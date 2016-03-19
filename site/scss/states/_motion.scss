@@ -1,0 +1,17 @@
+
+//  Animations
+// --------------
+
+@keyframes anim-enter {
+	0%   { opacity: 0; margin-top: -3em; }
+	90%	 { margin-top: 0; }
+	100% { opacity: 1; }
+}
+
+.anim-enter {
+	animation: 0.5s anim-enter ease-in;
+}
+
+.-hide {
+	opacity: 0.1;
+}

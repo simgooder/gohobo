@@ -1,0 +1,50 @@
+
+.card--dark {
+
+	padding: 2em;
+	max-height: 100%;
+	overflow-y: auto;
+
+	@include mq-md {
+		width: 345px;
+		background-color: $color-dark;
+	}
+
+	@include mq-sm {
+		background-color: rgba(#000, 0.7);
+		height: 100%;
+	}
+}
+
+.card--light {
+
+	padding: 2em;
+	box-shadow: 1px 1px 26px 6px rgba(0,0,0,0.15);
+	position: relative;
+	transition: 0.2s;
+
+	@include mq-md {
+		width: 345px;
+		background-color: #fff;
+	}
+
+	@include mq-sm {
+		margin: auto;
+		max-width: 95%;
+		background-color: #fff;
+	}
+}
+
+.card--transparent {
+
+	max-width: 550px;
+
+	@include mq-sm {
+		padding: 2em;
+	}
+
+	&.--sm {
+		max-width: 350px;
+	}
+	
+}

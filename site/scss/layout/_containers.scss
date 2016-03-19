@@ -1,0 +1,184 @@
+
+// a box is just a group of elements layed out evenly
+.row {
+	display: flex;
+	flex-flow: row nowrap;
+
+	justify-content: center;
+	align-items: center;
+}
+
+.footer {
+	background-color: #fff;
+	padding: 6em 10% 4em 10%;
+
+	display: flex;
+
+	justify-content: space-between;
+	align-items: center;
+	
+	@include mq-md {
+		flex-flow: row wrap;
+	}
+	@include mq-sm {
+		flex-flow: column nowrap;
+		align-items: space-between;
+	}
+}
+
+.section  {
+	height: 100%;
+	height: 100vh;
+
+	display: flex;
+	flex-direction: column;
+
+	overflow: hidden;
+
+	@include mq-md {
+		min-height: 40em;
+	}
+
+}
+
+	.section--container {
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+
+		height: 100%;
+
+		position: relative;
+
+		@include mq-md {
+			padding-left: 10%;
+			padding-right: 10%;
+		}
+	}
+
+		article {
+			display: flex;
+			flex-wrap: wrap;
+			align-content: center;
+
+			flex-direction: column;
+
+			@include mq-sm {
+				justify-content: center;
+			}
+		}
+
+
+
+// The Section Backgrounds
+//-----------------------------
+
+// the pull-up margin to cover the space caused by clipping
+$clip-margin: -2.8em;
+
+// header / hero
+main > .section:nth-of-type(1) {
+	background: url('../img/yukon-lookout_kelly-rogan.jpg')no-repeat center center fixed;
+	background-size: cover;
+
+	-webkit-clip-path: polygon(0 0, 100% 0, 100% 100%, 0 93%);
+	clip-path: polygon(0 0, 100% 0, 100% 100%, 0 93%);
+}
+
+// intro
+main > .section:nth-of-type(2) {
+
+	-webkit-clip-path: polygon(0 0, 100% 7%, 100% 100%, 0 93%);
+	clip-path: polygon(0 0, 100% 7%, 100% 100%, 0 93%);
+
+	margin-top: $clip-margin;
+}
+
+// on the road
+main > .section:nth-of-type(3) {
+	background: url('../img/on-the-road_forrest-cavale.jpg')no-repeat center center fixed;
+	background-size: cover;
+
+	-webkit-clip-path: polygon(0 0, 100% 7%, 100% 100%, 0 93%);
+	clip-path: polygon(0 0, 100% 7%, 100% 100%, 0 93%);
+
+	margin-top: $clip-margin;
+}
+
+// ridesharing
+main > .section:nth-of-type(4) {
+	background: url('../img/ridesharing_zachary-staines.jpg')no-repeat center center fixed;
+	background-size: cover;
+
+	-webkit-clip-path: polygon(0 0, 100% 7%, 100% 100%, 0 93%);
+	clip-path: polygon(0 0, 100% 7%, 100% 100%, 0 93%);
+
+	margin-top: $clip-margin;
+}
+
+// camping
+main > .section:nth-of-type(5) {
+	background: url('../img/camping-desert_zach-betten.jpg')no-repeat center center fixed;
+	background-size: cover;
+
+	-webkit-clip-path: polygon(0 0, 100% 7%, 100% 100%, 0 93%);
+	clip-path: polygon(0 0, 100% 7%, 100% 100%, 0 93%);
+
+	margin-top: $clip-margin;
+}
+
+// housesitting
+main > .section:nth-of-type(6) {
+	background: url('../img/cabin-at-night_paul-itkin.jpg')no-repeat center center fixed;
+	background-size: cover;
+
+	-webkit-clip-path: polygon(0 0, 100% 7%, 100% 100%, 0 93%);
+	clip-path: polygon(0 0, 100% 7%, 100% 100%, 0 93%);
+
+	margin-top: $clip-margin;
+}
+
+// email capture
+main > .section:nth-of-type(7) {
+	background: url('../img/silhouette-trees_lou-levit.jpg')no-repeat center center;
+	background-size: cover;
+
+	-webkit-clip-path: polygon(0 0, 100% 7%, 100% 100%, 0% 100%);
+	clip-path: polygon(0 0, 100% 7%, 100% 100%, 0% 100%);
+
+	margin-top: $clip-margin;
+
+	// ie fix::
+	// ie 11 ignores the left and right margins
+
+	align-items: center;
+}
+
+
+
+// Firefox specific Clip-Path
+// ---------------------------
+
+@-moz-document url-prefix() { 
+	
+  main > .section:nth-of-type(1) {
+	clip-path: url("../index.html#clip-b");
+  }
+
+  main > .section:nth-of-type(2),
+  main > .section:nth-of-type(3),
+  main > .section:nth-of-type(4),
+  main > .section:nth-of-type(5),
+  main > .section:nth-of-type(6) {
+  	clip-path: url("../index.html#clip-poly");
+  	//margin-top: 0 !important;
+  }
+
+  main > .section:nth-of-type(7) {
+  	clip-path: url("../index.html#clip-t");
+  }
+
+}
+
+
+

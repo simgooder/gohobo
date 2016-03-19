@@ -1,0 +1,46 @@
+  // -----------------------------
+ // 		Base Typography
+// ---------------------------------
+
+
+// Import the Fonts
+// ------------------
+
+@font-face {
+font-family: 'Youngserif';
+src: 
+	url('../fonts/youngserif-regular.eot');
+src: 
+	url('../fonts/youngserif-regular.eot?#iefix') format('embedded-opentype'),
+	url('../fonts/youngserif-regular.otf') format('otf');
+
+	font-weight: normal;
+	font-style: normal;
+}
+
+
+// // Font Families
+$font-heading: 'Youngserif', 'Georgia', serif;
+$font-copy: 'Roboto Mono', 'Lucida Console', Monaco, monospace;
+
+
+html,
+:root {
+	font-size: 16px;
+
+	@include mq-xl {
+		font-size: 18px;
+	}
+
+	@include mq-sm {
+		font-size: 14px;
+	}
+}
+
+body {
+	font-family: $font-copy;
+	color: #444;
+	line-height:1.5;
+}
+
+

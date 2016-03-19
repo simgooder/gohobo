@@ -1,0 +1,45 @@
+/*
+*  name: SlimKit
+*
+*
+*/
+
+//     Base    
+//----------------------
+@import 'base/reset',
+        'base/variables',
+        'base/mixins',
+        'base/media-queries',
+        'base/utils',
+        'base/typography'
+;
+
+//     Modules 
+//----------------------
+@import 'modules/lander',
+        'modules/modal'
+
+;  
+
+//     Layout  
+//----------------------
+@import 'layout/containers',
+        'layout/positioning'
+;  
+
+//     Components
+//----------------------
+@import 'components/type',
+        'components/buttons',
+        'components/forms',
+        'components/images',
+        'components/cards'
+
+;  
+
+//     States  
+//----------------------
+@import 'states/motion'
+
+; 
+

@@ -1,0 +1,166 @@
+  // -----------------------------
+ //       Typographic Styles
+// ---------------------------------
+
+// Headings
+// ------------
+
+	h1, h2, h3, h4 {
+		margin: 0;
+		font-family: $font-heading;
+	}
+
+
+	h1 {
+		letter-spacing: 0.75px;
+		line-height: 1.25;
+
+		margin: 3rem 0;
+
+		font-size: 4em;
+
+		@include mq-sm {
+			text-align: center;
+
+			// maintains the BLOCK appearance
+			width: 100%;
+		}
+		@include mq(550px) {
+			font-size: 2.6em;
+		}
+	}
+
+	h2 {
+		letter-spacing: 1.5px;
+		font-size: 1.6875em;
+		width: 100%;
+		
+
+		@include mq-sm {
+			// maintains the BLOCK appearance
+			width: 100%;
+		}
+	}
+
+	h3 {
+
+	}
+
+	h4 {
+
+	}
+
+
+// Copy
+// -----------
+
+	a {
+		color: inherit;
+		text-decoration: none;
+	}
+
+	p {
+		font-family: $font-copy;
+		line-height: 1.65;
+
+		font-size: 0.9em;
+		text-align: left;
+		
+		// fixed text-wrapping issue in IE 11 
+		width: 100%;
+	}
+
+	p + p {
+
+	}
+
+	p a {
+		text-decoration: underline;
+	}
+		p a:hover,
+		p a:focus {
+
+		}
+
+
+
+// Text Alignment
+.text--center  {text-align: center;}
+.text--left    {text-align: left;}
+.text--right   {text-align: right;}
+
+
+// Text Colours
+.text--color {
+
+	&.-dark {
+		color:$color-dark;
+	}
+}
+
+// Text Colour Themes
+// ------------------------
+
+
+.theme--dark {
+	color: #fff;
+}
+
+.theme--light {
+	color: $color-dark;
+	background-color: #fff;
+}
+
+.subheading {
+	color: rgba($color-dark, 0.05);
+	font-size: 7em;
+	position: absolute;
+	z-index: 1;
+	top: 0;
+
+	margin-top: 23vh;
+
+	@include mq-sm {
+		font-size: 15vw;
+	}
+}
+
+.footer {
+
+	small {
+		width: 100%;
+		margin-top:4em;
+		text-align: center;
+	}
+
+	a {
+		text-decoration: underline;
+	}
+
+	.email {
+
+		@include mq-sm {
+			margin: 4em auto;
+		}
+	}
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

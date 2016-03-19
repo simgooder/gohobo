@@ -1,0 +1,31 @@
+
+.pos--l {
+	@include mq-md {
+		margin-right: auto;
+	}
+}
+.pos--r {
+	@include mq-md {
+		margin-left: auto;
+	}
+}
+.pos--t {
+	@include mq-md {
+		margin-bottom: auto;
+	}
+}
+.pos--b {
+	@include mq-md {
+		margin-top: auto;
+	}
+}
+
+.pos--middle {
+
+	margin: auto inherit;
+}
+
+.align--center {
+	margin-left: auto;
+	margin-right: auto;
+}
