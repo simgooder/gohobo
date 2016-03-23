@@ -93,7 +93,8 @@ module.exports = function(grunt) {
 	        your_target: {
 	            files: {
 	            	// List the outputting pages here
-	                "site/index.html" : "site/partials/main.html"
+	                "site/index.html" : "site/partials/main.html",
+	                "site/blog.html" : "site/partials/blog.html",
 	            }
 	        }
 	    },

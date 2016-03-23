@@ -9,10 +9,46 @@
 @font-face {
 font-family: 'Youngserif';
 src: 
-	url('../fonts/youngserif-regular.eot');
+	url('../font/youngserif-regular.eot');
 src: 
-	url('../fonts/youngserif-regular.eot?#iefix') format('embedded-opentype'),
-	url('../fonts/youngserif-regular.otf') format('otf');
+	url('../font/youngserif-regular.eot?#iefix') format('embedded-opentype'),
+	url('../font/youngserif-regular.otf') format('opentype');
+
+	font-weight: normal;
+	font-style: normal;
+}
+
+@font-face {
+font-family: 'Roboto-Mono';
+src: 
+	url('../font/robotomono-regular.eot');
+src: 
+	url('../font/robotomono-regular.eot?#iefix') format('embedded-opentype'),
+	url('../font/robotomono-regular.ttf') format('truetype');
+
+	font-weight: normal;
+	font-style: normal;
+}
+
+@font-face {
+font-family: 'Roboto-Mono-Bold';
+src: 
+	url('../font/robotomono-bold.eot');
+src: 
+	url('../font/robotomono-bold.eot?#iefix') format('embedded-opentype'),
+	url('../font/robotomono-bold.ttf') format('truetype');
+
+	font-weight: normal;
+	font-style: normal;
+}
+
+@font-face {
+font-family: 'Roboto-Mono-Italic';
+src: 
+	url('../font/robotomono-lightitalic.eot');
+src: 
+	url('../font/robotomono-lightitalic.eot?#iefix') format('embedded-opentype'),
+	url('../font/robotomono-lightitalic.ttf') format('truetype');
 
 	font-weight: normal;
 	font-style: normal;
@@ -21,7 +57,9 @@ src:
 
 // // Font Families
 $font-heading: 'Youngserif', 'Georgia', serif;
-$font-copy: 'Roboto Mono', 'Lucida Console', Monaco, monospace;
+$font-copy: 'Roboto-Mono', 'Lucida Console', Monaco, monospace;
+$font-bold: 'Roboto-Mono-Bold', 'Lucida Console', Monaco, monospace;
+$font-italic: 'Roboto-Mono-Italic', 'Lucida Console', Monaco, monospace;
 
 
 html,
@@ -41,6 +79,9 @@ body {
 	font-family: $font-copy;
 	color: #444;
 	line-height:1.5;
+
+	-webkit-font-smoothing: antialiased;
+	text-rendering: optimizeLegibility;
 }
 
 

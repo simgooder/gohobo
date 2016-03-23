@@ -23,18 +23,28 @@
 	<meta property="og:title"       content="Go Hobo" />
 	<meta property="og:type"        content="website" />
 	<meta property="og:url"         content="http://gohobo.co" />
-	<meta property="og:image"       content="img/gohobo-logo@2x.png" />
+	<meta property="og:image"       content="http://gohobo.co/img/gohobo-postcard.jpg" />
+	<meta property="og:image:type"	content="image/jpeg">
 	<meta property="og:site_name"   content="GoHobo.co" />
 	<meta property="og:description" content="An alternative adventure travel network, bringing together the best of budget-friendly transportation, accommodation and high quality life experiences." />
 
-	
-	<!-- Options -->
+
+	<!-- Google Analytics -->
+	<script>
+		(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+		(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+		m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+		})(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+		ga('create', 'UA-73741436-2', 'auto');
+		ga('send', 'pageview');
+	</script>
 
 </head>
 
 <body>
 
-	<main role="main" itemscope itemtype="http://schema.org/Organization">
+	<main class="home" role="main">
 
 		
 		<svg class="visuallyhidden">
@@ -91,14 +101,14 @@
 		  </defs>
 		</svg>
 
-		<section class="section theme--dark" role="header">
+		<section class="section theme--dark" role="header" id="header">
 		
 			<div class="section--container">
 			
 				<article class="card--transparent pos--l anim-enter">
 		
 					<div class="logo text--center">
-						<span class="visuallyhidden" itemprop="name">Go Hobo</span>
+						<span class="visuallyhidden">Go Hobo</span>
 						<svg width="100px" height="66px" viewBox="0 0 120 86" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
 						    <title>Go Hobo</title>
 						    <desc>A seventies style handwritten typeface.</desc>
@@ -190,6 +200,9 @@
 					<p>
 						Whether it's <a href="https://nomadprojects.io/">freelance</a>, remote work, or self-employment, get what you need to start living the good life. It's cheaper than a mortgage and twice as fun.
 					</p>
+					
+					<img class="card--img" srcset="img/icons/ontheroad.png 1x, img/icons/ontheroad@2x.png 2x" src="img/icons/ontheroad.png" alt="A line drawing of a travel trailer.">
+		
 					<button class="btn--context__dark js-toggle-modal" type="button">
 						<span class="btn--text">find a home on wheels</span>
 						<div class="btn--fill"></div>
@@ -221,6 +234,9 @@
 					<p>
 						With strong communities built around it, <a href="https://en.wikipedia.org/wiki/Real-time_ridesharing" target="_blank">ridesharing</a> is more popular than ever, and is becoming infinitely easier for you to take advantage of. 
 					</p>
+		
+					<img class="card--img" srcset="img/icons/rideshare.png 1x, img/icons/rideshare@2x.png 2x" src="img/icons/rideshare.png" alt="A line drawing of two people in a car.">
+		
 					<button class="btn--context__dark js-toggle-modal" type="button">
 						<span class="btn--text">
 							find a ride
@@ -253,6 +269,9 @@
 					<p>
 						Besides sleeping under the stars and all the air you can breathe, it's a great way to <a href="http://campinmygarden.com/">meet people</a>, and get some real local insights. Best of all, it's (usually) free!
 					</p>
+		
+					<img class="card--img" srcset="img/icons/trees.png 1x, img/icons/trees@2x.png 2x" src="img/icons/trees.png" alt="A line drawing of evergreen trees.">
+		
 					<button class="btn--context__dark js-toggle-modal" type="button">
 						<span class="btn--text">find a campsite</span>
 						<div class="btn--fill"></div>
@@ -283,6 +302,9 @@
 					<p>
 						<a href="https://www.housecarers.com/gohoboco.cfm?mem=000">Housesitting</a> is an incredible way to live like a local and get a taste for life in other countries, without worrying about the full cost of living.
 					</p>
+		
+					<img class="card--img" srcset="img/icons/housesitting.png 1x, img/icons/housesitting@2x.png 2x" src="img/icons/housesitting.png" alt="A line drawing of a house.">
+		
 					<button class="btn--context__dark js-toggle-modal" type="button">
 						<span class="btn--text">find a house</span>
 						<div class="btn--fill"></div>
@@ -294,15 +316,17 @@
 		</section>
 
 		
-		<section class="section theme--light">
+		<section class="section theme--light" id="signup">
 		
 			<div class="section--container">
 				
-				<article class="card--transparent pos--middle align--center text--center" id="signup">
+				<article class="card--transparent pos--middle align--center text--center">
 				
 					<h2>
-						the adventure begins. soon.
+						the adventure begins. (very soon)
 					</h2>
+		
+					<img class="card--img" srcset="img/icons/mountains.png 1x, img/icons/mountains@2x.png 2x" src="img/icons/mountains.png" alt="A line drawing of snowcapped mountains.">
 		
 					<p>	
 						In the meantime, enter your email below, and you'll be the first to know when we launch.
@@ -334,9 +358,13 @@
 
 		<footer class="footer" role="info">
 			
-			<img itemprop="logo" width="120" srcset="img/gohobo-logo.png 1x, img/gohobo-logo@2x.png 2x" src="img/gohobo-logo.png" alt="GoHobo Logo, a handwritten typeface">
+			<a href="#header" class="tab--to--top">
+				^<br>TOP
+			</a>
 			
-			<a class="email" itemprop="email" href="mailto:gohoboco@gmail.com">
+			<img width="120" srcset="img/gohobo-logo.png 1x, img/gohobo-logo@2x.png 2x" src="img/gohobo-logo.png" alt="GoHobo Logo, a handwritten typeface">
+			
+			<a class="email" href="mailto:gohoboco@gmail.com">
 				gohoboco@gmail.com
 			</a>
 			<div class="social--set">
@@ -395,11 +423,27 @@
 
 	</main>
 
-	<!-- Scripts -->
+
+	<!-- Schema LDJSON -->
+	<script type="application/ld+json">
+	  {
+	    "@context": "http://schema.org",
+	    "@type": "Organization",
+	    "name": "GoHobo",
+	    "url": "http://gohobo.co",
+	    "logo": "http://www.gohobo.co/img/gohobo-logo.png",
+	    "sameAs" : [
+	        "https://www.facebook.com/Go-Hobo-649912611816927",
+	        "http://www.twitter.com/gohoboco"
+	    ]
+	  }
+	</script>
+
+
+	<!-- Magic Spells -->
 	<script src="js/jquery-2.1.4.min.js"></script>
 	<script src="js/scripts.js"></script>
 	<script src="js/modernizr.custom.min.js"></script>
-
 
 </body>
 </html>
