@@ -1,23 +1,41 @@
 ---
-layout: default
+pagename: home
 ---
 
-<div class="home">
+<!DOCTYPE html>
 
-  <h1 class="page-heading">Posts</h1>
+<html lang="en">
 
-  <ul class="post-list">
-    {% for post in site.posts %}
-      <li>
-        <span class="post-meta">{{ post.date | date: "%b %-d, %Y" }}</span>
+<head>
+	{% include head.html %}
+</head>
 
-        <h2>
-          <a class="post-link" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
-        </h2>
-      </li>
-    {% endfor %}
-  </ul>
+<body>
 
-  <p class="rss-subscribe">subscribe <a href="{{ "/feed.xml" | prepend: site.baseurl }}">via RSS</a></p>
+	<main class="{{ page.pagename }}" role="main">
 
-</div>
+		{% include _svg-clip-paths.html %}
+
+		{% include _hero.html %}
+
+		{% include _intro.html %}
+
+		{% include _ontheroad.html %}
+
+		{% include _ridesharing.html %}
+
+		{% include _camping.html %}
+
+		{% include _housesitting.html %}
+
+		{% include _emailcapture.html %}
+
+	</main>
+
+	
+	{% include footer.html %}
+
+	{% include _modal.html %}
+
+</body>
+</html>

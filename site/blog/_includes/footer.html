@@ -4,7 +4,7 @@
     ^<br>TOP
   </a>
   
-  <img width="120" srcset="img/gohobo-logo.png 1x, img/gohobo-logo@2x.png 2x" src="img/gohobo-logo.png" alt="GoHobo Logo, a handwritten typeface">
+  <img width="120" srcset="{{ 'assets/img/gohobo-logo.png' | prepend: site.url }} 1x, {{ 'assets/img/gohobo-logo@2x.png' | prepend: site.url }} 2x" src="{{ 'assets/img/gohobo-logo.png' | prepend: site.url }}" alt="GoHobo Logo, a handwritten typeface">
   
   <a class="email" href="mailto:gohoboco@gmail.com">
     gohoboco@gmail.com
@@ -24,3 +24,19 @@
   </small>
 
 </footer>
+
+
+<!-- Schema LDJSON -->
+<script type="application/ld+json">
+  {
+    "@context": "http://schema.org",
+    "@type": "Organization",
+    "name": "GoHobo",
+    "url": "http://gohobo.co",
+    "logo": "http://www.gohobo.co/assets/img/gohobo-logo.png",
+    "sameAs" : [
+        "https://www.facebook.com/Go-Hobo-649912611816927",
+        "http://www.twitter.com/gohoboco"
+    ]
+  }
+</script>
