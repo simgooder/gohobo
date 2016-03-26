@@ -2,22 +2,47 @@
 layout: default
 ---
 
-<div class="home">
+<!-- ARCHIVE -->
 
-  <h1 class="page-heading">Postssss</h1>
+<h1>Wander Journal</h1>
 
-  <ul class="post-list">
-    {% for post in site.posts %}
-      <li>
-        <span class="post-meta">{{ post.date | date: "%b %-d, %Y" }}</span>
+<ul class="post--list">
+  {% for post in site.posts %}
+    <li class="post--item">
+      
+      <div class="post--overlay">
 
-        <h2>
-          <a class="post-link" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
+        <small class="post--meta">
+          TAGS: <span>{{ post.tags }}</span>
+        </small>
+
+        <h2 class="post--title">
+          {{ post.title }}
         </h2>
-      </li>
-    {% endfor %}
-  </ul>
 
-  <p class="rss-subscribe">subscribe <a href="{{ "/feed.xml" | prepend: site.baseurl }}">via RSS</a></p>
+        <div class="post--meta">
 
-</div>
+          <small> {{ post.author }} </small>
+          •
+          <time datetime="{{ post.date }}">
+            {{ post.date | date: "%B %-d, %Y" }}
+          </time>
+
+        </div>  
+
+        <a href="{{ post.url | prepend: site.baseurl }}">
+          <button class="post--button" type="button">
+            Read Article    
+          </button>
+        </a>
+
+      </div>
+
+      <img class="post--thumbnail" src="{{ site.blog_image_assets }}{{ post.hero }}" alt="{{ post.title }}">
+
+    </li>
+  {% endfor %}
+</ul>
+
+<!-- <p class="rss-subscribe">subscribe <a href="{{ "/feed.xml" | prepend: site.baseurl }}">via RSS</a></p> -->
+

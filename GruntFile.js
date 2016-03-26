@@ -34,11 +34,7 @@ module.exports = function(grunt) {
 			},
 			gruntfile: {
 			  	files: ['Gruntfile.js']
-			},
-			bake: {
-		        files: [ 'site/partials/*.html' ],
-		        tasks: ['bake'],
-		    }
+			}
 		},
 		// Compile Sass
 		sass: {
@@ -88,27 +84,17 @@ module.exports = function(grunt) {
 		    	}
 		    }
 		},
-		// Compile HTML partials
-		bake: {
-	        your_target: {
-	            files: {
-	            	// List the outputting pages here
-	                "site/index.html" : "site/partials/main.html"
-	            }
-	        }
-	    },
 
 	});
 
 	// Load Tasks
 	grunt.loadNpmTasks('grunt-sass');
 	grunt.loadNpmTasks('grunt-contrib-watch');
-	grunt.loadNpmTasks('grunt-bake');
 	grunt.loadNpmTasks('grunt-browser-sync');
 	grunt.loadNpmTasks('grunt-web-server');
 	grunt.loadNpmTasks('grunt-postcss');
 
 	// Default task(s).
-  	grunt.registerTask('default', ['bake','browserSync','postcss','watch']);
+  	grunt.registerTask('default', ['browserSync','postcss','watch']);
   	grunt.registerTask('server', ['web_server']);
 };
