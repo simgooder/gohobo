@@ -7,10 +7,18 @@ $(document).ready(function(){
 	});
 
 	$('.icon--camera__left').click(function(){
-		//$().addClass('TEST-CLASS');
 		var next = $(this).next()[0];
 		$(next).toggleClass('-hide');
 	});
+
+// navigation toggle
+  $('.js--toggle--nav').click(function(){
+    $('.main--nav__list').toggleClass('-is--open');
+  });
+
+  $('main').click(function(){
+    $('.main--nav__list').removeClass('-is--open');
+  });
 
 
 });

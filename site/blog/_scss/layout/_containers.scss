@@ -43,6 +43,53 @@
 	}
 }
 
+.section--hero {
+	
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-flow: column wrap;
+
+	@include mq-md {
+		min-height: 500px;
+		// pull up under the header
+		margin-top: -128px;
+	}
+	@include mq-sm {
+		min-height: 200px;
+		// pull up under the header
+		margin-top: -112px;
+	}
+
+	&.-lg {
+		@include mq-md {
+			height: 80vh;
+		}
+		@include mq-sm {
+			height: 100vh;
+		}
+	}
+	&.-sm {
+		@include mq-md {
+			height: 60vh;
+		}
+		@include mq-sm {
+			height: 50vh;
+		}
+	}
+
+	&.-theme--journal {
+		@include mq-md {
+			background:transparent url('../img/hero-bg-gohobo@2x.jpg') center center no-repeat;
+			background-size: cover;
+		}
+		@include mq-sm {
+			background:transparent url('../img/hero-bg-gohobo.jpg') center center no-repeat;
+			background-size: cover;
+		}
+	}
+}
+
 .section  {
 	height: 100%;
 	height: 100vh;

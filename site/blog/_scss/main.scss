@@ -14,13 +14,6 @@
         'base/typography'
 ;
 
-//     Modules 
-//----------------------
-@import 'modules/lander',
-        'modules/modal'
-
-;  
-
 //     Layout  
 //----------------------
 @import 'layout/containers',
@@ -34,6 +27,15 @@
         'components/forms',
         'components/images',
         'components/cards'
+
+;  
+
+//     Modules 
+//----------------------
+@import 'modules/lander',
+        'modules/modal',
+        'modules/blog',
+        'modules/global-header'
 
 ;  
 

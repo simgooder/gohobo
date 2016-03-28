@@ -1,10 +1,13 @@
 ---
 layout: default
+headertheme: "light"
 ---
 
 <!-- ARCHIVE -->
 
-<h1>Wander Journalssss</h1>
+<section class="section--hero -lg -theme--journal">
+    <h1 class="text--center">Wander Journal</h1>
+</section>
 
 <ul class="post--list">
   {% for post in site.posts %}
@@ -12,31 +15,31 @@ layout: default
       
       <div class="post--overlay">
 
-        <small class="post--meta">
-          TAGS: <span>{{ post.tags }}</span>
-        </small>
-
-        <h2 class="post--title">
-          {{ post.title }}
-        </h2>
-
-        <div class="post--meta">
-
-          <small> {{ post.author }} </small>
-          •
-          <time datetime="{{ post.date }}">
-            {{ post.date | date: "%B %-d, %Y" }}
-          </time>
-
-        </div>  
-
         <a href="{{ post.url | prepend: site.baseurl }}">
-          <button class="post--button" type="button">
+
+          <h6 class="post--meta -tags">
+            TAGS: <span>{{ post.tags }}</span>
+          </h6>
+
+            <h2 class="post--title">
+              {{ post.title }}
+            </h2>
+
+            <h6 class="post--meta">
+              {{ post.author }} •
+              <time datetime="{{ post.date }}">
+                {{ post.date | date: "%B %-d, %Y" }}
+              </time>
+            </h6>
+        </a>  
+          
+      </div>  
+
+        <!-- <a href="{{ post.url | prepend: site.baseurl }}">
+          <button class="post--btn" type="button">
             Read Article    
           </button>
-        </a>
-
-      </div>
+        </a>   -->
 
       <img class="post--thumbnail" src="{{ site.blog_image_assets }}{{ post.hero }}" alt="{{ post.title }}">
 

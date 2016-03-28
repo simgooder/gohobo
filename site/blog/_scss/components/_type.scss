@@ -5,9 +5,10 @@
 // Headings
 // ------------
 
-	h1, h2, h3, h4 {
+	h1, h2, h3, h4, h5, h6 {
 		margin: 0;
 		font-family: $font-heading;
+		font-weight: normal;
 	}
 
 
@@ -50,6 +51,12 @@
 
 	}
 
+	// used for meta info
+	h6 {
+		display: inline-block;
+		margin: 0;
+	}
+
 
 // Copy
 // -----------
@@ -61,13 +68,17 @@
 
 	p {
 		font-family: $font-copy;
-		line-height: 1.65;
+		line-height: 1.9;
 
-		font-size: 0.9em;
+		font-size: 1em;
 		text-align: left;
 		
 		// fixed text-wrapping issue in IE 11 
 		width: 100%;
+
+		@include mq-sm {
+			font-size: 1.1em;
+		}
 	}
 
 	p + p {

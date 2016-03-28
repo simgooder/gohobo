@@ -164,5 +164,38 @@ p + .btn--context__dark {
 }
 
 
+.post--btn {
+	border-color: $color-cta;
+
+	text-align: center;
+	color: $color-cta;
+	text-transform: uppercase;
+	letter-spacing: 0.2em;
+	
+	width: 100%;
+	overflow: hidden;
+
+	transition: 0.4s;
+
+	// position: relative;
+	// transform: translate(-50%, 0);
+	// left: 50%;
+
+	@include mq-md {
+		padding: 0.5em 0;
+		max-width: 16em;
+	}
+	@include mq-sm {
+		padding: 0.679em 0;
+	}
+
+	&:hover,
+	&:focus {
+		background-color: rgba(#fff, 0.15);
+	}	
+
+}
+
+
 
 
