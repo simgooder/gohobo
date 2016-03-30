@@ -1,8 +1,10 @@
 
 .main--header {
 	position: relative;
+	z-index: 2;
 	top: 0;
 	left: 0;
+
 	width: 100%;
 	padding: 2em 4em;
 
@@ -11,7 +13,7 @@
 	justify-content: space-between;
 	align-items: center;
 
-	background: linear-gradient( to bottom, rgba(#000, 0.5), rgba(#000, 0.0) );
+	background: linear-gradient( to bottom, rgba(#000, 0.25), rgba(#000, 0.0) );
 
 }
 
@@ -33,7 +35,7 @@
 
 .main--nav__close {
 	position: absolute;
-	top: 2em;
+	top: 2.8em;
 	right: 4em;
 
 	svg {

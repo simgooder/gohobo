@@ -88,10 +88,38 @@
 	p a {
 		text-decoration: underline;
 	}
-		p a:hover,
-		p a:focus {
+	p a:hover,
+	p a:focus {
 
+	}
+
+	blockquote, 
+	blockquote p {
+		font-size: 1.4em;
+		line-height: 1.4;
+		font-family: $font-italic;
+
+		position: relative;
+		z-index: 2;
+
+		@include mq-sm {
+			margin-left: 0.25em;
+			margin-right: 0;
 		}
+	}
+
+	blockquote::before {
+		content: 'ˮ';
+		
+		font-size: 15em;
+		line-height: 1.2;
+		color: #efefef;
+		letter-spacing: -0.4em;
+
+		position: absolute;
+		left: 0;
+		top: 0;
+	}
 
 
 

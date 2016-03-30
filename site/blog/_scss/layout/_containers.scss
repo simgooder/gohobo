@@ -17,6 +17,8 @@
 
 	justify-content: space-between;
 	align-items: center;
+
+	border-top: 0.1em solid #efefef;
 	
 	@include mq-md {
 		flex-flow: row wrap;
@@ -29,7 +31,7 @@
 	.tab--to--top {
 		position: absolute;
 		right: 10%;
-		top: -46px;
+		z-index: 2;
 
 	    text-align: center;
 	    line-height: 1;
@@ -40,6 +42,17 @@
 
 	    border-top-left-radius: 0.5em;
 	    border-top-right-radius: 0.5em;
+
+	    border-top: 0.1em solid #efefef;
+	    border-right: 0.1em solid #efefef;
+	    border-left: 0.1em solid #efefef;
+
+	    @include mq-md {
+	    	top: -48px;
+	    }
+	    @include mq-sm {
+	    	top: -42px;
+	    }
 	}
 }
 
@@ -89,6 +102,15 @@
 		}
 	}
 }
+
+	.hero--title {
+		text-align: center;
+		font-size: 10vw;
+
+		@include mq-xl {
+			font-size: 8em;
+		}
+	}
 
 .section  {
 	height: 100%;
@@ -147,6 +169,15 @@ $clip-margin: -2.8em;
 
 	-webkit-clip-path: polygon(0 0, 100% 0, 100% 100%, 0 93%);
 	clip-path: polygon(0 0, 100% 0, 100% 100%, 0 93%);
+
+	@include mq-md {
+		// pull up under the header
+		margin-top: -128px;
+	}
+	@include mq-sm {
+		// pull up under the header
+		margin-top: -112px;
+	}
 }
 
 // intro

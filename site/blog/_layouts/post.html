@@ -1,10 +1,9 @@
 ---
 layout: default
-headertheme: "dark"
 ---
 
 <section class="section--hero -sm" 
-		 style="background:url('{{ site.blog_image_assets }}{{ page.hero }}')no-repeat center center;background-size:cover;">
+		 style="background:url('{{ site.image_assets }}{{ page.hero }}')no-repeat center center;background-size:cover;">
 
 </section>
 
@@ -21,6 +20,28 @@ headertheme: "dark"
 
 	<div class="art--content" itemprop="articleBody">
 		{{ content }}
+	</div>
+
+	<div class="art--footer">
+
+		<h6>Share the <span style="color:#F06E61">♥</span></h6>
+		<a href="https://twitter.com/share" 
+		   class="twitter-share-button" 
+		   data-via="goHoboCo"
+		   data-text="{{ page.title }}">
+		   Tweet
+		</a>
+		<div class="fb-share-button" 
+			data-href="http://gohobo.co{{ page.url }}" 
+			data-layout="button">
+		</div>
+		<a href="http://bufferapp.com/add" 
+		   class="buffer-add-button" 
+		   data-count="none">
+		   Buffer
+		</a>
+		<script type="text/javascript" src="https://d389zggrogs7qo.cloudfront.net/js/button.js"></script>
+
 	</div>
 
 	{% if page.author %}

@@ -1,12 +1,11 @@
 ---
 layout: default
-headertheme: "light"
 ---
 
 <!-- ARCHIVE -->
 
 <section class="section--hero -lg -theme--journal">
-    <h1 class="text--center">Wander Journal</h1>
+    <h1 class="hero--title">Wander Journal</h1>
 </section>
 
 <ul class="post--list">
@@ -26,22 +25,18 @@ headertheme: "light"
             </h2>
 
             <h6 class="post--meta">
-              {{ post.author }} •
+              {% if post.author %}
+                {{ post.author }} •
+              {% endif %}
               <time datetime="{{ post.date }}">
                 {{ post.date | date: "%B %-d, %Y" }}
               </time>
             </h6>
         </a>  
           
-      </div>  
+      </div>
 
-        <!-- <a href="{{ post.url | prepend: site.baseurl }}">
-          <button class="post--btn" type="button">
-            Read Article    
-          </button>
-        </a>   -->
-
-      <img class="post--thumbnail" src="{{ site.blog_image_assets }}{{ post.hero }}" alt="{{ post.title }}">
+      <img class="post--thumbnail" src="{{ site.image_assets }}{{ post.hero }}" alt="{{ post.title }}">
 
     </li>
   {% endfor %}

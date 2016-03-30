@@ -12,6 +12,8 @@ pagename: home
 
 <body>
 
+	{% include header.html %}
+
 	<main class="{{ page.pagename }}" role="main">
 
 		{% include _svg-clip-paths.html %}
@@ -31,7 +33,6 @@ pagename: home
 		{% include _emailcapture.html %}
 
 	</main>
-
 	
 	{% include footer.html %}
 
