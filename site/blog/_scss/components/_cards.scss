@@ -45,6 +45,10 @@
 	margin-bottom: 3em;
 	margin-left: auto;
 	margin-right: auto;
+
+	@include mq-sm {
+		width: 5em;
+	}
 }
 
 .card--dark {
@@ -95,4 +99,14 @@
 		max-width: 350px;
 	}
 	
+}
+
+
+
+.card--transparent p,
+.card--light p {
+
+	@include mq-sm {
+		font-size: 1em;
+	}
 }
