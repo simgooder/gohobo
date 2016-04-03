@@ -32,6 +32,35 @@ img {
 
 	}
 
+	&__bottom {
+		bottom: 2.5em;
+		position: absolute;
+
+		@include mq-md {
+			left: 4em;
+		}
+		@include mq-sm {
+			left: 2em;
+		}
+
+		display: flex;
+		align-items: center;
+		flex-wrap: nowrap;
+
+		cursor: pointer;
+
+		img {
+			width: 1.6em;
+			opacity: 0.6;
+			transition: 0.4s;
+
+			&:hover {
+				opacity: 1;
+			}
+		}
+
+	}
+
 }
 
 	.info--banner {
@@ -62,6 +91,14 @@ img {
 	}	
 
 	.icon--camera__left {
+
+		&:hover .info--banner {
+			opacity: 1;
+			margin-left: 1em;
+		}
+	}	
+
+	.icon--camera__bottom {
 
 		&:hover .info--banner {
 			opacity: 1;

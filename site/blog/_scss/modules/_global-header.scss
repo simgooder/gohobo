@@ -6,7 +6,6 @@
 	left: 0;
 
 	width: 100%;
-	padding: 2em 4em;
 
 	display: flex;
 	flex-flow: row nowrap;
@@ -14,6 +13,14 @@
 	align-items: center;
 
 	background: linear-gradient( to bottom, rgba(#000, 0.25), rgba(#000, 0.0) );
+
+	@include mq-md {
+		padding: 2em 4em;
+	}
+
+	@include mq-sm {
+		padding: 1em 2em;
+	}
 
 }
 
@@ -35,8 +42,15 @@
 
 .main--nav__close {
 	position: absolute;
-	top: 2.8em;
-	right: 4em;
+
+	@include mq-md {
+		top: 2.8em;
+		right: 4em;
+	}
+	@include mq-sm {
+		top: 2em;
+		right: 2em;
+	}
 
 	svg {
 		fill: $color-dark;
