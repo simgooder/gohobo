@@ -2,6 +2,7 @@
 layout: post
 title:  "5 Things I Learned About Van Life (While Living in a Van)"
 date:   2016-03-28
+author: "Simon Gooder"
 hero: "blog/simon-gohobo-vanlife.jpg"
 tags: 
 - vanlife

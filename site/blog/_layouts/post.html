@@ -54,14 +54,21 @@ layout: default
 		</a>
 		<script type="text/javascript" src="https://d389zggrogs7qo.cloudfront.net/js/button.js"></script>
 
+		<a data-pin-do="buttonPin" 
+		   data-pin-color="white" 
+		   data-pin-tall="true" 
+		   href="https://www.pinterest.com/pin/create/button/?url=http://gohobo.co{{ page.url }}&media=http://gohobo.co{{ site.image_assets }}{{ page.hero }}&description={% if page.excerpt %}{{ page.excerpt | strip_html | strip_newlines | truncate: 160 }}{% else %}{{ site.description }}{% endif %}">
+		   <img src="//assets.pinterest.com/images/pidgets/pinit_fg_en_rect_white_28.png" />
+		</a>
+
 	</div>
 
 	{% if page.author %}
-		<h6 itemprop="author" itemscope itemtype="http://schema.org/Person">
+	<!-- 	<h6 itemprop="author" itemscope itemtype="http://schema.org/Person">
 			<span itemprop="name">
 				{{ page.author }}
 			</span>
-		</h6>
+		</h6> -->
 	{% endif %}
 
 

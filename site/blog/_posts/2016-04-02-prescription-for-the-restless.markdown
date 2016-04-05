@@ -3,6 +3,7 @@ layout: post
 title:  "A Prescription for the Restless"
 date:   2016-04-02
 hero: "blog/vanlife-gohobo-prescription-for-restless.jpg"
+author: "Simon Gooder"
 image-author: "Jay Ma"
 image-author-link: "https://unsplash.com/imdecoder"
 tags: 
