@@ -17,22 +17,26 @@ title: GoHobo | Wander Journal | Adventure inspiration for regular people
 
         <a href="{{ post.url | prepend: site.baseurl }}">
 
-          <h6 class="post--meta -tags">
-            TAGS: <span>{{ post.tags }}</span>
-          </h6>
-
-            <h2 class="post--title">
-              {{ post.title }}
-            </h2>
-
             <h6 class="post--meta">
-              {% if post.author %}
-                {{ post.author }} •
-              {% endif %}
               <time datetime="{{ post.date }}">
                 {{ post.date | date: "%B %-d, %Y" }}
               </time>
             </h6>
+            
+            <h2 class="post--title">
+              {{ post.title }}
+            </h2>
+
+            <h6 class="post--meta -tags">
+              TAGS: <span>{{ post.tags }}</span>
+            </h6>
+
+            <h6 class="post--meta">
+              {% if post.author %}
+                {{ post.author }}
+              {% endif %}
+            </h6>
+
         </a>  
           
       </div>

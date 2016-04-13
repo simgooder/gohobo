@@ -21,7 +21,8 @@ Nights we spent in average neighborhoods, the only thing we ever occasionally ha
 
 ## Get a pee bucket
 If you're going to be [stealth camping](https://www.youtube.com/watch?v=XK18TVIjFeA), you absolutely need an emergency pee bucket. Ours was excessively fancy, something a previous owner of the van had installed in a small closet at the back. It even had a toilet seat! It's hard to be stealth with your pants down, peeing on somebody's lawn under the moonlight, not to mention in broad daylight.
-> Please note that this bucket is for emergencies, and it is not advisable to keep an open bucket of urine in a moving vehicle.
+
+> This bucket is for emergencies, and it is not advisable to keep an open bucket of urine in a moving vehicle.
 
 ## Keep an emergency repair fund
 When living in a motorised vehicle, especially a classic, there are always going to be unforseen incidents, and mechanical issues. Do your best to keep on top of these. If this is your home, it won't do you much good stuck in a shop being repaired.

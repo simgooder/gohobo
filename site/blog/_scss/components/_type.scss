@@ -99,6 +99,11 @@
 		line-height: 1.4;
 		font-family: $font-italic;
 
+		margin-top: 2em;
+		margin-bottom: 2em;
+		margin-left: 0;
+		margin-right: 0;
+
 		position: relative;
 		z-index: 2;
 
@@ -112,7 +117,7 @@
 		content: 'ˮ';
 		
 		font-size: 15em;
-		line-height: 1.2;
+		line-height: 1;
 		color: #efefef;
 		letter-spacing: -0.4em;
 

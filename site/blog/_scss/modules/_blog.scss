@@ -19,6 +19,7 @@
 	p + h2,
 	blockquote + h2 {
 		margin-top: 2em;
+		margin-bottom: 1em;
 	}
 
 	em {
@@ -40,11 +41,7 @@
 		text-transform: capitalize;
 		font-size: 4em;
 
-		padding-bottom: 1.4em;
-
-		margin: 0.3em 0 1em 0;
-
-		border-bottom: 0.025em solid $color-cta;
+		margin: 0.3em 0 1.75em 0;
 
 		word-break: break-word;
 		hyphens: auto;
@@ -53,6 +50,20 @@
 	.art--content {
 		line-height: 1.9;
 	}
+
+		.art--content {
+			li {
+				font-size: 1.2em;
+			}
+			
+			li + li {
+				margin-top: 0.75em;
+			}
+ 
+			li a {
+				text-decoration: underline;
+			}
+		}
 
 	.art--footer {
 		display: flex;
@@ -78,144 +89,3 @@
 
 
 
-
-// Post Thumbnails on Archive Pages
-// ---------------------------------------
-
-.post--list {
-	display: flex;
-	flex-flow: row wrap;
-
-	border: 0.05em solid #fff;
-
-	max-width: $breakpoint-xl;
-
-	@include mq-xl {
-		margin-left: auto;
-		margin-right: auto;
-	}
-}
-
-	.post--item {
-		position: relative;
-		overflow: hidden;
-
-		text-align: center;
-
-		display: flex;
-		flex-flow: column wrap;
-		flex-grow: 1;
-
-		min-height: 340px;
-		border: 0.1em solid #fff;
-
-		@include mq-md {
-			min-width: 300px;
-			flex-basis: 30%;
-
-			&:nth-of-type(1) {
-				flex-basis: 55%;
-				height: 70vh;
-			}
-		}
-		@include mq-sm {
-			height: 100vh;
-			width: 100%;
-		}
-	}
-
-		.post--thumbnail {
-			position: absolute;
-			z-index: 1;
-
-			max-width: none;
-			min-width: 100%;
-			min-height: 100%;
-			
-			transform: translate(-50%, -50%);
-			top: 50%;
-			left: 50%;
-
-			opacity: 0.9;
-		}	
-
-		.post--overlay {
-			display: flex;
-			flex-flow: row wrap;
-			align-content: flex-end;
-
-			position: absolute;
-			z-index: 2;
-			background: linear-gradient( to top, rgba(#000, 0.5), rgba(#000, 0.0) );
-			//background-color: rgba($color-dark, 0.5);
-
-			top: 0;
-			left: 0;
-			bottom: 0;
-			right: 0;
-			width: 100%;
-			height: 100%;
-
-			color: #fff;
-			text-align: left;
-
-			@include mq-md {
-				padding: 2em;
-			}
-			@include mq-sm {
-				padding: 5em 2em 4em;
-			}
-
-			> a {
-				display: flex;
-				flex-flow: column wrap;
-				flex-basis: 100%;
-				justify-content: flex-end;
-			}
-		}
-
-			// Typography
-			.post--title {
-				font-family: $font-copy;
-				letter-spacing: initial;
-
-				max-width: 800px;
-				max-height: 220px;
-				overflow: hidden;
-
-				@include mq-md {
-					line-height: 1.2;
-					font-size: 2.1em;
-
-					padding: 0.35em 0;
-				}
-				@include mq-sm {
-					line-height: 1.4;
-					font-size: 2.5em;
-
-					padding: 0.5em 0;
-				}
-			}
-
-			.post--meta {
-				font-family: $font-copy;
-
-				@include mq-md {
-					font-size: 0.75em;
-					letter-spacing: 0.04em;
-				}
-				@include mq-sm {
-					font-size: 1em;
-					letter-spacing: 0.04em;
-				}
-
-				span {
-					color: $color-cta;
-				}
-
-				&.-tags {
-					text-transform: uppercase;
-					font-family: $font-bold;
-				}
-				
-			}

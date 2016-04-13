@@ -82,7 +82,7 @@ module.exports = function(grunt) {
 		    	  'blog/assets/css/main.css' : 'blog/assets/css/main.css'
 		    	}
 		    }
-		},
+		},  
 
 	});
 
