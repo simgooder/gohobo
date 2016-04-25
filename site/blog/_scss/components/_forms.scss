@@ -30,12 +30,18 @@ form {
 
 // general input styling
 
-.input {
+.input,
+.input--textarea {
 	width: 100%;
 
 	color: $color-dark;
 
 	border: 1px solid $color-dark;
+
+	& + .input--textarea {
+		margin-top: 1em;
+		margin-bottom: 1em;
+	}
 
 	@include mq-sm {
 		padding: 1em 1.5em;

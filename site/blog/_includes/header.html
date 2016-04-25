@@ -39,16 +39,16 @@
 
       <div class="main--nav__list">
        
-       <a href="#" class="main--nav__close js--toggle--nav" title="Close the Main Menu">
-         <svg preserveAspectRatio="xMidYMid meet" viewBox="0 0 25 25" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
-             <title>An "X" indicating a close function</title>
-             <g stroke="none" stroke-width="1" fill-rule="evenodd">
-                 <g transform="translate(-504.000000, -48.000000)">
-                     <path d="M512.51825,60.9300945 L505.606681,67.8416637 C504.432486,69.0158584 504.438177,70.9096621 505.60975,72.081235 C506.778939,73.2504239 508.679444,73.2541821 509.849322,72.0843044 L516.760891,65.1727352 L523.67246,72.0843044 C524.846655,73.2584991 526.740458,73.2528078 527.912031,72.081235 C529.08122,70.912046 529.084978,69.0115414 527.915101,67.8416637 L521.003531,60.9300945 L527.915101,54.0185254 C529.089295,52.8443306 529.083604,50.950527 527.912031,49.7789541 C526.742842,48.6097651 524.842338,48.606007 523.67246,49.7758847 L516.760891,56.6874538 L509.849322,49.7758847 C508.675127,48.6016899 506.781323,48.6073812 505.60975,49.7789541 C504.440561,50.948143 504.436803,52.8486477 505.606681,54.0185254 L512.51825,60.9300945 L512.51825,60.9300945 Z"></path>
-                 </g>
-             </g>
-         </svg>
-       </a>
+         <a href="#" class="main--nav__close js--toggle--nav" title="Close the Main Menu">
+           <svg preserveAspectRatio="xMidYMid meet" viewBox="0 0 25 25" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+               <title>An "X" indicating a close function</title>
+               <g stroke="none" stroke-width="1" fill-rule="evenodd">
+                   <g transform="translate(-504.000000, -48.000000)">
+                       <path d="M512.51825,60.9300945 L505.606681,67.8416637 C504.432486,69.0158584 504.438177,70.9096621 505.60975,72.081235 C506.778939,73.2504239 508.679444,73.2541821 509.849322,72.0843044 L516.760891,65.1727352 L523.67246,72.0843044 C524.846655,73.2584991 526.740458,73.2528078 527.912031,72.081235 C529.08122,70.912046 529.084978,69.0115414 527.915101,67.8416637 L521.003531,60.9300945 L527.915101,54.0185254 C529.089295,52.8443306 529.083604,50.950527 527.912031,49.7789541 C526.742842,48.6097651 524.842338,48.606007 523.67246,49.7758847 L516.760891,56.6874538 L509.849322,49.7758847 C508.675127,48.6016899 506.781323,48.6073812 505.60975,49.7789541 C504.440561,50.948143 504.436803,52.8486477 505.606681,54.0185254 L512.51825,60.9300945 L512.51825,60.9300945 Z"></path>
+                   </g>
+               </g>
+           </svg>
+         </a>
 
         <a class="main--nav__item" href="{{ site.url }}">
           Home
@@ -59,13 +59,17 @@
         <br>
         <br>
         <br>
-        <br>
-        <a class="main--nav__item" href="" >
-          Twitter
-        </a>
-        <a class="main--nav__item" href="https://www.facebook.com/Go-Hobo-649912611816927/">
-          Facebook
-        </a>
+
+        <ul class="post--list">
+        <h3>Recent Posts</h3>
+        {% for post in site.posts limit:3 %}
+            <li class="post--item__sm" style="background:url({{ site.image_assets }}{{ post.hero }})no-repeat center center;background-size:cover;">
+              <a href="{{ post.url | prepend: site.baseurl }}">
+                <h3 class="post--title__sm">{{ post.title }}</h3>
+              </a>
+            </li>
+        {% endfor %}
+        </ul>
 
       </div>
 

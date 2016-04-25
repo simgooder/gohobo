@@ -1,7 +1,7 @@
 <article class="modal--overlay">
 
 		<form class="modal--card" method="post" action="http://mailthis.to/GoHobo">
-
+			<div class="modal--close__btn js-toggle-modal" title="Close this window">X</div>
 
 			<h2>
 				Can't wait to hit the road?
@@ -17,11 +17,13 @@
 			<input type="hidden" 
 				   name="_confirmation" 
 				   value="<b>Thank you!</b> Your adventure begins NOW! Just kidding, it shouldn't take too long though.">
+
+			<input class="input" type="text" name="email" id="email" placeholder="Your Email"/>	   
 			
 			<textarea class="input--textarea" name="request details" id="request-details" cols="30" rows="5"></textarea>
 
 			<div class="form--group__wide">
-				<button class="btn--cta" type="submit" style="margin-top:2em;">
+				<button class="btn--cta" type="submit">
 					Find me an adventure!
 				</button>
 			</div>
