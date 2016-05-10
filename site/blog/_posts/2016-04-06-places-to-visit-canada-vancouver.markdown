@@ -7,9 +7,10 @@ hero: "blog/places-to-visit-in-canada_vancouver.jpg"
 author: "Simon Gooder"
 image-author: "Gabriel Santiago"
 image-author-link: "https://unsplash.com/gabrielssantiago"
+category: journal
 tags: 
-- Vancouver, 
--  destinations
+- Vancouver
+- destinations
 ---
 
 It's easily one of the cleanest and greenest cities I've ever seen. The mayor rides his bike to work, plants fruit trees in the parks for residents to enjoy, and even holds the endearing nickname of Mayor Moonbeam. Beautiful ocean views surround most of the city proper, with snow-capped mountains towering over the region's perimeter, and a  constant fresh ocean breeze.

@@ -1,0 +1,175 @@
+
+// GoHobo Resource Directory
+// -------------------------
+
+
+// color themes
+// dynamically populated by the `resource.cat` variable
+[data-theme="accommodation"] {
+	background-image: linear-gradient(-45deg, #F6B299 0%, #FE81A8 100%);
+}
+[data-theme="transportation"] {
+	background-image: linear-gradient(-45deg, #98F5ED 0%, #6AB9FF 100%);
+}
+
+
+.dir--nav {
+	display: flex;
+
+	flex-basis: 100%;
+	flex-flow: row wrap;
+
+	align-items: center;
+
+	padding: 4em 0;
+
+}
+
+	.dir--nav__item {
+		padding: 0.3em 1.5em;
+		border-radius: 2em;
+
+		color: #fff;
+		font-family: $font-bold;
+		letter-spacing: 0.3px;
+		text-align: center;
+
+		cursor: pointer;
+
+
+		@include mq-md {
+			& + .dir--nav__item {
+				margin-left: 2em;
+			}
+		}
+		@include mq-sm {
+			margin: 1em;
+			flex-grow: 1;
+		}
+	}
+
+	.dir--nav__label {
+		width: 100%;
+		flex-basis: 100%;
+
+		margin-bottom: 1em;
+	}
+
+
+.dir--list {
+	display: flex;
+	flex-flow: row wrap;
+	justify-content: space-around;
+	align-items: stretch;
+
+	margin-bottom: 12em;
+}
+
+
+.dir--item {
+	background-color: #fff;
+	border: 1px solid #efefef;
+	border-radius: 3px;
+
+	@include mq-md {
+		min-width: 332px;
+		max-width: 380px;
+	}
+	@include mq-sm {
+		min-width: 98%;
+		max-width: 360px;
+		flex-shrink: 1;
+	}
+
+	margin-bottom: 2em;
+
+	flex-grow: 1;
+
+	display: flex;
+	flex-flow: column wrap;
+	justify-content: space-between;
+
+	&:nth-of-type(2n) {
+		margin-left: 1em;
+		margin-right: 1em;
+	}
+}
+
+	.dir--item__logo {
+		max-width: calc(100% - 5em);
+
+		margin-left: auto;
+		margin-right: auto;
+		margin-top: 2.5em;
+		margin-bottom: 1.5em;
+
+		text-align: center;
+
+		img {
+			max-height: 3.75em;
+		}
+	}
+
+	.dir--item__desc {
+		padding: 0 3em;
+
+		text-overflow: ellipsis;
+		word-wrap: break-word;
+		overflow: hidden;
+		max-height: 11.4em;
+		font-size: 0.9em;
+	}
+
+	.dir--item__meta-bar {
+		flex-basis: 100%;
+		width: 100%;
+
+		padding: 1em 3em 2.75em 3em;
+		margin-top: auto;
+
+		display: flex;
+		flex-flow: row nowrap;
+		justify-content: space-between;
+		align-items: center;
+
+	}
+
+		.item--meta__region {
+			font-size: 0.75em;
+			line-height: 2;
+
+			border: 1px solid $color-dark;
+			border-radius: 1em;
+
+			padding: 0 2em;
+		}
+
+		.item--meta__budget {
+			font-family: $font-heading;
+			letter-spacing: 4px;
+			font-size: 1.25em;
+
+			span {
+				opacity: 0.3;
+			}
+		}
+
+		// img associated with sub category
+		// ie housesitting, camping, rideshare, etc
+		.item--meta__subcat {
+
+			img {
+				max-width: 2.2em;
+			}
+		}
+
+
+	.dir--item__action {
+		width: 100%;
+		flex-basis: 100%;
+
+		padding: 0.85em 0;
+
+		color: #fff;
+	}
+

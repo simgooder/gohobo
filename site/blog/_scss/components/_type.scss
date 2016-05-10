@@ -93,37 +93,35 @@
 
 	}
 
-	blockquote, 
-	blockquote p {
-		font-size: 1.4em;
-		line-height: 1.4;
-		font-family: $font-italic;
+	blockquote {
 
 		margin-top: 2em;
 		margin-bottom: 2em;
 		margin-left: 0;
 		margin-right: 0;
 
-		position: relative;
-		z-index: 2;
+		padding-left: 1em;
+		padding-right: 1em;
 
-		@include mq-sm {
-			margin-left: 0.25em;
-			margin-right: 0;
+		border: 0.25em solid transparent;
+		border-image: $color-cta-grad;
+		border-image-slice: 1;
+
+		font-size: 1.5em;
+
+
+		p {
+			line-height: 1.4;
+			font-family: $font-copy;
+
+			padding-top: 0.4em;
+			padding-bottom: 0.4em;
+
+			@include mq-sm {
+				margin-left: 0.25em;
+				margin-right: 0;
+			}
 		}
-	}
-
-	blockquote::before {
-		content: 'ˮ';
-		
-		font-size: 15em;
-		line-height: 1;
-		color: #efefef;
-		letter-spacing: -0.4em;
-
-		position: absolute;
-		left: 0;
-		top: 0;
 	}
 
 

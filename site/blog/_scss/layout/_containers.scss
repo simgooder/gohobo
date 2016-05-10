@@ -8,6 +8,14 @@
 	align-items: center;
 }
 
+.row--spaced {
+	display: flex;
+	flex-flow: row nowrap;
+
+	justify-content: space-between;
+	align-items: center;
+}
+
 .footer {
 	background-color: #fff;
 	padding: 6em 10% 4em 10%;
@@ -55,6 +63,25 @@
 	    }
 	}
 }
+
+
+.section--content {
+	width: 100%;
+	max-width: 92.5em;
+	margin-left: auto;
+	margin-right: auto;
+
+
+	@include mq-md {
+		padding-left: 4em;
+		padding-right: 4em;
+	}
+	@include mq-sm {
+		padding-left: 0.5em;
+		padding-right: 0.5em;
+	}
+}
+
 
 .section--hero {
 	position: relative;

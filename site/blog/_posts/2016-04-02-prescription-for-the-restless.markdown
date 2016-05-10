@@ -6,9 +6,10 @@ hero: "blog/vanlife-gohobo-prescription-for-restless.jpg"
 author: "Simon Gooder"
 image-author: "Jay Ma"
 image-author-link: "https://unsplash.com/imdecoder"
+category: journal
 tags: 
-- vanlife, 
--  budget
+- vanlife 
+- budget
 ---
 
 ## Live free

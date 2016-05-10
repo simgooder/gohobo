@@ -7,9 +7,10 @@ hero: "blog/places-to-visit-canada-bc.jpg"
 author: "Simon Gooder"
 image-author: "Simon Gooder"
 image-author-link: "https://twitter.com/simgooder"
+category: journal
 tags: 
-- British Columbia, 
--  roadtrip
+- British Columbia
+- roadtrip
 ---
 
 Basically, if you enjoy outdoor activities and a fresh-air lifestyle, why don't you live here already? Of all the places I've visited (out of Canada and other sides of it) British Columbia is my favourite, and has so many spectacular adventures to offer.

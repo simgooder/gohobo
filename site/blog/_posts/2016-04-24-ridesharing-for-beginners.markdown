@@ -6,9 +6,10 @@ hero: "blog/rideshare-carpool-gohobo.jpg"
 author: "Simon Gooder"
 image-author: "Michele Spinnato"
 image-author-link: "https://unsplash.com/michelespinnato"
+category: journal
 tags: 
-- rideshare, 
--  roadtrip
+- rideshare
+- roadtrip
 ---
 
 ## The Whole Idea is Great
