@@ -94,7 +94,8 @@
 	@include mq-md {
 		min-height: 500px;
 		// pull up under the header
-		margin-top: -128px;
+		top: -128px;
+		//margin-top: -128px;
 	}
 	@include mq-sm {
 		min-height: 200px;
@@ -133,10 +134,16 @@
 
 	.hero--title {
 		text-align: center;
-		font-size: 10vw;
+		max-width: 90%;
 
 		@include mq-xl {
 			font-size: 8em;
+		}
+		@include mq-md {
+			font-size: 6em;
+		}
+		@include mq-sm {
+			font-size: 3.8em;
 		}
 	}
 

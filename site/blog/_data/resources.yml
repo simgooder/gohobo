@@ -25,25 +25,22 @@
 #   - worldwide
 #   - *continent
 # logo: URL to the associated logo image asset
+# cta: the text on the call to action button
 
+
+##################################
+########  ACCOMMODATION ##########
+##################################
 
 - name  : HouseCarers
   link  : http://gohobo.housecare.hop.clickbank.net
   desc  : 'HouseCarers.com invites you to join one of the fastest growing trends in the world today House sitting and Pet Sitting. Free house sitting guide.'  
   cat   : accommodation
   subcat: housesitting
-  budget:  1 # out of 3
+  budget: 1 # out of 3
   region: worldwide
   logo  : '../assets/img/directory/house-carers-logo.png'
-
-- name  : HitchPlanet
-  link  : http://hitchplanet.com/
-  desc  : 'We provide safe, reliable and affordable travel in British Columbia, Washington, Oregon, Alberta & Ontario. Join for free as a driver or a hitcher.'  
-  cat   : transportation
-  subcat: rideshare
-  budget: 2 # out of 3
-  region: north america
-  logo  : '../assets/img/directory/hitchplanet-logo.png'
+  cta   :  Find a house
 
 - name  : HipCamp
   link  : https://www.hipcamp.com/users/sign-up?rc=UIJ9VXIQ&rs=3&rk=0
@@ -53,3 +50,19 @@
   budget: 2 # out of 3
   region: north america
   logo  : '../assets/img/directory/hipcamp-logo.png'
+  cta   :  Go camping
+
+
+##################################
+########  TRANSPORTATION #########
+##################################
+
+- name  : HitchPlanet
+  link  : http://hitchplanet.com/
+  desc  : 'We provide safe, reliable and affordable travel in British Columbia, Washington, Oregon, Alberta & Ontario. Join for free as a driver or a hitcher.'  
+  cat   : transportation
+  subcat: rideshare
+  budget: 2 # out of 3
+  region: north america
+  logo  : '../assets/img/directory/hitchplanet-logo.png'
+  cta   : Find a ride 

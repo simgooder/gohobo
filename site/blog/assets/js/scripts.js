@@ -1,5 +1,17 @@
 
 
+// TAGSORT PLUGIN
+$('.dir--nav').tagSort({
+  items:'.dir--item',
+  tagElement: 'div',
+  sortType: 'single',
+  tagClassPrefix: 'dir--nav__item theme--',
+  fadeTime: '100'
+});
+
+
+
+// The Modal Toggle
 $(document).ready(function(){
 
 	$('.js-toggle-modal').click(function(){

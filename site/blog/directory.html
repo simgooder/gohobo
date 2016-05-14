@@ -19,13 +19,7 @@ title: GoHobo | Directory | Adventure resources for regular people
       Filter by:
     </label>
     
-    <div class="dir--nav__item" data-filter-by="accomodation" data-theme="accommodation">
-      Accommodation
-    </div>
-
-    <div class="dir--nav__item" data-filter-by="transportation" data-theme="transportation">
-      Transportation
-    </div>
+    <!-- tags for sorting go here here-->
 
   </nav>
 
@@ -34,7 +28,7 @@ title: GoHobo | Directory | Adventure resources for regular people
     {% assign sortedResources = site.data.resources | sort: 'name' %}
     {% for resource in sortedResources %}
 
-      <li class="dir--item" data-cat="{{ resource.cat }}">
+      <li class="dir--item" data-item-tags="{{ resource.cat }}">
 
         <figure class="dir--item__logo">
           <img src="{{ resource.logo }}" alt="{{ resource.name }}" title="{{ resource.name }}">
@@ -74,8 +68,12 @@ title: GoHobo | Directory | Adventure resources for regular people
         </div> 
 
         <a href="{{ resource.link }}"> 
-          <button class="dir--item__action" type="button" data-theme="{{ resource.cat }}">
-            ACTION
+          <button class="dir--item__action theme--{{ resource.cat }}" type="button">
+            {% if resource.cta %}
+              {{ resource.cta }}
+            {% else %}
+              Check it out
+            {% endif %}
           </button>
         </a>
 
