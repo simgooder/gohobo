@@ -94,21 +94,17 @@
 	@include mq-md {
 		min-height: 500px;
 		// pull up under the header
-		top: -128px;
-		//margin-top: -128px;
 	}
 	@include mq-sm {
 		min-height: 200px;
-		// pull up under the header
-		margin-top: -112px;
 	}
 
 	&.-lg {
 		@include mq-md {
-			height: 80vh;
+			height: 90vh;
 		}
 		@include mq-sm {
-			height: 100vh;
+			height: 90vh;
 		}
 	}
 	&.-sm {

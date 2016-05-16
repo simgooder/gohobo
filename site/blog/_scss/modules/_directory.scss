@@ -7,10 +7,31 @@
 // dynamically populated by the `resource.cat` variable
 
 .theme--accommodation {
-	background-image: linear-gradient(-45deg, #F6B299 0%, #FE81A8 100%);
+	background: linear-gradient(-45deg, #F6B299 0%, #FE81A8 100%);
+
+	background-size: 100%;
+
+	&:hover {
+		background-size: 150%;
+	}
 }
 .theme--transportation {
-	background-image: linear-gradient(-45deg, #98F5ED 0%, #6AB9FF 100%);
+	background: linear-gradient(-45deg, #98F5ED 0%, #6AB9FF 100%);
+
+	background-size: 100%;
+
+	&:hover {
+		background-size: 150%;
+	}
+}
+.theme--work-exchange {
+	background: linear-gradient(-45deg, #FD97B9 0%, #B976FE 100%);
+
+	background-size: 100%;
+
+	&:hover {
+		background-size: 150%;
+	}
 }
 
 
@@ -22,7 +43,7 @@
 
 	align-items: center;
 
-	padding: 4em 0;
+	padding: 0 0 4em 0;
 
 }
 
@@ -81,6 +102,7 @@
 
 
 .dir--item {
+
 	background-color: #fff;
 	border: 1px solid #efefef;
 	border-radius: 3px;
@@ -89,7 +111,7 @@
 	margin-left: 0.5em;
 	margin-right: 0.5em;
 	
-	flex-grow: 1;
+	//flex-grow: 1;
 
 	display: flex;
 	flex-flow: column nowrap;
@@ -98,11 +120,12 @@
 	box-shadow: 0px 1px 6px 0px rgba($color-dark, 0.2);
 
 	@include mq-md {
-		min-width: 332px;
+		min-width: 336px;
 		max-width: 380px;
+		width: 30%;
 	}
 	@include mq-sm {
-		min-width: 98%;
+		//min-width: 98%;
 		max-width: 360px;
 		flex-shrink: 1;
 	}
@@ -127,9 +150,10 @@
 		display: flex;
 		align-items: center;
 		justify-content: center;
+		flex-flow: column nowrap;
 	
 		img {
-			
+			max-height: 6.25em;
 		}
 	}
 
@@ -150,13 +174,19 @@
 		max-width: 100%;
 		max-height: 90px;
 
-		padding: 1em 3em 2.75em 3em;
 		margin-top: auto;
 
 		display: flex;
 		flex-flow: row nowrap;
 		justify-content: space-between;
 		align-items: center;
+
+		@include mq-md {
+			padding: 1em 3em 2.75em 3em;
+		}
+		@include mq-sm {
+			padding: 1em 2em 2.75em 2em;
+		}
 
 	}
 
@@ -167,13 +197,15 @@
 			border: 1px solid $color-dark;
 			border-radius: 1em;
 
-			padding: 0 2em;
+			padding: 0 1em;
 		}
 
 		.item--meta__budget {
 			font-family: $font-heading;
 			letter-spacing: 4px;
 			font-size: 1.25em;
+
+			cursor: help;
 
 			span {
 				opacity: 0.3;
@@ -197,5 +229,7 @@
 		padding: 0.85em 0;
 
 		color: #fff;
+
+		transition: 0.5s;
 	}
 

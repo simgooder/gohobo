@@ -1,7 +1,7 @@
 # Directory object spec
 # name  : name of the service
 # link  : url to the service
-# desc  : a short description of the service / property
+# desc  : short description of the service / property
 # cat   : top-level category 
 #   - accommodation
 #   - transportation
@@ -15,12 +15,11 @@
 #   - bike
 #   - bus
 # budget:
-#   0  = no cost
-#   1  = one-time or yearly membership fee
-#   2  = small cost
-#   3  = large cost
-#  -1  = work for room / board 
-#  -2  = possibility of payment
+#   0   = no cost
+#   1   = small cost
+#   1.5 = small annual fee
+#   2   = < $500
+#   3   = over $500
 # region: where the service is available
 #   - worldwide
 #   - *continent
@@ -37,7 +36,7 @@
   desc  : 'HouseCarers.com invites you to join one of the fastest growing trends in the world today House sitting and Pet Sitting. Free house sitting guide.'  
   cat   : accommodation
   subcat: housesitting
-  budget: 1 # out of 3
+  budget: 1.5 # out of 3
   region: worldwide
   logo  : '../assets/img/directory/house-carers-logo.png'
   cta   :  Find a house
@@ -47,11 +46,81 @@
   desc  : Search and discover the best camping near you or anywhere else in the country. Camp on ranches, farms, vineyards and land preserves.  
   cat   : accommodation
   subcat: camping
-  budget: 2 # out of 3
+  budget: 1 # out of 3
   region: north america
   logo  : '../assets/img/directory/hipcamp-logo.png'
+  cta   :  Find a campsite
+
+- name  : Camp in My Garden
+  link  : http://campinmygarden.com/
+  desc  : With more than 1000 micro-campsites to choose from, and located on every continent except Antarctica, Campinmygarden.com is the first website advertising private gardens for camping. 
+  cat   : accommodation
+  subcat: camping
+  budget: 0 # out of 3
+  region: worldwide
+  logo  : '../assets/img/directory/campinmygarden-logo.png'
+  cta   :  Find a campsite
+
+- name  : TrustedHousesitters
+  link  : https://www.trustedhousesitters.com
+  desc  : Find the perfect home & pet sitter. View references, video profiles and relevant house & pet sitting experience.
+  cat   : accommodation
+  subcat: housesitting
+  budget: 1.5 # out of 3
+  region: worldwide
+  logo  : '../assets/img/directory/trusted-housesitters-logo.png'
+  cta   :  Find a house
+
+- name  : Nomador
+  link  : https://www.nomador.com/
+  desc  : Leave on vacation with peace of mind! Entrust your home and pets to home-sitters or browse through recent offers of accommodation proposed by our members.
+  cat   : accommodation
+  subcat: housesitting
+  budget: 1.5 # out of 3
+  region: worldwide
+  logo  : '../assets/img/directory/nomador-logo.png'
+  cta   :  Find a house
+
+- name  : Home Exchange
+  link  : https://www.homeexchange.com
+  desc  : Our members use their homes to save thousands when they travel. Join today and browse 65,000+ home exchange and house swap listings in 150+ countries!
+  cat   : accommodation
+  subcat: housesitting
+  budget: 1.5 # out of 3
+  region: worldwide
+  logo  : '../assets/img/directory/home-exchange-logo.png'
+  cta   :  Exchange homes
+
+- name  : Free Campsites
+  link  : https://freecampsites.net
+  desc  : Finding free camping locations is easy! Use our interactive map to find the best free camping sites and go camping for free!
+  cat   : accommodation
+  subcat: camping
+  budget: 0 # out of 3
+  region: worldwide
+  logo  : '../assets/img/directory/free-campsites-logo.png'
   cta   :  Go camping
 
+- name  : Cool Camping
+  link  : https://www.coolcamping.co.uk/
+  desc  : Find the best campsites and camping grounds in England, Scotland, Wales and France. Campsite reviews, photos, facilities, equipment guides, plus much more.
+  cat   : accommodation
+  subcat: camping
+  budget: 1 # out of 3
+  region: europe
+  logo  : '../assets/img/directory/cool-camping-logo.png'
+  cta   :  Go camping
+
+- name  : Harvest Hosts
+  link  : https://harvesthosts.com/
+  desc  : "A network of wineries, farms and agri-tourism sites that invite
+self-contained RVers to visit and stay overnight for free!"
+  cat   : accommodation
+  subcat: vanlife
+  budget: 0 # out of 3
+  region: north america
+  logo  : '../assets/img/directory/harvest-hosts-logo.png'
+  cta   :  Find a campsite
 
 ##################################
 ########  TRANSPORTATION #########
@@ -59,10 +128,95 @@
 
 - name  : HitchPlanet
   link  : http://hitchplanet.com/
-  desc  : 'We provide safe, reliable and affordable travel in British Columbia, Washington, Oregon, Alberta & Ontario. Join for free as a driver or a hitcher.'  
+  desc  : We provide safe, reliable and affordable travel in British Columbia, Washington, Oregon, Alberta & Ontario. Join for free as a driver or a hitcher.
   cat   : transportation
   subcat: rideshare
-  budget: 2 # out of 3
+  budget: 1 # out of 3
   region: north america
   logo  : '../assets/img/directory/hitchplanet-logo.png'
   cta   : Find a ride 
+
+- name  : Kangaride
+  link  : http://www.kangaride.com/
+  desc  : Reliable, Well Supervised Rideshare and Carpooling Service for Canada and the United States. AKA Amigo Express in Quebec.
+  cat   : transportation
+  subcat: rideshare
+  budget: 1 # out of 3
+  region: north america
+  logo  : '../assets/img/directory/kangaride-logo.png'
+  cta   : Find a ride 
+
+- name  : Hit The Road
+  link  : http://www.hittheroad.ca/
+  desc  : "HitTheRoad. Delivering your vehicle to you. We connect people with transportation needs in a budget and environmentally conscious way."
+  cat   : transportation
+  subcat: rideshare
+  budget: 0 # out of 3
+  region: north america
+  logo  : '../assets/img/directory/hit-the-road-logo.png'
+  cta   : Relocate a vehicle 
+
+- name  : Airfare Watchdog
+  link  : http://www.airfarewatchdog.com/top-50-fares/
+  desc  : "Airfare deals, cheap flights, & money-saving tips from our experts. Track prices with our fare watcher alerts!"
+  cat   : transportation
+  subcat: airfare
+  budget: 2 # out of 3
+  region: united states
+  logo  : '../assets/img/directory/airfare-watchdog-logo.png'
+  cta   : Find a cheap flight
+
+- name  : The Fare Deal Alert
+  link  : http://faredealalert.com/
+  desc  : "Curated travel deals from Atlanta, Charlotte, Denver, Detroit, Houston, Kansas City, Las Vegas, Minneapolis, Orlando, and San Diego."
+  cat   : transportation
+  subcat: airfare
+  budget: 2 # out of 3
+  region: united states
+  logo  : '../assets/img/directory/fare-deal-alert-logo.png'
+  cta   : Find a cheap flight
+
+- name  : Secret Flying
+  link  : http://secretflying.com/
+  desc  : "Find cheap flight deals at Secret Flying. We provide info on airfares with huge savings to your favourite destinations around the world."
+  cat   : transportation
+  subcat: airfare
+  budget: 2 # out of 3
+  region: worldwide
+  logo  : '../assets/img/directory/secret-flying-logo.png'
+  cta   : Find a cheap flight
+
+
+##################################
+########  WORK EXCHANGE  #########
+##################################
+
+- name  : World Wide Opportunities on Organic Farms
+  link  : http://www.wwoof.net/
+  desc  : "Volunteer help exchange on organic farms in 100+ countries. Meet friends from all over the world."
+  cat   : work-exchange
+  subcat: work-exchange
+  budget: 0 # out of 3
+  region: worldwide
+  logo  : '../assets/img/directory/wwoof-logo.png'
+  cta   : Find a work exchange
+
+- name  : Work Away
+  link  : https://www.workaway.info/
+  desc  : "Workaway set up to promote fair exchange between budget travellers, language learners or culture seekers who can stay with 1000s of families, individuals or organizations that are looking for help in over 130 different countries."
+  cat   : work-exchange
+  subcat: work-exchange
+  budget: 0 # out of 3
+  region: worldwide
+  logo  : '../assets/img/directory/work-away-logo.png'
+  cta   : Find a work exchange
+
+- name  : Projects Abroad
+  link  : http://www.projects-abroad.ca/
+  desc  : "Volunteer Abroad in 29 developing countries in Africa, Asia, Latin America and Eastern Europe. Programs are offered in care, teaching, conservation, human rights, healthcare and more."
+  cat   : work-exchange
+  subcat: work-exchange
+  budget: 2 # out of 3
+  region: worldwide
+  logo  : '../assets/img/directory/projects-abroad-logo.png'
+  cta   : Find a volunteer opportunity

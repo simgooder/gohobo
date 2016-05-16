@@ -19,18 +19,18 @@ layout: default
 		{% endif %}
 </section>
 
-<article class="art--container" itemscope itemtype="http://schema.org/BlogPosting">
+<article class="art--container">
 
 	<h6 class="art--meta">
-		<time datetime="{{ page.date | date_to_xmlschema }}" itemprop="datePublished">
+		<time datetime="{{ page.date | date_to_xmlschema }}">
 			{{ page.date | date: "%B %-d, %Y" }}
 		</time>
 	</h6>
-	<h1 class="art--title" itemprop="name headline">
+	<h1 class="art--title">
 		{{ page.title }}
 	</h1>
 
-	<div class="art--content" itemprop="articleBody">
+	<div class="art--content">
 		{{ content }}
 	</div>
 
@@ -72,5 +72,27 @@ layout: default
 	{% endif %}
 
 
-
 </article>
+
+<!-- Schema LDJSON -->
+<script type="application/ld+json">
+  {
+    "@context": "http://schema.org",
+    "@type": "http://schema.org/CreativeWork/Article",
+    "name": "{{ page.title }}",
+    "url": "http://gohobo.com{{ page.url }}",
+    "datePublished": "{{ page.date | date_to_xmlschema }}",
+    "headline": "{{ page.title }}",
+    "image": "http://gohobo.co{{ site.image_assets }}{{ page.hero }}",
+    "dateModified": "{{ page.date | date_to_xmlschema }}",
+    "mainEntityOfPage": "{{ page.tags.first }}",
+    "keywords": "{{ page.tags | join: ', '}}",
+    "publisher": {
+    	"@type": "http://schema.org/Organization",
+    	"name": "GoHobo.co",
+    	"logo": "http://www.gohobo.co/assets/img/gohobo-logo.png"
+    },
+    "author": {% if page.author %}"{{page.author}}"{% endif %}
+
+  }
+</script>

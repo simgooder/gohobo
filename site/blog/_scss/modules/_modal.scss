@@ -1,7 +1,70 @@
+// Tooltips
+
+.tooltip {
+	position: absolute;
+	z-index: 3;
+	bottom: 100%;
+	left: calc(50% - 4em);
+
+	display: block;
+
+	width: 8em;
+	padding: 0.6em 1em;
+	background-color: #fff;
+	border-radius: 4px;
+
+	background-color: #333;
+	color: #fff;
+	text-align: center;
+
+	//specific to ie10 and ie11
+	@media screen and (-ms-high-contrast: active), (-ms-high-contrast: none) {
+		box-shadow: 1px 1px 4px 1px rgba(#000,0.2);
+	}
+
+	filter: drop-shadow(1px 1px 4px rgba(#000,0.2) );
+
+	font-size: 0.6em;
+	letter-spacing: initial;
+	font-family: $font-copy;
+
+	// The States
+	opacity: 0;
+	visibility: hidden;
+	transition: 0.25s;
+
+	&:after {
+		$width: 0.8em;
+
+		content: ' ';
+		width: 0;
+		height: 0;
+		position: absolute;
+		top: 100%;
+		left: calc(50% - #{$width});
+		border-left: $width solid transparent;
+		border-right: $width solid transparent;
+		border-top: $width solid #333;
+	}
+}
+
+.tooltip--trigger {
+	position: relative;
+}
+
+.tooltip--trigger:hover + .tooltip,
+.tooltip--trigger:hover .tooltip {
+	opacity: 1;
+	visibility: visible;
+	bottom: calc(100% + 0.7em);
+}
+
+// Modal Window
 .modal--overlay {
 	position: fixed;
 	top: 0;
 	left: 0;
+	z-index: 6;
 
 	width: 100%;
 	min-height: 100%;

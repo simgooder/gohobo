@@ -7,7 +7,7 @@ title: GoHobo | Directory | Adventure resources for regular people
 
 <section class="section--hero -lg -theme--journal">
     <h1 class="hero--title">
-      Resource Directory
+      Adventure Directory
     </h1>
 </section>
 
@@ -35,28 +35,46 @@ title: GoHobo | Directory | Adventure resources for regular people
         </figure>
 
         <p class="dir--item__desc">
-           {{ resource.desc }}
+           {{ resource.desc  | truncate: 156}}
         </p>
         
         <div class="dir--item__meta-bar">
 
           <div class="item--meta__subcat">
-            <img src="{{ site.image_assets }}/icons/{{ resource.subcat }}.png" alt="A representation of {{ resource.subcat }}">
+            <img src="{{ site.image_assets }}/icons/{{ resource.subcat }}.png" alt="{{ resource.subcat }}">
           </div>
 
-          <div class="item--meta__budget">
+          <div class="item--meta__budget tooltip--trigger">
 
-            {% if resource.budget == -1 %}
+            {% if resource.budget == 0 %}
               <span>$$$</span> 
+              <div class="tooltip">
+                No cost
+              </div>
             {% endif %}
             {% if resource.budget == 1 %}
-              $<span>$$</span>    
+              $<span>$$</span>  
+              <div class="tooltip">
+                Small fee
+              </div>  
+            {% endif %}
+            {% if resource.budget == 1.5 %}
+              $<span>$$</span>  
+              <div class="tooltip">
+                Small annual fee
+              </div>  
             {% endif %}
             {% if resource.budget == 2 %}
-              $$<span>$</span> 
+              $$<span>$</span>
+              <div class="tooltip">
+                Less than $500
+              </div>  
             {% endif %}
             {% if resource.budget == 3 %}
               $$$ 
+              <div class="tooltip">
+                More than $500
+              </div> 
             {% endif %}
 
           </div>
@@ -84,3 +102,18 @@ title: GoHobo | Directory | Adventure resources for regular people
   </ul>
 
 </section>
+
+<script type="application/ld+json">
+  {
+    "@context": "http://schema.org",
+    "@type": "Organization",
+    "name": "GoHobo",
+    "url": "http://gohobo.co",
+    "logo": "http://www.gohobo.co/assets/img/gohobo-logo.png",
+    "sameAs" : [
+        "https://www.facebook.com/Go-Hobo-649912611816927",
+        "http://www.twitter.com/gohoboco",
+        "https://www.instagram.com/gohobo.co"
+    ]
+  }
+</script>
