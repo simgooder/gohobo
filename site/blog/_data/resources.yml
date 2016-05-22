@@ -31,6 +31,66 @@
 ########  ACCOMMODATION ##########
 ##################################
 
+- name  : Campr
+  link  : https://www.gocampr.com
+  desc  : 'Camp with Locals, Meet the World. Campr is a social traveling platform where you can find unique camping experiences.'  
+  cat   : accommodation
+  subcat: camping
+  budget: 1 # out of 3
+  region: worldwide
+  logo  : '../assets/img/directory/campr-logo.png'
+  cta   :  Find a campsite
+
+- name  : Hostel World
+  link  : http://www.hostelworld.com/
+  desc  : 'Stay in a hostel and meet the real world, not the tourist brochure. Read millions of hostel reviews from fellow travellers & book your next adventure today. #MeetTheWorld'  
+  cat   : accommodation
+  subcat: housesitting
+  budget: 2 # out of 3
+  region: worldwide
+  logo  : '../assets/img/directory/hostel-world-logo.png'
+  cta   :  Find a hostel
+
+- name  : Staydu
+  link  : http://www.staydu.com/
+  desc  : 'Stay and help, stay and pay, or stay for free. Rooms for rent, trade, or exchange.'  
+  cat   : accommodation
+  subcat: housesitting
+  budget: 0 # out of 3
+  region: worldwide
+  logo  : '../assets/img/directory/staydu-logo.png'
+  cta   :  Find a stay
+
+- name  : Purple Tent
+  link  : http://purpletent.com/
+  desc  : 'Rent or host a tent in your backyard. Save Money, discover new places, enjoy the simplicity of a night spent under the stars. Free tent for hosts.'  
+  cat   : accommodation
+  subcat: camping
+  budget: 1 # out of 3
+  region: usa
+  logo  : '../assets/img/directory/purple-tent-logo.png'
+  cta   :  Find a tent
+
+- name  : RV With Me
+  link  : https://rvwithme.com/
+  desc  : 'Online RV Site Reservations Across the Country. Private Landowners Hosting RVers. The Airbnb For RVing.'  
+  cat   : accommodation
+  subcat: vanlife
+  budget: 1 # out of 3
+  region: usa
+  logo  : '../assets/img/directory/rv-with-me-logo.png'
+  cta   :  Find a yard
+
+- name  : Couchsurfing
+  link  : https://www.couchsurfing.com/
+  desc  : 'Couchsurfers share their homes, cities and lives in profound in meaningful ways, making travel anywhere in the world a truly social experience.'  
+  cat   : accommodation
+  subcat: housesitting
+  budget: 1 # out of 3
+  region: worldwide
+  logo  : '../assets/img/directory/couchsurfing-logo.png'
+  cta   :  Find a couch
+
 - name  : HouseCarers
   link  : http://gohobo.housecare.hop.clickbank.net
   desc  : 'HouseCarers.com invites you to join one of the fastest growing trends in the world today House sitting and Pet Sitting. Free house sitting guide.'  
@@ -125,6 +185,37 @@ self-contained RVers to visit and stay overnight for free!"
 ##################################
 ########  TRANSPORTATION #########
 ##################################
+
+
+- name  : Share Your Ride
+  link  : http://shareyourride.net/
+  desc  : 'Your free carpool and rideshare board. Join a road trip or find travel buddies for your next trip and share petrol costs.'
+  cat   : transportation
+  subcat: rideshare
+  budget: 1 # out of 3
+  region: usa
+  logo  : '../assets/img/directory/share-your-ride-logo.png'
+  cta   : Find a ride
+
+- name  : Transfercar
+  link  : https://www.transfercarus.com/
+  desc  : 'We have got free rental cars here for all your business and pleasure needs in the great US of A. Get on board quick as they go faster than you think!'
+  cat   : transportation
+  subcat: rideshare
+  budget: 0 # out of 3
+  region: usa
+  logo  : '../assets/img/directory/transfercar-logo.png'
+  cta   : Find a car
+
+- name  : RV Share
+  link  : https://rvshare.com/
+  desc  : 'Find and book your perfect RV rental with RVshare. Rent everything from Class A Motorhome, Class B, Class C, or Travel Trailer. Search 5000+ RV rental options.'
+  cat   : transportation
+  subcat: vanlife
+  budget: 2 # out of 3
+  region: north america
+  logo  : '../assets/img/directory/rv-share-logo.png'
+  cta   : Find a RV
 
 - name  : HitchPlanet
   link  : http://hitchplanet.com/

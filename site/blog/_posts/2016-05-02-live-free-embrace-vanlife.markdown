@@ -9,6 +9,7 @@ image-author-link: "https://unsplash.com/@drewsonix"
 category: journal
 tags: 
 - vanlife 
+desc: "Living the van life is living the good life. Stressful at times, it can be an incredible prescription for the restless. Live free! Embrace vanlife!"
 ---
 
 ## Live free

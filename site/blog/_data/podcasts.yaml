@@ -1,0 +1,11 @@
+# Podcast object spec
+
+- name: "Zach talks about van life."
+  episode: 1
+  embed: '<iframe width="100%" height="300" scrolling="no" frameborder="no" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/264992631&amp;auto_play=false&amp;hide_related=false&amp;show_comments=true&amp;show_user=true&amp;show_reposts=false&amp;visual=true"></iframe>'
+  notes: "Zach talks about his Van life. Shares a story involving a old guy and a Cat. Also, Van news of the week."
+  credits: |
+          Intro/Theme Song: Winnebego Warior by Dead Kennedys    
+
+          | Outro Song: Gone Man by Eels
+  releasedate: May 17, 2016 

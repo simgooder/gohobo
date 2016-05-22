@@ -1,6 +1,6 @@
 ---
 layout: default
-title: GoHobo | Wander Journal | Adventure inspiration for regular people
+title: "Wander Journal | Inspirational adventure blog about vanlife, camping, & budget travel."
 ---
 
 <!-- ARCHIVE -->
@@ -41,7 +41,7 @@ title: GoHobo | Wander Journal | Adventure inspiration for regular people
           
       </div>
 
-      <img class="post--thumbnail" src="{{ site.image_assets }}{{ post.hero }}" alt="{{ post.title }}">
+      <img class="post--thumbnail" src="{{ site.image_assets }}{{ post.hero }}" alt="{{ post.title }}, {{ post.tags | join: ', ' }}">
 
     </li>
   {% endfor %}

@@ -10,10 +10,11 @@ category: journal
 tags: 
 - budget travel
 - inspiration
+desc: "Our mission is to make adventure accessible to everybody, by providing the means to alternative travel and side-road adventure services."
 ---
 
-## Freedom
-You know what else I love? Freedom. Not "Freedom", like in 'Murica, but the feeling you get when cruising vast empty stretches of highway with no ETA, deadline or start time. The feeling you get in quiet, sunny meadows filled with strawberries and birds, or on calm lakes full of jumping trout. The feeling I get when I work for my family and myself. Our mission is to make adventure accessible to everybody, by providing the means to alternative travel and side-road adventure services, inspiration, and budget friendly content.  
+## Freedom  
+You know what I love? Freedom. Not "Freedom", like in 'Murica, but the feeling you get when cruising vast empty stretches of highway with no ETA, deadline or start time. The feeling you get in quiet, sunny meadows filled with strawberries and birds, or on calm lakes full of jumping trout. The feeling I get when I work for my family and myself. Our mission is to make adventure accessible to everybody, by providing the means to alternative travel and side-road adventure services, inspiration, and budget friendly content.  
 
 ## GoHobo is for regular people
 Over the past years, we've struggled hard to make ends meet, and managed to collect some valuable experiences travelling and adventuring, but as soon as you start taking adulting seriously (like when you have a child), these types of adventures become very tough on the wallet, and traditional travel becomes mostly unattainable. If you're thinking "Nope, not me. I've got enough money to travel the world tomorrow if I want to," then GoHobo is not for you. GoHobo is for regular people.    

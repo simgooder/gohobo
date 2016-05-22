@@ -11,6 +11,7 @@ category: journal
 tags: 
 - Vancouver
 - destinations
+desc: "Around the city, you'll find thousands of fun things to do, but I've compiled ten of the most epic adventures, which all happen to be my personal favourites."
 ---
 
 It's easily one of the cleanest and greenest cities I've ever seen. The mayor rides his bike to work, plants fruit trees in the parks for residents to enjoy, and even holds the endearing nickname of Mayor Moonbeam. Beautiful ocean views surround most of the city proper, with snow-capped mountains towering over the region's perimeter, and a  constant fresh ocean breeze.

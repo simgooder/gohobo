@@ -1,0 +1,69 @@
+---
+layout: default
+title: "Vanageddon | A podcast about vanlife, vandwelling and cats."
+---
+
+<!-- ARCHIVE -->
+
+<section class="section--hero -lg -theme--vanageddon">
+    <h1 class="hero--title">Vanageddon Podcast</h1>
+</section>
+
+<section class="art--container">
+
+  <h2>
+    About the podcast
+  </h2>
+  <p>
+    Zach and I (Matt) go all the way back to Grade 5 from a small town outside of Medford, OR. We both shared the one and only interest of our youth, Skateboarding. Soon after we met, Zach ended up transferring to a different School a few towns away. So we completely lost contact for about three years. Grade 8 grade rolls around and all of a sudden, we are reunited. From that point on, we developed a everlasting friendship. Hell, we were roommates at one point. Now we both call Washington State home and the friendship is still as strong as it was over a decade ago.  
+  </p>
+  <a href="https://itunes.apple.com/us/podcast/vanageddon/id1114839703">
+    <img src="{{ site.image_assets }}/icons/link-badge-itunes_2x.png" width="140" alt="get Vanageddon on iTunes">
+  </a>
+
+  <h2 class="space--top__lg"> The archive</h2>
+  {% for podcast in site.data.podcasts %}
+
+  <div class="art--meta" id="episode-{{ podcast.episode }}">
+    Episode {{ podcast.episode }}
+    <br>
+    <b>
+      {{ podcast.name }}
+    </b>
+  </div>
+
+  <p>
+    {{ podcast.embed }}  
+  </p> 
+    
+  <p>
+    {{ podcast.notes}}
+  </p>
+  <p>
+    {{ podcast.credits }}
+  </p>
+    
+
+  {% endfor %}
+
+</section>
+
+
+
+<script type="application/ld+json">
+  {
+    "@context": "http://schema.org",
+    "@type": "Organization",
+    "name": "GoHobo",
+    "url": "http://gohobo.co",
+    "logo": "http://www.gohobo.co/assets/img/gohobo-logo.png",
+    "sameAs" : [
+        "https://www.facebook.com/Go-Hobo-649912611816927",
+        "http://www.twitter.com/gohoboco",
+        "https://www.instagram.com/gohobo.co"
+    ]
+  }
+</script>
+
+<!-- <p class="rss-subscribe">subscribe <a href="{{ "/feed.xml" | prepend: site.baseurl }}">via RSS</a></p> -->
+

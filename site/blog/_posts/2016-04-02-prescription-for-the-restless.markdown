@@ -10,6 +10,7 @@ category: journal
 tags: 
 - vanlife 
 - budget
+desc: "'Man, I wish I could travel...', Why can't you? Just go. You'll never have the money, but so what? Life doesn't wait for you to save up."
 ---
 
 ## Live free

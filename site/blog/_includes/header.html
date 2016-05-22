@@ -1,4 +1,4 @@
-<header class="main--header {{ page.headertheme }}" id="header">
+<header class="main--header {{ page.headertheme }}">
 
     <a class="main--logo" href="{{ site.baseurl }}/" title="Navigate Home">
         <span class="visuallyhidden">Go Hobo</span>
@@ -59,6 +59,9 @@
         <a class="main--nav__item" href="/journal">
           Wander Journal
         </a>
+        <a class="main--nav__item" href="/vanageddon">
+          Vanageddon Podcast
+        </a>
         <br>
         <br>
         <br>
@@ -66,7 +69,7 @@
         <ul class="post--list">
         <h3>Recent Posts</h3>
         {% for post in site.posts limit:3 %}
-            <li class="post--item__sm" style="background:url({{ site.image_assets }}{{ post.hero }})no-repeat center center;background-size:cover;">
+            <li class="post--item__sm" style="background:url({{ site.image_assets }}{{ post.hero | replace: '.jpg', '_thumb.jpg'}})no-repeat center center;background-size:cover;">
               <a href="{{ post.url | prepend: site.baseurl }}">
                 <h3 class="post--title__sm">{{ post.title }}</h3>
               </a>

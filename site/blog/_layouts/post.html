@@ -2,8 +2,12 @@
 layout: default
 ---
 
-<section class="section--hero -sm" 
-		 style="background:url('{{ site.image_assets }}{{ page.hero }}')no-repeat center center;background-size:cover;">
+<section class="section--hero -sm">
+		
+		<img class="section--hero__img"
+			 src="{{ site.image_assets }}{{ page.hero }}"
+			 srcset="{{ site.image_assets }}{{ page.hero }} 1x, {{ site.image_assets }}{{ page.hero | replace: '.jpg', '@2x.jpg' }} 2x"
+			 alt="">
 		
 		{% if page.image-author %}
 		<div class="icon--camera__bottom">

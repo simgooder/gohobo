@@ -10,6 +10,7 @@ category: journal
 tags: 
 - rideshare
 - roadtrip
+desc: "Just like a Greyhound, but not long, boring, overpriced, and unreliable. A simple rideshare can save you money, time, and the planet, are you convinced?"
 ---
 
 ## The Whole Idea is Great
