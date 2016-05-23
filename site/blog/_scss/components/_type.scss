@@ -167,26 +167,6 @@
 	}
 }
 
-.footer {
-
-	small {
-		width: 100%;
-		margin-top:4em;
-		text-align: center;
-	}
-
-	a {
-		text-decoration: underline;
-	}
-
-	.email {
-
-		@include mq-sm {
-			margin: 4em auto;
-		}
-	}
-}
-
 
 
 

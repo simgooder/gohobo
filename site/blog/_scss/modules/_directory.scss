@@ -9,28 +9,28 @@
 .theme--accommodation {
 	background: linear-gradient(-45deg, #F6B299 0%, #FE81A8 100%);
 
-	background-size: 100%;
+	background-size: 102%;
 
 	&:hover {
-		background-size: 150%;
+		background-size: 200%;
 	}
 }
 .theme--transportation {
 	background: linear-gradient(-45deg, #98F5ED 0%, #6AB9FF 100%);
 
-	background-size: 100%;
+	background-size: 102%;
 
 	&:hover {
-		background-size: 150%;
+		background-size: 200%;
 	}
 }
 .theme--work-exchange {
 	background: linear-gradient(-45deg, #FD97B9 0%, #B976FE 100%);
 
-	background-size: 100%;
+	background-size: 102%;
 
 	&:hover {
-		background-size: 150%;
+		background-size: 200%;
 	}
 }
 
@@ -77,9 +77,18 @@
 		// when the filters are set to OFF
 		&.tagsort-active.theme--accommodation {
 			box-shadow: none;
+			background-size: 250%;
+			box-shadow: 0px 0px 1px 5px rgba(#FE81A8, 0.25);
 		}
 		&.tagsort-active.theme--transportation {
 			box-shadow: none;
+			background-size: 250%;
+			box-shadow: 0px 0px 1px 5px rgba(#6AB9FF, 0.25);
+		}
+		&.tagsort-active.theme--work-exchange {
+			box-shadow: none;
+			background-size: 250%;
+			box-shadow: 0px 0px 1px 5px rgba(#B976FE, 0.25);
 		}
 	}
 
@@ -90,10 +99,6 @@
 
 
 .dir--list {
-	display: flex;
-	flex-flow: row wrap;
-	justify-content: space-around;
-	align-items: stretch;
 
 	margin-bottom: 12em;
 	text-align: center;
@@ -101,20 +106,16 @@
 
 
 .dir--item {
+	display: inline-block;
 
 	background-color: #fff;
-	border: 1px solid #efefef;
-	border-radius: 3px;
+	border: 1px solid #E0DFDF;
+	border-radius: 4px;
+	overflow: hidden;
 
 	margin-bottom: 2em;
 	margin-left: 0.5em;
 	margin-right: 0.5em;
-	
-	//flex-grow: 1;
-
-	display: flex;
-	flex-flow: column nowrap;
-	justify-content: space-between;
 
 	box-shadow: 0px 1px 6px 0px rgba($color-dark, 0.2);
 
@@ -126,7 +127,6 @@
 	@include mq-sm {
 		//min-width: 98%;
 		max-width: 360px;
-		flex-shrink: 1;
 	}
 
 	position: relative;
@@ -140,7 +140,7 @@
 		padding-left: 2em;
 		padding-right: 2em;
 
-		min-height: 100px;
+		min-height: 6.25em;
 		max-width: 100%;
 		overflow: hidden;
 
@@ -152,7 +152,7 @@
 		flex-flow: column nowrap;
 	
 		img {
-			max-height: 6.25em;
+			max-height: 5em;
 		}
 	}
 
@@ -163,22 +163,17 @@
 		text-overflow: ellipsis;
 		word-wrap: break-word;
 		overflow: hidden;
-		max-height: 11.4em;
+		height: 12em;
+
 		font-size: 0.9em;
 	}
 
 	.dir--item__meta-bar {
-		flex-basis: 100%;
 		width: 100%;
 		max-width: 100%;
 		max-height: 90px;
 
 		margin-top: auto;
-
-		display: flex;
-		flex-flow: row nowrap;
-		justify-content: space-between;
-		align-items: center;
 
 		@include mq-md {
 			padding: 1em 3em 2.75em 3em;
@@ -190,6 +185,10 @@
 	}
 
 		.item--meta__region {
+			display: inline-block;
+			vertical-align: middle;
+			margin-bottom: 1em;
+
 			font-size: 0.75em;
 			line-height: 2;
 
@@ -200,11 +199,20 @@
 		}
 
 		.item--meta__budget {
+			display: inline-block;
+
+			margin-bottom: 0.5em;
+
 			font-family: $font-heading;
 			letter-spacing: 4px;
 			font-size: 1.25em;
 
 			cursor: help;
+
+			@include mq-sm {
+				margin-left: 1em;
+				margin-right: 1em;
+			}
 
 			span {
 				opacity: 0.3;
@@ -214,6 +222,7 @@
 		// img associated with sub category
 		// ie housesitting, camping, rideshare, etc
 		.item--meta__subcat {
+			display: inline-block;
 
 			img {
 				max-width: 2.2em;
@@ -223,7 +232,6 @@
 
 	.dir--item__action {
 		width: 100%;
-		flex-basis: 100%;
 
 		padding: 0.85em 0;
 
