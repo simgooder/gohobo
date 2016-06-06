@@ -3,7 +3,7 @@
 // TAGSORT PLUGIN
 $('.dir--nav').tagSort({
   items:'.dir--item',
-  tagElement: 'div',
+  tagElement: 'h2',
   sortType: 'single',
   tagClassPrefix: 'dir--nav__item theme--',
   fadeTime: '100'

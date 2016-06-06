@@ -39,18 +39,11 @@
 
 	overflow-y: scroll;
 
-	@include mq-md {
-		width: 284px;
+	width: 284px;
 
-		// hide on desktop
-		right: -284px;
-	}
-	@include mq-sm {
-		width: 94%;
+	// hide from view
+	right: -284px;
 
-		// hide on mobile
-		right: -94%;
-	}
 
 // hide state --------
 	transition: 0.2s ease-in;

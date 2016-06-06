@@ -13,6 +13,7 @@ img {
 		top: 2.5em;
 		left: 2em;
 		position: absolute;
+		z-index: 2;
 
 		display: flex;
 		align-items: center;
@@ -35,6 +36,7 @@ img {
 	&__bottom {
 		bottom: 2.5em;
 		position: absolute;
+		z-index: 2;
 
 		@include mq-md {
 			left: 4em;

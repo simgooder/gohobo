@@ -80,6 +80,8 @@
 
 		max-width: none;
 		min-width: 100%;
+		min-height: 100%;
+		object-fit: cover;
 	}
 
 	&.-lg {
@@ -96,6 +98,13 @@
 		}
 		@include mq-sm {
 			height: 50vh;
+		}
+	}
+
+
+	@-moz-document url-prefix() { 
+		.section--hero__img {
+			margin: 0;
 		}
 	}
 

@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "Places to Visit in Canada - 
-Southern British Columbia"
+Southern British Columbia totally going for 126 characters total here to see what happens when I need to truncate a massive chunk of text. Test test test test test."
 date:   2016-04-12
 hero: "blog/places-to-visit-canada-bc.jpg"
 author: "Simon Gooder"

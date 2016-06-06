@@ -1,27 +1,56 @@
 ---
 layout: default
 title: "Vanageddon | A podcast about vanlife, vandwelling and cats."
+image-author: "Dawn Armfield"
+image-author-link: "http://darmfield.com/photos"
 ---
 
 <!-- ARCHIVE -->
 
 <section class="section--hero -lg -theme--vanageddon">
-    <h1 class="hero--title">Vanageddon Podcast</h1>
+    <h1 class="hero--title">
+      Vanageddon Podcast
+      <br>
+      <a href="https://itunes.apple.com/us/podcast/vanageddon/id1114839703">
+        <img src="{{ site.image_assets }}/icons/link-badge-itunes_2x.png" width="140" alt="get Vanageddon on iTunes">
+      </a>
+      <a href="https://soundcloud.com/user-353494274">
+        <img src="{{ site.image_assets }}/icons/link-badge-soundcloud.png" height="50" alt="get Vanageddon on Soundcloud">
+      </a>
+    </h1>
+
+    {% if page.image-author %}
+    <div class="icon--camera__bottom">
+      <img srcset="{{ site.image_assets }}/icon-camera.png 1x, {{ site.image_assets }}/icon-camera@2x.png 2x" 
+         width="23"
+         src="assets/img/icon-camera.png" 
+         title="Toggle photograph info"
+         alt="A camera icon which toggles the photograph's author">
+      <label class="info--banner">
+        Photo by: <a href="{{ page.image-author-link }}" target="_blank">{{ page.image-author }}</a>
+      </label>   
+    </div>
+    {% endif %}
 </section>
 
 <section class="art--container">
 
   <h2>
-    About the podcast
+    Embrace the Vanageddon!
   </h2>
-  <p>
-    Zach and I (Matt) go all the way back to Grade 5 from a small town outside of Medford, OR. We both shared the one and only interest of our youth, Skateboarding. Soon after we met, Zach ended up transferring to a different School a few towns away. So we completely lost contact for about three years. Grade 8 grade rolls around and all of a sudden, we are reunited. From that point on, we developed a everlasting friendship. Hell, we were roommates at one point. Now we both call Washington State home and the friendship is still as strong as it was over a decade ago.  
-  </p>
-  <a href="https://itunes.apple.com/us/podcast/vanageddon/id1114839703">
-    <img src="{{ site.image_assets }}/icons/link-badge-itunes_2x.png" width="140" alt="get Vanageddon on iTunes">
-  </a>
 
-  <h2 class="space--top__lg"> The archive</h2>
+  <p>
+    Share your tips and stories with us!
+    <br>
+    Leave us a voicemail: <a href="tel:1-401-249-0826">(401)-249-0-VAN</a>
+    <br>
+    or email us: <a href="mailto:vanageddon@gmail.com?subject=feedback">Vanageddon@gmail.com</a>
+  </p>
+
+  <h2 class="space--top__lg">
+    Listen to the podcast
+  </h2>
+  
   {% for podcast in site.data.podcasts %}
 
   <div class="art--meta" id="episode-{{ podcast.episode }}">
@@ -43,8 +72,14 @@ title: "Vanageddon | A podcast about vanlife, vandwelling and cats."
     {{ podcast.credits }}
   </p>
     
-
   {% endfor %}
+
+  <h2>
+    About the podcast
+  </h2>
+  <p>
+   Zach and I (Matt) go all the way back to Grade 5 from a small town outside of Medford, OR. We both shared the one and only interest of our youth, Skateboarding. Soon after we met, Zach ended up transferring to a different School a few towns away. So we completely lost contact for about three years. Grade 8 rolls around and all of a sudden, we are reunited. From that point on, we developed a great friendship. Hell, we were roommates at one point. And now, we both call Washington State home.   
+  </p>
 
 </section>
 
@@ -53,14 +88,16 @@ title: "Vanageddon | A podcast about vanlife, vandwelling and cats."
 <script type="application/ld+json">
   {
     "@context": "http://schema.org",
-    "@type": "Organization",
-    "name": "GoHobo",
-    "url": "http://gohobo.co",
-    "logo": "http://www.gohobo.co/assets/img/gohobo-logo.png",
+    "@type": "CreativeWork",
+    "name": "Vanageddon Podcast",
+    "about": "A podcast about a guy living in a van.",
+    "keywords": "vanlife, vandwelling, storytelling, living simply, subcultures",
+    "creator": "Zach & Matt",
+    "thumbnailUrl": "http://gohobo.co/assets/img/vanageddon-podcast_dawn-armfield@2x.jpg",
+    "url": "http://gohobo.co/vanageddon",
     "sameAs" : [
-        "https://www.facebook.com/Go-Hobo-649912611816927",
-        "http://www.twitter.com/gohoboco",
-        "https://www.instagram.com/gohobo.co"
+        "https://itunes.apple.com/us/podcast/vanageddon/id1114839703",
+        "https://soundcloud.com/user-353494274"
     ]
   }
 </script>

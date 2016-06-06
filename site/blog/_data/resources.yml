@@ -186,6 +186,55 @@ self-contained RVers to visit and stay overnight for free!"
 ########  TRANSPORTATION #########
 ##################################
 
+- name  : BlaBlaCar
+  link  : http://www.selfdriveshop.com/relocation_rentals.aspx
+  desc  : "BlaBlaCar is the UK's leading long distance ridesharing service, connecting drivers with empty seats to people travelling the same way."
+  cat   : transportation
+  subcat: rideshare
+  budget: 2 # out of 3
+  region: europe
+  logo  : '../assets/img/directory/blablacar-logo.png'
+  cta   : Find a ride
+
+- name  : Self Drive Shop
+  link  : http://www.selfdriveshop.com/relocation_rentals.aspx
+  desc  : "Relocation rentals for cheap campervan hire Australia, one-way campervan rental New Zealand and USA relocation rentals. Information on campervan relocations in Australia and New Zealand."
+  cat   : transportation
+  subcat: vanlife
+  budget: 2 # out of 3
+  region: worldwide
+  logo  : '../assets/img/directory/self-drive-shop-logo.png'
+  cta   : Find a RV relocation
+
+- name  : Imoova
+  link  : http://www.imoova.com/imoova/relocations
+  desc  : "Compare and book car and motorhome rentals or one way relocations trips from $1 per day in one place."
+  cat   : transportation
+  subcat: rideshare
+  budget: 2 # out of 3
+  region: worldwide
+  logo  : '../assets/img/directory/imoova-logo.png'
+  cta   : Find a RV relocation
+
+- name  : Apollo
+  link  : http://www.apollorv.com/reloc.aspx
+  desc  : "If you're looking to save on your next self-drive adventure, here are our current relocation special rates for RV Rentals from Apollo Motorhomes USA."
+  cat   : transportation
+  subcat: vanlife
+  budget: 2 # out of 3
+  region: north america
+  logo  : '../assets/img/directory/apollo-logo.png'
+  cta   : Find a RV relocation
+
+- name  : Cruise America
+  link  : http://www.cruiseamerica.com/rent/hot_deals/#
+  desc  : 'The best RV Rental Deals in North America are found right here. 123 Locations Across North America.'
+  cat   : transportation
+  subcat: vanlife
+  budget: 2 # out of 3
+  region: north america
+  logo  : '../assets/img/directory/cruise-america-logo.png'
+  cta   : Find a RV relocation
 
 - name  : Share Your Ride
   link  : http://shareyourride.net/
@@ -225,7 +274,7 @@ self-contained RVers to visit and stay overnight for free!"
   budget: 1 # out of 3
   region: north america
   logo  : '../assets/img/directory/hitchplanet-logo.png'
-  cta   : Find a ride 
+  cta   : Rideshare Canada
 
 - name  : Kangaride
   link  : http://www.kangaride.com/
@@ -253,7 +302,7 @@ self-contained RVers to visit and stay overnight for free!"
   cat   : transportation
   subcat: airfare
   budget: 2 # out of 3
-  region: united states
+  region: usa
   logo  : '../assets/img/directory/airfare-watchdog-logo.png'
   cta   : Find a cheap flight
 
@@ -263,7 +312,7 @@ self-contained RVers to visit and stay overnight for free!"
   cat   : transportation
   subcat: airfare
   budget: 2 # out of 3
-  region: united states
+  region: usa
   logo  : '../assets/img/directory/fare-deal-alert-logo.png'
   cta   : Find a cheap flight
 
