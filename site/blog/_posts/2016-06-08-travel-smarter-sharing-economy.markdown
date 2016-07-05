@@ -1,11 +1,11 @@
 ---
 layout: post
 title: "Travel smarter with the Sharing Economy"
-date: 2016-06-06
-hero: "blog/free-cheap-and-affordable-travel-gohobo_maher-el-aridi.jpg"
+date: 2016-06-08
+hero: "blog/travel-smarter-sharing-economy-cover.jpg"
 author: "Simon Gooder"
-image-author: ""
-image-author-link: ""
+image-author: "Kimson Doan"
+image-author-link: "https://unsplash.com/@yaykimmyd"
 category: journal
 desc: ""
 tags: 
@@ -50,6 +50,8 @@ North America, Australia, Europe, United Kingdom, and Central America are among 
 This is by far one of the coolest accommodation ideas I've seen yet. Strangers rent out their yards, farms, gardens or ranches, often for no charge or very cheap, for you to camp in. Many offer car or RV parking, tent camping, and some even offer tents. This is a great way to meet people and keep your accommodation budget affordable.  
 [HipCamp](https://www.hipcamp.com) offers some pretty amazing off-the-beaten-path campsites across the United States and has a booming community of hosts and campers.  
 [Camp in my Garden](http://campinmygarden.com/) has been around for a lot longer and boasts some pretty incredible locales across the world. Kangaroo farms in Australia to hike-in mountain sites in Northern Italy. 
+
+![Photo by Jorge Flores, http://fd-photo.com](/assets/img/blog/travel-smarter-sharing-economy-support.jpg)
 
 ## Online communities
 The sharing economy surely wouldn't be the same without it's loyal following. Communities are what make all of these services great. The sheer amount of self-proclaimed brand ambassadors is what keeps them growing and strong.  

@@ -85,7 +85,8 @@
 
 	}
 
-	.art--content p a {
+	.art--content a,
+    p a {
 		display: inline-block;
 		
 		transition: 0.3s;

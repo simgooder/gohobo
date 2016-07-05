@@ -1,0 +1,51 @@
+<section class="section--panel space--bottom__lg">
+
+  <section class="section--info">
+      
+      <div class="section--info__content">
+          
+          <h2 class="section--info__title">
+              Wander Journal
+          </h2>
+          <p class="section--info__copy">
+              A source of experience, budget advice, travel tips, and adventure stories to inspire even the most uninspired wannabe wanderers. Adventures of every kind!
+          </p>
+
+          <a href="/journal">
+            <button class="btn--cta__blue">
+                get inspired
+            </button>
+          </a>
+
+      </div>
+
+      <figure class="section--info__img">
+          <img src="{{ site.image_assets }}icons/icon-wander-journal.png" 
+           srcset="{{ site.image_assets }}icons/icon-wander-journal.png 1x,
+                   {{ site.image_assets }}icons/icon-wander-journal@2x.png 2x"
+           title="Wander Journal Blog" 
+           alt="A book depicting the Wander Journal adventure travel blog">
+      </figure>
+
+  </section>
+
+  <section class="horizontal--overflow">
+      <ul class="recent-post--list">
+          {% for post in site.posts limit:5 %}
+              <li class="recent-post--list__item" style="background:url({{ site.image_assets }}{{ post.hero | replace: '.jpg', '_thumb.jpg'}})no-repeat center center;background-size:cover;">
+                  <div class="recent-post--info">
+                    <a href="{{ post.url | prepend: site.baseurl }}">
+                      <h6 class="recent-post--meta">
+                        <time datetime="{{ post.date }}">
+                          {{ post.date | date: "%B %-d, %Y" }}
+                        </time>
+                      </h6>
+                      <h3 class="recent-post--title">{{ post.title }}</h3>
+                    </a>
+                  </div>
+              </li>
+          {% endfor %}
+      </ul>
+  </section>
+
+</section>

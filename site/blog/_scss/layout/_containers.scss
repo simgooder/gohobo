@@ -2,6 +2,10 @@
 	margin-top: 6em;
 }
 
+.space--top__md {
+    padding-top: 4em;
+}
+
 // a box is just a group of elements layed out evenly
 .row {
 	display: flex;
@@ -56,127 +60,6 @@
 }
 
 
-.section--hero {
-	position: relative;
-	
-	display: flex;
-	justify-content: center;
-	align-items: center;
-	flex-flow: column wrap;
-
-	overflow: hidden;
-
-	@include mq-md {
-		min-height: 500px;
-		// pull up under the header
-	}
-	@include mq-sm {
-		min-height: 200px;
-	}
-
-	&__img {
-		position: relative;
-		margin: 0 -100%;
-
-		max-width: none;
-		min-width: 100%;
-		min-height: 100%;
-		object-fit: cover;
-	}
-
-	&.-lg {
-		@include mq-md {
-			height: 90vh;
-		}
-		@include mq-sm {
-			height: 90vh;
-		}
-	}
-	&.-sm {
-		@include mq-md {
-			height: 60vh;
-		}
-		@include mq-sm {
-			height: 50vh;
-		}
-	}
-
-
-	@-moz-document url-prefix() { 
-		.section--hero__img {
-			margin: 0;
-		}
-	}
-
-	&.-theme--journal {
-		@include mq-md {
-			background:transparent url('../img/hero-bg-gohobo@2x.jpg') center center no-repeat;
-			background-size: cover;
-		}
-		@include mq-sm {
-			background:transparent url('../img/hero-bg-gohobo.jpg') center center no-repeat;
-			background-size: cover;
-		}
-	}
-
-	&.-theme--vanageddon {
-		color: #fff;
-
-		@include mq-md {
-			background: transparent url('../img/vanageddon-podcast_dawn-armfield@2x.jpg') center center no-repeat;
-			background-size: cover;
-		}
-		@include mq-sm {
-			background: transparent url('../img/vanageddon-podcast_dawn-armfield.jpg') center center no-repeat;
-			background-size: cover;
-		}
-
-		&:before {
-			content: '';
-			position: absolute;
-			z-index: 1;
-			top: 0;
-			left: 0;
-			width: 100%;
-			height: 100%;
-
-			background-color: rgba(#000,0.5);
-		}
-	}
-}
-
-	.hero--title {
-		text-align: center;
-		max-width: 90%;
-		position: relative;
-		z-index: 2;
-
-		@include mq-xl {
-			font-size: 8em;
-		}
-		@include mq-md {
-			font-size: 6em;
-		}
-		@include mq-sm {
-			font-size: 3.8em;
-		}
-	}
-
-.section  {
-	min-height: 100%;
-	min-height: 100vh;
-
-	display: flex;
-	flex-direction: column;
-
-	overflow: hidden;
-
-	@include mq-md {
-		min-height: 40em;
-	}
-
-}
-
 	.section--container {
 		display: flex;
 		flex-direction: column;
@@ -193,155 +76,98 @@
 		}
 	}
 
-		article {
-			display: flex;
-			flex-wrap: wrap;
-			align-content: center;
+    .section--panel {
+        position: relative;
+        min-height: 90%;
+        min-height: 90vh;
 
-			flex-direction: column;
-
-			@include mq-sm {
-				justify-content: center;
-			}
-		}
+        display: flex;
+        justify-content: center;
+        flex-flow: column nowrap;
+    }
 
 
-
-// The Section Backgrounds
-//-----------------------------
-
-// the pull-up margin to cover the space caused by clipping
-$clip-margin: -2.8em;
-
-// header / hero
-.home > .section:nth-of-type(1) {
-	background: url('../img/yukon-lookout_kelly-rogan.jpg')no-repeat center center;
-	background-size: cover;
-
-	-webkit-clip-path: polygon(0 0, 100% 0, 100% 100%, 0 93%);
-	clip-path: polygon(0 0, 100% 0, 100% 100%, 0 93%);
-
-	@include mq-md {
-		// pull up under the header
-		margin-top: -128px;
-		background-attachment:  fixed;
-	}
-	@include mq-sm {
-		// pull up under the header
-		margin-top: -112px;
-	}
+// for the horiztonally overflowing list on the homepage
+// ------------------------------------------------------
+.horizontal--overflow {
+    max-width: 100%;
+    overflow-x: scroll;
+    overflow-y: hidden;
+    height: auto;
 }
 
-// intro
-.home > .section:nth-of-type(2) {
+// info sections like on the home page
+// -------------------------------------
 
-	-webkit-clip-path: polygon(0 0, 100% 7%, 100% 100%, 0 93%);
-	clip-path: polygon(0 0, 100% 7%, 100% 100%, 0 93%);
+.section--info {
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 4em;
+    margin-bottom: 4em;
 
-	margin-top: $clip-margin;
+    min-height: 500px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    padding-left: 2em;
+    padding-right: 2em;
+
+    @include mq-md {
+        max-width: 54em;
+        flex-flow: row wrap;
+    }
+    @include mq-sm {
+        flex-flow: column wrap;
+    }
 }
 
-// on the road
-.home > .section:nth-of-type(3) {
-	background: url('../img/on-the-road_forrest-cavale.jpg')no-repeat center center;
-	background-size: cover;
-
-	-webkit-clip-path: polygon(0 0, 100% 7%, 100% 100%, 0 93%);
-	clip-path: polygon(0 0, 100% 7%, 100% 100%, 0 93%);
-
-	margin-top: $clip-margin;
-
-	@include mq-md {
-		background-attachment: fixed;
-	}
+.section--info:nth-of-type(2) {
+    
 }
 
-// ridesharing
-.home > .section:nth-of-type(4) {
-	background: url('../img/ridesharing_zachary-staines.jpg')no-repeat center center;
-	background-size: cover;
+    .section--info__content {
+        display: inline-block;
+        vertical-align: top;
 
-	-webkit-clip-path: polygon(0 0, 100% 7%, 100% 100%, 0 93%);
-	clip-path: polygon(0 0, 100% 7%, 100% 100%, 0 93%);
+        @include mq-md {
+            width: 50%;
+        }
+        @include mq-sm {
+            width: 100%;
 
-	margin-top: $clip-margin;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-flow: column nowrap;
 
-	@include mq-md {
-		background-attachment: fixed;
-	}
-}
+            order: 2;
+        }
 
-// camping
-.home > .section:nth-of-type(5) {
-	background: url('../img/camping-desert_zach-betten.jpg')no-repeat center center;
-	background-size: cover;
+        p {
+            margin-bottom: 2.5em;
+        }
+    }
 
-	-webkit-clip-path: polygon(0 0, 100% 7%, 100% 100%, 0 93%);
-	clip-path: polygon(0 0, 100% 7%, 100% 100%, 0 93%);
+    .section--info__img {
+        margin: 0;
 
-	margin-top: $clip-margin;
+        text-align: center;
+        display: inline-block;
+        vertical-align: top;
 
-	@include mq-md {
-		background-attachment: fixed;
-	}
-}
+        @include mq-md {
+            margin-left: auto;
+            width: 40%;
+        }
+        @include mq-sm {
+            order: 1;
+            margin-bottom: 4em;
+            width: 60%;
+        }
+    }
 
-// housesitting
-.home > .section:nth-of-type(6) {
-	background: url('../img/cabin-at-night_paul-itkin.jpg')no-repeat center center;
-	background-size: cover;
-
-	-webkit-clip-path: polygon(0 0, 100% 7%, 100% 100%, 0 93%);
-	clip-path: polygon(0 0, 100% 7%, 100% 100%, 0 93%);
-
-	margin-top: $clip-margin;
-
-	@include mq-md {
-		background-attachment: fixed;
-	}
-}
-
-// email capture
-.home > .section:nth-of-type(7) {
-	background: url('../img/silhouette-trees_lou-levit.jpg')no-repeat center center;
-	background-size: cover;
-
-	-webkit-clip-path: polygon(0 0, 100% 7%, 100% 100%, 0% 100%);
-	clip-path: polygon(0 0, 100% 7%, 100% 100%, 0% 100%);
-
-	margin-top: $clip-margin;
-
-	// ie fix::
-	// ie 11 ignores the left and right margins
-
-	align-items: center;
-}
-
-
-
-// Firefox specific Clip-Path
-// ---------------------------
-
-@-moz-document url-prefix() { 
-	
-  .home > .section:nth-of-type(1) {
-	clip-path: url("../../#clip-b");
-  }
-
-  .home > .section:nth-of-type(2),
-  .home > .section:nth-of-type(3),
-  .home > .section:nth-of-type(4),
-  .home > .section:nth-of-type(5),
-  .home > .section:nth-of-type(6) {
-  	clip-path: url("../../#clip-poly");
-  	//margin-top: 0 !important;
-  }
-
-  .home > .section:nth-of-type(7) {
-  	clip-path: url("../../#clip-t");
-  }
-
-}
 
 
 

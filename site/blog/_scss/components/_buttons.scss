@@ -17,8 +17,6 @@ button {
 
 	border-radius: 0.2em;
 	
-	width: 100%;
-	height: 44px;
 	overflow: hidden;
 
 	display: flex;
@@ -28,147 +26,43 @@ button {
 	transition: 0.4s;
 
 	@include mq-sm {
-		padding: 0.679em 0;
+		padding: 0.6em 2em;
 	}
 	@include mq-md {
-		padding: 0.5em 0;
+		padding: 0.5em 2em;
 	}
 
-	&:hover,
-	&:focus {
-		//background-color: darken($color-cta, 6%);
-	}	
-
-	.slide--over__container {
-		height: 88px;
-		position: relative;
-		transition: 0.25s;
-	}
-	// the secondary text:
-	.slide--over {
-		height: 44px;
-		position: relative;
-	}
-
-	// button hover effects
-	&:hover .slide--over__container,
-	&:focus .slide--over__container {
-		margin-top: -44px;
-	}
-}
-
-
-.btn--context__light {
-	border: 2px solid #fff;
-	color: #fff;
-	position: relative;
-
-	border-radius: 0.2em;
-
-	@include mq-sm {
-		padding: 0.679em 0;
-		width: 100%;
-		max-width: 21em;
-
-		margin-left: auto;
-		margin-right: auto;
-	}
-	@include mq-md {
-		padding: 0.5em 0;
-	}
-
-	transition: 0.2s;
-}
-
-.btn--context__dark {
-	border: 2px solid $color-dark;
-	color: $color-dark;
-	position: relative;
-
-	border-radius: 0.2em;
-
-	@include mq-sm {
-		padding: 0.679em 0;
-		width: 100%;
-		max-width: 21em;
-
-	    margin-left: auto;
-		margin-right: auto;
-	}
-	@include mq-md {
-		padding: 0.5em 0;
-	}
-
-	transition: 0.2s;
-
-	&:hover,
-	&:focus {
-
+	&__blue {
+		background: $color-blue-grad;
+		text-align: center;
 		color: #fff;
-	}
-}
 
-// contextual button spacing
-p + .btn--context__light,
-p + .btn--context__dark {
-	margin-top: 1.8em;
-	margin-bottom: 0.8em;
-}
+		border-radius: 0.2em;
 
-// Button Hover States
+		overflow: hidden;
 
-// position the button text to the front
-.btn--text {
-	position: relative;
-	z-index: 2;
-}
+		transition: 0.4s;
 
-.btn--fill {
-	position: absolute;
-	bottom: 0;
-	left: 0;
-
-	width: 100%;
-	height: 0;
-
-	transition: color 0.1s, height 0.15s;
-}
-
-.btn--context__dark .btn--fill {
-	background-color: $color-dark;
-
-	border-radius: 0.2em;
-}
-
-.btn--context__light .btn--fill {
-	background-color: #fff;
-
-	border-radius: 0.2em;
-}
-
-.btn--context__light:hover,
-.btn--context__light:focus {
-
-	color: $color-dark;
-
-	.btn--fill {
-		height: 100%;
+		@include mq-sm {
+			padding: 0.6em 2em;
+		}
+		@include mq-md {
+			padding: 0.5em 2em;
+		}
 	}
 
 }
 
+.btn--input {
+    background-image: $color-cta-grad;
+    text-align: center;
+    color: #fff;
 
-.btn--context__dark:hover,
-.btn--context__dark:focus {
+    width: 180px;
 
-	color: #fff;
-
-	.btn--fill {
-		height: 100%;
-	}
-
+    border-top-right-radius: 0.2em;
+    border-bottom-right-radius: 0.2em;
 }
-
 
 
 

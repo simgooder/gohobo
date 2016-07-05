@@ -1,0 +1,49 @@
+---
+pagename: about
+layout: default
+hero: "hero-bg-gohobo@2x.jpg"
+title: GoHobo | About | How it works, alternative travel network
+---
+
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+    {% include head.html %}
+</head>
+
+<body>
+
+
+    {% include _home.hero.html %}
+    
+    {% include _about.intro.html %}
+
+    {% include _about.location.html %}
+
+    {% include _about.theme.html %}
+
+    {% include _about.budget.html %}
+
+    {% include _about.soon.html %}
+
+
+    <!-- Schema LDJSON -->
+    <script type="application/ld+json">
+      {
+        "@context": "http://schema.org",
+        "@type": "http://schema.org/Organization",
+        "name": "GoHobo",
+        "url": "http://gohobo.co",
+        "logo": "http://www.gohobo.co/assets/img/gohobo-logo.png",
+        "sameAs" : [
+            "https://www.facebook.com/Go-Hobo-649912611816927",
+            "http://www.twitter.com/gohoboco",
+            "https://www.instagram.com/gohobo.co"
+        ]
+      }
+    </script>
+
+</body>
+</html>

@@ -1,6 +1,7 @@
 ---
 layout: default
 title: "Vanageddon | A podcast about vanlife, vandwelling and cats."
+hero: "vanageddon-podcast_dawn-armfield@2x.jpg"
 image-author: "Dawn Armfield"
 image-author-link: "http://darmfield.com/photos"
 ---
@@ -33,56 +34,92 @@ image-author-link: "http://darmfield.com/photos"
     {% endif %}
 </section>
 
-<section class="art--container">
+<section class="section--content" style="overflow: auto;">
 
-  <h2>
-    Embrace the Vanageddon!
-  </h2>
+    <section class="podcast--archive">
 
-  <p>
-    Share your tips and stories with us!
-    <br>
-    Leave us a voicemail: <a href="tel:1-401-249-0826">(401)-249-0-VAN</a>
-    <br>
-    or email us: <a href="mailto:vanageddon@gmail.com?subject=feedback">Vanageddon@gmail.com</a>
-  </p>
+      <h2 class="podcast--title">
+        Listen to the podcast
+      </h2>
+      
+        {% for podcast in site.data.podcasts reversed %}
 
-  <h2 class="space--top__lg">
-    Listen to the podcast
-  </h2>
-  
-  {% for podcast in site.data.podcasts %}
+        <article class="podcast--archive__episode">
 
-  <div class="art--meta" id="episode-{{ podcast.episode }}">
-    Episode {{ podcast.episode }}
-    <br>
-    <b>
-      {{ podcast.name }}
-    </b>
-  </div>
+            <div class="podcast--meta" id="episode-{{ podcast.episode }}">
+                Episode {{ podcast.episode }}
+                <br>
+                <b>
+                {{ podcast.name }}
+                </b>
+            </div>
 
-  <p>
-    {{ podcast.embed }}  
-  </p> 
-    
-  <p>
-    {{ podcast.notes}}
-  </p>
-  <p>
-    {{ podcast.credits }}
-  </p>
-    
-  {% endfor %}
+            <article class="podcast--info">
 
-  <h2>
-    About the podcast
-  </h2>
-  <p>
-   Zach and I (Matt) go all the way back to Grade 5 from a small town outside of Medford, OR. We both shared the one and only interest of our youth, Skateboarding. Soon after we met, Zach ended up transferring to a different School a few towns away. So we completely lost contact for about three years. Grade 8 rolls around and all of a sudden, we are reunited. From that point on, we developed a great friendship. Hell, we were roommates at one point. And now, we both call Washington State home.   
-  </p>
+                <p>
+                {{ podcast.embed }}  
+                </p> 
+
+                <p>
+                {{ podcast.notes}}
+                </p>
+
+                {% if podcast.credits %}
+                <p class="podcast--em">
+                {{ podcast.credits }}
+                </p>
+                {% endif %}
+
+            </article>
+
+        </article>
+
+        {% endfor %}
+
+    </section>
+
+    <aside class="podcast--sidebar">
+
+        <h2>
+          Embrace the Vanageddon!
+        </h2>
+
+        <p>
+          Share your tips and stories with us!
+          <br>
+          Leave us a voicemail: <a href="tel:1-401-249-0826">(401)-249-0-VAN</a>
+          <br>
+          or email us: <a href="mailto:vanageddon@gmail.com?subject=feedback">Vanageddon@gmail.com</a>
+        </p>
+
+        <h2>
+          About the podcast
+        </h2>
+
+        <p>
+         Zach and I (Matt) go all the way back to Grade 5 from a small town outside of Medford, OR. We both shared the one and only interest of our youth, Skateboarding. Soon after we met, Zach ended up transferring to a different School a few towns away. So we completely lost contact for about three years. Grade 8 rolls around and all of a sudden, we are reunited. From that point on, we developed a great friendship. Hell, we were roommates at one point. And now, we both call Washington State home.   
+        </p>
+
+        <div class="podcast--sidebar__links">
+
+            <a href="https://itunes.apple.com/us/podcast/vanageddon/id1114839703">
+              <img src="{{ site.image_assets }}/icons/link-badge-itunes_2x.png" width="140" alt="get Vanageddon on iTunes">
+            </a>
+            <a href="https://soundcloud.com/user-353494274">
+              <img src="{{ site.image_assets }}/icons/link-badge-soundcloud.png" height="50" alt="get Vanageddon on Soundcloud">
+            </a>
+            <a href="https://twitter.com/vanageddon">
+                <img src="{{ site.image_assets }}/icons/social-twitter.png" width="50" alt="Vanageddon on Twitter">
+            </a>
+            <a href="https://www.youtube.com/channel/UCOG-ykm1b9j6JOHoXTiRajQ">
+                <img src="{{ site.image_assets }}/icons/social-youtube.png" width="50" alt="Vanageddon on Youtube">
+            </a>
+
+        </div>
+
+    </aside>
 
 </section>
-
 
 
 <script type="application/ld+json">

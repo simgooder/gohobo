@@ -1,6 +1,6 @@
 ---
 layout: default
-title: GoHobo | Directory | Adventure resources for regular people
+title: GoHobo | Adventure Directory | Adventure resources for regular people
 ---
 
 <!-- DIRECTORY -->
@@ -28,14 +28,14 @@ title: GoHobo | Directory | Adventure resources for regular people
     {% assign sortedResources = site.data.resources | sort: 'name' %}
     {% for resource in sortedResources %}
 
-      <li class="dir--item" data-item-tags="{{ resource.cat }}">
+      <li class="dir--item" data-item-tags="{{ resource.cat }}" id="{{ resource.name | slugify }}">
 
         <figure class="dir--item__logo">
           <img src="{{ resource.logo }}" alt="{{ resource.name }}" title="{{ resource.name }}">
         </figure>
 
         <p class="dir--item__desc">
-           {{ resource.desc  | truncate: 156}}
+           {{ resource.desc  | truncate: 156 }}
         </p>
         
         <div class="dir--item__meta-bar">

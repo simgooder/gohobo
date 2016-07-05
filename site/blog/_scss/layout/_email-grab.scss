@@ -1,0 +1,54 @@
+.section--email-grab {
+    width: 100%;
+    height: 16em;
+
+    margin-top: -1em;
+    background: url('../img/mountain-reflection-email-grab.jpg') center bottom no-repeat;
+    background-size: cover;
+
+    @include mq-sm {
+        margin-top: -1em;
+    }
+
+}
+
+    .email-grab--form {
+        position: relative;
+
+        margin-left: auto;
+        margin-right: auto;
+
+        @include mq-md {
+            width: 560px;
+        }
+        @include mq-sm {
+            width: 90%;
+            font-size: 0.85em;
+        }
+
+        p {
+            text-align: center;
+            color: #fff;
+        }
+    }
+
+    .email-grab--form__dark {
+        position: relative;
+
+        margin-left: auto;
+        margin-right: auto;
+
+        .input {
+            border-top: 3px solid #efefef;
+            border-bottom: 3px solid #efefef;
+            border-left: 3px solid #efefef;
+
+            border-top-left-radius: 0.2em;
+            border-bottom-left-radius: 0.2em;
+        }
+
+        p {
+            text-align: center;
+        }
+    }
+

@@ -11,8 +11,9 @@ email: gohoboco@gmail.com
 description: > # this means to ignore new lines
   An alternative adventure travel network, bringing together the best 
   of budget-friendly transportation, accommodation and high quality life experiences.
-url: "http://localhost:4000/" # the base hostname & protocol for your site
-#url: "http://gohobo.co/" # the base hostname & protocol for your site
+#url: "http://localhost:4000/" # the base hostname & protocol for your site
+url: "http://gohobo.co/" # the base hostname & protocol for your site
+prod_url: "http://gohobo.com"
 
 permalink: /:categories/:title/
 

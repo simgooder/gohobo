@@ -17,8 +17,11 @@
 //     Layout  
 //----------------------
 @import 'layout/containers',
+        'layout/spacing',
         'layout/positioning',
-        'layout/footer'
+        'layout/footer',
+        'layout/email-grab',
+        'layout/hero'
 ;  
 
 //     Components
@@ -39,7 +42,8 @@
         'modules/posts',
         'modules/directory',
         'modules/global-header',
-        'modules/nav'
+        'modules/nav',
+        'modules/podcasts'
 
 ;  
 

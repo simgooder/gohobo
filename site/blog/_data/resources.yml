@@ -31,8 +31,38 @@
 ########  ACCOMMODATION ##########
 ##################################
 
+- name  : Homestay
+  link  : https://www.homestay.com
+  desc  : 'Book accommodation in a local person’s home when you want an authentic travel experience. Stay in a homestay and discover the soul of your destination.'  
+  cat   : accommodation
+  subcat: housesitting
+  budget: 1.5 # out of 3
+  region: worldwide
+  logo  : '../assets/img/directory/homestay-logo.png'
+  cta   :  Find a home
+
+- name  : Tripping
+  link  : https://www.tripping.com
+  desc  : 'Compare & save on over 8 million vacation rentals in 150,000 destinations from HomeAway, Booking.com, TripAdvisor and more. Tripping.com is the Kayak of vacation rentals.'  
+  cat   : accommodation
+  subcat: housesitting
+  budget: 2 # out of 3
+  region: worldwide
+  logo  : '../assets/img/directory/tripping-logo.png'
+  cta   :  Find a room
+
+- name  : Housesit Match
+  link  : https://www.housesitmatch.com/find-housesits/?ref=145
+  desc  : 'HouseSit Match is the House-Sitting/Pet-Sitting website. We offer free housesitting & affordable travel options. Find the perfect house-sit / sitter today!'  
+  cat   : accommodation
+  subcat: housesitting
+  budget: 1 # out of 3
+  region: worldwide
+  logo  : '../assets/img/directory/housesit-match-logo.png'
+  cta   :  Find a house
+
 - name  : Campr
-  link  : https://www.gocampr.com
+  link  : https://www.gocampr.com/?utm_source=gohobo&utm_medium=adventuredirectory&utm_campaign=gohobo
   desc  : 'Camp with Locals, Meet the World. Campr is a social traveling platform where you can find unique camping experiences.'  
   cat   : accommodation
   subcat: camping
@@ -42,7 +72,7 @@
   cta   :  Find a campsite
 
 - name  : Hostel World
-  link  : http://www.hostelworld.com/
+  link  : http://www.hostelworld.com/?utm_source=gohobo&utm_medium=adventuredirectory&utm_campaign=gohobo
   desc  : 'Stay in a hostel and meet the real world, not the tourist brochure. Read millions of hostel reviews from fellow travellers & book your next adventure today. #MeetTheWorld'  
   cat   : accommodation
   subcat: housesitting
@@ -52,7 +82,7 @@
   cta   :  Find a hostel
 
 - name  : Staydu
-  link  : http://www.staydu.com/
+  link  : http://www.staydu.com/?utm_source=gohobo&utm_medium=adventuredirectory&utm_campaign=gohobo
   desc  : 'Stay and help, stay and pay, or stay for free. Rooms for rent, trade, or exchange.'  
   cat   : accommodation
   subcat: housesitting
@@ -62,7 +92,7 @@
   cta   :  Find a stay
 
 - name  : Purple Tent
-  link  : http://purpletent.com/
+  link  : http://purpletent.com/?utm_source=gohobo&utm_medium=adventuredirectory&utm_campaign=gohobo
   desc  : 'Rent or host a tent in your backyard. Save Money, discover new places, enjoy the simplicity of a night spent under the stars. Free tent for hosts.'  
   cat   : accommodation
   subcat: camping
@@ -72,7 +102,7 @@
   cta   :  Find a tent
 
 - name  : RV With Me
-  link  : https://rvwithme.com/
+  link  : https://rvwithme.com/?utm_source=gohobo&utm_medium=adventuredirectory&utm_campaign=gohobo
   desc  : 'Online RV Site Reservations Across the Country. Private Landowners Hosting RVers. The Airbnb For RVing.'  
   cat   : accommodation
   subcat: vanlife
@@ -82,7 +112,7 @@
   cta   :  Find a yard
 
 - name  : Couchsurfing
-  link  : https://www.couchsurfing.com/
+  link  : https://www.couchsurfing.com/?utm_source=gohobo&utm_medium=adventuredirectory&utm_campaign=gohobo
   desc  : 'Couchsurfers share their homes, cities and lives in profound in meaningful ways, making travel anywhere in the world a truly social experience.'  
   cat   : accommodation
   subcat: housesitting
@@ -112,7 +142,7 @@
   cta   :  Find a campsite
 
 - name  : Camp in My Garden
-  link  : http://campinmygarden.com/
+  link  : http://campinmygarden.com/?utm_source=gohobo&utm_medium=adventuredirectory&utm_campaign=gohobo
   desc  : With more than 1000 micro-campsites to choose from, and located on every continent except Antarctica, Campinmygarden.com is the first website advertising private gardens for camping. 
   cat   : accommodation
   subcat: camping
@@ -122,7 +152,7 @@
   cta   :  Find a campsite
 
 - name  : TrustedHousesitters
-  link  : https://www.trustedhousesitters.com
+  link  : https://www.trustedhousesitters.com/?utm_source=gohobo&utm_medium=adventuredirectory&utm_campaign=gohobo
   desc  : Find the perfect home & pet sitter. View references, video profiles and relevant house & pet sitting experience.
   cat   : accommodation
   subcat: housesitting
@@ -132,7 +162,7 @@
   cta   :  Find a house
 
 - name  : Nomador
-  link  : https://www.nomador.com/
+  link  : https://www.nomador.com/?utm_source=gohobo&utm_medium=adventuredirectory&utm_campaign=gohobo
   desc  : Leave on vacation with peace of mind! Entrust your home and pets to home-sitters or browse through recent offers of accommodation proposed by our members.
   cat   : accommodation
   subcat: housesitting
@@ -142,7 +172,7 @@
   cta   :  Find a house
 
 - name  : Home Exchange
-  link  : https://www.homeexchange.com
+  link  : https://www.homeexchange.com/?utm_source=gohobo&utm_medium=adventuredirectory&utm_campaign=gohobo
   desc  : Our members use their homes to save thousands when they travel. Join today and browse 65,000+ home exchange and house swap listings in 150+ countries!
   cat   : accommodation
   subcat: housesitting
@@ -152,7 +182,7 @@
   cta   :  Exchange homes
 
 - name  : Free Campsites
-  link  : https://freecampsites.net
+  link  : https://freecampsites.net/?utm_source=gohobo&utm_medium=adventuredirectory&utm_campaign=gohobo
   desc  : Finding free camping locations is easy! Use our interactive map to find the best free camping sites and go camping for free!
   cat   : accommodation
   subcat: camping
@@ -162,7 +192,7 @@
   cta   :  Go camping
 
 - name  : Cool Camping
-  link  : https://www.coolcamping.co.uk/
+  link  : https://www.coolcamping.co.uk/?utm_source=gohobo&utm_medium=adventuredirectory&utm_campaign=gohobo
   desc  : Find the best campsites and camping grounds in England, Scotland, Wales and France. Campsite reviews, photos, facilities, equipment guides, plus much more.
   cat   : accommodation
   subcat: camping
@@ -172,7 +202,7 @@
   cta   :  Go camping
 
 - name  : Harvest Hosts
-  link  : https://harvesthosts.com/
+  link  : https://harvesthosts.com/?utm_source=gohobo&utm_medium=adventuredirectory&utm_campaign=gohobo
   desc  : "A network of wineries, farms and agri-tourism sites that invite
 self-contained RVers to visit and stay overnight for free!"
   cat   : accommodation
@@ -186,8 +216,28 @@ self-contained RVers to visit and stay overnight for free!"
 ########  TRANSPORTATION #########
 ##################################
 
+- name  : OpenRide
+  link  : https://openride.co/?utm_source=gohobo&utm_medium=adventuredirectory&utm_campaign=gohobo
+  desc  : 'OpenRide is long distance ridesharing! Meet amazing people and travel smart. Planning a road trip? Use OpenRide to find paying passengers for your car, or to find yourself a ride to wherever you want to go. Planning an event? You can use OpenRide to create and your own free custom rideshare site in just minutes!'  
+  cat   : transportation
+  subcat: rideshare
+  budget: 1 # out of 3
+  region: north america
+  logo  : '../assets/img/directory/open-ride-logo.png'
+  cta   :  Find a ride
+
+- name  : Wingly
+  link  : https://en.wingly.io/index.php?page=flights/?utm_source=gohobo&utm_medium=adventuredirectory&utm_campaign=gohobo
+  desc  : 'Wingly is a flight sharing platform. Find pilots or passengers for your trip.'  
+  cat   : transportation
+  subcat: airfare
+  budget: 2 # out of 3
+  region: europe
+  logo  : '../assets/img/directory/wingly-logo.png'
+  cta   :  Find a flight
+  
 - name  : BlaBlaCar
-  link  : http://www.selfdriveshop.com/relocation_rentals.aspx
+  link  : http://www.blablacar.com/?utm_source=gohobo&utm_medium=adventuredirectory&utm_campaign=gohobo
   desc  : "BlaBlaCar is the UK's leading long distance ridesharing service, connecting drivers with empty seats to people travelling the same way."
   cat   : transportation
   subcat: rideshare
@@ -197,7 +247,7 @@ self-contained RVers to visit and stay overnight for free!"
   cta   : Find a ride
 
 - name  : Self Drive Shop
-  link  : http://www.selfdriveshop.com/relocation_rentals.aspx
+  link  : http://www.selfdriveshop.com/relocation_rentals.aspx/?utm_source=gohobo&utm_medium=adventuredirectory&utm_campaign=gohobo
   desc  : "Relocation rentals for cheap campervan hire Australia, one-way campervan rental New Zealand and USA relocation rentals. Information on campervan relocations in Australia and New Zealand."
   cat   : transportation
   subcat: vanlife
@@ -207,7 +257,7 @@ self-contained RVers to visit and stay overnight for free!"
   cta   : Find a RV relocation
 
 - name  : Imoova
-  link  : http://www.imoova.com/imoova/relocations
+  link  : http://www.imoova.com/imoova/relocations/?utm_source=gohobo&utm_medium=adventuredirectory&utm_campaign=gohobo
   desc  : "Compare and book car and motorhome rentals or one way relocations trips from $1 per day in one place."
   cat   : transportation
   subcat: rideshare
@@ -217,7 +267,7 @@ self-contained RVers to visit and stay overnight for free!"
   cta   : Find a RV relocation
 
 - name  : Apollo
-  link  : http://www.apollorv.com/reloc.aspx
+  link  : http://www.apollorv.com/reloc.aspx/?utm_source=gohobo&utm_medium=adventuredirectory&utm_campaign=gohobo
   desc  : "If you're looking to save on your next self-drive adventure, here are our current relocation special rates for RV Rentals from Apollo Motorhomes USA."
   cat   : transportation
   subcat: vanlife
@@ -227,7 +277,7 @@ self-contained RVers to visit and stay overnight for free!"
   cta   : Find a RV relocation
 
 - name  : Cruise America
-  link  : http://www.cruiseamerica.com/rent/hot_deals/#
+  link  : http://www.cruiseamerica.com/rent/hot_deals/?utm_source=gohobo&utm_medium=adventuredirectory&utm_campaign=gohobo
   desc  : 'The best RV Rental Deals in North America are found right here. 123 Locations Across North America.'
   cat   : transportation
   subcat: vanlife
@@ -237,7 +287,7 @@ self-contained RVers to visit and stay overnight for free!"
   cta   : Find a RV relocation
 
 - name  : Share Your Ride
-  link  : http://shareyourride.net/
+  link  : http://shareyourride.net/?utm_source=gohobo&utm_medium=adventuredirectory&utm_campaign=gohobo
   desc  : 'Your free carpool and rideshare board. Join a road trip or find travel buddies for your next trip and share petrol costs.'
   cat   : transportation
   subcat: rideshare
@@ -247,7 +297,7 @@ self-contained RVers to visit and stay overnight for free!"
   cta   : Find a ride
 
 - name  : Transfercar
-  link  : https://www.transfercarus.com/
+  link  : https://www.transfercarus.com/?utm_source=gohobo&utm_medium=adventuredirectory&utm_campaign=gohobo
   desc  : 'We have got free rental cars here for all your business and pleasure needs in the great US of A. Get on board quick as they go faster than you think!'
   cat   : transportation
   subcat: rideshare
@@ -257,7 +307,7 @@ self-contained RVers to visit and stay overnight for free!"
   cta   : Find a car
 
 - name  : RV Share
-  link  : https://rvshare.com/
+  link  : https://rvshare.com/?utm_source=gohobo&utm_medium=adventuredirectory&utm_campaign=gohobo
   desc  : 'Find and book your perfect RV rental with RVshare. Rent everything from Class A Motorhome, Class B, Class C, or Travel Trailer. Search 5000+ RV rental options.'
   cat   : transportation
   subcat: vanlife
@@ -267,7 +317,7 @@ self-contained RVers to visit and stay overnight for free!"
   cta   : Find a RV
 
 - name  : HitchPlanet
-  link  : http://hitchplanet.com/
+  link  : http://hitchplanet.com/?utm_source=gohobo&utm_medium=adventuredirectory&utm_campaign=gohobo
   desc  : We provide safe, reliable and affordable travel in British Columbia, Washington, Oregon, Alberta & Ontario. Join for free as a driver or a hitcher.
   cat   : transportation
   subcat: rideshare
@@ -277,7 +327,7 @@ self-contained RVers to visit and stay overnight for free!"
   cta   : Rideshare Canada
 
 - name  : Kangaride
-  link  : http://www.kangaride.com/
+  link  : http://www.kangaride.com/?utm_source=gohobo&utm_medium=adventuredirectory&utm_campaign=gohobo
   desc  : Reliable, Well Supervised Rideshare and Carpooling Service for Canada and the United States. AKA Amigo Express in Quebec.
   cat   : transportation
   subcat: rideshare
@@ -287,7 +337,7 @@ self-contained RVers to visit and stay overnight for free!"
   cta   : Find a ride 
 
 - name  : Hit The Road
-  link  : http://www.hittheroad.ca/
+  link  : http://www.hittheroad.ca/?utm_source=gohobo&utm_medium=adventuredirectory&utm_campaign=gohobo
   desc  : "HitTheRoad. Delivering your vehicle to you. We connect people with transportation needs in a budget and environmentally conscious way."
   cat   : transportation
   subcat: rideshare
@@ -297,7 +347,7 @@ self-contained RVers to visit and stay overnight for free!"
   cta   : Relocate a vehicle 
 
 - name  : Airfare Watchdog
-  link  : http://www.airfarewatchdog.com/top-50-fares/
+  link  : http://www.airfarewatchdog.com/top-50-fares/?utm_source=gohobo&utm_medium=adventuredirectory&utm_campaign=gohobo
   desc  : "Airfare deals, cheap flights, & money-saving tips from our experts. Track prices with our fare watcher alerts!"
   cat   : transportation
   subcat: airfare
@@ -307,7 +357,7 @@ self-contained RVers to visit and stay overnight for free!"
   cta   : Find a cheap flight
 
 - name  : The Fare Deal Alert
-  link  : http://faredealalert.com/
+  link  : http://faredealalert.com/?utm_source=gohobo&utm_medium=adventuredirectory&utm_campaign=gohobo
   desc  : "Curated travel deals from Atlanta, Charlotte, Denver, Detroit, Houston, Kansas City, Las Vegas, Minneapolis, Orlando, and San Diego."
   cat   : transportation
   subcat: airfare
@@ -317,7 +367,7 @@ self-contained RVers to visit and stay overnight for free!"
   cta   : Find a cheap flight
 
 - name  : Secret Flying
-  link  : http://secretflying.com/
+  link  : http://secretflying.com/?utm_source=gohobo&utm_medium=adventuredirectory&utm_campaign=gohobo
   desc  : "Find cheap flight deals at Secret Flying. We provide info on airfares with huge savings to your favourite destinations around the world."
   cat   : transportation
   subcat: airfare
@@ -332,7 +382,7 @@ self-contained RVers to visit and stay overnight for free!"
 ##################################
 
 - name  : World Wide Opportunities on Organic Farms
-  link  : http://www.wwoof.net/
+  link  : http://www.wwoof.net/?utm_source=gohobo&utm_medium=adventuredirectory&utm_campaign=gohobo
   desc  : "Volunteer help exchange on organic farms in 100+ countries. Meet friends from all over the world."
   cat   : work-exchange
   subcat: work-exchange
@@ -342,7 +392,7 @@ self-contained RVers to visit and stay overnight for free!"
   cta   : Find a work exchange
 
 - name  : Work Away
-  link  : https://www.workaway.info/
+  link  : https://www.workaway.info/?utm_source=gohobo&utm_medium=adventuredirectory&utm_campaign=gohobo
   desc  : "Workaway set up to promote fair exchange between budget travellers, language learners or culture seekers who can stay with 1000s of families, individuals or organizations that are looking for help in over 130 different countries."
   cat   : work-exchange
   subcat: work-exchange
@@ -352,7 +402,7 @@ self-contained RVers to visit and stay overnight for free!"
   cta   : Find a work exchange
 
 - name  : Projects Abroad
-  link  : http://www.projects-abroad.ca/
+  link  : http://www.projects-abroad.ca/?utm_source=gohobo&utm_medium=adventuredirectory&utm_campaign=gohobo
   desc  : "Volunteer Abroad in 29 developing countries in Africa, Asia, Latin America and Eastern Europe. Programs are offered in care, teaching, conservation, human rights, healthcare and more."
   cat   : work-exchange
   subcat: work-exchange

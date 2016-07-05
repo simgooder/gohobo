@@ -1,6 +1,9 @@
 ---
 pagename: home
+layout: default
+title: GoHobo | An alternative travel network offering cheap travel, and adventures for regular people.
 ---
+
 
 <!DOCTYPE html>
 
@@ -12,31 +15,32 @@ pagename: home
 
 <body>
 
-	{% include header.html %}
+	{% include _home.hero.html %}
 
-	<main class="{{ page.pagename }}" role="main">
+    {% include _home.adventure-directory.html %}
+    
+    {% include _home.wander-journal.html %}
 
-		{% include _svg-clip-paths.html %}
+    {% include _home.vanageddon.html %}
 
-		{% include _hero.html %}
+    {% include _home.pre-footer.html %}
 
-		{% include _intro.html %}
 
-		{% include _ontheroad.html %}
-
-		{% include _ridesharing.html %}
-
-		{% include _camping.html %}
-
-		{% include _housesitting.html %}
-
-		{% include _emailcapture.html %}
-
-	</main>
-	
-	{% include footer.html %}
-
-	{% include _modal.html %}
+    <!-- Schema LDJSON -->
+    <script type="application/ld+json">
+      {
+        "@context": "http://schema.org",
+        "@type": "http://schema.org/Organization",
+        "name": "GoHobo",
+        "url": "http://gohobo.co",
+        "logo": "http://www.gohobo.co/assets/img/gohobo-logo.png",
+        "sameAs" : [
+            "https://www.facebook.com/Go-Hobo-649912611816927",
+            "http://www.twitter.com/gohoboco",
+            "https://www.instagram.com/gohobo.co"
+        ]
+      }
+    </script>
 
 </body>
 </html>

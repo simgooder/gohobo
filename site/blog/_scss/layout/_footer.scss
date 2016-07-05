@@ -3,21 +3,22 @@
 	padding: 6em 10% 4em 10%;
 	position: relative;
 	text-align: center;
+    margin-top: 6em;
 
 	border-top: 0.1em solid #efefef;
 
 	@include mq-sm {
 		text-align: center;
 	}
-
-	// the logo image
-	img {
-		display: block;
-		margin-left: auto;
-		margin-right: auto;
-		margin-bottom: 2em;
-	}
 	
+}
+
+// the logo image
+.footer--logo {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 2em;
 }
 
 
@@ -69,12 +70,10 @@
 .social--set {
 	text-align: center;
 	margin: 2em 0;
-}
 
-.fb-like {
-	width: 49px;
-	overflow: hidden;
-	vertical-align: bottom;
-
-	margin-top: 0.45em;
+    svg {
+        fill: $color-dark;
+        width: 3em;
+        margin: 0 1em;
+    }
 }

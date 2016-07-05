@@ -16,7 +16,7 @@
 	}
 }
 .theme--transportation {
-	background: linear-gradient(-45deg, #98F5ED 0%, #6AB9FF 100%);
+	background: $color-blue-grad;
 
 	background-size: 102%;
 
@@ -25,7 +25,7 @@
 	}
 }
 .theme--work-exchange {
-	background: linear-gradient(-45deg, #FD97B9 0%, #B976FE 100%);
+	background: $color-purple-grad;
 
 	background-size: 102%;
 

@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "Places to Visit in Canada - 
-Southern British Columbia totally going for 126 characters total here to see what happens when I need to truncate a massive chunk of text. Test test test test test."
+Southern British Columbia"
 date:   2016-04-12
 hero: "blog/places-to-visit-canada-bc.jpg"
 author: "Simon Gooder"
@@ -15,7 +15,7 @@ tags:
 
 Basically, if you enjoy outdoor activities and a fresh-air lifestyle, why don't you live here already? Of all the places I've visited (out of Canada and other sides of it) British Columbia is my favourite, and has so many spectacular adventures to offer.
 
-I've put together a list of all my favourite Southern BC adventures, because this is where I grew up, and this is what I know. Keep in mind I saw this over a number of years, and had the privelege of living in some of these places, there is no way one could see and do all of this in any less than two months. At least, while enjoying ones self. 
+I've put together a list of all my favourite Southern BC adventures, because this is where I grew up, and this is what I know. Keep in mind I saw this over a number of years, and had the privelege of living in some of these places, there is no way one could see and do all of this in any less than two months. At least, while enjoying one's self. 
 
 ### Ten Epic Adventures in Southern British Columbia
 1. Ponder life at [Whytecliff Park](http://whytecliffpark.com/). Home to 200+ marine animal species, the flat white cliffs overlooking the ocean make for one of the best picnic spots in the city.  
