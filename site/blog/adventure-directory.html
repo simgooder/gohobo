@@ -20,6 +20,9 @@ title: GoHobo | Adventure Directory | Adventure resources for regular people
     </label>
     
     <!-- tags for sorting go here here-->
+    <!-- <h2 class="dir--nav__item theme--transportation" data-sort-by="transportation">transportation</h2>
+    <h2 class="dir--nav__item theme--accommodation" data-sort-by="accommodation">accommodation</h2>
+    <h2 class="dir--nav__item theme--work-exchange" data-sort-by="work-exchange">work-exchange</h2> -->
 
   </nav>
 
@@ -28,7 +31,7 @@ title: GoHobo | Adventure Directory | Adventure resources for regular people
     {% assign sortedResources = site.data.resources | sort: 'name' %}
     {% for resource in sortedResources %}
 
-      <li class="dir--item" data-item-tags="{{ resource.cat }}" id="{{ resource.name | slugify }}">
+      <li class="dir--item {{ resource.cat }}" data-item-tags="{{ resource.cat }}" id="{{ resource.name | slugify }}">
 
         <figure class="dir--item__logo">
           <img src="{{ resource.logo }}" alt="{{ resource.name }}" title="{{ resource.name }}">

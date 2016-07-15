@@ -13,7 +13,7 @@
         // pull up under the header
     }
     @include mq-sm {
-        min-height: 600px;
+        min-height: 400px;
     }
 
     &.-lg {
@@ -90,15 +90,22 @@
 
     
     .section--hero__img {
-        position: relative;
         z-index: -1;
-        margin: 0 -100%;
 
-        max-width: none;
-        flex-basis: 100%;
+        // flex-basis: 100%;
         min-width: 100%;
         min-height: 100%;
         object-fit: cover;
+
+        @include mq-md {
+            max-width: none;
+            position: fixed;
+
+            @include all-align;
+        }
+        @include mq-sm {
+            position: relative;
+        }
     }
 
     .section--hero__tagline {

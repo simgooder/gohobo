@@ -9,6 +9,8 @@
 
 	max-width: $breakpoint-xl;
 
+	margin-bottom: 5em;
+
 	overflow: hidden;
 
 	@include mq-xl {
@@ -224,7 +226,7 @@
 		height: 100%;
 
 		padding: 2em;
-		background-color: rgba(#000,0.2);
+		background: linear-gradient(rgba(#000, 0.05), rgba(#000,0.75));
 		transition: 0.2s;
 
 		display: flex;
@@ -232,7 +234,9 @@
 		justify-content: flex-end;
 
 		&:hover {
-			background-color: rgba(#000, 0.3);
+			img {
+				transform: scale(1.2);
+			}
 		}
 	}
 

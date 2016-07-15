@@ -34,6 +34,23 @@ layout: default
 		{{ page.title }}
 	</h1>
 
+    <figure class="art--meta__author">
+        
+        {% if page.author-thumb %}
+        <div class="art--meta__thumb">
+          <img src="{{ site.image_assets }}{{page.author-thumb}}" alt="{{ page.author }}, author of {{ page.title }}">  
+        </div>
+        {% endif %}
+
+        <figcaption class="art--meta">
+            By {{ page.author }} <br>
+            <a href="{{ page.author-website-link }}">
+                {{ page.author-website}}
+            </a>
+        </figcaption>
+
+    </figure>
+
 	<div class="art--content">
 		{{ content }}
 	</div>
@@ -68,7 +85,7 @@ layout: default
         <form class="email-grab--form__dark" action="//gohobo.us13.list-manage.com/subscribe/post?u=5f6a30e10e891d0f4921d3148&amp;id=cdec36a9ab" method="post" name="mc-embedded-subscribe-form" target="_blank" accept-charset="utf-8">
            
             <p>
-                sign up to receive exclusive adventures in your inbox.
+                sign up for exclusive adventures <br>in your inbox.
             </p>
             <div class="form--group__row">
 
@@ -87,16 +104,33 @@ layout: default
 
 	</div>
 
-	{% if page.author %}
-	<!-- 	<h6 itemprop="author" itemscope itemtype="http://schema.org/Person">
-			<span itemprop="name">
-				{{ page.author }}
-			</span>
-		</h6> -->
-	{% endif %}
-
 
 </article>
+
+<section class="disqus--container">
+    <div class="disqus--module" id="disqus_thread"></div>  
+</section>
+
+
+<script>
+    
+    var disqus_config = function () {
+        this.page.url = "{{site.prod_url}}{{page.url}}"; 
+        this.page.identifier = "{{page.slug}}"; 
+    };
+    
+    (function() {  // DON'T EDIT BELOW THIS LINE
+        var d = document, s = d.createElement('script');
+        
+        s.src = '//gohoboco.disqus.com/embed.js';
+        
+        s.setAttribute('data-timestamp', +new Date());
+        (d.head || d.body).appendChild(s);
+    })();
+</script>
+
+<noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript" rel="nofollow">comments powered by Disqus.</a></noscript>
+
 
 <!-- Schema LDJSON -->
 <script type="application/ld+json">

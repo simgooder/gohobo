@@ -1,19 +1,24 @@
 
-
 // TAGSORT PLUGIN
+// ----------------
 $('.dir--nav').tagSort({
   items:'.dir--item',
   tagElement: 'h2',
   sortType: 'single',
   tagClassPrefix: 'dir--nav__item theme--',
-  fadeTime: '100'
+  fadeTime: '100',
 });
 
+$('p').has('img').addClass('art--img');
+// $('img').click(function(){
+//   $(this).toggleClass('active');
+// })
 
 
-// The Modal Toggle
 $(document).ready(function(){
 
+// The Modal Toggle
+// -----------------------
 	$('.js-toggle-modal').click(function(){
 		$('.modal--overlay').toggleClass('--is--open');
 	});
@@ -23,7 +28,9 @@ $(document).ready(function(){
 		$(next).toggleClass('-hide');
 	});
 
-// navigation toggle
+
+// Mobile Navigation toggle
+// -------------------------
   $('.js--toggle--nav').click(function(){
     $('.main--nav__list').toggleClass('-is--open');
   });
@@ -34,6 +41,8 @@ $(document).ready(function(){
 
 
 });
+
+
 
 // Twitter Widget
 

@@ -1,0 +1,171 @@
+
+// Page Layout for Articles
+// --------------------------------
+
+.art--container {
+
+	margin-left: auto;
+	margin-right: auto;
+
+	padding-top: 5em;
+	
+	background-color: #fff;
+
+	p {
+		font-size: 1.1em;
+	}
+
+	p:not(.art--img), h1, h2, h3, h4, blockquote, ol, ul, em, b {
+		width: 95%;
+		max-width: 600px;
+
+		margin-left: auto;
+		margin-right: auto;
+	}
+
+// used for subheadings
+	p + h2,
+	blockquote + h2 {
+		margin-top: 2em;
+		margin-bottom: 1em;
+	}
+
+	em {
+		font-family: $font-copy;
+	}
+}
+
+	.art--meta {
+		font-family: $font-copy;
+		text-transform: uppercase;
+		text-align: center;
+		letter-spacing: 0.1em;
+		color: #999;
+		font-size: 1em;
+
+		display: block;
+
+		a {
+			text-transform: capitalize;
+			text-decoration: underline;
+			text-align: left;
+		}	
+	}
+
+		// the AUTHOR section
+		.art--meta__author {
+			text-align: center;
+			margin-top: 2em;
+
+			.art--meta,
+			.art--meta__thumb {
+				display: inline-block;
+				vertical-align: middle;
+			}
+			.art--meta {
+				text-align: left;
+			}
+		}
+
+			.art--meta__thumb {
+				position: relative;
+
+				width: 4em;
+				height: 4em;
+
+				overflow: hidden;
+				border-radius: 50%;
+
+				margin-right: 0.5em;
+
+				img {
+					display: block;
+					position: absolute;
+					top: 50%;
+					left: 50%;
+					transform: translate(-50%, -50%);
+					max-width: none;
+					max-height: 4em;
+				}
+			}
+
+
+	.art--title {
+		text-align: center;
+		text-transform: capitalize;
+
+		margin: 0.3em 0;
+
+		word-break: break-word;
+		hyphens: auto;
+
+		@include mq-md {
+			font-size: 4em;
+		}
+		@include mq-sm {
+			font-size: 3.8em;
+		}
+	}
+
+	.art--content {
+		line-height: 1.9;
+		margin-top: 5em;
+	}
+
+		.art--content {
+			li {
+				font-size: 1em;
+			}
+			
+			li + li {
+				margin-top: 0.75em;
+			}
+		}
+
+		.art--img {
+			margin-top: 2em;
+			margin-bottom: 2em;
+			text-align: center;
+
+			img {
+				width: 100%;
+
+				max-width: 75em;
+			}
+		}
+
+	.art--footer {
+		display: flex;
+		flex-flow: column nowrap;
+		justify-content: center;
+		align-items: center;
+
+		border-top: 1px solid #efefef;
+		border-bottom: 1px solid #efefef;
+
+		padding-top: 2em;
+		margin: 3em auto 0 auto;
+
+		@include mq-md {
+			padding-left: 3em;
+			padding-right: 3em;
+		}
+		@include mq-sm {
+			padding-left: 1em;
+			padding-right: 1em;
+		}
+
+		h6 {
+			font-size: 1.2em;
+			margin-bottom: 0.7em;
+		}
+
+		> * {
+			margin-top: 1em;
+		}
+	}
+
+
+
+
+
