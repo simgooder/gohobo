@@ -10,9 +10,6 @@ $('.dir--nav').tagSort({
 });
 
 $('p').has('img').addClass('art--img');
-// $('img').click(function(){
-//   $(this).toggleClass('active');
-// })
 
 
 $(document).ready(function(){

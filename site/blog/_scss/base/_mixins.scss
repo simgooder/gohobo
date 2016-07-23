@@ -27,7 +27,7 @@
 // Vertically align an element!
 @mixin v-align{
 	transform:translate(0, -50%);
-	top:50%;
+	top: 50%;
 }
 
 @mixin h-align {
