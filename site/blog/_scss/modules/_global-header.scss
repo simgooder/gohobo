@@ -16,7 +16,7 @@
 
 	@include mq-md {
 		padding: 2em 4em;
-		height: 128px;
+		height: 100px;
 	}
 
 	@include mq-sm {
@@ -28,7 +28,7 @@
 
 .main--logo svg {
 	fill: #fff;
-	width: 5em;
+	width: 4.25em;
 
 	position: relative;
 	z-index: 6;

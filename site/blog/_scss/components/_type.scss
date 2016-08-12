@@ -155,9 +155,14 @@
 		padding-left: 1em;
 		padding-right: 1em;
 
-		border: 0.25em solid transparent;
+		border-left: 0.25em solid transparent;
 		border-image: $color-cta-grad;
 		border-image-slice: 1;
+
+		p::before,
+		p::after {
+			content: '"';
+		}
 
 		@include mq-md {
 			font-size: 1.5em;
@@ -170,9 +175,6 @@
 		p {
 			line-height: 1.4;
 			font-family: $font-copy;
-
-			padding-top: 0.4em;
-			padding-bottom: 0.4em;
 
 			@include mq-sm {
 				margin-left: 0.25em;

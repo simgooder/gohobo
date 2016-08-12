@@ -18,7 +18,7 @@ Living in a van put many things into perspective for me, and really allowed me t
 Imagine the possibilities! Don't like your neighborhood? Move on and try a new one for a night. Need to escape the cold weather? Drive South for winter.  
 While on the road in Australia, we met a ton of others living (and loving) the van life. Many people had set out for a short trip and ended up driving around and living for many more months.  
 
-> "One of my favourite parts of moving into a van was dropping everything." 
+> One of my favourite parts of moving into a van was dropping everything.
 
 ## It's cheaper than rent
 
@@ -27,7 +27,7 @@ Depending on how you look at it, vanlife can be cheaper than paying rent. I say 
 We lived in the city and did the whole stealth camping thing, parking in different neighborhoods around the city, never staying more than a night unless it was in a friend's driveway, so there were no camping fees. Stealth camping takes some practice, and there are a few lessons to be learned, but you can get away with it for a long time.  
 If you have friends with a spare driveway, plugging in and pitching a few dollars or trading labour for the cost of utilities can be a good break if you're going through a lot of propane.   
 
-> "There's something extremely freeing about being attached to only the things you need to live."
+> There's something extremely freeing about being attached to only the things you need to live.
 
 ## It's therapeutic
 

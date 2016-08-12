@@ -57,7 +57,7 @@
 			border: 0.1em solid #fff;
 
 			min-width: 100%;
-			height: 100px;
+			height: 120px;
 
 			& + .post--item__sm {
 				margin-top: 0.5em;
@@ -213,7 +213,7 @@
 		height: 300px;
 	}
 	@include mq-sm {
-		width: 65vw;
+		width: 76vw;
 		height: 250px;
 	}
 }
@@ -251,6 +251,77 @@
 	}
 
 
+// Related Posts Component
+// ------------------------
 
+.related--posts__container {
+	background-color: #fff;
+
+	padding-top: 6em;
+	padding-bottom: 6em;
+}
+
+.related--posts__list {
+	@include article-width;
+
+	@include mq-sm {
+		max-width: 320px;
+	}
+}
+
+.related--posts__label {
+	width: 100%;
+	flex-basis: 100%;
+
+	margin-bottom: 1em;
+}
+
+.related--posts__item {
+	cursor: pointer;
+	position: relative;
+
+	display: inline-block;
+	vertical-align: top;
+
+	@include mq-md {
+		width: 10em;
+
+		& + .related--posts__item {
+			margin-left: 1em;	
+		}
+	}
+	@include mq-sm {
+		width: 100%;
+		margin-bottom: 2em;
+		margin-left: auto;
+		margin-right: auto;
+	}
+}
+
+	.related--posts__title {
+		font-size: 0.7em;
+		line-height: 1;
+		font-family: $font-bold;
+		width: 100%;
+
+	}
+
+	.related--posts__thumbnail {
+		height: 6em;
+		width: 100%;
+
+		filter: grayscale(90%);
+
+		background-repeat: no-repeat;
+		background-size: cover;
+		background-position: 50% 50%;
+
+		transition: 0.45s;
+
+		&:hover {
+			filter: grayscale(0%);
+		}
+		
+	}
 
 

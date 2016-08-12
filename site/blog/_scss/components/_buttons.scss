@@ -25,6 +25,10 @@ button {
 
 	transition: 0.4s;
 
+	&:hover {
+		background-size: 175%;
+	}
+
 	@include mq-sm {
 		padding: 0.6em 2em;
 	}
@@ -49,6 +53,10 @@ button {
 		@include mq-md {
 			padding: 0.5em 2em;
 		}
+
+		&:hover {
+			background-size: 175%;
+		}
 	}
 
 }
@@ -62,8 +70,26 @@ button {
 
     border-top-right-radius: 0.2em;
     border-bottom-right-radius: 0.2em;
+
+    &:hover {
+    	background-size: 175%;
+    }
 }
 
+.btn--line__white {
+	color: #fff;
+	border: 2px solid #fff;
+	border-radius: 3px;
+	padding: 0.5em 2em;
+
+	background-color: rgba(#000, 0.12);
+
+	transition: 0.5s;
+
+	&:hover {
+		background-color: rgba(#000, 0.35);
+	}
+}
 
 
 

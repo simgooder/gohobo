@@ -57,55 +57,70 @@ layout: default
 
 	<div class="art--footer">
 
-		<h6>Share the <span style="color:#F06E61">♥</span></h6>
-		<a href="https://twitter.com/share" 
-		   class="twitter-share-button" 
-		   data-via="goHoboCo"
-		   data-text="{{ page.title }}">
-		   Tweet
-		</a>
-		<div class="fb-share-button" 
-			data-href="http://gohobo.co{{ page.url }}" 
-			data-layout="button">
-		</div>
-		<a href="http://bufferapp.com/add" 
-		   class="buffer-add-button" 
-		   data-count="none">
-		   Buffer
-		</a>
-		<script type="text/javascript" src="https://d389zggrogs7qo.cloudfront.net/js/button.js"></script>
-
-		<a data-pin-do="buttonPin" 
-		   data-pin-color="white" 
-		   data-pin-tall="true" 
-		   href="https://www.pinterest.com/pin/create/button/?url=http://gohobo.co{{ page.url }}&media=http://gohobo.co{{ site.image_assets }}{{ page.hero }}&description={% if page.excerpt %}{{ page.excerpt | strip_html | strip_newlines | truncate: 160 }}{% else %}{{ site.description }}{% endif %}">
-		   <img src="//assets.pinterest.com/images/pidgets/pinit_fg_en_rect_white_28.png" />
-		</a>
-
-        <form class="email-grab--form__dark" action="//gohobo.us13.list-manage.com/subscribe/post?u=5f6a30e10e891d0f4921d3148&amp;id=cdec36a9ab" method="post" name="mc-embedded-subscribe-form" target="_blank" accept-charset="utf-8">
-           
-            <p>
-                sign up for exclusive adventures <br>in your inbox.
-            </p>
-            <div class="form--group__row">
-
-                <div style="position: absolute; left: -5000px;" aria-hidden="true">
-                    <input type="text" name="b_5f6a30e10e891d0f4921d3148_cdec36a9ab" tabindex="-1" value="">
-                </div>
-
-                <input class="input" type="email" placeholder="your email" name="EMAIL" required/>
-
-                <button class="btn--input" type="submit" name="subscribe" id="mc-embedded-subscribe">
-                    sign up
-                </button>
-
-            </div>
-        </form>
+	   {% include _global.share-section.html %}
 
 	</div>
 
-
 </article>
+
+<section class="related--posts__container">
+
+        <script type="text/javascript">
+
+            var postsHREF = [{% for post in site.posts %}"{{ post.url }}"{% unless forloop.last %},{% endunless %}{% endfor %}];
+
+            var postsTitle = [{% for post in site.posts %}"{{ post.title }}"{% unless forloop.last %},{% endunless %}{% endfor %}];
+
+            var postsThumb = [{% for post in site.posts %}"{{ site.image_assets }}{{ post.hero | replace: '.jpg', '_thumb.jpg'}}"{% unless forloop.last %},{% endunless %}{% endfor %}];
+
+        </script>
+
+    <div class="related--posts__list">
+
+        <h4 class="related--posts__label">
+            Recommended
+        </h4>
+
+        <script type="text/javascript">
+            var randomIndexUsed = [];
+            var counter = 0;
+            var numberOfPosts = 3;
+
+            while (counter < numberOfPosts)
+            {
+                var randomIndex;
+                var postHREF;
+                var postTitle;
+                var postThumb;
+
+                randomIndex = Math.floor(Math.random() * postsHREF.length);
+
+                if (randomIndexUsed.indexOf(randomIndex) == "-1")
+                {
+                    postHREF = postsHREF[randomIndex];
+                    postTitle = postsTitle[randomIndex];
+                    postThumb = postsThumb[randomIndex];
+
+                    if (counter == (numberOfPosts - 1))
+                    {
+                        document.write('<div class="related--posts__item"><a href="' + postHREF + '">' +  '<div style="background-image:url(' + postThumb + ');" class="related--posts__thumbnail"></div>' + '<label class="related--posts__title">' + postTitle + '</label>' + '</a></div>');
+                    }
+                    else
+                    {
+                        document.write('<div class="related--posts__item"><a href="' + postHREF + '">' +  '<div style="background-image:url(' + postThumb + ');" class="related--posts__thumbnail"></div>' + '<label class="related--posts__title">' + postTitle + '</label>' + '</a></div>');
+                    }
+
+                    randomIndexUsed.push(randomIndex);
+
+                    counter++;
+                }
+            }
+
+        </script>
+
+    </div>
+
+</section>
 
 <section class="disqus--container">
     <div class="disqus--module" id="disqus_thread"></div>  

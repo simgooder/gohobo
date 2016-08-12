@@ -16,11 +16,11 @@
 	}
 
 	p:not(.art--img), h1, h2, h3, h4, blockquote, ol, ul, em, b {
-		width: 95%;
-		max-width: 600px;
+		@include article-width;
+	}
 
-		margin-left: auto;
-		margin-right: auto;
+	blockquote {
+		position: relative;
 	}
 
 // used for subheadings
@@ -136,32 +136,31 @@
 
 	.art--footer {
 		display: flex;
-		flex-flow: column nowrap;
-		justify-content: center;
-		align-items: center;
+		flex-flow: row wrap;
 
-		border-top: 1px solid #efefef;
-		border-bottom: 1px solid #efefef;
+		@include article-width;
 
 		padding-top: 2em;
-		margin: 3em auto 0 auto;
+		padding-bottom: 4em;
 
 		@include mq-md {
-			padding-left: 3em;
-			padding-right: 3em;
+			justify-content: space-between;
+			align-items: center;
 		}
 		@include mq-sm {
-			padding-left: 1em;
-			padding-right: 1em;
+			justify-content: center;
+			align-items: center;
 		}
 
 		h6 {
-			font-size: 1.2em;
-			margin-bottom: 0.7em;
-		}
+			font-family: $font-bold;
+			font-size: 1em;
 
-		> * {
-			margin-top: 1em;
+			@include mq-sm {
+				text-align: center;
+				flex-basis: 100%;
+				margin-bottom: 1em;
+			}
 		}
 	}
 

@@ -40,7 +40,8 @@ form {
 	width: 100%;
 
 	color: $color-dark;
-    border-color: transparent;
+
+	border: 1px solid $color-gray;
 
     &:focus {
 		border-color: #ccc;

@@ -1,0 +1,56 @@
+%btn--share__base {
+    color: #fff;
+    font-family: $font-copy;
+
+    border-radius: 2px;
+
+    padding-left: 0.5em;
+    padding-right: 0.55em;
+    padding-top: 0.45em;
+    padding-bottom: 0.45em;
+
+    .icon {
+        display: block;
+        transition: 0.25s;
+    }
+
+    &:hover .icon {
+        transform: scale(1.2);
+    }
+}
+
+.btn--share {
+
+    &__twitter {
+        @extend %btn--share__base;
+        background-color: $color-twitter;
+    }
+    &__facebook {
+        @extend %btn--share__base;
+        background-color: $color-facebook;
+    }
+    &__googleplus {
+        @extend %btn--share__base;
+        background-color: $color-googleplus;
+    }
+    &__pinterest {
+        @extend %btn--share__base;
+        background-color: $color-pinterest;
+    }
+    &__linkedin {
+        @extend %btn--share__base;
+        background-color: $color-linkedin;
+    }
+    &__tumblr {
+        @extend %btn--share__base;
+        background-color: $color-tumblr;
+    }
+    &__reddit {
+        @extend %btn--share__base;
+        background-color: $color-reddit;
+    }
+    &__stumbleupon {
+        @extend %btn--share__base;
+        background-color: $color-stumbleupon;
+    }
+}

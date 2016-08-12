@@ -3,14 +3,14 @@
 
 .main--nav__icon svg {
 	fill: #fff;
-	width: 2em;
+	width: 1.8em;
 }
 
 .main--nav__close {
 	position: absolute;
 
 	@include mq-md {
-		top: 2.8em;
+		top: 2em;
 		right: 4em;
 	}
 	@include mq-sm {

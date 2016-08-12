@@ -32,6 +32,26 @@
 ##################################
 
 
+- name  : Hostel Bookers
+  link  : http://www.hostelbookers.com/
+  desc  : "Youth hostels and Cheap Hotels in over 3,500 travel destinations! Book a Hostel or Cheap Hotel with no booking fee. Best online deals with our lowest price guarantee."
+  cat   : accommodation
+  subcat: housesitting
+  budget: 1 # out of 3
+  region: worldwide
+  logo  : '../assets/img/directory/hostel-bookers-logo.png'
+  cta   :  Find a hostel
+
+- name  : Trampolinn
+  link  : https://trampolinn.com
+  desc  : "Discover our homestay community to travel on a budget. Stay at locals' and share unique experiences around the world in more than 150 countries."
+  cat   : accommodation
+  subcat: housesitting
+  budget: 1 # out of 3
+  region: worldwide
+  logo  : '../assets/img/directory/trampolinn-logo.png'
+  cta   :  Find a homestay
+
 - name  : Owlcamp
   link  : http://owlcamp.com
   desc  : 'With Owlcamp, welcome travelers on your land or go camping with hosts worldwide.'  
@@ -237,6 +257,16 @@ self-contained RVers to visit and stay overnight for free!"
 ########  TRANSPORTATION #########
 ##################################
 
+- name  : Busbud
+  link  : https://busbud.com
+  desc  : 'Busbud is the best way to book bus tickets. Search, compare and book tickets from hundreds of bus companies around the world.'  
+  cat   : transportation
+  subcat: rideshare
+  budget: 2 # out of 3
+  region: worldwide
+  logo  : '../assets/img/directory/busbud-logo.png'
+  cta   :  Find a fare
+
 - name  : Airfare Spot
   link  : https://airfarespot.com/
   desc  : 'Book, travel, save. Incredible flight deals aggregator. Pick a location and watch for the cheapest fares.'  
@@ -411,6 +441,16 @@ self-contained RVers to visit and stay overnight for free!"
 ##################################
 ########  WORK EXCHANGE  #########
 ##################################
+
+- name  : Volunteers Base
+  link  : http://www.volunteersbase.com
+  desc  : "Are you looking for free volunteering opportunities? This is the place! Volunteers Base is a Moneyless Help Exchange Network"
+  cat   : work-exchange
+  subcat: work-exchange
+  budget: 0 # out of 3
+  region: worldwide
+  logo  : '../assets/img/directory/volunteers-base-logo.png'
+  cta   : Find a work exchange
 
 - name  : World Wide Opportunities on Organic Farms
   link  : http://www.wwoof.net

@@ -17,7 +17,7 @@
     }
 
     &.-lg {
-        height: 86vh;
+        height: 100vh;
     }
     &.-sm {
         @include mq-md {
@@ -36,12 +36,13 @@
     }
 
     &.-theme--stars {
+
         @include mq-md {
-            background:transparent url('../img/gohobo-hero@2x.jpg') center center no-repeat;
+            background:transparent url('../img/hero-sky@2x.jpg') center center no-repeat fixed;
             background-size: cover;
         }
         @include mq-sm {
-            background:transparent url('../img/gohobo-hero.jpg') center center no-repeat;
+            background:transparent url('../img/hero-sky.jpg') center center no-repeat fixed;
             background-size: cover;
         }
     }
@@ -120,7 +121,7 @@
 
     .section--hero__tagline {
 
-        max-width: 500px;
+        max-width: 520px;
 
         color: #fff;
         text-align: center;
