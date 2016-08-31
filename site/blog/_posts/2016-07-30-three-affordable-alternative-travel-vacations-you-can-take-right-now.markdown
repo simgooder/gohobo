@@ -38,24 +38,25 @@ If that last pitch wasn't hot enough to light a fire under your ass, perhaps thi
 
 >This whole vacation is an adventure. Two words: **road trip**.
 
+
 ## 1. The free vacation
 
 ### Transportation
 If you have access to the internet (which I know you do, 'cause you're reading this), you could catch a ride somewhere using the rideshare section of Craig's List or Kijiji to find a free seat, or just polish up your thumb, write your destination on a piece of cardboard and hit the pavement.  
 
-Alternatively, you could rent a vehicle and charge people for seats using your [favourite ridesharing app](https://hitchplanet.com), and you could completely cover your cost this way. 
+Alternatively, you could rent a vehicle and charge people for seats using your [favourite ridesharing app](https://hitchplanet.com "Hitchplanet.com, obviously"), and you could completely cover your cost this way. 
 
-![Simon from GoHobo hitchhiking in Margaret River, Australia](/assets/img/blog/alternative-travel-vacation-ideas-simon-hitchhiking.jpg)
+![Simon from GoHobo hitchhiking in Margaret River, Australia](/assets/img/blog/alternative-travel-vacation-ideas-simon-hitchhiking.jpg "Hitchhiking is an affordable way to travel")
 
 ### Accommodation
 Don't forget your sleeping bag, because you're going on a [Couchsurfing](https://www.couchsurfing.com/) sleepover! It's one of the most reliable places to find a free couch to crash on, so unless you have friends where you're going, you'll have to keep this one in mind.  
 
-Or, if you have a tent you can borrow, you could hit a [free camping map](https://freecampsites.net/?utm_source=gohobo&utm_medium=adventuredirectory&utm_campaign=gohobo) for the best place in and around your destination.
+Or, if you have a tent you can borrow, you could hit a [free camping map](https://freecampsites.net/?utm_source=gohobo&utm_medium=adventuredirectory&utm_campaign=gohobo "Freecampsites.net") for the best place in and around your destination.
 
 ### Food
 I'll admit this one is going to really cut it close when it comes to the *free* part. We all know there is no such thing as a free lunch. But, there are some nice people out there who are offering to make you lunch. There's a community called [EatWithALocal](http://eatwithalocal.socialgo.com/) where people offer to cook meals for travelers. I haven't used it before, but it exists.  
 
-If I was really hard-pressed to get that elusive free lunch, I would resort to [Falling Fruit](http://fallingfruit.org/?). This is one I am familiar with. It's a user-curated map of hundreds of cities all over the world, featuring places to find free food. That's right, free food of all shapes and sizes. People have kindly listed public gardens, fruit trees, berry bushes, city forage, and even bakeries and fruiteries that are free-food-friendly (they give away the day-olds). It's a pretty cool system, and I can honestly say I've tried it and it works!
+If I was really hard-pressed to get that elusive free lunch, I would resort to [Falling Fruit](http://fallingfruit.org/? "Free food resources"). This is one I am familiar with. It's a user-curated map of hundreds of cities all over the world, featuring places to find free food. That's right, free food of all shapes and sizes. People have kindly listed public gardens, fruit trees, berry bushes, city forage, and even bakeries and fruiteries that are free-food-friendly (they give away the day-olds). It's a pretty cool system, and I can honestly say I've tried it and it works!
 
 > I believe every great vacation is an adventure, and every great adventure should be a vacation.
 
@@ -71,7 +72,7 @@ Getting around is definitely one of the most affordable and flexible parts of tr
 
 If you have a destination in mind, you could check for rides using your [favourite ridesharing app](https://hitchplanet.com). If you're just itching to go *somewhere*, I would check the [Adventure Directory](/adventure-directory) for a one-way vehicle relocation.  
 
-![Roadtrip photo by Caleb Whiting](/assets/img/blog/alternative-travel-vacation-ideas-roadtrip.jpg)
+![Roadtrip photo by Caleb Whiting](/assets/img/blog/alternative-travel-vacation-ideas-roadtrip.jpg "Roadtrips make a simple, cheap alternative vacation")
 
 One-way vehicle relocation opportunities occur when a rental company needs to move inventory from one place to another. Usually within a rather short (but sometimes generous) amount of time. The price ranges anywhere from $1 per day, to $25 dollar per day, with the latter usually pertaining to RV rentals, and both often including vouchers for gas.
 
@@ -94,7 +95,7 @@ This whole vacation is an adventure. Two words: **road trip**.
 ### Transportation
 Assuming you managed to squirrel away several hundred dollars to get away this winter, your options just got a whole lot more expansive. If you're looking to go somewhere warm, you're definitely in luck. You could start by checking with your favourite cheap flights and error-fares provider. They post wicked-cheap flight deals daily, to exotic locations all over the world. If you stay vigilant you can get a return flight almost anywhere in the world for around, and sometimes less than, $400.
 
-![Roadtrip photo by Ashim D’Silva](/assets/img/blog/alternative-travel-vacation-ideas-airport.jpg)
+![Airport photo by Ashim D’Silva](/assets/img/blog/alternative-travel-vacation-ideas-airport.jpg)
 
 ### Accommodation
 If you've managed to get yourself a killer flight deal to some super fun adventurous country on the other side of the world, you'll need a place to stay. If you've read the other two sections above, I've already suggested couchsurfing and camping, so let's expand the options a little bit. After all, nobody wants to pack a tent into their carry-on.  

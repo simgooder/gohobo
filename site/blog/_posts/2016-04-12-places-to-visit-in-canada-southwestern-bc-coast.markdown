@@ -11,6 +11,7 @@ category: journal
 tags: 
 - British Columbia
 - roadtrip
+desc: "From the West Coast to the Kokanee glacier. Southern British Columbia has a lot to offer; Mountains, lakes, ocean, camping, hiking, fishing, skiiing... "
 ---
 
 Basically, if you enjoy outdoor activities and a fresh-air lifestyle, why don't you live here already? Of all the places I've visited (out of Canada and other sides of it) British Columbia is my favourite, and has so many spectacular adventures to offer.

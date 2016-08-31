@@ -1,9 +1,15 @@
 .footer {
 	background-color: #fff;
-	padding: 6em 10% 4em 10%;
 	position: relative;
 	
     text-align: center;
+
+    @include mq-md {
+        padding: 6em 10% 4em 10%;
+    }
+    @include mq-sm {
+        padding: 6em 5% 4em 5%;
+    }
     
     //margin-top: 6em;
 
@@ -28,13 +34,12 @@
 
 	small {
 		width: 100%;
-		margin-top:4em;
+		margin-top: 4em;
+        display: block;
 	}
 
-	.email {
-		display: block;
+	small a {
 		text-decoration: underline;
-		padding: 2em 0;
 	}
 }
 
@@ -75,10 +80,18 @@
 
     svg {
         fill: $color-dark;
-        width: 3em;
         margin: 0 1em;
 
+        cursor: pointer;
+
         transition: 0.25s;
+
+        @include mq-md {
+            width: 3em;
+        }
+        @include mq-sm {
+            width: 2.2em;
+        }
 
         &:hover {
             transform: scale(1.15);

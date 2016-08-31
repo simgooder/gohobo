@@ -21,7 +21,7 @@ Everyone should be able to travel. We don’t all have budgets for an around-the
 
 The internet caters beautifully to this idea, providing us with avenues to connect with our peers, share knowledge and rooms, cars and workspaces. We live in an incredible time for affordable anything really, it just comes down to us taking advantage of the tools we are given.  
 
-Below I’ve outlined some of my personal go-to services for affordable accommodation and transportation.  
+Below I’ve outlined some of my personal go-to services for [affordable accommodation](http://www.nomadicmatt.com/travel-tips/finding-cheap-accommodation/ "Nomadic Matt - Finding Cheap Accommodation") and transportation.  
 
 • [Secret Flying](http://www.secretflying.com/) can find you a $200 ticket out of the country (almost any country).  
 • With [HitchPlanet](https://www.hitchplanet.com/), you can get across the country (Canada or USA) for around $200. If you’re new to the world of ridesharing, be sure to check out [RideShare for Beginners](http://gohobo.co/journal/ridesharing-for-beginners/).  
@@ -29,6 +29,7 @@ Below I’ve outlined some of my personal go-to services for affordable accommod
 • [HipCamp](https://www.hipcamp.com/users/sign-up?rc=UIJ9VXIQ&rs=3&rk=0) offers unique campsites on ranches, gardens, peoples wood lots, etc, all for a small nightly fee.  
 • [HostelWorld](http://www.hostelworld.com/) allows you to connect with hostels everywhere, and search based on location and availablity for nightly or weekly dormatory bed rentals.   
 • [Purple Tent](http://purpletent.com/) is a pretty cool idea. Rent a tent in somebody’s backyard for a small nightly fee. They’ll even send you a free tent if you’re willing to host travellers.   
+
 
 ## Free Travel
 
@@ -39,7 +40,7 @@ This category requires a few more sacrifices, but if you want to travel, and you
 These are some of GoHobo’s top choices for free travel, so dig in and enjoy. Be sure to let us know if you end up using any of these services, we would love to hear about your experiences!  
 
 • [TransferCar](https://www.transfercarus.com/) or [HitTheRoad.ca](http://www.hittheroad.ca/) will even pay you to drive yourself across the country.  
-• [RV Relocations](http://thriftynomads.com/rv-relocation-deals/) can be one of the best (although hard to find) means of getting around a land mass. If you can get yourself one, they often include daily road allowances and all your camping and sleeping gear.  
+• [RV Relocations](http://thriftynomads.com/rv-relocation-deals/ "Thrifty Nomads - RV Relocation Deals") can be one of the best (although hard to find) means of getting around a land mass. If you can get yourself one, they often include daily road allowances and all your camping and sleeping gear.  
 • If you’re on your own, [Couchsurfing](http://www.couchsurfing.com/) will get you a free couch to crash on.  
 • [HouseCarers](https://www.housecarers.com/?hop=gohobo) can find you a place to stay for up to 6 months almost anywhere in the world, for the mere price* of dogsitting a family pet, or maintaining the residence at an automated bed and breakfast somewhere in the jungles of Costa Rica.  
 • [Staydu](http://www.staydu.com/) offers rooms for rent around the world for a small labour exchange, and often for free.  

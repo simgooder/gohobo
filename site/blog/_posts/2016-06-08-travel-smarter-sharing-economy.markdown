@@ -17,7 +17,7 @@ tags:
 
 ### Avoid traditional travel if you can
 Think back to the last time you went online to book a flight or a hotel. Did you go straight to Expedia? or Priceline? It's often an instinct to go straight to something like Expedia, or Booking.com, throwing trust to the wind (and right into Expedia's pocket). These services do offer both purchases in one place, and are well known for having "the best deals", but don't be fooled, it's all part of the game.  
-When booking through a third-party, you're missing out on [accountability, price matching, room choice](https://usattravel.wordpress.com/2015/06/03/why-you-should-book-your-stay-directly-with-the-hotel/), and general flexibility. Third-party sites have a pre-defined set of rooms they're allowed to sell for each hotel, and logically, the hotels are going to save the best rooms for their own guests, not those who have booked through another service.   
+When booking through a third-party, you're missing out on accountability, price matching, room choice, and general flexibility. Third-party sites have a pre-defined set of rooms they're allowed to sell for each hotel, and logically, the hotels are going to save the best rooms for their own guests, not those who have booked through another service.   
 These third-party sites are not all bad. Use them as a means to test the waters, to see what's available in your destination, and get a feel for what's out there.  
 
 >Always be prepared for a change of plans.
@@ -30,13 +30,13 @@ This mentality, not only for your departure dates or destination but in your day
 Some of my top travel experiences came out of spontaneity and opportunity. There are some opportunities you just can't pass up, and if you're not prepared for a little bit of leniency in your plans, you _will_ miss out. Always be prepared for a change of plans. This is some of the most valuable travel advice I ever received.  
 
 ## Stick to the side roads
-By avoiding the traditional travel booking traps, and keeping our minds open, we're already on our way to travelling smarter. Next, let's explore what community and the sharing economy have to offer the travel industry. On such a large scale, these ideas are rather new to the travel industry as a whole and are truly changing the face of travel all over the world.  
-Those familiar with AirBnB and Uber, know that these services alone have made travel much more enjoyable and affordable. The downside is that with their popularity growth has come more obstacles (like [harsh regulation](http://globalnews.ca/news/2685575/uber-threatens-to-leave-quebec-if-government-regulates-services/)), and higher pricing, which has proven a deterrent for some.
+By avoiding the traditional travel booking traps, and keeping our minds open, we're already on our way to smarter travel. Next, let's explore what community and the [sharing economy](https://www.fastcompany.com/1747551/sharing-economy "Fast Company - The Sharing Economy") have to offer the travel industry. On such a large scale, these ideas are rather new to the travel industry as a whole and are truly changing the face of travel all over the world.  
+Those familiar with AirBnB and Uber, know that these services alone have made travel much more enjoyable and affordable. The downside is that with their popularity growth has come more obstacles (like harsh regulation), and higher pricing, which has proven a deterrent for some.
 
 Alongside these giants, many other more convenient sharing economy services have grown and crashed and withstood the test of time. Many of these services fly under the radar of governments, avoiding regulation and price-gouging as the other giants have suffered.  
 
 ## Ridesharing
-If you're familiar with [GoHobo](http://gohobo.co), you know we're huge fans of ridesharing. From hitchhiking to carpooling it's all great. With services like [HitchPlanet](https://www.hitchplanet.com/), [Kangaride](http://www.kangaride.com/), and [TransferCar](https://www.transfercarus.com/), we've got all the bases covered. There's no longer a need to call fourteen people on Kijiji, and pray you actually get picked up so you can make it to your sister's birthday party.   
+If you're familiar with [GoHobo](http://gohobo.co "Affordable travel for everyone!"), you know we're huge fans of ridesharing. From hitchhiking to carpooling it's all great. With services like [HitchPlanet](https://www.hitchplanet.com/), [Kangaride](http://www.kangaride.com/), and [TransferCar](https://www.transfercarus.com/), we've got all the bases covered. There's no longer a need to call fourteen people on Kijiji, and pray you actually get picked up so you can make it to your sister's birthday party.   
 Need a ride between cities, or across the country? Hitchplanet has your back. With an intuitively designed app, they make it super convenient for anyone looking for a ride or offering rides in your area. Riders and drivers are up-front about the cost, number of seats, and the pickup and dropoff times and the community behind it keeps everyone accountable.  
 For regular carpooling, Kangaride offers reliable options with regular schedules, up-front costs, quality control and member ratings.  
 For long distance one-way road trips, TransferCar rolls in North America and Australia and boasts "free" rental vehicles across both countries. Cars and RV's can cost anywhere from 1$ to 5$ per day, with fuel, insurance, and extra expenses covered.  
@@ -51,7 +51,7 @@ This is by far one of the coolest accommodation ideas I've seen yet. Strangers r
 [HipCamp](https://www.hipcamp.com) offers some pretty amazing off-the-beaten-path campsites across the United States and has a booming community of hosts and campers.  
 [Camp in my Garden](http://campinmygarden.com/) has been around for a lot longer and boasts some pretty incredible locales across the world. Kangaroo farms in Australia to hike-in mountain sites in Northern Italy. 
 
-![Photo by Jorge Flores, http://fd-photo.com](/assets/img/blog/travel-smarter-sharing-economy-support.jpg)
+![Photo by Jorge Flores, http://fd-photo.com](/assets/img/blog/travel-smarter-sharing-economy-support.jpg "Camping is a great way to travel smarter")
 
 ## Online communities
 The sharing economy surely wouldn't be the same without it's loyal following. Communities are what make all of these services great. The sheer amount of self-proclaimed brand ambassadors is what keeps them growing and strong.  
@@ -61,6 +61,6 @@ If you're a Redditor, be sure to subscribe to [/r/travel](https://www.reddit.com
 Twitter is always a great place for small bits of information, and if you follow the right people, you can gather a ton of intel. Follow [@SecretFlying](https://twitter.com/SecretFlying), [@AirFareWatchdog](https://twitter.com/airfarewatchdog), and [@GoHoboCo](https://twitter.com/goHoboCo) for a feed of daily flight deals, and crazy cheap error fares.  
 
 
-The sharing economy has opened up so many doors for people who can't afford traditional travel. It provides accommodation, transportation, jobs, and opportunities to so many people, let's not let it go to waste. This time, the fate of the economy is in our hands, and we control where it goes and what it does. We determine the supply and demand. Let's not let this one get out of control like so many spoiled economies did before. Take part in the community, even if you are just taking advantage of what it has to give.  
+The sharing economy has opened up so many doors for people who can't afford traditional travel. It provides accommodation, transportation, jobs, and opportunities to so many people, let's not let it go to waste. It allows us to **travel smart**. This time, the fate of the economy is in our hands, and we control where it goes and what it does. We determine the supply and demand. Let's not let this one get out of control like so many spoiled economies did before. Take part in the community, even if you are just taking advantage of what it has to give.  
 
 

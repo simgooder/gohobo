@@ -5,8 +5,10 @@ date:   2016-03-28
 author: "Simon Gooder"
 hero: "blog/simon-gohobo-vanlife.jpg"
 category: journal
+desc: "Living in a van is not always awesome. But neither is living in a house. Actually, most of the time living in a van is awesome."
 tags: 
 - vanlife
+- vandwelling
 ---
 
 ## Get a yoga pass ( or a gym pass )
@@ -14,11 +16,11 @@ Some of these places are oases of refreshment and relaxation. Aside from the yog
 
 ## Don't camp in fancy neighborhoods
 When we lived in our van we had much better luck camping in average neighborhoods.
-For a while, we thought it would be nice to camp near the nice beaches in town, which happened to be a very well off area. We had the police called on us more than once. Most of the time, the cop was nice, and just told us to move in the morning. We got talking to an officer one time, who was actually quite interested in the fact that we had opted for van-living, in the big city. She even had a laugh with us about how the person who had called us in, had thought that we were "casing houses".
+For a while, we thought it would be nice to camp near the nice beaches in town, which happened to be a very well off area. We had the police called on us more than once. Most of the time, the cop was nice, and just told us to move in the morning. We got talking to an officer one time, who was actually quite interested in the fact that we had opted for vandwelling, in the big city. She even had a laugh with us about how the person who had called us in, had thought that we were "casing houses".
 We also had several incidences of drunk people attempting to enter our van in the night.
 Nights we spent in average neighborhoods, the only thing we ever occasionally had to deal with was ambient drunken yelling in the late hours of the night / early hours of the morning. 
 
->Living in a van is not always awesome. But neither is living in a house. Actually, most of the time living in a van is awesome.
+> Living in a van is not always awesome. But neither is living in a house. Actually, most of the time living in a van is awesome.
 
 ## Get a pee bucket
 If you're going to be [stealth camping](https://www.youtube.com/watch?v=XK18TVIjFeA), you absolutely need an emergency pee bucket. Ours was excessively fancy, something a previous owner of the van had installed in a small closet at the back. It even had a toilet seat! It's hard to be stealth with your pants down, peeing on somebody's lawn under the moonlight, not to mention in broad daylight.
