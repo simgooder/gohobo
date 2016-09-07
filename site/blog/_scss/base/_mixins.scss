@@ -5,16 +5,20 @@
 	    content: " ";
 	    display: table;
 	}
-}
-
-.cf:after {
-    clear: both;
+	&:after {
+		clear: both;
+	}
 }
 
 // Proportional element
 @mixin square($param) {
 	height: $param;
 	width: $param;
+}
+
+@mixin grayscale($param) {
+	-webkit-filter: grayscale( $param );
+	filter: grayscale( $param );
 }
 
 // Adds an ellipsis on overflowing text

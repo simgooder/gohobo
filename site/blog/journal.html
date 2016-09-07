@@ -6,7 +6,7 @@ desc: "A collection of inspirational writing and informative articles for those 
 
 <!-- ARCHIVE -->
 
-<section class="section--hero -lg -theme--journal">
+<section class="section--hero -sm -theme--journal">
     <h1 class="hero--title">Wander Journal</h1>
 </section>
 
@@ -17,29 +17,23 @@ desc: "A collection of inspirational writing and informative articles for those 
       <div class="post--overlay">
 
         <a href="{{ post.url | prepend: site.baseurl }}">
-
-            <h6 class="post--meta">
-              <time datetime="{{ post.date }}">
-                {{ post.date | date: "%B %-d, %Y" }}
-              </time>
-            </h6>
             
             <h2 class="post--title">
               {{ post.title | truncate: 70, "..." }}
             </h2>
 
-            <h6 class="post--meta -tags">
-              TAGS: <span>{{ post.tags | join: ', '}}</span>
-            </h6>
-
             <h6 class="post--meta">
               {% if post.author %}
                 {{ post.author }}
               {% endif %}
+              •
+              <time datetime="{{ post.date }}">
+                {{ post.date | date: "%B %-d, %Y" }}
+              </time>
             </h6>
 
         </a>  
-          
+        
       </div>
 
       <img class="post--thumbnail" src="{{ site.image_assets }}{{ post.hero }}" alt="{{ post.title }}, {{ post.tags | join: ', ' }}">

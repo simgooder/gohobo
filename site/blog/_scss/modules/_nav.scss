@@ -1,71 +1,167 @@
 //  Navigation
 // -------------
+.main--nav {
+	width: 100%;
 
-.main--nav__icon svg {
-	fill: #fff;
-	width: 1.8em;
-}
+	padding-top: 1em;
+	
+	font-family: $font-bold;
+	letter-spacing: 1px;
+	text-transform: uppercase;
 
-.main--nav__close {
-	position: absolute;
+	@include clearfix;
 
-	@include mq-md {
-		top: 2em;
-		right: 4em;
+	@include mq-min(801px) {
 	}
-	@include mq-sm {
-		top: 2em;
-		right: 2em;
-	}
+	@include mq(800px) {
 
-	svg {
-		fill: $color-dark;
-		width: 2em;
 	}
 }
 
-.main--nav__list {
-	position: fixed;
-	top: 0;
-	height: 100%;
-	z-index: 5;
+	.main--nav__wrapper {
+		display: inline-block;
 
-	background-color: #fff;
-	padding: 8em 2em;
-	box-shadow: 0 -5px 15px 4px rgba(#000, 0.1);
+		@include mq-min(801px) {
+			float: right;
+		}
+		@include mq(800px) {
+			position: fixed;
+			top: 0;
+			right: -90%;
 
-	color: $color-dark;
-	white-space: nowrap;
+			height: 100%;
+			width: 97%;
+			max-width: 300px;
 
-	overflow-y: scroll;
+			padding-top: 8em;
 
-	width: 284px;
+			background-color: #111;
 
-	// hide from view
-	right: -284px;
+			transition: 0.25s;
 
-
-// hide state --------
-	transition: 0.2s ease-in;
-
-// show state ---------
-	&.-is--open {
-		right: 0;
-	}
-
-}
-
-	.main--nav__item {
-		display: block;
-		padding: 0.05em 0 0.05em 0.25em;
-		margin-bottom: 0.5em;
-
-		font-size: 1.2em;
-
-		border-left: 0em solid transparent;
-		transition: 0.2s;
-
-		&:hover {
-			border-left: 0.25em solid $color-cta;
+			&.-is--open {
+				right: 0;
+			}
 		}
 	}
+
+	.main--nav__item {
+		position: relative;
+
+		padding-top: 1em;
+		padding-bottom: 0.25em;
+
+		margin-left: 1em;
+		margin-right: 1em;
+
+		color: #fff;
+
+		cursor: pointer;
+
+		@include mq-min(801px) {
+			float: left;
+			font-size: 0.9em;
+		}
+		
+		@include mq(800px) {
+			width: auto;
+			font-size: 1.2em;
+		}
+
+		transition: 0.2s;
+
+		&.ui--dropdown__toggle {
+			margin-left: 0;
+			margin-right: 0;
+
+			padding-left: 1em;
+			padding-right: 1em;
+		}
+	}
+
+
+// The Mobile Menu
+// ----------------
+
+.main--nav__mobile {
+
+	svg {
+		fill: #fff;
+		
+		width: 2em;
+		margin-top: 0.65em;
+
+		float: right;
+	}
+	
+	@include mq-min(801px) {
+		display: none;
+	}
+
+}
+
+.main--nav__mobile.btn--close {
+	position: absolute;
+	top: 3.65em;
+	right: 2em;
+}
+
+
+
+// Dropdown
+// ---------
+
+.ui--dropdown {
+	position: relative;
+	top: 100%;
+	left: 0;
+
+}
+
+	.ui--dropdown__item {
+		color: #fff;
+		font-size: 0.8em;
+		
+		padding-top: 0.5em;
+		padding-bottom: 0.5em;
+
+		&:first-of-type {
+			margin-top: 0.5em;
+		}
+
+		&:hover {
+			color: $color-cta;
+		}
+	}
+
+// 	 States
+// - - - - - -
+
+.main--nav__item.ui--dropdown__toggle {
+
+	transition: 0.45s ease-in-out;
+
+	span::after {
+		font-size: 1.25em;
+		line-height: 0;
+		content: '▾';
+		margin-left: 6px;
+	}
+
+	&:hover {
+		background-color: rgba(#000, 0.4);
+	}
+
+}
+
+.ui--dropdown {
+	max-height: 0;
+	overflow: hidden;
+
+	transition: 0.4s ease-in;
+
+}
+.ui--dropdown__toggle:hover .ui--dropdown {
+	max-height: 400px;
+}
+

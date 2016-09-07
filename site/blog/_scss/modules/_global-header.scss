@@ -1,37 +1,27 @@
 
 .main--header {
-	position: fixed;
-	z-index: 5;
+	width: 100%;
+	max-width: 1140px;
+
+	margin-top: 3em;
+	margin-right: auto;
+	margin-left: auto;
+
+	position: absolute;
 	top: 0;
 	left: 0;
+	right: 0;
+	z-index: 3;
 
-	width: 100%;
-
-	display: flex;
-	flex-flow: row nowrap;
-	justify-content: space-between;
-	align-items: center;
-
-	background: linear-gradient( to bottom, rgba(#000, 0.25), rgba(#000, 0.0) );
-
-	@include mq-md {
-		padding: 2em 4em;
-		height: 100px;
-	}
-
-	@include mq-sm {
-		padding: 1em 2em;
-		height: 84px;
-	}
+	padding-left: 2em;
+	padding-right: 2em;
 
 }
 
-.main--logo svg {
-	fill: #fff;
-	width: 4.25em;
+	.main--logo {
+		fill: #fff;
+		width: 4em;
 
-	position: relative;
-	z-index: 6;
-}
+		float: left;
 
-
+	}

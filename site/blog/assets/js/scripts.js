@@ -29,7 +29,7 @@ $(document).ready(function(){
 // Mobile Navigation toggle
 // -------------------------
   $('.js--toggle--nav').click(function(){
-    $('.main--nav__list').toggleClass('-is--open');
+    $('.main--nav__wrapper').toggleClass('-is--open');
   });
 
   $('main').click(function(){

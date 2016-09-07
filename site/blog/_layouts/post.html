@@ -2,12 +2,14 @@
 layout: default
 ---
 
-<section class="section--hero -sm">
+<section class="section--hero -lg">
 		
 		<img class="section--hero__img"
 			 src="{{ site.image_assets }}{{ page.hero }}"
 			 srcset="{{ site.image_assets }}{{ page.hero }} 1x, {{ site.image_assets }}{{ page.hero | replace: '.jpg', '@2x.jpg' }} 2x"
 			 alt="">
+
+        <h1 class="hero--title__sm">{{ page.title }}</h1>
 		
 		{% if page.image-author %}
 		<div class="icon--camera__bottom">
@@ -30,9 +32,6 @@ layout: default
 			{{ page.date | date: "%B %-d, %Y" }}
 		</time>
 	</h6>
-	<h1 class="art--title">
-		{{ page.title }}
-	</h1>
 
     <figure class="art--meta__author">
         

@@ -31,6 +31,18 @@ src:
 }
 
 @font-face {
+font-family: 'Roboto-Mono-Medium';
+src: 
+	url('../font/robotomono-medium.eot');
+src: 
+	url('../font/robotomono-medium.eot?#iefix') format('embedded-opentype'),
+	url('../font/robotomono-medium.ttf') format('truetype');
+
+	font-weight: normal;
+	font-style: normal;
+}
+
+@font-face {
 font-family: 'Roboto-Mono-Bold';
 src: 
 	url('../font/robotomono-bold.eot');
@@ -58,6 +70,7 @@ src:
 // // Font Families
 $font-heading: 'Youngserif', 'Georgia', serif;
 $font-copy: 'Roboto-Mono', 'Lucida Console', Monaco, monospace;
+$font-medium: 'Roboto-Mono-Medium', 'Lucida Console', Monaco, monospace;
 $font-bold: 'Roboto-Mono-Bold', 'Lucida Console', Monaco, monospace;
 $font-italic: 'Roboto-Mono-Italic', 'Lucida Console', Monaco, monospace;
 

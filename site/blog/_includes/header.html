@@ -1,5 +1,7 @@
 <header class="main--header {{ page.headertheme }}">
 
+  <nav class="main--nav">
+
     <a class="main--logo" href="{{ site.baseurl }}/" title="Navigate Home">
         <span class="visuallyhidden">Go Hobo</span>
         <svg viewBox="0 0 120 86" preserveAspectRatio="xMidYMid meet" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
@@ -25,59 +27,81 @@
         </svg>
     </a>
 
-    <nav class="main--nav">
-     
-      <a class="main--nav__icon js--toggle--nav" title="Open the Main Menu">
+    <a class="main--nav__mobile btn--open js--toggle--nav" title="Open the Main Menu">
         <svg viewBox="0 0 18 15" preserveAspectRatio="xMidYMid meet">
           <desc>A Menu Button</desc>
           <path d="M18,1.484c0,0.82-0.665,1.484-1.484,1.484H1.484C0.665,2.969,0,2.304,0,1.484l0,0C0,0.665,0.665,0,1.484,0 h15.031C17.335,0,18,0.665,18,1.484L18,1.484z"/>
           <path d="M18,7.516C18,8.335,17.335,9,16.516,9H1.484C0.665,9,0,8.335,0,7.516l0,0c0-0.82,0.665-1.484,1.484-1.484 h15.031C17.335,6.031,18,6.696,18,7.516L18,7.516z"/>
           <path d="M18,13.516C18,14.335,17.335,15,16.516,15H1.484C0.665,15,0,14.335,0,13.516l0,0 c0-0.82,0.665-1.484,1.484-1.484h15.031C17.335,12.031,18,12.696,18,13.516L18,13.516z"/>
         </svg>
-      </a>
+    </a>
 
-      <div class="main--nav__list">
-       
-         <a class="main--nav__close js--toggle--nav" title="Close the Main Menu">
-          <svg preserveAspectRatio="xMidYMid meet" viewBox="0 0 25 25" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
-            <desc>An 'X' indicating a close function</desc>
-               <g stroke="none" stroke-width="1" fill-rule="evenodd">
-                   <g transform="translate(-504.000000, -48.000000)">
-                       <path d="M512.51825,60.9300945 L505.606681,67.8416637 C504.432486,69.0158584 504.438177,70.9096621 505.60975,72.081235 C506.778939,73.2504239 508.679444,73.2541821 509.849322,72.0843044 L516.760891,65.1727352 L523.67246,72.0843044 C524.846655,73.2584991 526.740458,73.2528078 527.912031,72.081235 C529.08122,70.912046 529.084978,69.0115414 527.915101,67.8416637 L521.003531,60.9300945 L527.915101,54.0185254 C529.089295,52.8443306 529.083604,50.950527 527.912031,49.7789541 C526.742842,48.6097651 524.842338,48.606007 523.67246,49.7758847 L516.760891,56.6874538 L509.849322,49.7758847 C508.675127,48.6016899 506.781323,48.6073812 505.60975,49.7789541 C504.440561,50.948143 504.436803,52.8486477 505.606681,54.0185254 L512.51825,60.9300945 L512.51825,60.9300945 Z"></path>
-                   </g>
-               </g>
-           </svg>
-         </a>
+    <section class="main--nav__wrapper">
 
-        <a class="main--nav__item" href="{{ site.url }}">
-          Home
+        <a class="main--nav__mobile btn--close js--toggle--nav" title="Close the Main Menu">
+            <svg preserveAspectRatio="xMidYMid meet" viewBox="0 0 25 25" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                <desc>An 'X' indicating a close function</desc>
+                <g stroke="none" stroke-width="1" fill-rule="evenodd">
+                  <g transform="translate(-504.000000, -48.000000)">
+                      <path d="M512.51825,60.9300945 L505.606681,67.8416637 C504.432486,69.0158584 504.438177,70.9096621 505.60975,72.081235 C506.778939,73.2504239 508.679444,73.2541821 509.849322,72.0843044 L516.760891,65.1727352 L523.67246,72.0843044 C524.846655,73.2584991 526.740458,73.2528078 527.912031,72.081235 C529.08122,70.912046 529.084978,69.0115414 527.915101,67.8416637 L521.003531,60.9300945 L527.915101,54.0185254 C529.089295,52.8443306 529.083604,50.950527 527.912031,49.7789541 C526.742842,48.6097651 524.842338,48.606007 523.67246,49.7758847 L516.760891,56.6874538 L509.849322,49.7758847 C508.675127,48.6016899 506.781323,48.6073812 505.60975,49.7789541 C504.440561,50.948143 504.436803,52.8486477 505.606681,54.0185254 L512.51825,60.9300945 L512.51825,60.9300945 Z"></path>
+                  </g>
+                </g>
+            </svg>
         </a>
-        <a class="main--nav__item" href="/adventure-directory">
-          Adventure Directory
-        </a>
-        <a class="main--nav__item" href="/journal">
-          Wander Journal
-        </a>
-        <a class="main--nav__item" href="/about">
-          About GoHobo
-        </a>
-        <br>
-        <br>
-        <br>
 
-        <ul class="post--list">
-        <h3>Recent Posts</h3>
-        {% for post in site.posts limit:3 %}
-            <li class="post--item__sm" style="background:url({{ site.image_assets }}{{ post.hero | replace: '.jpg', '_thumb.jpg'}})no-repeat center center;background-size:cover;">
-              <a href="{{ post.url | prepend: site.baseurl }}">
-                <h3 class="post--title__sm">{{ post.title }}</h3>
-              </a>
-            </li>
-        {% endfor %}
-        </ul>
+        <div class="main--nav__item e--underline">
+            <a href="{{site.url}}adventure-directory">
+                Adventure Directory 
+            </a>
+        </div>
 
-      </div>
+        <div class="main--nav__item e--underline">
+            <a href="{{site.url}}journal">
+                Journal 
+            </a>
+        </div>
 
-    </nav>
+        <div class="main--nav__item ui--dropdown__toggle">
+            <a href="{{site.url}}journal/what-is-alternative-travel">
+                <span>Alternative Travel</span>
+            </a>
+            <ul class="ui--dropdown">
+                <a href="{{site.url}}alternative-accommodation">
+                <li class="ui--dropdown__item">
+                    Alternative Accommodation
+                </li>
+                </a>
+               <!--  <a href="{{site.url}}">
+                <li class="ui--dropdown__item">
+                    Alternative <br>Transportation
+                </li>
+                </a>
+                <a href="{{site.url}}">
+                <li class="ui--dropdown__item">
+                    Voluntourism
+                </li>
+                </a>
+                <a href="{{site.url}}">
+                <li class="ui--dropdown__item">
+                    Vandwelling
+                </li>
+                </a>
+                <a href="{{site.url}}">
+                <li class="ui--dropdown__item">
+                    Adventure Travel
+                </li>
+                </a> -->
+            </ul>
+        </div>
+
+        <div class="main--nav__item e--underline">
+            <a href="{{site.url}}about">
+                about
+            </a>
+        </div>
+
+    </section>
+    
+  </nav>
 
 </header>
