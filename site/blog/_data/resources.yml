@@ -31,6 +31,25 @@
 ########  ACCOMMODATION ##########
 ##################################
 
+- name  : Gamping
+  link  : https://www.gamping.com
+  desc  : "Find fabulous sites to camp on. Or rent your own. With gamping, you can book a plot at someone's home. Or earn some money by renting out your own land."
+  cat   : accommodation
+  subcat: camping
+  budget: 1 # out of 3
+  region: worldwide
+  logo  : '../assets/img/directory/gamping-logo.png'
+  cta   : Find a campsite
+
+- name  : Tracks and Trails
+  link  : http://www.tracksandtrails.ca
+  desc  : "A comprehensive camping resource for all of Canada, including free-camping, as well as national and provincial campgrounds."
+  cat   : accommodation
+  subcat: camping
+  budget: 0 # out of 3
+  region: canada
+  logo  : '../assets/img/directory/tracks-trails-logo.png'
+  cta   : Find a campsite
 
 - name  : Hostel Bookers
   link  : http://www.hostelbookers.com
@@ -256,6 +275,16 @@ self-contained RVers to visit and stay overnight for free!"
 ##################################
 ########  TRANSPORTATION #########
 ##################################
+
+- name  : ExitFares
+  link  : https://www.exitfares.com/deals
+  desc  : 'Get the latest flight deals people are talking about, from all over the USA.'  
+  cat   : transportation
+  subcat: airfare
+  budget: 2 # out of 3
+  region: usa
+  logo  : '../assets/img/directory/exitfares-logo.png'
+  cta   :  Find a fare
 
 - name  : Busbud
   link  : https://busbud.com

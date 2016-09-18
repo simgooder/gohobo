@@ -4,10 +4,22 @@
 
     border-radius: 2px;
 
-    padding-left: 0.5em;
-    padding-right: 0.55em;
-    padding-top: 0.45em;
-    padding-bottom: 0.45em;
+    @include mq-md {
+        padding-left: 0.5em;
+        padding-right: 0.55em;
+        padding-top: 0.45em;
+        padding-bottom: 0.45em;
+    }
+    @include mq-sm {
+        padding-left: 1em;
+        padding-right: 1em;
+        padding-top: 1em;
+        padding-bottom: 1em;
+
+        font-size: 1.65em;
+
+        margin-bottom: 0.5em;
+    }
 
     .icon {
         display: block;

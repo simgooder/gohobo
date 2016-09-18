@@ -3,7 +3,6 @@
 	width: 100%;
 	max-width: 1140px;
 
-	margin-top: 3em;
 	margin-right: auto;
 	margin-left: auto;
 
@@ -15,7 +14,13 @@
 
 	padding-left: 2em;
 	padding-right: 2em;
-
+	
+	@include mq-md {
+		margin-top: 3em;
+	}
+	@include mq-sm {
+		margin-top: 1em;
+	}	
 }
 
 	.main--logo {

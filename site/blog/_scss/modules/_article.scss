@@ -70,8 +70,8 @@
 			.art--meta__thumb {
 				position: relative;
 
-				width: 4em;
-				height: 4em;
+				width: 6em;
+				height: 6em;
 
 				overflow: hidden;
 				border-radius: 50%;
@@ -85,7 +85,7 @@
 					left: 50%;
 					transform: translate(-50%, -50%);
 					max-width: none;
-					max-height: 4em;
+					max-height: 100%;
 				}
 			}
 
@@ -147,6 +147,10 @@
 		@include mq-sm {
 			justify-content: center;
 			align-items: center;
+
+			> div {
+				text-align: center;
+			}
 		}
 
 		h6 {

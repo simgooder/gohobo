@@ -320,16 +320,22 @@
 	}
 
 	.related--posts__thumbnail {
-		height: 6em;
-		width: 100%;
 
-		filter: grayscale(90%);
+		width: 100%;
 
 		background-repeat: no-repeat;
 		background-size: cover;
 		background-position: 50% 50%;
 
 		transition: 0.45s;
+
+		@include mq-md {
+			filter: grayscale(90%);
+			height: 6em;
+		}
+		@include mq-sm {
+			height: 9em;
+		}
 
 		&:hover {
 			filter: grayscale(0%);
