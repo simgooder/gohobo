@@ -4,25 +4,26 @@ layout: default
 
 <section class="section--hero -lg">
 		
-		<img class="section--hero__img"
-			 src="{{ site.image_assets }}{{ page.hero }}"
-			 srcset="{{ site.image_assets }}{{ page.hero }} 1x, {{ site.image_assets }}{{ page.hero | replace: '.jpg', '@2x.jpg' }} 2x"
-			 alt="">
+	<img class="section--hero__img"
+		 src="{{ site.image_assets }}{{ page.hero }}"
+		 srcset="{{ site.image_assets }}{{ page.hero }} 1x, {{ site.image_assets }}{{ page.hero | replace: '.jpg', '@2x.jpg' }} 2x"
+		 alt="">
 
-        <h1 class="hero--title__sm">{{ page.title }}</h1>
-		
-		{% if page.image-author %}
-		<div class="icon--camera__bottom">
-			<img srcset="{{ site.image_assets }}icon-camera.png 1x, {{ site.image_assets }}/icon-camera@2x.png 2x" 
-				 width="23"
-				 src="assets/img/icon-camera.png" 
-				 title="Toggle photograph info"
-				 alt="A camera icon which toggles the photograph's author">
-			<label class="info--banner">
-				Photo by: <a href="{{ page.image-author-link }}" target="_blank">{{ page.image-author }}</a>
-			</label>	 
-		</div>
-		{% endif %}
+    <h1 class="hero--title hero--content">{{ page.title }}</h1>
+	
+	{% if page.image-author %}
+	<div class="icon--camera__bottom">
+		<img srcset="{{ site.image_assets }}icon-camera.png 1x, {{ site.image_assets }}/icon-camera@2x.png 2x" 
+			 width="23"
+			 src="assets/img/icon-camera.png" 
+			 title="Toggle photograph info"
+			 alt="A camera icon which toggles the photograph's author">
+		<label class="info--banner">
+			Photo by: <a href="{{ page.image-author-link }}" target="_blank">{{ page.image-author }}</a>
+		</label>	 
+	</div>
+	{% endif %}
+
 </section>
 
 <article class="art--container">
@@ -64,115 +65,11 @@ layout: default
 
 </article>
 
-<aside class="mailbox -is--hidden">
-    <form class="mailbox--form" action="//gohobo.us13.list-manage.com/subscribe/post?u=5f6a30e10e891d0f4921d3148&amp;id=cdec36a9ab" method="post" name="mc-embedded-subscribe-form" target="_blank" accept-charset="utf-8">
-       
-        <p>
-            sign up for exclusive adventures in your inbox.
-        </p>
-        <div class="form--group__row">
+{% include _widget.mailbox.html %}
 
-            <div style="position: absolute; left: -5000px;" aria-hidden="true">
-                <input type="text" name="b_5f6a30e10e891d0f4921d3148_cdec36a9ab" tabindex="-1" value="">
-            </div>
+{% include _widget.recommended-posts.html %}
 
-            <input class="input" type="email" placeholder="your email" name="EMAIL" required/>
-
-            <button class="btn--input" type="submit" name="subscribe" id="mc-embedded-subscribe">
-                sign up
-            </button>
-
-        </div>
-        <div class="mailbox--close js-closeMailbox">
-            &#10005;
-        </div>
-
-    </form>
-</aside>
-
-<section class="related--posts__container">
-
-        <script type="text/javascript">
-
-            var postsHREF = [{% for post in site.posts %}"{{ post.url }}"{% unless forloop.last %},{% endunless %}{% endfor %}];
-
-            var postsTitle = [{% for post in site.posts %}"{{ post.title }}"{% unless forloop.last %},{% endunless %}{% endfor %}];
-
-            var postsThumb = [{% for post in site.posts %}"{{ site.image_assets }}{{ post.hero | replace: '.jpg', '_thumb.jpg'}}"{% unless forloop.last %},{% endunless %}{% endfor %}];
-
-        </script>
-
-    <div class="related--posts__list">
-
-        <h4 class="related--posts__label">
-            Recommended
-        </h4>
-
-        <script type="text/javascript">
-            var randomIndexUsed = [];
-            var counter = 0;
-            var numberOfPosts = 3;
-
-            while (counter < numberOfPosts)
-            {
-                var randomIndex;
-                var postHREF;
-                var postTitle;
-                var postThumb;
-
-                randomIndex = Math.floor(Math.random() * postsHREF.length);
-
-                if (randomIndexUsed.indexOf(randomIndex) == "-1")
-                {
-                    postHREF = postsHREF[randomIndex];
-                    postTitle = postsTitle[randomIndex];
-                    postThumb = postsThumb[randomIndex];
-
-                    if (counter == (numberOfPosts - 1))
-                    {
-                        document.write('<div class="related--posts__item"><a href="' + postHREF + '">' +  '<div style="background-image:url(' + postThumb + ');" class="related--posts__thumbnail"></div>' + '<label class="related--posts__title">' + postTitle + '</label>' + '</a></div>');
-                    }
-                    else
-                    {
-                        document.write('<div class="related--posts__item"><a href="' + postHREF + '">' +  '<div style="background-image:url(' + postThumb + ');" class="related--posts__thumbnail"></div>' + '<label class="related--posts__title">' + postTitle + '</label>' + '</a></div>');
-                    }
-
-                    randomIndexUsed.push(randomIndex);
-
-                    counter++;
-                }
-            }
-
-        </script>
-
-    </div>
-
-</section>
-
-<section class="disqus--container">
-    <div class="disqus--module" id="disqus_thread"></div>  
-</section>
-
-
-<script>
-    
-    var disqus_config = function () {
-        this.page.url = "{{site.prod_url}}{{page.url}}"; 
-        this.page.identifier = "{{page.slug}}"; 
-    };
-    
-    (function() {  // DON'T EDIT BELOW THIS LINE
-        var d = document, s = d.createElement('script');
-        
-        s.src = '//gohoboco.disqus.com/embed.js';
-        
-        s.setAttribute('data-timestamp', +new Date());
-        (d.head || d.body).appendChild(s);
-    })();
-</script>
-
-<noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript" rel="nofollow">comments powered by Disqus.</a></noscript>
-
+{% include _widget.disqus.html %}
 
 <!-- Schema LDJSON -->
 <script type="application/ld+json">

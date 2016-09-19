@@ -72,12 +72,23 @@
     transition: 0.35s;
 
     &.-is--hidden {
-        bottom: -71px;
+
+        @include mq-min(950px) {
+            bottom: -71px;
+        }
+        @include mq(950px) {
+            bottom: -110px;
+        }
     }
 
     p {
-        width: auto;
-        margin-right: 3em
+        @include mq-min(950px) {
+          width: auto;  
+          margin-right: 3em
+        }
+        @include mq(950px) {
+            text-align: center;
+        }
     }
 
     input {
@@ -93,17 +104,26 @@
         align-content: center;
 
         padding: 1em;
+
     }
 
     .mailbox--close {
         position: absolute;
-        right: 3em;
 
         font-size: 1.85em;
 
         cursor: pointer;
 
         transition: 0.4s ease-in-out;
+
+        @include mq-min(950px) {
+            right: 3em;
+            top: 0.85em;
+        }
+        @include mq(950px) {
+            right: 0.65em;
+            top: 0.25em;
+        }
 
         &:hover {
             transform: rotate(180deg);

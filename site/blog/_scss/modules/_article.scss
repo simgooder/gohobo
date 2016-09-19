@@ -147,6 +147,10 @@
 		@include mq-sm {
 			justify-content: center;
 			align-items: center;
+
+			> div {
+				text-align: center;
+			}
 		}
 
 		h6 {
