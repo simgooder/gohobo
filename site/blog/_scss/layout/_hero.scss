@@ -93,20 +93,6 @@
 
     }
 
-    &.-theme--accommodation {
-
-        @include mq-md {
-            background: transparent url('../img/hero-alternative-accommodation@2x.jpg') center center no-repeat fixed;
-            background-size: cover;
-        }
-        @include mq-sm {
-            //background:transparent url('../img/hero-bg-gohobo.jpg') center center no-repeat;
-            background: transparent url('../img/hero-bg-gohobo.jpg') center center no-repeat fixed;
-            background-size: cover;
-        }
-
-    }
-
     &.-theme--vanageddon {
         color: #fff;
 
@@ -180,7 +166,7 @@
 
         &__sm {
             text-align: center;
-            max-width: 80%;
+            max-width: 12em;
             position: relative;
             z-index: 2;
 

@@ -39,6 +39,41 @@ $(document).ready(function(){
 
 });
 
+$(window).scroll(function(){
+  var scrollPos = pageYOffset;
+  var windowHeight = $(window).height();
+  var docHeight = $(document).height();
+  var pageHeight = $('body').height();
+  
+  var difference = (docHeight - pageHeight);
+  var newHeight = (pageHeight - windowHeight + difference);
+  var percentage = (scrollPos / newHeight * 100);
+  
+  if(percentage > 64) {
+    $('.mailbox').removeClass('-is--hidden');
+  }
+  if(percentage < 65) {
+    $('.mailbox').addClass('-is--hidden');
+  }
+  
+  //$('#reader').css('width', percentage + "%");
+
+});
+
+// Track the user variable.
+// This will set the user's status (isAuthenticated) to false.
+localStorage.isAuthenticated = 0;
+
+// Close the Mailbox for good!
+var closeMailbox = function() {
+  $('.mailbox').addClass('-is--hidden');
+
+
+}
+
+$('.js-closeMailbox').click(function(){
+  closeMailbox();
+});
 
 
 // Twitter Widget
