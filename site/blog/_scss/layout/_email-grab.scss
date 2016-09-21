@@ -58,11 +58,18 @@
 .mailbox {
     position: fixed;
     z-index: 2;
-    right: 0;
-    left: 0;
-    bottom: 0;
 
-    width: 100%;
+    @include mq-md {
+        width: 300px;
+        right: 1em;
+        bottom: 2em;
+    }
+    @include mq-sm {
+        right: 0;
+        left: 0;
+        bottom: 0;
+        width: 100%;
+    }
 
     font-size: 0.75em;
 
@@ -74,7 +81,7 @@
     &.-is--hidden {
 
         @include mq-min(950px) {
-            bottom: -71px;
+            right: -310px;
         }
         @include mq(950px) {
             bottom: -110px;
@@ -82,13 +89,7 @@
     }
 
     p {
-        @include mq-min(950px) {
-          width: auto;  
-          margin-right: 3em
-        }
-        @include mq(950px) {
-            text-align: center;
-        }
+        text-align: center;
     }
 
     input {
@@ -109,20 +110,20 @@
 
     .mailbox--close {
         position: absolute;
-
         font-size: 1.85em;
+        color: $color-gray;
 
         cursor: pointer;
 
         transition: 0.4s ease-in-out;
 
-        @include mq-min(950px) {
-            right: 3em;
-            top: 0.85em;
+        @include mq-md {
+            top: 0;
+            left: 0.5em;
         }
-        @include mq(950px) {
-            right: 0.65em;
+        @include mq-sm {
             top: 0.25em;
+            right: 0.25em;
         }
 
         &:hover {
