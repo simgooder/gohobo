@@ -1,18 +1,20 @@
-
-// TAGSORT PLUGIN
-// ----------------
-$('.dir--nav').tagSort({
-  items:'.dir--item',
-  tagElement: 'h2',
-  sortType: 'single',
-  tagClassPrefix: 'dir--nav__item theme--',
-  fadeTime: '100',
-});
-
-$('p').has('img').addClass('art--img');
+$( document ).ready(function() {
 
 
-$(document).ready(function(){
+    // TAGSORT PLUGIN
+    // ----------------
+    $('.dir--nav').tagSort({
+      items:'.dir--item',
+      tagElement: 'h2',
+      sortType: 'single',
+      tagClassPrefix: 'dir--nav__item theme--',
+      fadeTime: '100',
+    });
+
+
+    $('p').has('img').addClass('art--img');
+
+
 
 // The Modal Toggle
 // -----------------------
