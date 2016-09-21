@@ -41,10 +41,10 @@ $(document).ready(function(){
     var newHeight = (pageHeight - windowHeight + difference);
     var percentage = (scrollPos / newHeight * 100);
     
-    if(percentage > 64) {
+    if(percentage > 54) {
       $('.mailbox').removeClass('-is--hidden');
     }
-    if(percentage < 65) {
+    if(percentage < 55) {
       $('.mailbox').addClass('-is--hidden');
     }
     
@@ -58,11 +58,16 @@ $(document).ready(function(){
 
   // close the mailbox function
   var closeMailbox = function() {
+
     mailboxElement.addClass('-is--hidden');
 
     if (sessionStorage) {
       sessionStorage.setItem('userClosedMailbox', 'true');
     }
+
+    setTimeout(function(){
+       mailboxElement.hide(); 
+     }, 500);
 
     console.log("No thanks.");
   }
