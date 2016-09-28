@@ -31,6 +31,36 @@
 ########  ACCOMMODATION ##########
 ##################################
 
+- name  : Panda Bed
+  link  : https://www.pandabed.com
+  desc  : "Stay in trustworthy & authentic vacation rentals, short term rentals, apartments, villas & rooms in more than 30 Asian countries. Book yours today!"  
+  cat   : accommodation
+  subcat: housesitting
+  budget: 1 # out of 3
+  region: asia
+  logo  : '../assets/img/directory/panda-bed-logo.png'
+  cta   :  Find a bed
+
+- name  : All the Rooms
+  link  : http://alltherooms.com
+  desc  : "Bringing you every room on the planet - the world's largest accommodation search engine. If you can't find it on AllTheRooms that's probably because it doesn't exist."  
+  cat   : accommodation
+  subcat: housesitting
+  budget: 2 # out of 3
+  region: worldwide
+  logo  : '../assets/img/directory/all-the-rooms-logo.png'
+  cta   :  Find a room
+
+- name  : Mind My House
+  link  : https://www.mindmyhouse.com
+  desc  : "Global house sitting matching service bringing home owners and house sitters together online. Home owners join for free. House sitter members pay the lowest annual fee on the web. Happy house sitting!"
+  cat   : accommodation
+  subcat: housesitting
+  budget: 1.5 # out of 3
+  region: worldwide
+  logo  : '../assets/img/directory/mind-my-house-logo.png'
+  cta   : Find a home
+
 - name  : Gamping
   link  : https://www.gamping.com
   desc  : "Find fabulous sites to camp on. Or rent your own. With gamping, you can book a plot at someone's home. Or earn some money by renting out your own land."
@@ -40,6 +70,16 @@
   region: worldwide
   logo  : '../assets/img/directory/gamping-logo.png'
   cta   : Find a campsite
+
+- name  : GuestToGuest
+  link  : https://www.guesttoguest.com
+  desc  : "A global social network for free home and apartment exchanges. Travel whenever you want with complete confidence."
+  cat   : accommodation
+  subcat: housesitting
+  budget: 0 # out of 3
+  region: worldwide
+  logo  : '../assets/img/directory/guest-to-guest-logo.png'
+  cta   : Find a home
 
 - name  : Tracks and Trails
   link  : http://www.tracksandtrails.ca
@@ -276,6 +316,16 @@ self-contained RVers to visit and stay overnight for free!"
 ########  TRANSPORTATION #########
 ##################################
 
+- name  : From A to B
+  link  : https://fromatob.com
+  desc  : 'Compare and book trains, flights, long distance buses and ride shares in one search.'  
+  cat   : transportation
+  subcat: rideshare
+  budget: 2 # out of 3
+  region: europe
+  logo  : '../assets/img/directory/from-a-to-b-logo.png'
+  cta   :  Find a ride
+
 - name  : ExitFares
   link  : https://www.exitfares.com/deals
   desc  : 'Get the latest flight deals people are talking about, from all over the USA.'  
@@ -471,6 +521,17 @@ self-contained RVers to visit and stay overnight for free!"
 ########  WORK EXCHANGE  #########
 ##################################
 
+
+- name  : Helpstay
+  link  : https://helpstay.com
+  desc  : "Volunteer Abroad for Free Accommodation! Try a Farm Stay, Search for Ranch and Hostel Jobs. Gap Year Abroad, Work Away, Internship Overseas, Help Exchange or Teach. | Get Going with HelpStay.com."
+  cat   : work-exchange
+  subcat: work-exchange
+  budget: 1.5 # out of 3
+  region: worldwide
+  logo  : '../assets/img/directory/helpstay-logo.png'
+  cta   : Find an exchange
+
 - name  : Volunteers Base
   link  : http://www.volunteersbase.com
   desc  : "Are you looking for free volunteering opportunities? This is the place! Volunteers Base is a Moneyless Help Exchange Network"
@@ -479,7 +540,7 @@ self-contained RVers to visit and stay overnight for free!"
   budget: 0 # out of 3
   region: worldwide
   logo  : '../assets/img/directory/volunteers-base-logo.png'
-  cta   : Find a work exchange
+  cta   : Find an exchange
 
 - name  : World Wide Opportunities on Organic Farms
   link  : http://www.wwoof.net
@@ -489,7 +550,7 @@ self-contained RVers to visit and stay overnight for free!"
   budget: 0 # out of 3
   region: worldwide
   logo  : '../assets/img/directory/wwoof-logo.png'
-  cta   : Find a work exchange
+  cta   : Find an exchange
 
 - name  : Worldpackers
   link  : https://www.worldpackers.com
@@ -509,7 +570,7 @@ self-contained RVers to visit and stay overnight for free!"
   budget: 0 # out of 3
   region: worldwide
   logo  : '../assets/img/directory/work-away-logo.png'
-  cta   : Find a work exchange
+  cta   : Find an exchange
 
 - name  : Projects Abroad
   link  : http://www.projects-abroad.ca
