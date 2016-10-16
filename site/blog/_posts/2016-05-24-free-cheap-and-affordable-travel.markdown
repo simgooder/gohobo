@@ -2,6 +2,7 @@
 layout: post
 title: "Free, Cheap, and Affordable Travel Resources"
 date: 2016-05-24
+modified_date: 2016-10-03
 hero: "blog/free-cheap-and-affordable-travel-gohobo_maher-el-aridi.jpg"
 author: "Simon Gooder"
 image-author: "Maher El Aridi"
@@ -11,6 +12,7 @@ desc: "We don’t all have budgets for an around-the-world ticket, but if you’
 tags: 
     - budget
     - free travel
+pinterest-pin: true
 ---
 
 ## Affordable Travel
@@ -53,7 +55,8 @@ I’ve had the chance to try out similar programs both in Mexico and Australia a
 
 • [Projects Abroad](http://www.projects-abroad.ca/) offers some pretty interesting programs and initiatives for volunteers. They have a global network of organizations offering internships and volunteer opportunities on almost every continent.  
 • [World Wide Opportunities on Organic Farms](http://www.wwoof.net/) offers a straight-up work exchange program. You get the chance to work and learn on an organic farm, anywhere in the world, in exchange for food and accommodation.   
-• [WorkAway](https://www.workaway.info/) is a grassroots program, offering budget travellers opportunies to connect and work (in exchange for food and accommodation) for local communities all over the world.   
+• [WorkAway](https://www.workaway.info/) is a grassroots program, offering budget travellers opportunities to connect and work (in exchange for food and accommodation) for local communities all over the world.  
+• [HelpStay](https://helpstay.com/?utm_source=gohobo&utm_medium=adventuredirectory&utm_campaign=gohobo) offers accommodation and hospitality on ranches or farms, hostels and more, in exchange for all sorts of skills. 
 
 
 ## Cheap Travel

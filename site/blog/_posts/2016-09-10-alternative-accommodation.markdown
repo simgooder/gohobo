@@ -13,7 +13,7 @@ desc: "Alternative accommodation provides a means for adventurers with any budge
 
 ## What is Alternative Accommodation?
 
-When we refer to **alternative accommodation** we're talking about any type of accommodation that is not the status quo; not a hotel or a resort, usually a budget-travel often being associated with [alternative travel](http://gohobo.co/journal/what-is-alternative-travel "GoHobo - What is Alternative Travel").
+When we refer to **alternative accommodation** we're talking about any type of accommodation that is not the status quo; not a hotel or a resort, usually a budget-travel option, and often associated with [alternative travel](http://gohobo.co/journal/what-is-alternative-travel "GoHobo - What is Alternative Travel").
 
 These services are heavily reliant on online communities. Some of these communities are thousands of members strong. They are generally based on a traveler/host relationship, where a host posts their offering, and a traveler applies for a stay, and if accepted by the host, pays and stays. 
 
@@ -23,7 +23,7 @@ These days, it's hard to view Airbnb as *alternative*, but the concept is absolu
 
 [Finding cheap accomodation](http://www.nomadicmatt.com/travel-tips/finding-cheap-accommodation/ "Nomadic Matt - Finding Cheap Accommodation") is not a difficult task these days. If you have an internet connection, you should have no problem finding what you need.
 
-### Types of Alternative Accommodation
+## Types of Alternative Accommodation
 It could be tenting in a stranger's backyard, or on their ranch, or on their farm. It could be parking your RV in a friendly vineyard in the South of France, or the South of the Okanagan Valley. It could even be crashing on somebody's couch. 
 
 ![Starry sky and RV by Eugene Quek](/assets/img/blog/alternative-accommodation_rv.jpg "RV and starry sky. Photo by Eugene Quek")

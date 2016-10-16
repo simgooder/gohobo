@@ -117,13 +117,6 @@
 			li + li {
 				margin-top: 0.75em;
 			}
-
-			p:first-of-type:first-letter {
-				float: left;
-				font-size: 3.75em;
-				line-height: 1;
-				margin-right: 0.15em;
-			}
 		}
 
 		.art--img {
@@ -174,5 +167,12 @@
 
 
 
+// Pinterest Image
+.art--pin-img {
+	visibility: hidden;
+	z-index: -1;
+	position: absolute;
 
+	left: -99999px;
+}
 

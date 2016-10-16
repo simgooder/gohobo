@@ -26,6 +26,13 @@ layout: default
 
 </section>
 
+{% if page.pinterest-pin == true %}
+<img class="art--pin-img"
+     src="{{ site.image_assets }}{{ page.hero | replace: '.jpg', '_pin.jpg' }}"
+     data-pin-url="{{page.url}}"
+     data-pin-media="{{ site.image_assets }}{{ page.hero | replace: '.jpg', '_pin.jpg' }}"/>
+{% endif %}     
+
 <article class="art--container">
 
 	<h6 class="art--meta">

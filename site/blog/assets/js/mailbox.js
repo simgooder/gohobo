@@ -41,10 +41,10 @@ $(document).ready(function(){
     var newHeight = (pageHeight - windowHeight + difference);
     var percentage = (scrollPos / newHeight * 100);
     
-    if(percentage > 54) {
+    if(percentage > 24) {
       $('.mailbox').removeClass('-is--hidden');
     }
-    if(percentage < 55) {
+    if(percentage < 25) {
       $('.mailbox').addClass('-is--hidden');
     }
     

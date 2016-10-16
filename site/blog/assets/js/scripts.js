@@ -4,10 +4,10 @@ $( document ).ready(function() {
     // TAGSORT PLUGIN
     // ----------------
     $('.dir--nav').tagSort({
-      items:'.dir--item',
+      items:'.dir--card',
       tagElement: 'h2',
       sortType: 'single',
-      tagClassPrefix: 'dir--nav__item theme--',
+      tagClassPrefix: 'dir--nav__item -theme--',
       fadeTime: '100',
     });
 

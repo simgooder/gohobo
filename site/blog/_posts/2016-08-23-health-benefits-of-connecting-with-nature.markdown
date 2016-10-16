@@ -12,6 +12,7 @@ desc: "There is no denying that *#theOutdoors* is trending on Instagram, but a s
 tags: 
     - nature
     - inspiration
+pinterest-pin: true
 ---
 
 ## Body and Soil Are One

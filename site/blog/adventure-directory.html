@@ -12,7 +12,7 @@ desc: "A compendium of alternative transportation, accommodation and hospitality
     </h1>
 </section>
 
-<section class="section--content">
+<section class="bg--topo">
   
   <nav class="dir--nav">
     
@@ -23,85 +23,142 @@ desc: "A compendium of alternative transportation, accommodation and hospitality
     <!-- tags for sorting go here here-->
     <!-- <h2 class="dir--nav__item theme--transportation" data-sort-by="transportation">transportation</h2>
     <h2 class="dir--nav__item theme--accommodation" data-sort-by="accommodation">accommodation</h2>
-    <h2 class="dir--nav__item theme--work-exchange" data-sort-by="work-exchange">work-exchange</h2> -->
+    <h2 class="dir--nav__item theme--skills-exchange" data-sort-by="skills-exchange">skills-exchange</h2> -->
 
   </nav>
 
   <ul class="dir--list">
 
+    <section class="dir--column">
+
     {% assign sortedResources = site.data.resources | sort: 'name' %}
-    {% for resource in sortedResources %}
+    {% assign totalItems = sortedResources.size | divided_by:2 %}
 
-      <li class="dir--item {{ resource.cat }}" data-item-tags="{{ resource.cat }}" id="{{ resource.name | slugify }}">
+    {% for resource in sortedResources | limit: totalItems %}
 
-        <figure class="dir--item__logo">
-          <img src="{{ resource.logo }}" alt="{{ resource.name }}" title="{{ resource.name }}">
-        </figure>
-
-        <p class="dir--item__desc">
-           {{ resource.desc  | truncate: 156 }}
-        </p>
+      <li class="dir--card" data-item-tags="{{ resource.cat }}" id="{{ resource.name | slugify }}">
         
-        <div class="dir--item__meta-bar">
+        <section class="card--panel__info">
+      
+          <h3 class="card--title">
+            {{ resource.name }}  
+          </h3>
 
-          <div class="item--meta__subcat">
-            <img src="{{ site.image_assets }}/icons/{{ resource.subcat }}.png" alt="{{ resource.subcat }}">
-          </div>
-
-          <div class="item--meta__budget tooltip--trigger">
-
+          <label class="card--meta">
             {% if resource.budget == 0 %}
-              <span>$$$</span> 
-              <div class="tooltip">
-                No cost
-              </div>
+            No cost
+            {% elsif resource.budget == 1 %}
+            Small transactions
+            {% elsif resource.budget == 1.5 %}
+            Membership fee
+            {% elsif resource.budget == 2 %}
+            Less than $500
+            {% elsif resource.budget == 3 %}
+            Over $500
             {% endif %}
-            {% if resource.budget == 1 %}
-              $<span>$$</span>  
-              <div class="tooltip">
-                Small fee
-              </div>  
-            {% endif %}
-            {% if resource.budget == 1.5 %}
-              $<span>$$</span>  
-              <div class="tooltip">
-                Small annual fee
-              </div>  
-            {% endif %}
-            {% if resource.budget == 2 %}
-              $$<span>$</span>
-              <div class="tooltip">
-                Less than $500
-              </div>  
-            {% endif %}
-            {% if resource.budget == 3 %}
-              $$$ 
-              <div class="tooltip">
-                More than $500
-              </div> 
-            {% endif %}
+          </label>
 
+          <p class="card--desc">
+            {{ resource.desc  | truncate: 200 }}
+          </p>
+
+          <div class="card--categories -theme--{{ resource.cat }}">
+            <article class="card--categories__cat">
+              {{ resource.cat }}
+            </article>
+
+            <article class="card--categories__cat">
+              {{ resource.subcat }}
+            </article>
+
+            <article class="card--categories__cat">
+              {{ resource.region }}
+            </article>
           </div>
 
-          <small class="item--meta__region" title="This property is available in {{ resource.region }}">
-             {{ resource.region }}
-          </small> 
+        </section>
 
-        </div> 
+        <section class="card--panel__slideout">
 
-        <a href="{{ resource.link }}/?utm_source=gohobo&utm_medium=adventuredirectory&utm_campaign=gohobo"> 
-          <button class="dir--item__action theme--{{ resource.cat }}" type="button">
-            {% if resource.cta %}
+          <figure class="card--logo" style="background-image:url('{{ resource.logo }}');">
+          </figure>
+
+          <a href="{{ resource.link }}/?utm_source=gohobo&utm_medium=adventuredirectory&utm_campaign=gohobo" title="{{resource.name}}" alt="{{ resource.name }}">
+            <button class="card--action theme--{{ resource.cat }}" type="button"">
               {{ resource.cta }}
-            {% else %}
-              Check it out
+            </button>
+          </a>
+
+        </section>
+
+      </li>   
+
+    {% endfor %} 
+    </section>
+
+    <section class="dir--column">
+    {% for resource in sortedResources | limit: totalItems, offset: totalItems %}
+
+      <li class="dir--card" data-item-tags="{{ resource.cat }}" id="{{ resource.name | slugify }}">
+        
+        <section class="card--panel__info">
+      
+          <h3 class="card--title">
+            {{ resource.name }}  
+          </h3>
+
+          <label class="card--meta">
+            {% if resource.budget == 0 %}
+            No cost
+            {% elsif resource.budget == 1 %}
+            Small transactions
+            {% elsif resource.budget == 1.5 %}
+            Membership fee
+            {% elsif resource.budget == 2 %}
+            Less than $500
+            {% elsif resource.budget == 3 %}
+            Over $500
             {% endif %}
-          </button>
-        </a>
+          </label>
 
-      </li>
+          <p class="card--desc">
+            {{ resource.desc  | truncate: 200 }}
+          </p>
 
-    {% endfor %}
+          <div class="card--categories -theme--{{ resource.cat }}">
+            <article class="card--categories__cat">
+              {{ resource.cat }}
+            </article>
+
+            <article class="card--categories__cat">
+              {{ resource.subcat }}
+            </article>
+
+            <article class="card--categories__cat">
+              {{ resource.region }}
+            </article>
+          </div>
+
+        </section>
+
+        <section class="card--panel__slideout">
+
+          <figure class="card--logo" style="background-image:url('{{ resource.logo }}');">
+          </figure>
+
+          <a href="{{ resource.link }}/?utm_source=gohobo&utm_medium=adventuredirectory&utm_campaign=gohobo" title="{{resource.name}}" alt="{{ resource.name }}">
+            <button class="card--action theme--{{ resource.cat }}" type="button"">
+              {{ resource.cta }}
+            </button>
+          </a>
+
+        </section>
+
+      </li>   
+
+    {% endfor %} 
+
+    </section>
 
   </ul>
 

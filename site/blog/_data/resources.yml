@@ -31,6 +31,56 @@
 ########  ACCOMMODATION ##########
 ##################################
 
+- name  : NightSwapping
+  link  : https://www.nightswapping.com
+  desc  : "NightSwapping is a community of people that host each other to travel for free. Whenever you host members in your guest room or entire home, you earn Nights credits that you can then use to travel later on."  
+  cat   : accommodation
+  subcat: home exchange
+  budget: 1 # out of 3
+  region: worldwide
+  logo  : '../assets/img/directory/nightswapping-logo.png'
+  cta   :  Find an exchange
+
+- name  : Intervac Home Exchange
+  link  : https://ca.intervac-homeexchange.com
+  desc  : "What a way to travel! Since 1953 we have been leading the way facilitating home exchange between families, singles and retired people. What a way to travel!"  
+  cat   : accommodation
+  subcat: home exchange
+  budget: 1.5 # out of 3
+  region: worldwide
+  logo  : '../assets/img/directory/intervac-logo.png'
+  cta   :  Find an exchange
+
+- name  : BeWelcome
+  link  : http://www.bewelcome.org
+  desc  : "Step inside and invite travelers to your home, find hosts all over the world, and become part of our multicultural hospitality community."  
+  cat   : accommodation
+  subcat: couchsurfing
+  budget: 0 # out of 3
+  region: worldwide
+  logo  : '../assets/img/directory/bewelcome-logo.png'
+  cta   :  Find a home
+
+- name  : Homelink
+  link  : https://homelink.org
+  desc  : "Exchange homes for vacation and experience a new way of travelling."  
+  cat   : accommodation
+  subcat: home exchange
+  budget: 1.5 # out of 3
+  region: worldwide
+  logo  : '../assets/img/directory/homelink-logo.png'
+  cta   :  Find an exchange
+
+- name  : Hostelz
+  link  : https://www.hostelz.com
+  desc  : "The only complete guide to hostels worldwide, with real reviews and instant online booking."  
+  cat   : accommodation
+  subcat: hostels
+  budget: 1 # out of 3
+  region: worldwide
+  logo  : '../assets/img/directory/hostelz-logo.png'
+  cta   :  Find a hostel
+
 - name  : Panda Bed
   link  : https://www.pandabed.com
   desc  : "Stay in trustworthy & authentic vacation rentals, short term rentals, apartments, villas & rooms in more than 30 Asian countries. Book yours today!"  
@@ -95,7 +145,7 @@
   link  : http://www.hostelbookers.com
   desc  : "Youth hostels and Cheap Hotels in over 3,500 travel destinations! Book a Hostel or Cheap Hotel with no booking fee. Best online deals with our lowest price guarantee."
   cat   : accommodation
-  subcat: housesitting
+  subcat: hostels
   budget: 1 # out of 3
   region: worldwide
   logo  : '../assets/img/directory/hostel-bookers-logo.png'
@@ -175,7 +225,7 @@
   link  : http://www.hostelworld.com
   desc  : 'Stay in a hostel and meet the real world, not the tourist brochure. Read millions of hostel reviews from fellow travellers & book your next adventure today. #MeetTheWorld'  
   cat   : accommodation
-  subcat: housesitting
+  subcat: hostels
   budget: 2 # out of 3
   region: worldwide
   logo  : '../assets/img/directory/hostel-world-logo.png'
@@ -279,7 +329,7 @@
   budget: 1.5 # out of 3
   region: worldwide
   logo  : '../assets/img/directory/home-exchange-logo.png'
-  cta   :  Exchange homes
+  cta   : Find an exchange
 
 - name  : Free Campsites
   link  : https://freecampsites.net
@@ -289,7 +339,7 @@
   budget: 0 # out of 3
   region: worldwide
   logo  : '../assets/img/directory/free-campsites-logo.png'
-  cta   :  Go camping
+  cta   : Find a campsite
 
 - name  : Cool Camping
   link  : https://www.coolcamping.co.uk
@@ -299,7 +349,7 @@
   budget: 1 # out of 3
   region: europe
   logo  : '../assets/img/directory/cool-camping-logo.png'
-  cta   :  Go camping
+  cta   : Find a campsite
 
 - name  : Harvest Hosts
   link  : https://harvesthosts.com
@@ -310,7 +360,7 @@ self-contained RVers to visit and stay overnight for free!"
   budget: 0 # out of 3
   region: north america
   logo  : '../assets/img/directory/harvest-hosts-logo.png'
-  cta   :  Find a campsite
+  cta   : Find a campsite
 
 ##################################
 ########  TRANSPORTATION #########
@@ -324,7 +374,7 @@ self-contained RVers to visit and stay overnight for free!"
   budget: 2 # out of 3
   region: europe
   logo  : '../assets/img/directory/from-a-to-b-logo.png'
-  cta   :  Find a ride
+  cta   : Find a ride
 
 - name  : ExitFares
   link  : https://www.exitfares.com/deals
@@ -334,7 +384,7 @@ self-contained RVers to visit and stay overnight for free!"
   budget: 2 # out of 3
   region: usa
   logo  : '../assets/img/directory/exitfares-logo.png'
-  cta   :  Find a fare
+  cta   : Find a flight
 
 - name  : Busbud
   link  : https://busbud.com
@@ -344,17 +394,17 @@ self-contained RVers to visit and stay overnight for free!"
   budget: 2 # out of 3
   region: worldwide
   logo  : '../assets/img/directory/busbud-logo.png'
-  cta   :  Find a fare
+  cta   : Find a fare
 
 - name  : Airfare Spot
-  link  : https://airfarespot.com/
+  link  : https://airfarespot.com
   desc  : 'Book, travel, save. Incredible flight deals aggregator. Pick a location and watch for the cheapest fares.'  
   cat   : transportation
   subcat: airfare
   budget: 2 # out of 3
   region: worldwide
   logo  : '../assets/img/directory/airfare-spot-logo.png'
-  cta   :  Find a fare
+  cta   : Find a flight
 
 - name  : OpenRide
   link  : https://openride.co
@@ -364,7 +414,7 @@ self-contained RVers to visit and stay overnight for free!"
   budget: 1 # out of 3
   region: north america
   logo  : '../assets/img/directory/open-ride-logo.png'
-  cta   :  Find a ride
+  cta   : Find a ride
 
 - name  : Wingly
   link  : https://en.wingly.io/index.php?page=flights
@@ -374,7 +424,7 @@ self-contained RVers to visit and stay overnight for free!"
   budget: 2 # out of 3
   region: europe
   logo  : '../assets/img/directory/wingly-logo.png'
-  cta   :  Find a flight
+  cta   : Find a flight
   
 - name  : BlaBlaCar
   link  : http://www.blablacar.com
@@ -394,7 +444,7 @@ self-contained RVers to visit and stay overnight for free!"
   budget: 2 # out of 3
   region: worldwide
   logo  : '../assets/img/directory/self-drive-shop-logo.png'
-  cta   : Find a RV relocation
+  cta   : Find a RV
 
 - name  : Imoova
   link  : http://www.imoova.com/imoova/relocations
@@ -404,7 +454,7 @@ self-contained RVers to visit and stay overnight for free!"
   budget: 2 # out of 3
   region: worldwide
   logo  : '../assets/img/directory/imoova-logo.png'
-  cta   : Find a RV relocation
+  cta   : Find a RV
 
 - name  : Apollo
   link  : http://www.apollorv.com/reloc.aspx
@@ -414,7 +464,7 @@ self-contained RVers to visit and stay overnight for free!"
   budget: 1 # out of 3
   region: north america
   logo  : '../assets/img/directory/apollo-logo.png'
-  cta   : Find a RV relocation
+  cta   : Find a RV
 
 - name  : Cruise America
   link  : http://www.cruiseamerica.com/rent/hot_deals
@@ -424,7 +474,7 @@ self-contained RVers to visit and stay overnight for free!"
   budget: 2 # out of 3
   region: north america
   logo  : '../assets/img/directory/cruise-america-logo.png'
-  cta   : Find a RV relocation
+  cta   : Find a RV
 
 - name  : Share Your Ride
   link  : http://shareyourride.net
@@ -484,7 +534,7 @@ self-contained RVers to visit and stay overnight for free!"
   budget: 0 # out of 3
   region: north america
   logo  : '../assets/img/directory/hit-the-road-logo.png'
-  cta   : Relocate a vehicle 
+  cta   : Find a relocation
 
 - name  : Airfare Watchdog
   link  : http://www.airfarewatchdog.com/top-50-fares
@@ -494,7 +544,7 @@ self-contained RVers to visit and stay overnight for free!"
   budget: 2 # out of 3
   region: usa
   logo  : '../assets/img/directory/airfare-watchdog-logo.png'
-  cta   : Find a cheap flight
+  cta   : Find a flight
 
 - name  : The Fare Deal Alert
   link  : http://faredealalert.com
@@ -504,7 +554,7 @@ self-contained RVers to visit and stay overnight for free!"
   budget: 2 # out of 3
   region: usa
   logo  : '../assets/img/directory/fare-deal-alert-logo.png'
-  cta   : Find a cheap flight
+  cta   : Find a flight
 
 - name  : Secret Flying
   link  : http://secretflying.com
@@ -514,7 +564,7 @@ self-contained RVers to visit and stay overnight for free!"
   budget: 2 # out of 3
   region: worldwide
   logo  : '../assets/img/directory/secret-flying-logo.png'
-  cta   : Find a cheap flight
+  cta   : Find a flight
 
 
 ##################################
@@ -524,9 +574,9 @@ self-contained RVers to visit and stay overnight for free!"
 
 - name  : Helpstay
   link  : https://helpstay.com
-  desc  : "Volunteer Abroad for Free Accommodation! Try a Farm Stay, Search for Ranch and Hostel Jobs. Gap Year Abroad, Work Away, Internship Overseas, Help Exchange or Teach. | Get Going with HelpStay.com."
-  cat   : work-exchange
-  subcat: work-exchange
+  desc  : "Volunteer Abroad for Free Accommodation! Try a Farm Stay, Search for Ranch and Hostel Jobs. Gap Year Abroad, Work Away, Internship Overseas, Help Exchange or Teach. Get Going with HelpStay.com."
+  cat   : skills-exchange
+  subcat: volunteering
   budget: 1.5 # out of 3
   region: worldwide
   logo  : '../assets/img/directory/helpstay-logo.png'
@@ -535,8 +585,8 @@ self-contained RVers to visit and stay overnight for free!"
 - name  : Volunteers Base
   link  : http://www.volunteersbase.com
   desc  : "Are you looking for free volunteering opportunities? This is the place! Volunteers Base is a Moneyless Help Exchange Network"
-  cat   : work-exchange
-  subcat: work-exchange
+  cat   : skills-exchange
+  subcat: volunteering
   budget: 0 # out of 3
   region: worldwide
   logo  : '../assets/img/directory/volunteers-base-logo.png'
@@ -545,8 +595,8 @@ self-contained RVers to visit and stay overnight for free!"
 - name  : World Wide Opportunities on Organic Farms
   link  : http://www.wwoof.net
   desc  : "Volunteer help exchange on organic farms in 100+ countries. Meet friends from all over the world."
-  cat   : work-exchange
-  subcat: work-exchange
+  cat   : skills-exchange
+  subcat: volunteering
   budget: 0 # out of 3
   region: worldwide
   logo  : '../assets/img/directory/wwoof-logo.png'
@@ -555,8 +605,8 @@ self-contained RVers to visit and stay overnight for free!"
 - name  : Worldpackers
   link  : https://www.worldpackers.com
   desc  : "Find unique places where you can exchange your skills for accommodation. Traveling changes people. People change the world."
-  cat   : work-exchange
-  subcat: work-exchange
+  cat   : skills-exchange
+  subcat: volunteering
   budget: 0 # out of 3
   region: worldwide
   logo  : '../assets/img/directory/worldpackers-logo.png'
@@ -565,8 +615,8 @@ self-contained RVers to visit and stay overnight for free!"
 - name  : Work Away
   link  : https://www.workaway.info
   desc  : "Workaway set up to promote fair exchange between budget travellers, language learners or culture seekers who can stay with 1000s of families, individuals or organizations that are looking for help in over 130 different countries."
-  cat   : work-exchange
-  subcat: work-exchange
+  cat   : skills-exchange
+  subcat: volunteering
   budget: 0 # out of 3
   region: worldwide
   logo  : '../assets/img/directory/work-away-logo.png'
@@ -575,8 +625,8 @@ self-contained RVers to visit and stay overnight for free!"
 - name  : Projects Abroad
   link  : http://www.projects-abroad.ca
   desc  : "Volunteer Abroad in 29 developing countries in Africa, Asia, Latin America and Eastern Europe. Programs are offered in care, teaching, conservation, human rights, healthcare and more."
-  cat   : work-exchange
-  subcat: work-exchange
+  cat   : skills-exchange
+  subcat: volunteering
   budget: 2 # out of 3
   region: worldwide
   logo  : '../assets/img/directory/projects-abroad-logo.png'

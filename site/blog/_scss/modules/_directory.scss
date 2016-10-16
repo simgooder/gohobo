@@ -5,10 +5,17 @@
 // color themes
 // dynamically populated by the `resource.cat` variable
 
-.theme--accommodation {
-	background: linear-gradient(-45deg, #F6B299 0%, #FE81A8 100%);
+.bg--topo {
+    @include mq-md {
+        //background:transparent url('../img/hero-bg-gohobo@2x.jpg') center center no-repeat;
+        background-image: url('../img/bg-topo.png');
+    }
+}
 
-	background-size: 102%;
+.theme--accommodation {
+	background: $color-cta-grad;
+
+	background-size: 120%;
 
 	&:hover {
 		background-size: 200%;
@@ -23,7 +30,7 @@
 		background-size: 200%;
 	}
 }
-.theme--work-exchange {
+.theme--skills-exchange {
 	background: $color-purple-grad;
 
 	background-size: 102%;
@@ -56,7 +63,7 @@
 
 		cursor: pointer;
 
-		box-shadow: 0px 1px 4px 0px rgba($color-dark, 0.25);
+		transition: 0.15s;
 
 		@include mq-md {
 			display: inline-block;
@@ -72,26 +79,67 @@
 			padding: 0.7em 2em;
 
 		}
+		
+		// Colours and States
+		&.-theme--transportation {
+			color: $color-blue;
+			border: 2px solid $color-blue;
 
-		// states
-		// ------
-		transition: 0.5s;
+			&:hover {
+				box-shadow: 0px 2px 0px 0px rgba($color-blue, 1);
+			}
+			&:active {
+				box-shadow: none;
+			}
+		}
+		&.-theme--accommodation {
+			color: $color-pink;
+			border: 2px solid $color-pink;
 
-		// when the filters are set to OFF
-		&.tagsort-active.theme--accommodation {
-			box-shadow: none;
-			background-size: 250%;
-			box-shadow: 0px 0px 1px 5px rgba(#FE81A8, 0.25);
+			&:hover {
+				box-shadow: 0px 2px 0px 0px rgba($color-pink, 1);
+			}
+			&:active {
+				box-shadow: none;
+			}
 		}
-		&.tagsort-active.theme--transportation {
-			box-shadow: none;
-			background-size: 250%;
-			box-shadow: 0px 0px 1px 5px rgba(#6AB9FF, 0.25);
+		&.-theme--skills-exchange {
+			color: $color-purple;
+			border: 2px solid $color-purple;
+
+			&:hover {
+				box-shadow: 0px 2px 0px 0px rgba($color-purple, 1);
+			}
+			&:active {
+				box-shadow: none;
+			}
 		}
-		&.tagsort-active.theme--work-exchange {
+
+
+		//  Active filters
+		&.tagsort-active.-theme--transportation {
 			box-shadow: none;
-			background-size: 250%;
-			box-shadow: 0px 0px 1px 5px rgba(#B976FE, 0.25);
+			background: $color-blue-grad;
+			background-size: 125%;
+			border-color: transparent;
+
+			color: #fff;
+		}
+		&.tagsort-active.-theme--accommodation {
+			box-shadow: none;
+			background: $color-cta-grad;
+			background-size: 125%;
+			border-color: transparent;
+
+			color: #fff;
+		}
+		&.tagsort-active.-theme--skills-exchange {
+			box-shadow: none;
+			background: $color-purple-grad;
+			background-size: 125%;
+			border-color: transparent;
+
+			color: #fff;
 		}
 	}
 
@@ -101,144 +149,194 @@
 	}
 
 
+//   The list of Directory items
+// --------------------------------
+
 .dir--list {
 
-	margin-bottom: 12em;
-	text-align: center;
-}
-
-
-.dir--item {
-	display: inline-block;
-
-	background-color: #fff;
-	border: 1px solid #E0DFDF;
-	border-radius: 4px;
-	overflow: hidden;
-
-	margin-bottom: 2em;
-	margin-left: 0.5em;
-	margin-right: 0.5em;
-
-	box-shadow: 0px 1px 6px 0px rgba($color-dark, 0.2);
-
-	width: calc(33.33% - 2em);
-
-	@include mq(1060px) {
-		width: calc(50% - 2em);
-	}
-	@include mq(620px) {
-		width: calc(100% - 2em);
-	}
-
-
-	position: relative;
-	z-index: 1;
-}
-
-
-	.dir--item__logo {
-		margin: 0;
-		padding-top: 1.25em;
-		padding-left: 2em;
-		padding-right: 2em;
-
-		min-height: 6.25em;
-		max-width: 100%;
-		overflow: hidden;
-
-		text-align: center;
-
-		display: flex;
-		align-items: center;
-		justify-content: center;
-		flex-flow: column nowrap;
+	margin-left: auto;
+	margin-right: auto;
 	
-		img {
-			max-height: 5em;
-		}
+	padding-bottom: 4em;
+
+	@include mq-min(68.8125em) {
+		width: 68.6em;
+	}
+	@include mq-between(31.875em ,68.75em) {
+		width: 34em;
 	}
 
+	@extend %cf;
 
-	.dir--item__desc {
-		padding: 0 3em;
+}
 
-		text-overflow: ellipsis;
-		word-wrap: break-word;
-		overflow: hidden;
-		height: 11.75em;
+.dir--column {
+	vertical-align: top;
 
-		font-size: 0.9em;
+	padding-left: 1em;
+	padding-right: 1em;
+
+	@include mq-min(31.8749em) {
+		float: left;
 	}
+}
 
-	.dir--item__meta-bar {
-		width: 100%;
-		max-width: 100%;
-		max-height: 90px;
+	.dir--card {
+		position: relative;
 
-		margin-top: auto;
-
-		@include mq-md {
-			padding: 1em 2em 2.75em 2em;
-		}
-		@include mq-sm {
-			padding: 1em 2em 2.75em 2em;
+		@include mq-min(31.8749em) {
+			width: 32em;
 		}
 
+		margin-bottom: 3em;
 	}
 
-		.item--meta__region {
+	.card--panel__info {
+		background-color: #fff;
+		padding: 1em 2em 2em 2em;
+
+		@include mq-min(31.875em) {
+			width: 18em;
+		}
+		
+		position: relative;
+		z-index: 2;
+		
+		box-shadow: -2px 0px 16px rgba(#000, 0.1);
+	}
+
+	.card--panel__slideout {
+		background-color: #fff;
+		z-index: 1;
+
+		@include mq-min(31.875em) {
+			position: absolute;
+			width: 14em;
+			height: 94%;
+			
+			right: 0;
+			top: 3%;
+
+			padding: 2.5em 0;
+		}
+		@include mq(31.8749em) {
+			width: 90%;
+			margin-left: 5%;
+
+			padding-top: 1em;
+			padding-bottom: 2em;
+		}
+		
+		box-shadow: 2px 0px 16px rgba(#000, 0.1);
+		
+		text-align: center;
+		
+		display: flex;
+		flex-flow: column wrap;
+		align-items: center;
+		justify-content: space-between;
+	}
+
+		.card--logo {
+			margin-left: auto;
+			margin-right: auto;
+
+			width: 80%;
+			height: 4em;
+			background-repeat: no-repeat;
+			background-size: contain;
+			background-position: center;
+
+			@include mq(31.8749em) {
+				margin-top: 2em;
+				margin-bottom: 3em;
+			}
+		}
+
+		.card--meta {
+			display: block;
+			padding-top: 0.5em;
+			padding-bottom: 1em;
+			font-size: 0.8em;
+			color: $color-gray;
+		}
+
+		.card--title {
+			font-family: $font-bold;
+			margin: 0;
+			padding-top: 1em;
+			padding-bottom: 0.25em;
+		}
+
+		.card--desc {
+			margin: 0;
+		}
+
+		.card--categories {
+			padding-top: 1em;
+			opacity: 0.75;
+
+			&.-theme--transportation .card--categories__cat {
+				color: $color-blue;
+				border: 2px solid $color-blue;
+			}
+			&.-theme--accommodation .card--categories__cat {
+				color: $color-pink;
+				border: 2px solid $color-pink;
+			}
+			&.-theme--skills-exchange .card--categories__cat {
+				color: $color-purple;
+				border: 2px solid $color-purple;
+			}
+		}
+
+		.card--categories__cat {
 			display: inline-block;
-			vertical-align: middle;
-			margin-bottom: 1em;
+			font-family: $font-bold;
+			text-transform: uppercase;
+			font-size: 0.65em;
+			letter-spacing: 1px;
 
-			font-size: 0.75em;
-			line-height: 2;
-
-			border: 1px solid $color-dark;
-			border-radius: 1em;
-
-			padding: 0 1em;
-		}
-
-		.item--meta__budget {
-			display: inline-block;
-
+			border-radius: 2em;
+			
 			margin-bottom: 0.5em;
+			padding-left: 0.85em;
+			padding-right: 0.85em;
+			padding-top: 0.25em;
+			padding-bottom: 0.2em;
+		}
 
-			font-family: $font-heading;
-			letter-spacing: 4px;
-			font-size: 1.25em;
+		.card--action {
+			outline: 0;
+				
+			box-shadow: 0px 1px 6px 0 rgba(#000, 0.2);
+			border: 0;
+			border-radius: 5em;
+			border-radius: 3px;
+			
+			color: #fff;
+			font-size: 0.85em;
+			text-transform: uppercase;
+			letter-spacing: 1px;
 
-			cursor: help;
-
-			@include mq-sm {
-				margin-left: 1em;
-				margin-right: 1em;
+			@include mq-min(31.8749em) {
+				padding: 0.5em 1.5em;
 			}
-
-			span {
-				opacity: 0.3;
+			@include mq(31.8749em) {
+				padding: 0.85em 2.5em;
+			}
+			
+			&:hover,
+			&:focus {
+				
+			}
+			&:active {
+				box-shadow: none;
 			}
 		}
 
-		// img associated with sub category
-		// ie housesitting, camping, rideshare, etc
-		.item--meta__subcat {
-			display: inline-block;
-
-			img {
-				max-width: 2.2em;
-			}
-		}
 
 
-	.dir--item__action {
-		width: 100%;
 
-		padding: 0.85em 0;
 
-		color: #fff;
 
-		transition: 0.5s;
-	}
