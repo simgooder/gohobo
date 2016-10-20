@@ -45,7 +45,7 @@
 
 			&:nth-of-type(3n + 1) {
 				flex-basis: 60%;
-				max-width: 60%;
+				//max-width: 60%;
 			}
 
 		}
@@ -206,28 +206,37 @@
 // -------------------------------
 
 .recent-post--list {
-
-	@include mq-md {
-		width: 2000px;
-		height: 300px;
-	}
-	@include mq-sm {
-		width: calc(85vw * 5);
-	}
+	@include clearfix;
 }
 
 .recent-post--list__item {
 	position: relative;
-
 	float: left;
 
 	@include mq-md {
-		width: 400px;
+		width: (100% / 3);
 		height: 300px;
 	}
 	@include mq-sm {
 		width: 76vw;
 		height: 250px;
+	}
+
+	&:nth-of-type(1) {
+		@include mq-md {
+			width: 66.66%;
+			height: 600px;
+		}
+		@include mq-sm {
+
+		}
+	}
+	&:nth-of-type(2) {
+		
+	}
+	&:nth-of-type(4),
+	&:nth-of-type(5) {
+		
 	}
 }
 

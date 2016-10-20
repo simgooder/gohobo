@@ -6,12 +6,12 @@
 # 'jekyll serve'. If you change this file, please restart the server process.
 
 # Site settings
-title: GoHobo | Alternative Travel Adventures for Regular People | Just Go.
+title: GoHobo | Alternative Travel Resources | Adventures for Regular People.
 email: gohoboco@gmail.com
 description: > # this means to ignore new lines
-  Accommodation, transportation, and alternative travel opportunities with a focus on affordability, adventure, and experience beyond cheap travel.
-#url: "http://localhost:4000/" # the base hostname & protocol for your site
-url: "http://gohobo.co/" # the base hostname & protocol for your site
+  GoHobo is a mindset, a mentality, & a tribe. Also, a collection of alternative travel resources and inspiration for travellers, adventurers, digital nomads, vandwellers & explorers. 
+url: "http://localhost:4000/" # the base hostname & protocol for your site
+#url: "http://gohobo.co/" # the base hostname & protocol for your site
 prod_url: "http://gohobo.co"
 
 permalink: /:categories/:title/

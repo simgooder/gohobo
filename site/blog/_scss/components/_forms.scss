@@ -7,7 +7,6 @@
 	margin-left: auto;
 	margin-right: auto;
 
-
 	@include mq-min(430px) {
 		width: 246px;
 		max-width: 350px;
@@ -30,6 +29,23 @@
 
 // general input styling
 
+.input--group {
+	margin-bottom: 1em;
+}
+
+.input--label {
+	display: block;
+	margin-bottom: 0.25em;
+
+	font-size: 0.85em;
+	color: $color-gray;
+}
+
+.input--group__heading {
+	font-family: $font-heading;	
+	margin-bottom: 1em;
+}
+
 .input,
 .input--textarea {
 	width: 100%;
@@ -37,16 +53,17 @@
 	color: $color-dark;
 
 	border: 1px solid $color-gray;
+	border-radius: 3px;
 
     &:focus {
-		border-color: #ccc;
+		border-color: $color-cta;
     }
 
 	@include mq-sm {
-		padding: 1em 1.5em;
+		padding: 1em;
 	}
 	@include mq-md {
-		padding: 0.782em 1.75em;
+		padding: 0.75em 1em;
 	}
 
 	& + .input--textarea {

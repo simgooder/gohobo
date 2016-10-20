@@ -59,7 +59,10 @@
 	bottom: calc(100% + 0.7em);
 }
 
+
 // Modal Window
+// --------------
+
 .modal--overlay {
 	position: fixed;
 	top: 0;
@@ -70,19 +73,14 @@
 	min-height: 100%;
 	overflow-y: scroll;
 
-	background-color: rgba(236,236,236, 0.96);
+	padding-bottom: 2em;
 
-	display: flex;
-	align-content: center;
-	flex-direction: column;
-	flex-wrap: nowrap;
+	background-color: rgba(236,236,236, 0.96);
 
 	visibility: hidden;
 	opacity: 0;
 
 	transition: opacity 0.2s;
-
-	padding-bottom: 2em;
 }
 
 	.modal--close {
@@ -102,17 +100,25 @@
 	.modal--close__btn {
 		cursor: pointer;
 		position: absolute;
-		top: -1.5em;
-		right: -2em;
+		top: -1em;
+		right: -1em;
 
 		font-family: $font-heading;
 		text-align: center;
 		line-height: 1.5;
+		color: $color-dark;
 
-		border: 2px solid $color-dark;
+		background-color: #fff;
+		box-shadow: 0 0 10px 0 rgba(#000,0.1);
+
 		border-radius: 50%;
 		width: 1.7em;
 		height: 1.7em;
+
+		span {
+			font-size: 1.2em;
+			line-height: 1.2;
+		}
 	}
 
 	.modal--card {
@@ -141,7 +147,10 @@
 	}
 
 	.modal--overlay.--is--open {
-		
 		visibility: visible;
 		opacity: 1;
+
+		.modal--card {
+			animation: 0.5s anim-enter ease;
+		}
 	}

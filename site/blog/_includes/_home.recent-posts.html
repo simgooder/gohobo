@@ -1,0 +1,36 @@
+<!-- <section class="section--info__sm">
+        
+  <h2 class="section--info__title">
+      From the Journal
+  </h2>
+
+</section>
+ -->
+
+<ul class="post--list">
+  {% for post in site.posts limit: 4 %}
+  <a href="{{ post.url | prepend: site.baseurl }}" class="post--item">
+
+      <div class="post--overlay">
+            
+            <h2 class="post--title">
+              {{ post.title | truncate: 70, "..." }}
+            </h2>
+
+            <h6 class="post--meta">
+              {% if post.author %}
+                {{ post.author }}
+              {% endif %}
+              •
+              <time datetime="{{ post.date }}">
+                {{ post.date | date: "%B %-d, %Y" }}
+              </time>
+            </h6>
+        
+      </div>
+
+      <img class="post--thumbnail" src="{{ site.image_assets }}{{ post.hero }}" alt="{{ post.title }}, {{ post.tags | join: ', ' }}">
+
+  </a>  
+  {% endfor %}
+</ul>

@@ -50,11 +50,11 @@
         }
 
         @include mq-md {
-            background: transparent url('../img/hero-sky@2x.jpg') center center no-repeat fixed;
+            background: transparent url('../img/hero-forest_alternative-travel@2x.jpg') center center no-repeat fixed;
             background-size: cover;
         }
         @include mq-sm {
-            background:transparent url('../img/hero-sky.jpg') center center no-repeat fixed;
+            background:transparent url('../img/hero-forest_alternative-travel.jpg') center center no-repeat fixed;
             background-size: cover;
         }
     }
@@ -132,6 +132,9 @@
 
         text-align: center;
 
+        button {
+            margin-top: 2em;
+        }
         @include mq-sm {
             button {
                 margin-top: 2em;
@@ -145,29 +148,44 @@
         z-index: 2;
 
         margin-top: 0;
+        margin-bottom: 0;
         margin-left: auto;
         margin-right: auto;
 
-        max-width: 12em;
+        max-width: 98%;
         color: #fff;
         text-align: center;
 
         @include mq-xl {
-            font-size: 8em;
-        }
-        @include mq-md {
             font-size: 5em;
         }
-        @include mq-sm {
+        @include mq-md {
             font-size: 3em;
+        }
+        @include mq-sm {
+            font-size: 2em;
             margin-top: 0;
             margin-bottom: 0;
         }
 
         @include mq(400px) {
-            font-size: 2.5em;
+            font-size: 2em;
         }
 
+    }
+
+    .hero--copy {
+        font-family: $font-copy;
+        color: #fff;
+
+        margin-left: auto;
+        margin-right: auto;
+        max-width: 40em;
+
+        padding-left: 2em;
+        padding-right: 2em;
+        padding-top: 2em;
+        padding-bottom: 2em;
     }
 
 .section  {

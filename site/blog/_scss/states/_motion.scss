@@ -5,17 +5,13 @@
 // --------------
 @keyframes show {
 	0%		{opacity: 0;}
-	100%  {opacity: 1;}
+	100%    {opacity: 1;}
 }
 
 @keyframes anim-enter {
-	0%   { opacity: 0; margin-top: -3em; }
-	90%	 { margin-top: 0; }
-	100% { opacity: 1; }
-}
-
-.anim-enter {
-	animation: 0.5s anim-enter ease-in;
+	0%   { opacity: 0; top: -3em; }
+    85%  { opacity: 1;}
+	100% { top: 0; }
 }
 
 @keyframes spin {

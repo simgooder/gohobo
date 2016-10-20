@@ -4,7 +4,7 @@ button {
 	border: none;
 	display: inline-block;
 
-	outline:0;
+	outline: 0;
 
 	font-family: $font-bold;
 }
@@ -19,11 +19,7 @@ button {
 	
 	overflow: hidden;
 
-	display: flex;
-	flex-direction: column;
-	align-items: center;
-
-	transition: 0.4s;
+	transition: 0.1s;
 
 	&:hover {
 		background-size: 175%;
@@ -45,7 +41,7 @@ button {
 
 		overflow: hidden;
 
-		transition: 0.4s;
+		transition: 0.1s;
 
 		@include mq-sm {
 			padding: 0.6em 2em;
@@ -84,10 +80,43 @@ button {
 
 	background-color: rgba(#000, 0.12);
 
-	transition: 0.5s;
+	transition: 0.05s;
 
 	&:hover {
 		background-color: rgba(#000, 0.35);
+	}
+}
+
+.btn--line__dark {
+	color: $color-dark;
+	border: 2px solid $color-dark;
+	border-radius: 3px;
+	padding: 0.5em 2em;
+
+	transition: 0.05s;
+
+	&:hover {
+		background-color: rgba(#000, 0.35);
+	}
+}
+
+.btn--standard__dark {
+	color: #fff;
+	border-radius: 3px;
+
+	padding: 0.75em 2em;
+	margin-top: 1em;
+
+	background-color: $color-dark;
+
+	transition: 0.05s;
+
+	&:hover,
+	&:focus {
+		background-color: $color-gray;
+	}
+	&:active {
+		background-color: $color-dark;
 	}
 }
 
