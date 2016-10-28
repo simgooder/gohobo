@@ -1,0 +1,35 @@
+RewriteEngine On
+RewriteCond %{HTTPS} off
+RewriteRule (.*) https://%{HTTP_HOST}%{REQUEST_URI}
+
+Header add Access-Control-Allow-Origin "https://gohobo.co"
+
+ExpiresActive On
+ExpiresByType image/jpg "access plus 1 month"
+ExpiresByType image/jpeg "access plus 1 month"
+ExpiresByType image/gif "access plus 1 month"
+ExpiresByType image/png "access plus 1 month"
+ExpiresByType text/css "access plus 1 week"
+ExpiresByType text/x-javascript "access plus 1 month"
+ExpiresByType text/javascript "access plus 1 month"
+ExpiresByType image/x-icon "access plus 1 year"
+ExpiresDefault "access plus 2 weeks"
+
+AddOutputFilterByType DEFLATE text/plain
+AddOutputFilterByType DEFLATE text/html
+AddOutputFilterByType DEFLATE text/xml
+AddOutputFilterByType DEFLATE text/css
+AddOutputFilterByType DEFLATE application/xml
+AddOutputFilterByType DEFLATE application/xhtml+xml
+AddOutputFilterByType DEFLATE application/rss+xml
+AddOutputFilterByType DEFLATE application/javascript
+AddOutputFilterByType DEFLATE application/x-javascript
+
+Redirect 301 /live-free-embrace-vanlife/ http://gohobo.co/journal/live-free-embrace-vanlife/
+Redirect 301 /ridesharing-for-beginners/ http://gohobo.co/journal/ridesharing-for-beginners/
+Redirect 301 /places-to-visit-in-canada-southwestern-bc-coast/ http://gohobo.co/journal/places-to-visit-in-canada-southwestern-bc-coast/
+Redirect 301 /places-to-visit-canada-vancouver/ http://gohobo.co/journal/places-to-visit-canada-vancouver/
+Redirect 301 /prescription-for-the-restless/ http://gohobo.co/journal/prescription-for-the-restless/
+Redirect 301 /5-things-i-learned-about-van-life/ http://gohobo.co/journal/5-things-i-learned-about-van-life/
+
+Options -Indexes

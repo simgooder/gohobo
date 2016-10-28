@@ -1,0 +1,51 @@
+$item-width: 294px;
+
+.store--wrapper {
+    background-color: #fff;
+
+    width: 100%;
+
+    padding-top: 5em;
+    padding-left: 2em;
+    padding-right: 2em;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+    .store--section {
+        @include clearfix;
+
+        margin-left: auto;
+        margin-right: auto;
+
+        @include mq-min(881px) {
+            padding-bottom: 3em;
+            width: $item-width * 3;
+        }
+        @include mq-between(586px, 880px) {
+            padding-bottom: 3em;
+            width: $item-width * 2;
+        }
+        @include mq(585px) {
+            width: $item-width;
+        }
+    }
+        
+        .store--section__title {
+
+        }
+        .store--section__desc {
+            
+        }
+
+        .store--item {
+            width: $item-width;
+
+            padding-top: 2em;
+            padding-bottom: 2em;
+
+            padding-left: 2em;
+            padding-right: 2em;
+
+            float: left;
+        }

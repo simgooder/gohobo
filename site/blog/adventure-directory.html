@@ -80,7 +80,8 @@ desc: "A collection of vetted alternative travel resources for travellers, adven
 
         <section class="card--panel__slideout">
 
-          <figure class="card--logo" style="background-image:url('{{ resource.logo }}');">
+          <figure class="card--logo">
+            <img src="{{ resource.logo }}" alt="{{ resource.name }} logo" title="{{ resource.name }}">
           </figure>
 
           <a href="{{ resource.link }}/?utm_source=gohobo&utm_medium=adventuredirectory&utm_campaign=gohobo" title="{{resource.name}}" alt="{{ resource.name }}">
@@ -143,7 +144,8 @@ desc: "A collection of vetted alternative travel resources for travellers, adven
 
         <section class="card--panel__slideout">
 
-          <figure class="card--logo" style="background-image:url('{{ resource.logo }}');">
+          <figure class="card--logo">
+            <img src="{{ resource.logo }}" alt="{{ resource.name }} logo" title="{{ resource.name }}">
           </figure>
 
           <a href="{{ resource.link }}/?utm_source=gohobo&utm_medium=adventuredirectory&utm_campaign=gohobo" title="{{resource.name}}" alt="{{ resource.name }}">

@@ -5,20 +5,16 @@
 	
     text-align: center;
 
+    @include clearfix;
+
     @include mq-md {
         padding: 6em 10% 4em 10%;
     }
     @include mq-sm {
         padding: 6em 5% 4em 5%;
     }
-    
-    //margin-top: 6em;
 
 	border-top: 0.1em solid #efefef;
-
-	@include mq-sm {
-		text-align: center;
-	}
 
     
     form {
@@ -27,6 +23,61 @@
     }
 	
 }
+
+.footer--list__col {
+    text-align: left;
+    
+    float: left;
+
+    @include mq-md {
+        width: (100% / 3);
+    }
+    @include mq-sm {
+        width: 100%;
+        padding: 1em;
+    }
+}
+
+    .footer--list__item {
+        display: block;
+        padding-top: 0.25em;
+        padding-bottom: 0.25em;
+
+        &:hover {
+            color: $color-cta;
+        }
+    }
+
+    .footer--list__heading {
+        border-bottom: 1px solid $color-cta;
+        display: inline-block;
+
+        padding-bottom: 1em;
+        margin-bottom: 1em;
+    }
+
+
+.footer--cta {
+    max-width: 600px;
+
+    text-align: center;
+    font-size: 0.85em;
+
+    margin-bottom: 8.5em;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+    .footer--cta__content {
+        padding-left: 2em;
+        padding-right: 2em;
+    }
+
+    .footer--cta__copy {
+        padding-top: 1em;
+        padding-bottom: 2em;
+    }
+
 
 // the logo image
 .footer--logo {
@@ -41,8 +92,12 @@
 
 	small {
 		width: 100%;
-		margin-top: 4em;
+		margin-top: 6em;
         display: block;
+
+        text-align: left;
+
+        font-size: 70%;
 	}
 
 	small a {
@@ -79,30 +134,31 @@
     }
 }
 
+
 // Social Buttons
 
 .social--set {
-	text-align: center;
-	margin: 2em 0;
+	padding-top: 0.25em;
+    padding-bottom: 0.25em;
 
     svg {
         fill: $color-dark;
-        margin: 0 1em;
+        margin: 0 0.5em;
 
         cursor: pointer;
 
         transition: 0.25s;
 
         @include mq-md {
-            width: 3em;
+            width: 1.5em;
         }
         @include mq-sm {
-            width: 2.2em;
+            width: 2em;
         }
 
         &:hover {
             transform: scale(1.15);
-            fill: $color-cta-grad;
+            fill: $color-cta;
         }
     }
 }

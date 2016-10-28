@@ -31,6 +31,16 @@
 ########  ACCOMMODATION ##########
 ##################################
 
+- name  : ClubSofa
+  link  : http://clubsofa.org
+  desc  : "ClubSofa is a platform that allows you to meet and stay with new people, overseas or local using our unique friend of friends model. Our friend sharing model is that you're connected to your friends and their friends too! Assuming everyone you know has on average 200 unique friends then you have a pool of 40,000 people! That's the world that ClubSofa opens!"  
+  cat   : accommodation
+  subcat: couchsurfing
+  budget: 0 # out of 3
+  region: worldwide
+  logo  : '../assets/img/directory/clubsofa-logo.png'
+  cta   :  Find a couch
+
 - name  : NightSwapping
   link  : https://www.nightswapping.com
   desc  : "NightSwapping is a community of people that host each other to travel for free. Whenever you host members in your guest room or entire home, you earn Nights credits that you can then use to travel later on."  

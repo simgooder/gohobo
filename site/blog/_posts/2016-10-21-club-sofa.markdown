@@ -1,0 +1,38 @@
+---
+layout: post
+title: "ClubSofa: couchsurfing your personal network"
+date: 2016-10-21
+hero: "blog/is-couchsurfing-safe_club-sofa.jpg"
+image-author: "Kevin Fernandez"
+image-author-link: "http://kevinfernandez.in"
+author: "Iain, Club Sofa"
+author-thumb: "authors/club-sofa.png"
+author-website: "Club Sofa"
+author-website-link: "http://clubsofa.org/?utm_source=gohobo"
+category: journal
+tags: 
+- sharing economy
+- accommodation
+desc: "The future of couchsurfing involves your personal network. ClubSofa has built a system of safer couchsurfing, based on your Facebook friends. Stay with friends or friends of friends."
+pinterest-pin: true
+---
+
+## Moving on from conventional travel
+One of the biggest shifts in the last 5 years has been the change of spending from materialistic goods to experiences. This is a worldwide phenomenon. People are choosing to forgo a plasma screen TV and instead go to a music festival. People are engaging with the world!
+
+Yet, how does this translate to one of the most expensive experiences of all, when we travel? What do we still see? Trump Towers, Holiday Inns and large homogenous resorts with big pools. This is an old travel form and we believe it's in decline. The modern traveller does not want to go to a resort in Fiji where everything except the beer is the exact same as the resort in Ibiza. Just like the tie is disappearing from business meetings so will large hotels from holidays.
+
+> The future of couchsurfing involves your personal network.
+
+This change has coincided with the rise of Airbnb, people want to meet and live like a local. When we travel now we don’t just want to relax, we want to learn, make lasting connections and like it so much that we will return. 
+
+## Long live (the real) sharing economy
+We think that Airbnb has opened up a whole new world of engagement. Locals and travellers are meeting, sharing and mutually benefiting from the other more than ever before. We want to be a part of this new chapter. Airbnb isn’t the end-all of this new wave. They have had some problems. More can be done to improve this system. 
+
+## A network of friends
+We think our project, [ClubSofa](http://www.clubsofa.org/ "ClubSofa.org"), is important because it fosters engagement. We are the next-gen [Couchsurfing](https://en.wikipedia.org/wiki/CouchSurfing "Wikipedia - couchsurfing"), only people that you share a mutual friend with can connect with you. Every person you meet will have someone in common with you. We believe that in this way we can instill more people with confidence such that locals and travellers can engage in more ways than just renting out a room for profit. 
+
+## ClubSofa
+We hope to make the world more open for people to engage with each other. And engagement is important, because ultimately, the places we love deserve more promotion than a five star review on Tripadvisor. They deserve a “look, I’ll show you myself” approach. So [sign up to ClubSofa](http://www.clubsofa.org/ "Sign up for ClubSofa") and engage with travellers and locals. Show people around, meet travellers, broaden your horizon both when you are home and away. 
+
+
