@@ -49,3 +49,23 @@ $item-width: 294px;
 
             float: left;
         }
+
+    .store--item__product {
+        width: $item-width;
+
+        padding-top: 2em;
+        padding-bottom: 2em;
+
+        padding-left: 2em;
+        padding-right: 2em;
+
+        float: left;
+
+        position: absolute;
+        z-index: -1;
+    }
+
+        .store--item__img {
+            max-width: 100%;
+        }
+

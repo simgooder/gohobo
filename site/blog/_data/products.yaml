@@ -1,0 +1,35 @@
+- title: Northern Explore T-Shirt
+  collection: explore
+  price: 33.28
+  img: '../assets/img/apparel/northern-explore-shirt_gohobo.jpg'
+  desc: "Quench your wanderlust with our Northern Explore tee. Printed on American Apparel fine jersey, slim fit, double stitched, made in the USA, sweatshop free"
+
+- title: Sunset Explore T-Shirt 
+  collection: explore
+  price: 33.28
+  img: '../assets/img/apparel/sunset-explore-shirt_gohobo.jpg'
+  desc: "Quench your wanderlust with our Northern Explore tee. Printed on American Apparel fine jersey, slim fit, double stitched, made in the USA, sweatshop free."
+
+- title: Sunset Explore Zip Hoodie 
+  collection: explore
+  price: 54.72
+  img: '../assets/img/apparel/sunset-explore-hoodie_gohobo.jpg'
+  desc: "Quench your wanderlust with our Sunset Explore zip hoodie. Printed on American Apparel 100% California fleece cotton, nylon zipper, hooded with matching finished polyester drawcord. Manufactured in the USA."
+
+- title: Ocean Explore Zip Hoodie 
+  collection: explore
+  price: 54.72
+  img: '../assets/img/apparel/ocean-explore-hoodie_gohobo.jpg'
+  desc: "Quench your wanderlust with our Ocean Explore zip hoodie. Printed on American Apparel 100% California fleece cotton, nylon zipper, hooded with matching finished polyester drawcord. Manufactured in the USA."
+
+- title: Vanlife T-Shirt 
+  collection: vanlife 
+  price: 33.28
+  img: '../assets/img/apparel/vanlife-shirt--vandweller_gohobo.jpg'
+  desc: "Home is where you park it. Lovin' livin' the vanlife! Printed on American Apparel fine jersey, slim fit, double stitched, made in the USA, sweatshop free."
+
+- title: Vandweller T-Shirt 
+  collection: vanlife 
+  price: 33.28
+  img: '../assets/img/apparel/vandweller-shirt--vanlife_gohobo.jpg'
+  desc: "What's better than living in a van down by the river? Printed on American Apparel fine jersey, slim fit, double stitched, made in the USA, sweatshop free."

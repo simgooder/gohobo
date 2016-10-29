@@ -53,6 +53,26 @@ postcard: gohobo-apparel-postcard.jpg
            Our Explore series takes inspiration from the climates of the world. Wherever your adventures take you, GoHobo has your back with unique tees and zip-ups. 
         </p>
 
+        {% for product in site.data.products %}
+        {% if product.collection == 'explore' %}
+        <div class="store--item__product" itemscope itemtype="http://schema.org/Product">
+            <div class="store--item__img">
+                <img src="{{ product.img }}" itemprop="image" alt="Photo of {{ product.title }} - GoHobo Adventure Apparel's {{ product.category }}">
+            </div>
+            <label class="store--item__meta" itemprop="offers" itemscope itemtype="http://schema.org/Offer">
+                <span itemprop="priceCurrency" content="CAD">$</span>
+                <span itemprop="price" content="{{ product.price }}.00">{{ product.price }}</span>
+            </label>
+            <label class="store--item__title" itemprop="name">
+                {{ product.title }}
+            </label>
+            <p class="store--item__desc" itemprop="description">
+                {{ product.desc }}
+            </p>
+        </div>
+        {% endif %}
+        {% endfor %}
+
         <div class="store--item" data-embed_type="product" data-shop="gohobo.myshopify.com" data-product_name="Women&#39;s Northern Explore Tee" data-product_handle="short-sleeve-womens-t-shirt-4" data-has_image="true" data-display_size="compact" data-redirect_to="checkout" data-buy_button_text="Buy now" data-buy_button_out_of_stock_text="Out of Stock" data-buy_button_product_unavailable_text="Unavailable" data-button_background_color="ffffff" data-button_text_color="ff6767" data-product_modal="false" data-product_title_color="333333" data-next_page_button_text="Next page" alt="Women's Northern Explore Adventure Shirt in Forest Green"></div>
 
         <div class="store--item" data-embed_type="product" data-shop="gohobo.myshopify.com" data-product_name="Women&#39;s Sunset Explore Tee" data-product_handle="short-sleeve-womens-t-shirt-2" data-has_image="true" data-display_size="compact" data-redirect_to="checkout" data-buy_button_text="Buy now" data-buy_button_out_of_stock_text="Out of Stock" data-buy_button_product_unavailable_text="Unavailable" data-button_background_color="ffffff" data-button_text_color="ff6767" data-product_modal="false" data-product_title_color="333333" data-next_page_button_text="Next page" alt="Women's Sunset Explore Adventure Shirt in Heather Grey"></div>
@@ -77,13 +97,33 @@ postcard: gohobo-apparel-postcard.jpg
            Those who love the vanlife, really love it. Vanlife shirts for all occasions. Show your Vandweller pride. Say it with me: "I live in a van!" 
         </p>
 
+        {% for product in site.data.products %}
+        {% if product.collection == 'vanlife' %}
+        <div class="store--item__product" itemscope itemtype="http://schema.org/Product">
+            <div class="store--item__img">
+                <img src="{{ product.img }}" itemprop="image" alt="Photo of {{ product.title }} - GoHobo Adventure Apparel's {{ product.category }}">
+            </div>
+            <label class="store--item__meta" itemprop="offers" itemscope itemtype="http://schema.org/Offer">
+                <span itemprop="priceCurrency" content="CAD">$</span>
+                <span itemprop="price" content="{{ product.price }}.00">{{ product.price }}</span>
+            </label>
+            <label class="store--item__title" itemprop="name">
+                {{ product.title }}
+            </label>
+            <p class="store--item__desc" itemprop="description">
+                {{ product.desc }}
+            </p>
+        </div>
+        {% endif %}
+        {% endfor %}
+
         <div class="store--item" data-embed_type="product" data-shop="gohobo.myshopify.com" data-product_name="Men&#39;s Vandweller Shirt" data-product_handle="short-sleeve-mens-t-shirt-3" data-has_image="true" data-display_size="compact" data-redirect_to="checkout" data-buy_button_text="Buy now" data-buy_button_out_of_stock_text="Out of Stock" data-buy_button_product_unavailable_text="Unavailable" data-button_background_color="ffffff" data-button_text_color="ff6767" data-product_modal="false" data-product_title_color="333333" data-next_page_button_text="Next page" alt="Men's Vanlife Clothing Vandweller Shirt"></div>
 
-       <!--  <div class="store--item" data-embed_type="product" data-shop="gohobo.myshopify.com" data-product_name="Men&#39;s Vanlife Shirt" data-product_handle="short-sleeve-mens-t-shirt-2" data-has_image="true" data-display_size="compact" data-redirect_to="checkout" data-buy_button_text="Buy now" data-buy_button_out_of_stock_text="Out of Stock" data-buy_button_product_unavailable_text="Unavailable" data-button_background_color="ffffff" data-button_text_color="ff6767" data-product_modal="false" data-product_title_color="333333" data-next_page_button_text="Next page" alt="Men's Vanlife Shirt"></div> -->
+        <div class="store--item" data-embed_type="product" data-shop="gohobo.myshopify.com" data-product_name="Men&#39;s Vanlife Shirt" data-product_handle="short-sleeve-mens-t-shirt-2" data-has_image="true" data-display_size="compact" data-redirect_to="checkout" data-buy_button_text="Buy now" data-buy_button_out_of_stock_text="Out of Stock" data-buy_button_product_unavailable_text="Unavailable" data-button_background_color="ffffff" data-button_text_color="ff6767" data-product_modal="false" data-product_title_color="333333" data-next_page_button_text="Next page" alt="Men's Vanlife Shirt"></div>
 
         <div class="store--item" data-embed_type="product" data-shop="gohobo.myshopify.com" data-product_name="Women&#39;s Vandweller shirt" data-product_handle="short-sleeve-womens-t-shirt-1" data-has_image="true" data-display_size="compact" data-redirect_to="checkout" data-buy_button_text="Buy now" data-buy_button_out_of_stock_text="Out of Stock" data-buy_button_product_unavailable_text="Unavailable" data-button_background_color="ffffff" data-button_text_color="ff6767" data-product_modal="false" data-product_title_color="333333" data-next_page_button_text="Next page" alt="Women's Vanlife Clothing Vandweller Shirt"></div>
 
-        <!-- <div class="store--item" data-embed_type="product" data-shop="gohobo.myshopify.com" data-product_name="Women&#39;s Vanlife Shirt" data-product_handle="short-sleeve-womens-t-shirt" data-has_image="true" data-display_size="compact" data-redirect_to="checkout" data-buy_button_text="Buy now" data-buy_button_out_of_stock_text="Out of Stock" data-buy_button_product_unavailable_text="Unavailable" data-button_background_color="ffffff" data-button_text_color="ff6767" data-product_modal="false" data-product_title_color="333333" data-next_page_button_text="Next page" alt="Women's Vanlife Shirt"></div> -->
+        <div class="store--item" data-embed_type="product" data-shop="gohobo.myshopify.com" data-product_name="Women&#39;s Vanlife Shirt" data-product_handle="short-sleeve-womens-t-shirt" data-has_image="true" data-display_size="compact" data-redirect_to="checkout" data-buy_button_text="Buy now" data-buy_button_out_of_stock_text="Out of Stock" data-buy_button_product_unavailable_text="Unavailable" data-button_background_color="ffffff" data-button_text_color="ff6767" data-product_modal="false" data-product_title_color="333333" data-next_page_button_text="Next page" alt="Women's Vanlife Shirt"></div>
 
     </section>
     
