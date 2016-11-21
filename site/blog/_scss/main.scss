@@ -20,8 +20,8 @@
 @import 'layout/containers',
         'layout/spacing',
         'layout/positioning',
+        'layout/global-header',
         'layout/footer',
-        'layout/email-grab',
         'layout/hero'
 ;  
 
@@ -43,9 +43,9 @@
         'modules/article',
         'modules/posts',
         'modules/directory',
-        'modules/global-header',
         'modules/nav',
         'modules/podcasts',
+        'modules/mailbox',
         'modules/store'
 
 ;  

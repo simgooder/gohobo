@@ -35,6 +35,11 @@
         }
     }
 
+    &.-xs {
+        height: 400px;
+        min-height: 400px;
+    }
+
 
     @-moz-document url-prefix() { 
         .section--hero__img {
@@ -59,21 +64,6 @@
         }
     }
 
-    &.-theme--map {
-
-        @include mq-md {
-            //background:transparent url('../img/hero-bg-gohobo@2x.jpg') center center no-repeat;
-            background: transparent url('../img/hero-map@2x.jpg') center center no-repeat fixed;
-            background-size: cover;
-        }
-        @include mq-sm {
-            //background:transparent url('../img/hero-bg-gohobo.jpg') center center no-repeat;
-            background: transparent url('../img/hero-map.jpg') center center no-repeat fixed;
-            background-size: cover;
-        }
-
-    }
-
     &.-theme--journal {
 
         @include mq-md {
@@ -84,6 +74,20 @@
         @include mq-sm {
             //background:transparent url('../img/hero-bg-gohobo.jpg') center center no-repeat;
             background: transparent url('https://source.unsplash.com/collection/148531/500x500') center center no-repeat fixed;
+            background-size: cover;
+        }
+
+    }
+
+    &.-theme--map {
+        color: #fff;
+
+        @include mq-md {
+            background: transparent url('../img/hero-map@2x.jpg') center center no-repeat;
+            background-size: cover;
+        }
+        @include mq-sm {
+            background: transparent url('../img/hero-map.jpg') center center no-repeat;
             background-size: cover;
         }
 
@@ -133,18 +137,25 @@
 
         text-align: center;
 
-        button {
-            margin-top: 2em;
+        @include mq-md {
+
         }
         @include mq-sm {
-            button {
+            margin-top: 2em;
+        }
+
+        button {
+            @include mq-md {
                 margin-top: 2em;
+            }
+            @include mq-sm {
+                position: absolute;
+                margin-top: 3em;
             }
         }
     }
 
     .hero--title {
-    
         position: relative;
         z-index: 2;
 
@@ -153,7 +164,7 @@
         margin-left: auto;
         margin-right: auto;
 
-        max-width: 98%;
+        max-width: 95%;
         color: #fff;
         text-align: center;
 
@@ -186,10 +197,18 @@
         margin-right: auto;
         max-width: 40em;
 
-        padding-left: 2em;
-        padding-right: 2em;
-        padding-top: 2em;
-        padding-bottom: 2em;
+        @include mq-md {
+            padding-left: 2em;
+            padding-right: 2em;
+            padding-top: 2em;
+            padding-bottom: 2em;
+        }
+        @include mq-sm {
+            padding-left: 1em;
+            padding-right: 1em;
+            padding-top: 2em;
+            padding-bottom: 1em;
+        }
     }
 
 .section  {

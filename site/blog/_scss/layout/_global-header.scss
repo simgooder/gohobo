@@ -1,0 +1,47 @@
+
+.main--header {
+	width: 100%;
+
+	margin-right: auto;
+	margin-left: auto;
+
+	position: absolute;
+	top: 0;
+	left: 0;
+	right: 0;
+	z-index: 3;
+
+	padding-left: 2em;
+	padding-right: 2em;
+	padding-top: 2em;
+	
+
+	&.-theme--light {
+
+		.main--nav__item {
+			color: $color-dark;
+			@include mq(860px) {
+				color: #fff;
+			}
+			
+		}
+		.main--logo svg {
+			fill: $color-dark;
+		}
+		
+	}
+}
+
+	.-header--space {
+		padding-top: 131px;
+	}
+
+
+	.main--logo {
+		
+		float: left;
+
+		svg {
+			fill: #fff;
+		}
+	}

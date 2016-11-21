@@ -1,15 +1,14 @@
-<!-- <section class="section--info__sm">
-        
-  <h2 class="section--info__title">
-      From the Journal
-  </h2>
-
-</section>
- -->
-
 <ul class="post--list">
-  {% for post in site.posts limit: 4 %}
-  <a href="{{ post.url | prepend: site.baseurl }}" class="post--item">
+
+  <li class="post--list__heading">
+    <a href="{{ site.baseurl }}journal">
+      <h2>
+        Wander Journal
+      </h2>
+    </a>
+  </li>
+  {% for post in site.posts limit: 3 %}
+  <a class="post--item" href="{{ post.url | prepend: site.baseurl }}">
 
       <div class="post--overlay">
             

@@ -1,6 +1,5 @@
 $( document ).ready(function() {
 
-
     // TAGSORT PLUGIN
     // ----------------
     $('.dir--nav').tagSort({

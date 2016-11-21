@@ -1,0 +1,141 @@
+ // Mailbox ------------
+
+.mailbox {
+    position: fixed;
+    z-index: 4;
+
+    @include mq-md {
+        width: 360px;
+        right: 1em;
+        bottom: 1em;
+    }
+    @include mq-sm {
+        right: 0;
+        left: 0;
+        bottom: 0;
+        width: 100%;
+    }
+
+    font-size: 0.75em;
+
+    background-color: #fff;
+    box-shadow: 0 0 18px 0 rgba(#000,0.2);
+
+    transition: 0.35s;
+
+    &.-is--hidden {
+
+        @include mq-md {
+            right: -365px;
+        }
+        @include mq-sm {
+            bottom: -160px;
+        }
+    }
+
+    p {
+        text-align: center;
+    }
+
+    input {
+        border: 2px solid $color-gray-light;
+    }
+}
+
+    .mailbox--form {
+        display: flex;
+        flex-flow: row wrap;
+        align-items: center;
+        justify-content: center;
+        align-content: center;
+
+        padding: 3em 2em;
+
+    }
+
+    .mailbox--close {
+        position: absolute;
+        font-size: 1.85em;
+        color: $color-gray;
+
+        cursor: pointer;
+
+        transition: 0.4s ease-in-out;
+
+        @include mq-md {
+            top: 0;
+            left: 0.5em;
+        }
+        @include mq-sm {
+            top: 0.25em;
+            right: 0.25em;
+        }
+
+        &:hover {
+            transform: rotate(180deg);
+        }
+    }
+
+
+
+
+
+
+
+
+
+
+.section--email-grab {
+    width: 100%;
+    height: 16em;
+
+    @include mq-sm {
+        margin-top: -1em;
+    }
+
+}
+
+    .email-grab--form {
+        position: relative;
+
+        margin-left: auto;
+        margin-right: auto;
+
+        @include mq-md {
+            width: 560px;
+        }
+        @include mq-sm {
+            width: 90%;
+            font-size: 0.85em;
+        }
+
+        p {
+            text-align: center;
+            color: #fff;
+        }
+    }
+
+    .email-grab--form__dark {
+        position: relative;
+
+        max-width: 600px;
+
+        margin-left: auto;
+        margin-right: auto;
+
+        .input {
+            border-top: 3px solid #efefef;
+            border-bottom: 3px solid #efefef;
+            border-left: 3px solid #efefef;
+
+            border-top-left-radius: 0.2em;
+            border-bottom-left-radius: 0.2em;
+        }
+
+        p {
+            text-align: center;
+        }
+    }
+
+
+

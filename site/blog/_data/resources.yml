@@ -251,16 +251,6 @@
   logo  : '../assets/img/directory/staydu-logo.png'
   cta   :  Find a stay
 
-- name  : Purple Tent
-  link  : http://purpletent.com
-  desc  : 'Rent or host a tent in your backyard. Save Money, discover new places, enjoy the simplicity of a night spent under the stars. Free tent for hosts.'  
-  cat   : accommodation
-  subcat: camping
-  budget: 1 # out of 3
-  region: usa
-  logo  : '../assets/img/directory/purple-tent-logo.png'
-  cta   :  Find a tent
-
 - name  : RV With Me
   link  : https://rvwithme.com
   desc  : 'Online RV Site Reservations Across the Country. Private Landowners Hosting RVers. The Airbnb For RVing.'  
@@ -386,16 +376,6 @@ self-contained RVers to visit and stay overnight for free!"
   logo  : '../assets/img/directory/from-a-to-b-logo.png'
   cta   : Find a ride
 
-- name  : ExitFares
-  link  : https://www.exitfares.com/deals
-  desc  : 'Get the latest flight deals people are talking about, from all over the USA.'  
-  cat   : transportation
-  subcat: airfare
-  budget: 2 # out of 3
-  region: usa
-  logo  : '../assets/img/directory/exitfares-logo.png'
-  cta   : Find a flight
-
 - name  : Busbud
   link  : https://busbud.com
   desc  : 'Busbud is the best way to book bus tickets. Search, compare and book tickets from hundreds of bus companies around the world.'  
@@ -405,16 +385,6 @@ self-contained RVers to visit and stay overnight for free!"
   region: worldwide
   logo  : '../assets/img/directory/busbud-logo.png'
   cta   : Find a fare
-
-- name  : Airfare Spot
-  link  : https://airfarespot.com
-  desc  : 'Book, travel, save. Incredible flight deals aggregator. Pick a location and watch for the cheapest fares.'  
-  cat   : transportation
-  subcat: airfare
-  budget: 2 # out of 3
-  region: worldwide
-  logo  : '../assets/img/directory/airfare-spot-logo.png'
-  cta   : Find a flight
 
 - name  : OpenRide
   link  : https://openride.co

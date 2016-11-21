@@ -5,13 +5,6 @@
 // color themes
 // dynamically populated by the `resource.cat` variable
 
-.bg--topo {
-    @include mq-md {
-        //background:transparent url('../img/hero-bg-gohobo@2x.jpg') center center no-repeat;
-        background-image: url('../img/bg-topo.png');
-    }
-}
-
 .theme--accommodation {
 	background: $color-cta-grad;
 
@@ -40,6 +33,13 @@
 	}
 }
 
+.dir--container {
+	background-image: url('../img/bg-topo.png');
+
+	@include mq-md {
+		padding-top: 131px;
+	}
+}
 
 .dir--nav {
 

@@ -1,8 +1,14 @@
 //  Navigation
 // -------------
+$mobile-nav-bp: 860px;
+
 .main--nav {
 	width: 100%;
+	max-width: 1140px;
+	margin-left: auto;
+	margin-right: auto;
 
+	padding-bottom: 1em;
 	padding-top: 1em;
 	
 	font-family: $font-bold;
@@ -11,20 +17,15 @@
 
 	@include clearfix;
 
-	@include mq-min(801px) {
-	}
-	@include mq(800px) {
-
-	}
 }
 
 	.main--nav__wrapper {
 		display: inline-block;
 
-		@include mq-min(801px) {
+		@include mq-min($mobile-nav-bp) {
 			float: right;
 		}
-		@include mq(800px) {
+		@include mq($mobile-nav-bp) {
 			position: fixed;
 			top: 0;
 			right: -300px;
@@ -58,12 +59,12 @@
 
 		cursor: pointer;
 
-		@include mq-min(801px) {
+		@include mq-min($mobile-nav-bp) {
 			float: left;
 			font-size: 0.9em;
 		}
 		
-		@include mq(800px) {
+		@include mq($mobile-nav-bp) {
 			width: auto;
 			font-size: 1.2em;
 		}
@@ -94,23 +95,28 @@
 		float: right;
 	}
 	
-	@include mq-min(801px) {
+	@include mq-min($mobile-nav-bp) {
 		display: none;
 	}
 
 }
 
+	.-theme--light .main--nav__mobile {
+		
+		svg {
+			fill: $color-dark;
+		}
+
+		&.btn--close svg {
+			fill: #fff;
+		}
+	}
+
 .main--nav__mobile.btn--close {
 	position: absolute;
 
-	@include mq-md {
-		top: 3.65em;
-		right: 2em;
-	}
-	@include mq-sm {
-		top: 1.75em;
-		right: 2em;
-	}
+	top: 2.75em;
+	right: 2.25em;
 }
 
 

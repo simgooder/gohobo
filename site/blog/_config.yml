@@ -21,3 +21,8 @@ kramdown:
   input: GFM
 
 image_assets: "/assets/img/" 
+
+collections:
+  gohobo-apparel:
+    output: true
+
