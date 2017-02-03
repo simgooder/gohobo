@@ -6,23 +6,26 @@ $space: 1em;
 
 
 // Colours
-$color-dark: #333;
-$color-cta: #F06E61;
-$color-blue : #6AB9FF;
+$color-dark:        #333;
+$color-cta:         #F06E61;
+$color-blue :       #6AB9FF;
+$color-blue-light:  #98F5ED;
 
-$color-orange: #ff6767;
-$color-pink: #ED4F80;
-$color-pink-hot: #ff3366;
-$color-purple: #B976FE;
+$color-orange:      #ff6767;
+$color-pink:        #ED4F80;
+$color-pink-hot:    #ff3366;
+$color-purple:      #B976FE;
 
-$color-cta-grad: linear-gradient(-45deg, $color-pink 0%, $color-orange 100%);
+$color-cta-grad:    linear-gradient(-45deg, $color-pink 0%, $color-orange 100%);
 
-$color-blue-grad: linear-gradient(-45deg, #98F5ED 0%, $color-blue 100%);
+$color-blue-grad:   linear-gradient(-45deg, $color-blue-light 0%, $color-blue 100%);
 
 $color-purple-grad: linear-gradient(-45deg, $color-pink 0%, $color-purple 100%);
 
-$color-gray-light: #eee;
-$color-gray: #777;
+$color-social-grad: linear-gradient(-45deg, $color-orange 0%, $color-blue-light 100%);
+
+$color-gray-light:  #eee;
+$color-gray:        #777;
 
 
 // Social Colours

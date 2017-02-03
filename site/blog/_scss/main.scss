@@ -20,6 +20,7 @@
 @import 'layout/containers',
         'layout/spacing',
         'layout/positioning',
+        'layout/lander',
         'layout/global-header',
         'layout/footer',
         'layout/hero'
@@ -38,8 +39,7 @@
 
 //     Modules 
 //----------------------
-@import 'modules/lander',
-        'modules/modal',
+@import 'modules/modal',
         'modules/article',
         'modules/posts',
         'modules/directory',

@@ -2,8 +2,8 @@
   collection: explore
   meta: Unisex T-Shirt
   url: gohobo-apparel/northern-explore-t-shirt
-  price: 45
-  priceUSD: 34
+  price: 38
+  priceUSD: 30
   componentNumber: cc48b1ac2ce
   img: '../assets/img/apparel/northern-explore-shirt_gohobo.png'
   desc: "Quench your wanderlust with our Northern Explore tee. Printed on American Apparel fine jersey, slim fit, double stitched, made in the USA, sweatshop free"
@@ -12,28 +12,38 @@
   collection: explore
   meta: Unisex T-Shirt
   url: gohobo-apparel/sunset-explore-t-shirt
-  price: 45
-  priceUSD: 34
+  price: 38
+  priceUSD: 30
   componentNumber: 33ba9946888
   img: '../assets/img/apparel/sunset-explore-shirt_gohobo.png'
   desc: "Quench your wanderlust with our Sunset Explore tee. Printed on American Apparel fine jersey, slim fit, double stitched, made in the USA, sweatshop free."
 
-- title: Sunset Explore
+- title: Camping Explore
   collection: explore
-  meta: Unisex Zip Hoodie
-  url: gohobo-apparel/sunset-explore-zip-hoodie
-  price: 70
-  priceUSD: 52
-  componentNumber: 424f000687c
-  img: '../assets/img/apparel/sunset-explore-hoodie_gohobo.png'
-  desc: "Quench your wanderlust with our Sunset Explore zip hoodie. Printed on American Apparel 100% California fleece cotton, nylon zipper, hooded with matching finished polyester drawcord. Manufactured in the USA."
+  meta: Unisex Crewneck
+  url: gohobo-apparel/camping-explore-crewneck-sweatshirt
+  price: 50
+  priceUSD: 44
+  componentNumber: ae5e4614f5e
+  img: '../assets/img/apparel/camping-explore-crewneck.png'
+  desc: "Bask in the campvibes with our Camping Explore sweatshirt. Printed on American Apparel 100% California fleece cotton, raglan sleeves, crew neckline, made in the USA, sweatshop free."
+
+# - title: Sunset Explore
+#   collection: explore
+#   meta: Unisex Zip Hoodie
+#   url: gohobo-apparel/sunset-explore-zip-hoodie
+#   price: 65
+#   priceUSD: 50
+#   componentNumber: 424f000687c
+#   img: '../assets/img/apparel/sunset-explore-hoodie_gohobo.png'
+#   desc: "Quench your wanderlust with our Sunset Explore zip hoodie. Printed on American Apparel 100% California fleece cotton, nylon zipper, hooded with matching finished polyester drawcord. Manufactured in the USA."
 
 - title: Ocean Explore
   collection: explore
   meta: Unisex Zip Hoodie 
   url: gohobo-apparel/ocean-explore-zip-hoodie
-  price: 70
-  priceUSD: 52
+  price: 62
+  priceUSD: 50
   componentNumber: 0f72f886e68
   img: '../assets/img/apparel/ocean-explore-hoodie_gohobo.png'
   desc: "Quench your wanderlust with our Ocean Explore zip hoodie. Printed on American Apparel 100% California fleece cotton, nylon zipper, hooded with matching finished polyester drawcord. Manufactured in the USA."
@@ -42,8 +52,8 @@
   collection: vanlife 
   meta: Unisex T-Shirt
   url: gohobo-apparel/vandweller-vw-t-shirt
-  price: 45
-  priceUSD: 34
+  price: 38
+  priceUSD: 30
   componentNumber: 5a880892537
   img: '../assets/img/apparel/vanlife-shirt--vandweller_gohobo.png'
   desc: "Home is where you park it. Lovin' livin' the vanlife! Printed on American Apparel fine jersey, slim fit, double stitched, made in the USA, sweatshop free."
@@ -52,8 +62,8 @@
   collection: vanlife 
   meta: Unisex T-Shirt
   url: gohobo-apparel/vanlife-home-is-where-you-park-it-t-shirt
-  price: 45
-  priceUSD: 34
+  price: 38
+  priceUSD: 30
   componentNumber: dd0eb7eab7b
   img: '../assets/img/apparel/vandweller-shirt--vanlife_gohobo.png'
   desc: "What's better than living in a van down by the river? Printed on American Apparel fine jersey, slim fit, double stitched, made in the USA, sweatshop free."

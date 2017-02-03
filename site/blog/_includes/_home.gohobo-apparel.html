@@ -1,21 +1,28 @@
-<ul class="post--list">
+<ul class="lander-section">
     
-    <li class="post--list__heading">
+    <li class="lander-section--heading">
         <a href="{{ site.baseurl }}gohobo-apparel">
             <h2>
                 GoHobo Apparel
             </h2>
         </a>
     </li>
-    <div class="post--item__row">
+    <div class="lander-section--row">
     {% for product in site.data.products %}
-        <li class="post--item__sm">
+        <li class="lander-section--item -bg--gray">
 
-            <a class="post--logo" href="{{ site.url }}{{ product.url }}">
-                
+            <div class="lander-section--item__img">
+            
                 <img src="{{ product.img }}" alt="{{ product.title }} from GoHobo Adventure Apparel" title="{{ product.title }} from GoHobo Adventure Apparel">
 
-            </a>
+            </div>
+            <div class="lander-section--item__overlay">
+                <a href="{{ site.url }}{{ product.url }}">
+                    <button class="btn--line__pink" type="button">
+                        View Product
+                    </button>
+                </a>
+            </div>
 
         </li>  
     {% endfor %}

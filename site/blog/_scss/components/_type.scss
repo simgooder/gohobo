@@ -112,11 +112,6 @@
 		border-image: $color-cta-grad;
 		border-image-slice: 1;
 
-		p::before,
-		p::after {
-			content: '"';
-		}
-
 		@include mq-md {
 			font-size: 1.5em;
 		}
@@ -127,7 +122,7 @@
 
 		p {
 			line-height: 1.4;
-			font-family: $font-copy;
+			font-family: $font-italic;
 
 			@include mq-sm {
 				margin-left: 0.25em;

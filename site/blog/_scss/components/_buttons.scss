@@ -89,6 +89,23 @@ button {
 	}
 }
 
+.btn--line__pink {
+	color: $color-pink-hot;
+	border: 2px solid $color-pink-hot;
+	border-radius: 3px;
+	padding: 0.35em 1.5em;
+
+	transition: 0.05s;
+
+	&:hover,
+	&:focus {
+		box-shadow: 0 0.1em 0.05em -0.05em darken($color-pink-hot, 10%);
+	}
+	&:active {
+		box-shadow: none;
+	}
+}
+
 .btn--line__dark {
 	color: $color-dark;
 	border: 2px solid $color-dark;

@@ -10,6 +10,10 @@
 	width: 1px;
 }
 
+.text-center {
+	text-align: center;
+}
+
 .cf, %cf {
 	@include clearfix;
 }

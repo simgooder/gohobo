@@ -11,6 +11,7 @@
 #   - room rental
 #   - couch surfing
 #   - rideshare
+#   - vanlife
 #   - air
 #   - bike
 #   - bus
@@ -31,15 +32,35 @@
 ########  ACCOMMODATION ##########
 ##################################
 
-- name  : ClubSofa
-  link  : http://clubsofa.org
-  desc  : "ClubSofa is a platform that allows you to meet and stay with new people, overseas or local using our unique friend of friends model. Our friend sharing model is that you're connected to your friends and their friends too! Assuming everyone you know has on average 200 unique friends then you have a pool of 40,000 people! That's the world that ClubSofa opens!"  
+- name  : GuestToGuest
+  link  : https://www.guesttoguest.com
+  desc  : "A global social network for free home and apartment exchanges. Travel whenever you want with complete confidence."
   cat   : accommodation
-  subcat: couchsurfing
+  subcat: housesitting
   budget: 0 # out of 3
   region: worldwide
-  logo  : '../assets/img/directory/clubsofa-logo.png'
-  cta   :  Find a couch
+  logo  : '../assets/img/directory/guest-to-guest-logo.png'
+  cta   : Find a home
+
+- name  : Campr
+  link  : https://www.gocampr.com
+  desc  : 'Camp with Locals, Meet the World. Campr is a social traveling platform where you can find unique camping experiences.'  
+  cat   : accommodation
+  subcat: camping
+  budget: 1 # out of 3
+  region: worldwide
+  logo  : '../assets/img/directory/campr-logo.png'
+  cta   :  Find a campsite
+
+- name  : HouseCarers
+  link  : http://gohobo.housecare.hop.clickbank.net
+  desc  : 'HouseCarers.com invites you to join one of the fastest growing trends in the world today House sitting and Pet Sitting. Free house sitting guide.'  
+  cat   : accommodation
+  subcat: housesitting
+  budget: 1.5 # out of 3
+  region: worldwide
+  logo  : '../assets/img/directory/house-carers-logo.png'
+  cta   :  Find a house
 
 - name  : NightSwapping
   link  : https://www.nightswapping.com
@@ -111,6 +132,16 @@
   logo  : '../assets/img/directory/all-the-rooms-logo.png'
   cta   :  Find a room
 
+- name  : ClubSofa
+  link  : http://clubsofa.org
+  desc  : "ClubSofa is a platform that allows you to meet and stay with new people, overseas or local using our unique friend of friends model. Our friend sharing model is that you're connected to your friends and their friends too! Assuming everyone you know has on average 200 unique friends then you have a pool of 40,000 people! That's the world that ClubSofa opens!"  
+  cat   : accommodation
+  subcat: couchsurfing
+  budget: 0 # out of 3
+  region: worldwide
+  logo  : '../assets/img/directory/clubsofa-logo.png'
+  cta   :  Find a couch
+
 - name  : Mind My House
   link  : https://www.mindmyhouse.com
   desc  : "Global house sitting matching service bringing home owners and house sitters together online. Home owners join for free. House sitter members pay the lowest annual fee on the web. Happy house sitting!"
@@ -130,16 +161,6 @@
   region: worldwide
   logo  : '../assets/img/directory/gamping-logo.png'
   cta   : Find a campsite
-
-- name  : GuestToGuest
-  link  : https://www.guesttoguest.com
-  desc  : "A global social network for free home and apartment exchanges. Travel whenever you want with complete confidence."
-  cat   : accommodation
-  subcat: housesitting
-  budget: 0 # out of 3
-  region: worldwide
-  logo  : '../assets/img/directory/guest-to-guest-logo.png'
-  cta   : Find a home
 
 - name  : Tracks and Trails
   link  : http://www.tracksandtrails.ca
@@ -169,7 +190,7 @@
   budget: 1 # out of 3
   region: worldwide
   logo  : '../assets/img/directory/trampolinn-logo.png'
-  cta   :  Find a homestay
+  cta   : Find a homestay
 
 - name  : Owlcamp
   link  : http://owlcamp.com
@@ -221,15 +242,15 @@
   logo  : '../assets/img/directory/housesit-match-logo.png'
   cta   :  Find a house
 
-- name  : Campr
-  link  : https://www.gocampr.com
-  desc  : 'Camp with Locals, Meet the World. Campr is a social traveling platform where you can find unique camping experiences.'  
+- name  : Cool Camping
+  link  : https://www.coolcamping.co.uk
+  desc  : Find the best campsites and camping grounds in England, Scotland, Wales and France. Campsite reviews, photos, facilities, equipment guides, plus much more.
   cat   : accommodation
   subcat: camping
   budget: 1 # out of 3
-  region: worldwide
-  logo  : '../assets/img/directory/campr-logo.png'
-  cta   :  Find a campsite
+  region: europe
+  logo  : '../assets/img/directory/cool-camping-logo.png'
+  cta   : Find a campsite
 
 - name  : Hostel World
   link  : http://www.hostelworld.com
@@ -271,16 +292,6 @@
   logo  : '../assets/img/directory/couchsurfing-logo.png'
   cta   :  Find a couch
 
-- name  : HouseCarers
-  link  : http://gohobo.housecare.hop.clickbank.net
-  desc  : 'HouseCarers.com invites you to join one of the fastest growing trends in the world today House sitting and Pet Sitting. Free house sitting guide.'  
-  cat   : accommodation
-  subcat: housesitting
-  budget: 1.5 # out of 3
-  region: worldwide
-  logo  : '../assets/img/directory/house-carers-logo.png'
-  cta   :  Find a house
-
 - name  : HipCamp
   link  : https://www.hipcamp.com/users/sign-up?rc=UIJ9VXIQ&rs=3&rk=0
   desc  : Search and discover the best camping near you or anywhere else in the country. Camp on ranches, farms, vineyards and land preserves.  
@@ -290,6 +301,7 @@
   region: north america
   logo  : '../assets/img/directory/hipcamp-logo.png'
   cta   :  Find a campsite
+  featured: 7
 
 - name  : Camp in My Garden
   link  : http://campinmygarden.com
@@ -340,16 +352,7 @@
   region: worldwide
   logo  : '../assets/img/directory/free-campsites-logo.png'
   cta   : Find a campsite
-
-- name  : Cool Camping
-  link  : https://www.coolcamping.co.uk
-  desc  : Find the best campsites and camping grounds in England, Scotland, Wales and France. Campsite reviews, photos, facilities, equipment guides, plus much more.
-  cat   : accommodation
-  subcat: camping
-  budget: 1 # out of 3
-  region: europe
-  logo  : '../assets/img/directory/cool-camping-logo.png'
-  cta   : Find a campsite
+  featured: 6
 
 - name  : Harvest Hosts
   link  : https://harvesthosts.com
@@ -365,6 +368,28 @@ self-contained RVers to visit and stay overnight for free!"
 ##################################
 ########  TRANSPORTATION #########
 ##################################
+
+- name  : RV Rental Connection
+  link  : https://www.rvrentalconnection.com/request-rv
+  desc  : "Rent the RV. Own the Experience. Find private RV's to rent from private owners; Class A, Class B and Class C Motorhomes along with Travel Trailers, Campervans and more. Start your journey today!"
+  cat   : transportation
+  subcat: rv rental
+  budget: 2 # out of 3
+  region: north america
+  logo  : '../assets/img/directory/rv-rental-connection-logo.png'
+  cta   : Find a RV
+  featured: 1
+
+- name  : Turo
+  link  : https://turo.com/rentals
+  desc  : 'Rent the car you want, wherever you want it. Search, browse, and book unique cars for rent by local owners nationwide.'  
+  cat   : transportation
+  subcat: rideshare
+  budget: 2 # out of 3
+  region: worldwide
+  logo  : '../assets/img/directory/turo-logo.png'
+  cta   : Rent a car
+  featured: 2
 
 - name  : From A to B
   link  : https://fromatob.com
@@ -385,6 +410,7 @@ self-contained RVers to visit and stay overnight for free!"
   region: worldwide
   logo  : '../assets/img/directory/busbud-logo.png'
   cta   : Find a fare
+  featured: 5
 
 - name  : OpenRide
   link  : https://openride.co
@@ -486,14 +512,14 @@ self-contained RVers to visit and stay overnight for free!"
   logo  : '../assets/img/directory/rv-share-logo.png'
   cta   : Find a RV
 
-- name  : HitchPlanet
-  link  : http://hitchplanet.com
-  desc  : We provide safe, reliable and affordable travel in British Columbia, Washington, Oregon, Alberta & Ontario. Join for free as a driver or a hitcher.
+- name  : Pop Rideshare
+  link  : https://www.poparide.com/
+  desc  : 42,900 people use Pop to rideshare between cities in Canada and the United States. Try it out, it's super easy and free to sign up!
   cat   : transportation
   subcat: rideshare
   budget: 1 # out of 3
   region: north america
-  logo  : '../assets/img/directory/hitchplanet-logo.png'
+  logo  : '../assets/img/directory/pop-rideshare-logo.png'
   cta   : Rideshare Canada
 
 - name  : Kangaride
@@ -515,6 +541,7 @@ self-contained RVers to visit and stay overnight for free!"
   region: north america
   logo  : '../assets/img/directory/hit-the-road-logo.png'
   cta   : Find a relocation
+  featured: 3
 
 - name  : Airfare Watchdog
   link  : http://www.airfarewatchdog.com/top-50-fares
@@ -548,25 +575,25 @@ self-contained RVers to visit and stay overnight for free!"
 
 
 ##################################
-########  WORK EXCHANGE  #########
+########  VOLUNTEERING  ##########
 ##################################
 
 
-- name  : Helpstay
-  link  : https://helpstay.com
-  desc  : "Volunteer Abroad for Free Accommodation! Try a Farm Stay, Search for Ranch and Hostel Jobs. Gap Year Abroad, Work Away, Internship Overseas, Help Exchange or Teach. Get Going with HelpStay.com."
-  cat   : skills-exchange
-  subcat: volunteering
-  budget: 1.5 # out of 3
-  region: worldwide
-  logo  : '../assets/img/directory/helpstay-logo.png'
-  cta   : Find an exchange
+# - name  : Helpstay
+#   link  : https://helpstay.com
+#   desc  : "Volunteer Abroad for Free Accommodation! Try a Farm Stay, Search for Ranch and Hostel Jobs. Gap Year Abroad, Work Away, Internship Overseas, Help Exchange or Teach. Get Going with HelpStay.com."
+#   cat   : volunteering
+#   subcat: skills-exchange
+#   budget: 1.5 # out of 3
+#   region: worldwide
+#   logo  : '../assets/img/directory/helpstay-logo.png'
+#   cta   : Find an exchange
 
 - name  : Volunteers Base
   link  : http://www.volunteersbase.com
   desc  : "Are you looking for free volunteering opportunities? This is the place! Volunteers Base is a Moneyless Help Exchange Network"
-  cat   : skills-exchange
-  subcat: volunteering
+  cat   : volunteering
+  subcat: skills-exchange
   budget: 0 # out of 3
   region: worldwide
   logo  : '../assets/img/directory/volunteers-base-logo.png'
@@ -575,8 +602,8 @@ self-contained RVers to visit and stay overnight for free!"
 - name  : World Wide Opportunities on Organic Farms
   link  : http://www.wwoof.net
   desc  : "Volunteer help exchange on organic farms in 100+ countries. Meet friends from all over the world."
-  cat   : skills-exchange
-  subcat: volunteering
+  cat   : volunteering
+  subcat: skills-exchange
   budget: 0 # out of 3
   region: worldwide
   logo  : '../assets/img/directory/wwoof-logo.png'
@@ -585,8 +612,8 @@ self-contained RVers to visit and stay overnight for free!"
 - name  : Worldpackers
   link  : https://www.worldpackers.com
   desc  : "Find unique places where you can exchange your skills for accommodation. Traveling changes people. People change the world."
-  cat   : skills-exchange
-  subcat: volunteering
+  cat   : volunteering
+  subcat: skills-exchange
   budget: 0 # out of 3
   region: worldwide
   logo  : '../assets/img/directory/worldpackers-logo.png'
@@ -595,19 +622,36 @@ self-contained RVers to visit and stay overnight for free!"
 - name  : Work Away
   link  : https://www.workaway.info
   desc  : "Workaway set up to promote fair exchange between budget travellers, language learners or culture seekers who can stay with 1000s of families, individuals or organizations that are looking for help in over 130 different countries."
-  cat   : skills-exchange
-  subcat: volunteering
+  cat   : volunteering
+  subcat: skills-exchange
   budget: 0 # out of 3
   region: worldwide
   logo  : '../assets/img/directory/work-away-logo.png'
   cta   : Find an exchange
+  featured: 7
 
 - name  : Projects Abroad
   link  : http://www.projects-abroad.ca
   desc  : "Volunteer Abroad in 29 developing countries in Africa, Asia, Latin America and Eastern Europe. Programs are offered in care, teaching, conservation, human rights, healthcare and more."
-  cat   : skills-exchange
-  subcat: volunteering
+  cat   : volunteering
+  subcat: skills-exchange
   budget: 2 # out of 3
   region: worldwide
   logo  : '../assets/img/directory/projects-abroad-logo.png'
   cta   : Find a project
+
+
+##################################
+########     Tourism     #########
+##################################
+
+- name  : Kootour
+  link  : https://www.kootour.com/
+  desc  : "Find unique adventures and connect with expert local guides with Kootour’s online travel marketplace."
+  cat   : tourism
+  subcat: social
+  budget: 2 # out of 3
+  region: worldwide
+  logo  : '../assets/img/directory/kootour-logo.png'
+  cta   : Find a tour
+  featured: 4

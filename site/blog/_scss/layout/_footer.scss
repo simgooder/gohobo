@@ -25,17 +25,20 @@
 }
 
 .footer--list__col {
-    text-align: left;
     
     float: left;
 
     @include mq-md {
         width: (100% / 3);
         padding-left: 6em;
+
+        text-align: left;
     }
     @include mq-sm {
         width: 100%;
         padding: 1em;
+
+        text-align: center;
     }
 }
 

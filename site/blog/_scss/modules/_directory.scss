@@ -5,33 +5,35 @@
 // color themes
 // dynamically populated by the `resource.cat` variable
 
-.theme--accommodation {
-	background: $color-cta-grad;
-
-	background-size: 120%;
-
-	&:hover {
-		background-size: 200%;
-	}
-}
 .theme--transportation {
-	background: $color-blue-grad;
-
-	background-size: 102%;
+	background-color: $color-blue;
 
 	&:hover {
-		background-size: 200%;
+		background-color: lighten($color-blue, 5%);
 	}
 }
-.theme--skills-exchange {
-	background: $color-purple-grad;
-
-	background-size: 102%;
+.theme--accommodation {
+	background-color: $color-pink-hot;
 
 	&:hover {
-		background-size: 200%;
+		background-color: lighten($color-pink-hot, 5%);
 	}
 }
+.theme--volunteering {
+	background-color: $color-purple;
+
+	&:hover {
+		background-color: lighten($color-purple, 5%);
+	}
+}
+.theme--tourism {
+	background-color: $color-orange;
+
+	&:hover {
+		background-color: lighten($color-orange, 5%);
+	}
+}
+
 
 .dir--container {
 	background-image: url('../img/bg-topo.png');
@@ -103,7 +105,7 @@
 				box-shadow: none;
 			}
 		}
-		&.-theme--skills-exchange {
+		&.-theme--volunteering {
 			color: $color-purple;
 			border: 2px solid $color-purple;
 
@@ -114,29 +116,44 @@
 				box-shadow: none;
 			}
 		}
+		&.-theme--tourism {
+			color: $color-orange;
+			border: 2px solid $color-orange;
+
+			&:hover {
+				box-shadow: 0px 2px 0px 0px rgba($color-orange, 1);
+			}
+			&:active {
+				box-shadow: none;
+			}
+		}
 
 
 		//  Active filters
 		&.tagsort-active.-theme--transportation {
 			box-shadow: none;
-			background: $color-blue-grad;
-			background-size: 125%;
+			background-color: $color-blue;
 			border-color: transparent;
 
 			color: #fff;
 		}
 		&.tagsort-active.-theme--accommodation {
 			box-shadow: none;
-			background: $color-cta-grad;
-			background-size: 125%;
+			background-color: $color-pink-hot;
 			border-color: transparent;
 
 			color: #fff;
 		}
-		&.tagsort-active.-theme--skills-exchange {
+		&.tagsort-active.-theme--volunteering {
 			box-shadow: none;
-			background: $color-purple-grad;
-			background-size: 125%;
+			background-color: $color-purple;
+			border-color: transparent;
+
+			color: #fff;
+		}
+		&.tagsort-active.-theme--tourism {
+			box-shadow: none;
+			background-color: $color-orange;
 			border-color: transparent;
 
 			color: #fff;
@@ -280,9 +297,13 @@
 				color: $color-pink;
 				border: 2px solid $color-pink;
 			}
-			&.-theme--skills-exchange .card--categories__cat {
+			&.-theme--volunteering .card--categories__cat {
 				color: $color-purple;
 				border: 2px solid $color-purple;
+			}
+			&.-theme--tourism .card--categories__cat {
+				color: $color-orange;
+				border: 2px solid $color-orange;
 			}
 		}
 

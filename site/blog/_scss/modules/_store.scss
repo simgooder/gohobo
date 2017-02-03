@@ -230,6 +230,21 @@ $item-width: 18.375em;
             padding-top: 2em;
         }
 
+        .product--info__meta {
+            font-size: $font-size-meta;
+            text-align: center;
+            color: darken($color-gray-light, 45%);
+
+            display: block;
+
+            @include mq-md {
+                padding-top: 0.5em;
+            }
+            @include mq-sm {
+                padding-top: 1.5em;
+            }
+        }
+
         
         .product--payment-icons {
             margin-top: 2em;

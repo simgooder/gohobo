@@ -4,97 +4,126 @@ layout: default
 
 <script defer>
   $.getJSON('https://freegeoip.net/json/') 
-       .success (function(location){
+	   .success (function(location){
 
-        var country = location.country_name;
+		var country = location.country_name;
 
-        if (country == "Canada") {
-          $("[data-currency='USD']").hide();
-        }
-        if (country == "United States") {
-          $("[data-currency='CAD']").hide();
-        }
+		if (country == "Canada") {
+		  $("[data-currency='USD']").hide();
+		}
+		if (country == "United States") {
+		  $("[data-currency='CAD']").hide();
+		}
 
-        //console.log(country);
+		//console.log(country);
 
-       }).error (function(){
-          $("[data-currency='CAD']").hide();
-          console.log("Location denied. Currency defaulted to USD.");
-       });
+	   }).error (function(){
+		  $("[data-currency='CAD']").hide();
+		  console.log("Location denied. Currency defaulted to USD.");
+	   });
 </script>
 <script src="{{ 'assets/js/shopify-products.js' | prepend: site.url }}" defer></script>
 
 <img class="art--pin-img"
-     src="{{ site.url | replace: 'gohobo.co/', 'gohobo.co' }}{{ site.image_assets }}{{ page.productPin }}"
-     data-pin-url="{{ site.url | replace: 'gohobo.co/', 'gohobo.co' }}{{page.url}}"
-     data-pin-media="{{ site.url | replace: 'gohobo.co/', 'gohobo.co' }}{{ site.image_assets }}{{ page.productPin }}"/>
+	 src="{{ site.url | replace: 'gohobo.co/', 'gohobo.co' }}{{ site.image_assets }}{{ page.productPin }}"
+	 data-pin-url="{{ site.url | replace: 'gohobo.co/', 'gohobo.co' }}{{page.url}}"
+	 data-pin-media="{{ site.url | replace: 'gohobo.co/', 'gohobo.co' }}{{ site.image_assets }}{{ page.productPin }}"/>
 
 <section class="store--wrapper">
-    
-    <section class="product--container" itemscope itemtype="http://schema.org/Product">
-        
-        <figure class="product--image">
-            <img src="{{ site.image_assets }}{{ page.productImg }}" alt="{{ page.productTitle }} - GoHobo Adventure Apparel">
-        </figure>
-        <div class="product--info">
+	
+	<section class="product--container" itemscope itemtype="http://schema.org/Product">
+		
+		<figure class="product--image">
+			<img src="{{ site.image_assets }}{{ page.productImg }}" alt="{{ page.productTitle }} - GoHobo Adventure Apparel">
+		</figure>
+		<div class="product--info">
 
-            <h1 class="product--info__title" itemprop="name">
-               {{ page.productTitle }}
-            </h1>
+			<h1 class="product--info__title" itemprop="name">
+			   {{ page.productTitle }}
+			</h1>
 
-            <label class="product--info__price" data-currency="CAD" itemprop="offers" itemscope itemtype="http://schema.org/Offer">
-               <span itemprop="priceCurrency" content="CAD">$</span><span itemprop="price" content="{{ page.productPrice }}.00">{{ page.productPrice }}<sup>CAD</sup> </span>
-               <meta itemprop="availability" itemtype="http://schema.org/ItemAvailability"
-                           content="http://schema.org/InStock" />
-            </label>
-            <label class="product--info__price" data-currency="USD" itemprop="offers" itemscope itemtype="http://schema.org/Offer">
-               <span itemprop="priceCurrency" content="USD">$</span><span itemprop="price" content="{{ page.productPriceUSD }}.00">{{ page.productPriceUSD }}<sup>USD</sup> </span>
-               <meta itemprop="availability" itemtype="http://schema.org/ItemAvailability"
-                           content="http://schema.org/InStock" />
-            </label>
+			<label class="product--info__price" data-currency="CAD" itemprop="offers" itemscope itemtype="http://schema.org/Offer">
+			   <span itemprop="priceCurrency" content="CAD">$</span><span itemprop="price" content="{{ page.productPrice }}.00">{{ page.productPrice }}<sup>CAD</sup> </span>
+			   <meta itemprop="availability" itemtype="http://schema.org/ItemAvailability"
+				     content="http://schema.org/InStock" />
+			</label>
+			<label class="product--info__price" data-currency="USD" itemprop="offers" itemscope itemtype="http://schema.org/Offer">
+			   <span itemprop="priceCurrency" content="USD">$</span><span itemprop="price" content="{{ page.productPriceUSD }}.00">{{ page.productPriceUSD }}<sup>USD</sup> </span>
+			   <meta itemprop="availability" itemtype="http://schema.org/ItemAvailability"
+				     content="http://schema.org/InStock" />
+			</label>
+			<small class="product--info__meta" style="margin-top: -2em;margin-bottom: 1.5em;">
+				Includes shipping to USA &amp; Canada.
+			</small>
 
-            <label class="product--info__desc" itemprop="description">
-                {{ page.productDesc }}
-            </label>
+			<label class="product--info__desc" itemprop="description">
+				{{ page.productDesc }}
+			</label>
 
-            <div class="product--info__purchase" id="product-component-{{ page.productComponentNumber }}"></div>
-            <div class="product--payment-icons">
-                <img src="{{ site.image_assets }}apparel/payments.png" class="product--payment-icon" alt="">
-            </div>
+			<div class="product--info__purchase" id="product-component-{{ page.productComponentNumber }}" data-tracking="buyButtonClick"></div>
+			<div class="product--payment-icons">
+				<img src="{{ site.image_assets }}apparel/payments.png" class="product--payment-icon" alt="">
+			</div>
+			<small class="product--info__meta">
+			  <a href="/refund-policy">
+				Refund Policy
+			  </a>
+			  •
+			  <a href="/privacy-policy">
+				Your Privacy
+			  </a>
+			  •
+			  <a href="/terms">
+				Terms of Service
+			  </a>
+			</small>
 
-        </div>
+		</div>
 
-    </section>
+	</section>
 
 </section>
 
 {% include _widget.free-shipping-banner.html %}
 
+<!-- Add event to the button's click handler -->
+<script type="text/javascript">
+$( '[buyButtonClick]' ).click(function() {
+fbq('track', 'AddToCart', {
+content_ids: ['{{ page.productComponentNumber }}'],
+content_type: 'product',
+value: {{ page.productPrice }},
+currency: 'CAD'
+});
+});
+</script>
+
+
 <script type="application/ld+json">
   {
-    "@context": "http://schema.org",
-    "@type": "Product",
-    "name": "{{ page.productTitle }}",
-    "image": "{{ site.url }}{{ site.image_assets }}{{ page.productImg }}",
-    "description": "{{ page.productDesc }}",
-    "brand": {
-        "@type": "Thing",
-        "name": "GoHobo"
-    },
-    "offers": {
-        "@type": "Offer",
-        "url": "{{ site.prod_url }}{{ page.url }}",
-        "priceCurrency": "USD",
-        "price": "{{ page.productPriceUSD }}",
-        "priceValidUntil": "2020-11-05",
-        "itemCondition": "http://schema.org/NewCondition",
-        "availability": "http://schema.org/InStock",
-        "seller": {
-          "@type": "Organization",
-          "name": "GoHobo",
-          "url": "http://gohobo.co",
-          "logo": "http://www.gohobo.co/assets/img/gohobo-logo.png"
-        }
-    }
+	"@context": "http://schema.org",
+	"@type": "Product",
+	"name": "{{ page.productTitle }}",
+	"image": "{{ site.url }}{{ site.image_assets }}{{ page.productImg }}",
+	"description": "{{ page.productDesc }}",
+	"brand": {
+		"@type": "Thing",
+		"name": "GoHobo"
+	},
+	"offers": {
+		"@type": "Offer",
+		"url": "{{ site.prod_url }}{{ page.url }}",
+		"priceCurrency": "USD",
+		"price": "{{ page.productPriceUSD }}",
+		"priceValidUntil": "2020-11-05",
+		"itemCondition": "http://schema.org/NewCondition",
+		"availability": "http://schema.org/InStock",
+		"seller": {
+		  "@type": "Organization",
+		  "name": "GoHobo",
+		  "url": "http://gohobo.co",
+		  "logo": "http://www.gohobo.co/assets/img/gohobo-logo.png"
+		}
+	}
   }
 </script>
