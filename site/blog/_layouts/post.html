@@ -8,8 +8,10 @@ layout: default
 		 src="{{ site.image_assets }}{{ page.hero }}"
 		 srcset="{{ site.image_assets }}{{ page.hero }} 1x, {{ site.image_assets }}{{ page.hero | replace: '.jpg', '@2x.jpg' }} 2x"
 		 alt="">
-
-    <h1 class="hero--title hero--content">{{ page.title }}</h1>
+    
+    <div class="hero--content">
+        <h1 class="hero--title">{{ page.title }}</h1>
+    </div>
 	
 	{% if page.image-author %}
 	<div class="icon--camera__bottom">
@@ -35,14 +37,8 @@ layout: default
 
 <article class="art--container">
 
-	<h6 class="art--meta">
-		<time datetime="{{ page.date | date_to_xmlschema }}">
-			{{ page.date | date: "%B %-d, %Y" }}
-		</time>
-	</h6>
-
-    <figure class="art--meta__author">
-        
+    <div class="art--meta">
+            
         {% if page.author-thumb %}
         <div class="art--meta__thumb">
             <a href="{{ page.author-website-link }}">
@@ -51,14 +47,15 @@ layout: default
         </div>
         {% endif %}
 
-        <figcaption class="art--meta">
-            By {{ page.author }} <br>
-            <a href="{{ page.author-website-link }}">
-                {{ page.author-website}}
-            </a>
-        </figcaption>
+        <a class="art--meta__author" href="{{ page.author-website-link }}">
+            {{ page.author }}
+        </a>
 
-    </figure>
+        <time class="art--meta__date" datetime="{{ page.date | date_to_xmlschema }}">
+            {{ page.date | date: "%B %-d, %Y" }}
+        </time>
+
+    </div>
 
 	<div class="art--content">
 		{{ content }}

@@ -72,4 +72,29 @@
 		margin-top: 1em;
 		margin-bottom: 1em;
 	}
+
 }
+
+// Select Box ----
+
+// wraps a select element
+.input--select {
+    position: relative;
+
+    &:after {
+        content: '\25be';
+        
+        position: absolute;
+        top: 0.1em;
+        right: 0.65em;
+
+        font-size: 2em;
+
+        z-index: 1;
+    }
+
+    select {
+        z-index: 2;
+        position: relative;
+    }
+}    

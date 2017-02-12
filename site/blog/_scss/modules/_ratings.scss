@@ -1,0 +1,41 @@
+.rating--widget {
+
+    float: left;
+
+    > input {
+        @extend %visuallyhidden;
+    }
+    .rating--star {
+        float: right;
+        width: 1em;
+        overflow: hidden;
+        white-space: nowrap;
+        cursor: pointer;
+        font-size: 200%;
+        line-height: 1.2;
+        color: #ddd;
+
+        &:before {
+            content: '★';
+        }
+    }
+
+}
+
+// States ---
+
+// Hover State
+.rating--star:hover,
+.rating--star:hover ~ .rating--star {
+    color: $color-dark;
+}
+
+// Checked
+.rating--widget > input:checked ~ .rating--star {
+    color: $color-dark;
+
+    &:hover,
+    &:focus {
+        opacity: 0.8;
+    }
+}

@@ -1,0 +1,192 @@
+---
+pagename: gohobo adventure apparel
+layout: default
+headertheme: -theme--light
+---
+
+
+  <div>
+
+      <form class="modal--card" method="POST" id="gform" action="https://script.google.com/macros/s/AKfycbxE_iaiF_HoKLPs3Akd4bLBDqDd7s43dwjglUFjlPOnQSUXVlg/exec">
+
+          <div class="modal--close__btn js-toggle-modal" title="close this window">
+              <span>
+                  &#215;
+              </span>
+          </div>
+
+          <div class="input--group">
+              <h3 class="input--group__heading">
+                  Contact GoHobo
+              </h3>
+              <label class="input--label">
+                  Get in touch anytime and we'll get back to you as soon as possible - usually within a few hours.
+              </label>
+          </div> 
+
+          <div class="input--group">
+              <label class="input--label" for="name">
+                  Your name
+              </label>
+              <input type="text" name="name" class="input">
+          </div>
+          <div class="input--group">
+              <label class="input--label" for="email">
+                  Your email*
+              </label>
+              <input type="email" name="email" class="input">
+          </div>
+          <div class="input--group">
+              <label class="input--label" for="website">
+                  Website URL
+              </label>
+              <input type="url" name="website" class="input">
+          </div>
+          <div class="input--group">
+              <label class="input--label" for="service">
+                  What service is this review for?
+              </label>
+              <div class="input--select">
+              <select class="input" name="service">
+                  {% assign sortedResources = site.data.resources | sort: 'name' %}
+                  {% assign totalItems = sortedResources.size | divided_by:2 %}
+
+                  {% for resource in sortedResources | limit: totalItems %}
+
+                  <option value="{{resource.name}}">
+                      {{resource.name}}
+                  </option>
+
+                  {% endfor %}
+              </select>
+              </div>
+          </div>
+          <div class="input--group">
+              <label class="input--label" for="rating">
+                  Rating
+              </label>
+              <div class="rating--widget">
+                  <input type="radio" name="rating" value="5" id="star5">
+                  <label class="rating--star" for="star5" title="Rocks!">5 stars</label>
+
+                  <input type="radio" name="rating" value="4" id="star4">
+                  <label class="rating--star" for="star4" title="Pretty good">4 stars</label>
+
+                  <input type="radio" name="rating" value="3" id="star3">
+                  <label class="rating--star" for="star3" title="Meh">3 stars</label>
+
+                  <input type="radio" name="rating" value="2" id="star2">
+                  <label class="rating--star" for="star2" title="Kinda bad">2 stars</label>
+
+                  <input type="radio" name="rating" value="1" id="star1">
+                  <label class="rating--star" for="star1" title="Sucks big time">1 star</label>
+              </div>
+          </div>
+          <div class="input--group">
+              <label class="input--label" for="review">
+                  Your review
+              </label>
+              <textarea class="input--textarea" name="review" rows="5"></textarea>
+          </div>
+
+          <button class="btn--cta" type="submit">
+              Submit
+          </button>
+
+      </form>
+
+      <div style="display:none;" id="thankyou_message">
+          Thanks for the submission! Pending review, we'll let you know when your review goes live!
+      </div>
+
+  </div>
+
+  <script>
+      
+      function validEmail(email) { // see:
+        var re = /^([\w-]+(?:\.[\w-]+)*)@((?:[\w-]+\.)*\w[\w-]{0,66})\.([a-z]{2,6}(?:\.[a-z]{2})?)$/i;
+        return re.test(email);
+      }
+      // get all data in form and return object
+      function getFormData() {
+        var elements = document.getElementById("gform").elements; // all form elements
+        var fields = Object.keys(elements).map(function(k) {
+          if(elements[k].name !== undefined) {
+            return elements[k].name;
+          // special case for Edge's html collection
+          }else if(elements[k].length > 0){
+            return elements[k].item(0).name;
+          }
+        }).filter(function(item, pos, self) {
+          return self.indexOf(item) == pos && item;
+        });
+        var data = {};
+        fields.forEach(function(k){
+          data[k] = elements[k].value;
+          if(elements[k].type === "checkbox"){
+            data[k] = elements[k].checked;
+          // special case for Edge's html collection
+          }else if(elements[k].length){
+            for(var i = 0; i < elements[k].length; i++){
+              if(elements[k].item(i).checked){
+                data[k] = elements[k].item(i).value;
+              }
+            }
+          }
+        });
+        //console.log(data);
+        return data;
+      }
+
+      function handleFormSubmit(event) {  // handles form submit withtout any jquery
+        event.preventDefault();           // we are submitting via xhr below
+        var data = getFormData();         // get the values submitted in the form
+        if( !validEmail(data.email) ) {   // if email is not valid show error
+          document.getElementById('email-invalid').style.display = 'block';
+          return false;
+        } else {
+          var url = event.target.action;  //
+          var xhr = new XMLHttpRequest();
+          xhr.open('POST', url);
+          // xhr.withCredentials = true;
+          xhr.setRequestHeader('Content-Type', 'application/x-www-form-urlencoded');
+          xhr.onreadystatechange = function() {
+              console.log( xhr.status, xhr.statusText )
+              console.log(xhr.responseText);
+              document.getElementById('gform').style.display = 'none'; // hide form
+              document.getElementById('thankyou_message').style.display = 'block';
+              return;
+          };
+          // url encode form data for sending as post data
+          var encoded = Object.keys(data).map(function(k) {
+              return encodeURIComponent(k) + '=' + encodeURIComponent(data[k])
+          }).join('&')
+          xhr.send(encoded);
+        }
+      }
+      function loaded() {
+        // console.log('contact form submission handler loaded successfully');
+        // bind to the submit event of our form
+        var form = document.getElementById('gform');
+        form.addEventListener("submit", handleFormSubmit, false);
+      };
+      document.addEventListener('DOMContentLoaded', loaded, false);
+
+  </script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

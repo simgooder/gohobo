@@ -46,58 +46,52 @@
 }
 
 	.art--meta {
-		font-family: $font-copy;
-		text-transform: uppercase;
-		text-align: center;
-		letter-spacing: 0.1em;
-		color: #999;
-		font-size: 1em;
-
-		display: block;
-
-		a {
-			text-transform: initial;
-			text-decoration: underline;
-			text-align: left;
-		}	
+	   text-align: center;
 	}
 
 		// the AUTHOR section
 		.art--meta__author {
-			text-align: center;
-			margin-top: 2em;
+            display: block;
+			margin-top: 1em;
 
-			.art--meta,
-			.art--meta__thumb {
-				display: inline-block;
-				vertical-align: middle;
-			}
-			.art--meta {
-				text-align: left;
+            text-align: center;
+            font-family: $font-bold;
+		}
+
+		.art--meta__thumb {
+			position: relative;
+
+			width: 5em;
+			height: 5em;
+
+            margin-left: auto;
+            margin-right: auto;
+
+			overflow: hidden;
+			border-radius: 50%;
+
+            border: 1px solid #eee;
+
+			img {
+				display: block;
+				position: absolute;
+				top: 50%;
+				left: 50%;
+				transform: translate(-50%, -50%);
+				max-width: none;
+				max-height: 100%;
 			}
 		}
 
-			.art--meta__thumb {
-				position: relative;
-
-				width: 6em;
-				height: 6em;
-
-				overflow: hidden;
-				border-radius: 50%;
-
-				margin-right: 0.5em;
-
-				img {
-					display: block;
-					position: absolute;
-					top: 50%;
-					left: 50%;
-					transform: translate(-50%, -50%);
-					max-width: none;
-					max-height: 100%;
-				}
-			}
+        .art--meta__date {
+            font-family: $font-copy;
+            text-align: center;
+            color: #999;
+            font-size: $font-size-meta;
+            
+            margin-top: 0.25em;
+            display: block;
+        }
 
 
 	.art--title {

@@ -5,7 +5,7 @@ date: 2017-1-15
 hero: "blog/rejuvenating-power-of-nature.jpg"
 image-author: "@julentto"
 image-author-link: "https://www.instagram.com/julentto/"
-author: "+venture"
+author: "Addventure"
 author-thumb: "authors/addventure.png"
 author-website: "@addventure_co"
 author-website-link: "https://www.instagram.com/addventure_co/"
