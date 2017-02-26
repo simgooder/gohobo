@@ -24,11 +24,11 @@
 [Hit The Road](http://hittheroad.ca/htr/roadtrips.html)  
 
 ### Content
-[Outside Online](http://www.outsideonline.com/)
-[MEC Blog](https://www.mec.ca/en/blog/)
-[Travel Stories](http://www.thetravelstories.com/)
-[Gear Junkie](https://gearjunkie.com/)
-[The Outbound](https://www.theoutbound.com/)
+[Outside Online](http://www.outsideonline.com/)  
+[MEC Blog](https://www.mec.ca/en/blog/)  
+[Travel Stories](http://www.thetravelstories.com/)  
+[Gear Junkie](https://gearjunkie.com/)  
+[The Outbound](https://www.theoutbound.com/)  
 
 ## Referral Codes
 Air BnB `www.airbnb.ca/c/simong136`  
