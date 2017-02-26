@@ -5,6 +5,9 @@ Vancouver, BC"
 date:   2016-04-06
 hero: "blog/places-to-visit-in-canada_vancouver.jpg"
 author: "Simon Gooder"
+author-thumb: "authors/simon-gooder-gohobo.jpg"
+author-website: "Twitter"
+author-website-link: "https://www.twitter.com/simgooder"
 image-author: "Gabriel Santiago"
 image-author-link: "https://unsplash.com/gabrielssantiago"
 category: journal

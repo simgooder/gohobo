@@ -4,6 +4,9 @@ title: "Three Affordable Alternative Travel Vacations You Can Take Right Now"
 date: 2016-07-30
 hero: "blog/alternative-travel-vacation-ideas-hero.jpg"
 author: "Simon Gooder"
+author-thumb: "authors/simon-gooder-gohobo.jpg"
+author-website: "Twitter"
+author-website-link: "https://www.twitter.com/simgooder"
 image-author: "Julien Lavallée"
 image-author-link: "http://www.julienlavallee.com/?utm_medium=referral&utm_source=gohobo.co"
 category: journal

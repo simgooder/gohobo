@@ -4,6 +4,9 @@ title:  "A Prescription for the Restless"
 date:   2016-04-02
 hero: "blog/vanlife-gohobo-prescription-for-restless.jpg"
 author: "Simon Gooder"
+author-thumb: "authors/simon-gooder-gohobo.jpg"
+author-website: "Twitter"
+author-website-link: "https://www.twitter.com/simgooder"
 image-author: "Jay Ma"
 image-author-link: "https://unsplash.com/imdecoder"
 category: journal

@@ -3,6 +3,9 @@ layout: post
 title:  "5 Things I Learned About Van Life (While Living in a Van)"
 date:   2016-03-28
 author: "Simon Gooder"
+author-thumb: "authors/simon-gooder-gohobo.jpg"
+author-website: "Twitter"
+author-website-link: "https://www.twitter.com/simgooder"
 hero: "blog/simon-gohobo-vanlife.jpg"
 category: journal
 desc: "Living in a van is not always awesome. But neither is living in a house. Actually, most of the time living in a van is awesome."

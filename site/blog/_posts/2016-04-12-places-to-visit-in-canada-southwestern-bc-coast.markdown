@@ -5,6 +5,9 @@ Southern British Columbia"
 date:   2016-04-12
 hero: "blog/places-to-visit-canada-bc.jpg"
 author: "Simon Gooder"
+author-thumb: "authors/simon-gooder-gohobo.jpg"
+author-website: "Twitter"
+author-website-link: "https://www.twitter.com/simgooder"
 image-author: "Simon Gooder"
 image-author-link: "https://twitter.com/simgooder"
 category: journal

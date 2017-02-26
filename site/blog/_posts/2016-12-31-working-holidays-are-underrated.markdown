@@ -6,6 +6,9 @@ hero: "blog/working-holidays-are-underrated.jpg"
 image-author: "Chuttersnap"
 image-author-link: "facebook.com/chuttersnap"
 author: "Simon Gooder"
+author-thumb: "authors/simon-gooder-gohobo.jpg"
+author-website: "Twitter"
+author-website-link: "https://www.twitter.com/simgooder"
 category: journal
 tags: 
 - budget travel

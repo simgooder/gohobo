@@ -6,6 +6,9 @@ hero: "blog/travel-for-health_backpacker.jpg"
 image-author: "Steven Lewis"
 image-author-link: "http://notsteve.com"
 author: "Simon Gooder"
+author-thumb: "authors/simon-gooder-gohobo.jpg"
+author-website: "Twitter"
+author-website-link: "https://www.twitter.com/simgooder"
 category: journal
 tags: 
 - travel

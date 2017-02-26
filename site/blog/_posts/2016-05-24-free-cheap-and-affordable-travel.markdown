@@ -5,6 +5,9 @@ date: 2016-05-24
 modified_date: 2016-10-03
 hero: "blog/free-cheap-and-affordable-travel-gohobo_maher-el-aridi.jpg"
 author: "Simon Gooder"
+author-thumb: "authors/simon-gooder-gohobo.jpg"
+author-website: "Twitter"
+author-website-link: "https://www.twitter.com/simgooder"
 image-author: "Maher El Aridi"
 image-author-link: "https://unsplash.com/@maher"
 category: journal

@@ -5,9 +5,10 @@ layout: default
 <section class="section--hero -lg">
 		
 	<img class="section--hero__img"
+         role="presentation"
 		 src="{{ site.image_assets }}{{ page.hero }}"
 		 srcset="{{ site.image_assets }}{{ page.hero }} 1x, {{ site.image_assets }}{{ page.hero | replace: '.jpg', '@2x.jpg' }} 2x"
-		 alt="">
+		 alt="{{ page.title }}">
     
     <div class="hero--content">
         <h1 class="hero--title">{{ page.title }}</h1>
@@ -21,7 +22,7 @@ layout: default
 			 title="Toggle photograph info"
 			 alt="A camera icon which toggles the photograph's author">
 		<label class="info--banner">
-			Photo by: <a href="{{ page.image-author-link }}" target="_blank">{{ page.image-author }}</a>
+			Photo by: <a href="{{ page.image-author-link }}?utm_medium=referral&utm_source=gohobo" target="_blank">{{ page.image-author }}</a>
 		</label>	 
 	</div>
 	{% endif %}

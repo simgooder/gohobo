@@ -5,6 +5,9 @@ date: 2016-08-23
 # modified_date: 
 hero: "blog/health-benefits-of-nature_grounding.jpg"
 author: "Simon Gooder"
+author-thumb: "authors/simon-gooder-gohobo.jpg"
+author-website: "Twitter"
+author-website-link: "https://www.twitter.com/simgooder"
 image-author: "Jordan Whitt"
 image-author-link: "https://unsplash.com/@jwwhitt/?utm_medium=referral&utm_source=gohobo.co"
 category: journal

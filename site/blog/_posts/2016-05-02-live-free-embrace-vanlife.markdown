@@ -4,6 +4,9 @@ title:  "Stop Worrying and Embrace the Vanlife"
 date:   2016-05-02
 hero: "blog/live-free-embrace-van-life-gohobo.jpg"
 author: "Simon Gooder"
+author-thumb: "authors/simon-gooder-gohobo.jpg"
+author-website: "Twitter"
+author-website-link: "https://www.twitter.com/simgooder"
 category: journal
 tags: 
 - vanlife 

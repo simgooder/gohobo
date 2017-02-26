@@ -4,6 +4,9 @@ title:  "Rideshare for Beginners"
 date:   2016-04-24
 hero: "blog/rideshare-carpool-gohobo.jpg"
 author: "Simon Gooder"
+author-thumb: "authors/simon-gooder-gohobo.jpg"
+author-website: "Twitter"
+author-website-link: "https://www.twitter.com/simgooder"
 image-author: "Michele Spinnato"
 image-author-link: "https://unsplash.com/michelespinnato"
 category: journal

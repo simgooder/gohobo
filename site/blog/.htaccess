@@ -27,6 +27,8 @@ AddOutputFilterByType DEFLATE application/rss+xml
 AddOutputFilterByType DEFLATE application/javascript
 AddOutputFilterByType DEFLATE application/x-javascript
 
+Redirect 301 /gohobo-apparel/ https://gohobo.co/
+
 Redirect 301 /live-free-embrace-vanlife/ https://gohobo.co/journal/live-free-embrace-vanlife/
 Redirect 301 /ridesharing-for-beginners/ https://gohobo.co/journal/ridesharing-for-beginners/
 Redirect 301 /places-to-visit-in-canada-southwestern-bc-coast/ https://gohobo.co/journal/places-to-visit-in-canada-southwestern-bc-coast/

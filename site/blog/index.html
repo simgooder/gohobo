@@ -3,27 +3,25 @@ pagename: home
 layout: default
 ---
 
-	{% include _home.hero.html %}
+{% include _home.hero.html %}
 
-    {% include _home.adventure-directory.html %}
+{% include _home.recent-posts.html %}
 
-    {% include _home.recent-posts.html %}
-
-<!--     {% include _home.gohobo-apparel.html %} -->
+{% include _home.adventure-directory.html %}
 
 
-    <!-- Schema LDJSON -->
-    <script type="application/ld+json">
-      {
-        "@context": "http://schema.org",
-        "@type": "http://schema.org/Organization",
-        "name": "GoHobo",
-        "url": "http://gohobo.co",
-        "logo": "http://www.gohobo.co/assets/img/gohobo-logo.png",
-        "sameAs" : [
-            "https://www.facebook.com/Go-Hobo-649912611816927",
-            "http://www.twitter.com/gohoboco",
-            "https://www.instagram.com/gohobo.co"
-        ]
-      }
-    </script>
+<!-- Schema LDJSON -->
+<script type="application/ld+json">
+  {
+    "@context": "http://schema.org",
+    "@type": "http://schema.org/Organization",
+    "name": "GoHobo",
+    "url": "http://gohobo.co",
+    "logo": "http://www.gohobo.co/assets/img/gohobo-logo.png",
+    "sameAs" : [
+        "https://www.facebook.com/Go-Hobo-649912611816927",
+        "http://www.twitter.com/gohoboco",
+        "https://www.instagram.com/gohobo.co"
+    ]
+  }
+</script>

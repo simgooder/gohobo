@@ -6,6 +6,9 @@ hero: "blog/inexpensive-vacation-ideas-winter.jpg"
 image-author: "David Creixell Mediante"
 image-author-link: "https://unsplash.com/@kingklaudi"
 author: "Simon Gooder"
+author-thumb: "authors/simon-gooder-gohobo.jpg"
+author-website: "Twitter"
+author-website-link: "https://www.twitter.com/simgooder"
 category: journal
 tags: 
 - budget travel

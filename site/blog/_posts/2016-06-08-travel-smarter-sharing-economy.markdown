@@ -5,6 +5,9 @@ date: 2016-06-08
 modified_date: 2016-10-03
 hero: "blog/travel-smarter-sharing-economy-cover.jpg"
 author: "Simon Gooder"
+author-thumb: "authors/simon-gooder-gohobo.jpg"
+author-website: "Twitter"
+author-website-link: "https://www.twitter.com/simgooder"
 image-author: "Kimson Doan"
 image-author-link: "https://unsplash.com/@yaykimmyd"
 category: journal

@@ -6,6 +6,9 @@ hero: "blog/alternative-adventure-people.jpg"
 image-author: "Olga Stalska"
 image-author-link: "https://unsplash.com/@stalskaya"
 author: "Simon Gooder"
+author-thumb: "authors/simon-gooder-gohobo.jpg"
+author-website: "Twitter"
+author-website-link: "https://www.twitter.com/simgooder"
 category: journal
 tags: 
 - adventure

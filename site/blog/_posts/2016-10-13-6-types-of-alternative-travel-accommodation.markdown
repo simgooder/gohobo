@@ -6,6 +6,9 @@ hero: "blog/alternative-travel-accommodation--gohobo.jpg"
 image-author: "Geran de Klerk"
 image-author-link: "https://www.instagram.com/gerandk/"
 author: "Simon Gooder"
+author-thumb: "authors/simon-gooder-gohobo.jpg"
+author-website: "Twitter"
+author-website-link: "https://www.twitter.com/simgooder"
 category: journal
 tags: 
 - travel

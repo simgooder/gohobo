@@ -4,6 +4,9 @@ title:  "Alternative Accommodation"
 date:   2016-09-10
 hero: "blog/alternative-accommodation.jpg"
 author: "Simon Gooder"
+author-thumb: "authors/simon-gooder-gohobo.jpg"
+author-website: "Twitter"
+author-website-link: "https://www.twitter.com/simgooder"
 category: journal
 tags: 
 - alternative travel

@@ -4,6 +4,9 @@ title: "What is alternative travel?"
 date: 2016-07-08
 hero: "blog/alternative-travel.jpg"
 author: "Simon Gooder"
+author-thumb: "authors/simon-gooder-gohobo.jpg"
+author-website: "Twitter"
+author-website-link: "https://www.twitter.com/simgooder"
 image-author: "Atlas Green"
 image-author-link: "https://unsplash.com/@atlas_green"
 category: journal

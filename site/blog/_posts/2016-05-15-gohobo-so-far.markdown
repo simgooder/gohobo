@@ -4,6 +4,9 @@ title:  "GoHobo So Far"
 date:   2016-05-15
 hero: "blog/gohobo-so-far.jpg"
 author: "Simon Gooder"
+author-thumb: "authors/simon-gooder-gohobo.jpg"
+author-website: "Twitter"
+author-website-link: "https://www.twitter.com/simgooder"
 image-author: "Ales Krivec"
 image-author-link: "https://unsplash.com/@aleskrivec"
 category: journal

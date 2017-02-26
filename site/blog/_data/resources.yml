@@ -32,6 +32,28 @@
 ########  ACCOMMODATION ##########
 ##################################
 
+- name  : Love Home Swap
+  link  : http://www.lovehomeswap.com/
+  desc  : "Join Love Home Swap, the world’s favourite home exchange club. Stay in 100,000+ beautiful homes worldwide for free."
+  cat   : accommodation
+  subcat: home exchange
+  budget: 1.5 # out of 3
+  region: worldwide
+  logo  : '../assets/img/directory/love-home-swap-logo.png'
+  cta   : Find an exchange 
+  featured: 2
+
+- name  : Campendium
+  link  : https://www.campendium.com
+  desc  : "RV Park reviews, free camping, dump station locations, campsite photos and RV travel blogs. Easily compare campgrounds and share your best camping sites."
+  cat   : accommodation
+  subcat: rv camping
+  budget: 0 # out of 3
+  region: usa
+  logo  : '../assets/img/directory/campendium-logo.gif'
+  cta   : Find a campsite
+  featured: 1
+
 - name  : GuestToGuest
   link  : https://www.guesttoguest.com
   desc  : "A global social network for free home and apartment exchanges. Travel whenever you want with complete confidence."
@@ -301,7 +323,6 @@
   region: north america
   logo  : '../assets/img/directory/hipcamp-logo.png'
   cta   :  Find a campsite
-  featured: 7
 
 - name  : Camp in My Garden
   link  : http://campinmygarden.com
@@ -378,7 +399,7 @@ self-contained RVers to visit and stay overnight for free!"
   region: north america
   logo  : '../assets/img/directory/rv-rental-connection-logo.png'
   cta   : Find a RV
-  featured: 1
+  featured: 7
 
 - name  : Turo
   link  : https://turo.com/rentals
@@ -389,7 +410,6 @@ self-contained RVers to visit and stay overnight for free!"
   region: worldwide
   logo  : '../assets/img/directory/turo-logo.png'
   cta   : Rent a car
-  featured: 2
 
 - name  : From A to B
   link  : https://fromatob.com
@@ -647,7 +667,7 @@ self-contained RVers to visit and stay overnight for free!"
 
 - name  : Kootour
   link  : https://www.kootour.com/
-  desc  : "Find unique adventures and connect with expert local guides with Kootour’s online travel marketplace."
+  desc  : "Kootour is an online marketplace for unique tours and activities. We give guides the opportunity to list their services to a global audience, connecting discerning travellers looking for a more authentic experience with hard to find tours."
   cat   : tourism
   subcat: social
   budget: 2 # out of 3
