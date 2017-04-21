@@ -1,4 +1,10 @@
-<section class="section--hero -lg -theme--lander" id="header">  
+<section class="section--hero -lg" id="header">  
+
+    <img class="section--hero__img"
+         role="presentation"
+         src="{{ site.image_assets }}{{ site.hero_hero }}"
+         srcset="{{ site.image_assets }}{{ site.hero_hero }} 1x, {{ site.image_assets }}{{ site.hero_hero | replace: '.jpg', '@2x.jpg' }} 2x"
+         alt="{{ site.hero_desc }}">
 
     <div class="hero--content">
         <h1 class="hero--title">
@@ -13,6 +19,17 @@
             Start your adventure
         </button>
         </a>
+    </div>
+
+    <div class="icon--camera__bottom">
+        <img srcset="{{ site.image_assets }}icon-camera.png 1x, {{ site.image_assets }}/icon-camera@2x.png 2x" 
+             width="23"
+             src="assets/img/icon-camera.png" 
+             title="Toggle photograph info"
+             alt="A camera icon which toggles the photograph's author">
+        <label class="info--banner">
+            Epic adventure-shot by: <a href="{{ site.hero_link }}?utm_medium=referral&utm_source=gohobo" target="_blank">{{ site.hero_author }}</a>
+        </label>     
     </div>
 
 </section>

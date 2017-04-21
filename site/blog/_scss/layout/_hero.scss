@@ -53,17 +53,9 @@
             position: relative;
             z-index: 2;
         }
-
-        @include mq-md { //desert at night
-            //background: transparent url('../img/hero_desert-at-night_gohobo_alternative-travel@2x.jpg') center center no-repeat fixed;
-            background: transparent url('https://images.unsplash.com/photo-1487651678393-ccc8947fdbe3?dpr=2&auto=format&fit=crop&w=1199&h=800&q=80&cs=tinysrgb&crop=') center center no-repeat fixed;
-            //background: transparent url('https://images.unsplash.com/photo-1473694043131-fb0b5da4e14c?dpr=2&auto=format&fit=crop&w=1199&h=799&q=80&cs=tinysrgb&crop=') center center no-repeat fixed;
-            background-size: cover;
-        }
-        @include mq-sm {
-            background: transparent url('../img/hero_desert-at-night_gohobo_alternative-travel.jpg') center center no-repeat fixed;
-            background-size: cover;
-        }
+        
+        background: transparent url('../img/yukon-lookout_kelly-rogan.jpg') center center no-repeat fixed;
+        background-size: cover;
     }
 
     &.-theme--vanageddon {
@@ -118,13 +110,7 @@
         }
 
         button {
-            @include mq-md {
-                margin-top: 2em;
-            }
-            @include mq-sm {
-                position: absolute;
-                margin-top: 3em;
-            }
+            margin-top: 2em;
         }
     }
 

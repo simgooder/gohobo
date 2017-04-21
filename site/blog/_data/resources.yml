@@ -32,6 +32,17 @@
 ########  ACCOMMODATION ##########
 ##################################
 
+- name  : Horizon
+  link  : http://www.horizonapp.co/
+  desc  : "Stay With Someone You Trust. Horizon uses groups and mutual friends to help you find people and places to stay."
+  cat   : accommodation
+  subcat: couchsurfing
+  budget: 0 # out of 3
+  region: worldwide
+  logo  : '../assets/img/directory/horizon-logo.png'
+  cta   : Find a place to stay
+  featured: 1
+
 - name  : Love Home Swap
   link  : http://www.lovehomeswap.com/
   desc  : "Join Love Home Swap, the world’s favourite home exchange club. Stay in 100,000+ beautiful homes worldwide for free."
@@ -41,7 +52,6 @@
   region: worldwide
   logo  : '../assets/img/directory/love-home-swap-logo.png'
   cta   : Find an exchange 
-  featured: 2
 
 - name  : Campendium
   link  : https://www.campendium.com
@@ -52,7 +62,6 @@
   region: usa
   logo  : '../assets/img/directory/campendium-logo.gif'
   cta   : Find a campsite
-  featured: 1
 
 - name  : GuestToGuest
   link  : https://www.guesttoguest.com
@@ -399,7 +408,7 @@ self-contained RVers to visit and stay overnight for free!"
   region: north america
   logo  : '../assets/img/directory/rv-rental-connection-logo.png'
   cta   : Find a RV
-  featured: 7
+  featured: 4
 
 - name  : Turo
   link  : https://turo.com/rentals
@@ -430,7 +439,6 @@ self-contained RVers to visit and stay overnight for free!"
   region: worldwide
   logo  : '../assets/img/directory/busbud-logo.png'
   cta   : Find a fare
-  featured: 5
 
 - name  : OpenRide
   link  : https://openride.co
@@ -451,6 +459,7 @@ self-contained RVers to visit and stay overnight for free!"
   region: europe
   logo  : '../assets/img/directory/wingly-logo.png'
   cta   : Find a flight
+  featured: 5
   
 - name  : BlaBlaCar
   link  : http://www.blablacar.com
@@ -592,28 +601,39 @@ self-contained RVers to visit and stay overnight for free!"
   region: worldwide
   logo  : '../assets/img/directory/secret-flying-logo.png'
   cta   : Find a flight
+  featured: 2
 
 
 ##################################
-########  VOLUNTEERING  ##########
+######   Skills Exchange  ########
 ##################################
 
 
 # - name  : Helpstay
 #   link  : https://helpstay.com
 #   desc  : "Volunteer Abroad for Free Accommodation! Try a Farm Stay, Search for Ranch and Hostel Jobs. Gap Year Abroad, Work Away, Internship Overseas, Help Exchange or Teach. Get Going with HelpStay.com."
-#   cat   : volunteering
-#   subcat: skills-exchange
+#   cat   : skills-exchange
+#   subcat: volunteering
 #   budget: 1.5 # out of 3
 #   region: worldwide
 #   logo  : '../assets/img/directory/helpstay-logo.png'
 #   cta   : Find an exchange
 
+- name  : My Hostpitality
+  link  : http://www.myhostpitality.com/en/
+  desc  : "Study abroad in a homestay experience or welcome a guest to conversation exchange and learn languages, such as Spanish or English, with native speakers"
+  cat   : skills-exchange
+  subcat: volunteering
+  budget: 0 # out of 3
+  region: worldwide
+  logo  : '../assets/img/directory/my-hostpitality-logo.png'
+  cta   : Find an exchange
+
 - name  : Volunteers Base
   link  : http://www.volunteersbase.com
   desc  : "Are you looking for free volunteering opportunities? This is the place! Volunteers Base is a Moneyless Help Exchange Network"
-  cat   : volunteering
-  subcat: skills-exchange
+  cat   : skills-exchange
+  subcat: volunteering
   budget: 0 # out of 3
   region: worldwide
   logo  : '../assets/img/directory/volunteers-base-logo.png'
@@ -622,18 +642,19 @@ self-contained RVers to visit and stay overnight for free!"
 - name  : World Wide Opportunities on Organic Farms
   link  : http://www.wwoof.net
   desc  : "Volunteer help exchange on organic farms in 100+ countries. Meet friends from all over the world."
-  cat   : volunteering
-  subcat: skills-exchange
+  cat   : skills-exchange
+  subcat: volunteering
   budget: 0 # out of 3
   region: worldwide
   logo  : '../assets/img/directory/wwoof-logo.png'
   cta   : Find an exchange
+  featured: 3
 
 - name  : Worldpackers
   link  : https://www.worldpackers.com
   desc  : "Find unique places where you can exchange your skills for accommodation. Traveling changes people. People change the world."
-  cat   : volunteering
-  subcat: skills-exchange
+  cat   : skills-exchange
+  subcat: volunteering
   budget: 0 # out of 3
   region: worldwide
   logo  : '../assets/img/directory/worldpackers-logo.png'
@@ -642,23 +663,23 @@ self-contained RVers to visit and stay overnight for free!"
 - name  : Work Away
   link  : https://www.workaway.info
   desc  : "Workaway set up to promote fair exchange between budget travellers, language learners or culture seekers who can stay with 1000s of families, individuals or organizations that are looking for help in over 130 different countries."
-  cat   : volunteering
-  subcat: skills-exchange
+  cat   : skills-exchange
+  subcat: volunteering
   budget: 0 # out of 3
   region: worldwide
   logo  : '../assets/img/directory/work-away-logo.png'
   cta   : Find an exchange
-  featured: 7
 
 - name  : Projects Abroad
   link  : http://www.projects-abroad.ca
   desc  : "Volunteer Abroad in 29 developing countries in Africa, Asia, Latin America and Eastern Europe. Programs are offered in care, teaching, conservation, human rights, healthcare and more."
-  cat   : volunteering
-  subcat: skills-exchange
+  cat   : skills-exchange
+  subcat: volunteering
   budget: 2 # out of 3
   region: worldwide
   logo  : '../assets/img/directory/projects-abroad-logo.png'
   cta   : Find a project
+  featured: 7
 
 
 ##################################
@@ -674,4 +695,4 @@ self-contained RVers to visit and stay overnight for free!"
   region: worldwide
   logo  : '../assets/img/directory/kootour-logo.png'
   cta   : Find a tour
-  featured: 4
+

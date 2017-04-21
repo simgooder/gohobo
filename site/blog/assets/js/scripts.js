@@ -17,14 +17,26 @@ $( document ).ready(function() {
 
 // The Modal Toggle
 // -----------------------
-	$('.js-toggle-modal').click(function(){
-		$('.modal--overlay').toggleClass('--is--open');
-	});
 
-	$('.icon--camera__left').click(function(){
-		var next = $(this).next()[0];
-		$(next).toggleClass('-hide');
-	});
+$('.js-toggle-modal.-contact').click(function(){
+	$('.modal--overlay.-contact').toggleClass('--is--open');
+});
+
+$('.js-toggle-modal.-review').click(function(){
+    $('.modal--overlay.-review').toggleClass('--is--open');
+
+    setTimeout(function(){
+        var hash = window.location.hash;
+        var string = hash.replace('#', '');
+
+        console.log(string)
+
+        $('[value=' + string + ']').attr('selected', 'selected');
+
+    }, 250);
+});
+
+
 
 
 // Mobile Navigation toggle

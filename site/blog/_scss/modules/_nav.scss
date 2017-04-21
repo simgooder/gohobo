@@ -147,7 +147,12 @@ $mobile-nav-bp: 860px;
     }
 
     .-theme--light .sub--nav__item svg {
-        fill: $color-dark;
+        @include mq-md {
+            fill: $color-dark;
+        }
+        @include mq-sm {
+            fill: #fff;
+        }
     }
 
 // The Mobile Menu

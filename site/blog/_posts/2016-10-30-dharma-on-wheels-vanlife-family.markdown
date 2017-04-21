@@ -4,11 +4,11 @@ title: "Dharma on Wheels, Vanlife Family"
 date: 2016-10-29
 hero: "blog/dharma-on-wheels-vanlife-family_schoolbus.jpg"
 image-author: "Mélanie Babin"
-image-author-link: "https://www.instagram.com/dharmaonwheels/"
+image-author-link: "https://www.instagram.com/our.dharma.tribe/"
 author: "Mélanie Babin"
 author-thumb: "authors/dharma-on-wheels-vanlife-family.jpg"
 author-website: "Dharma On Wheels"
-author-website-link: "https://www.facebook.com/dharmaonwheels/"
+author-website-link: "https://www.dharmaonwheels.com/"
 category: journal
 tags: 
 - vanlife
@@ -80,6 +80,7 @@ We are looking into homeschooling little Alice and traveling indefinitely.
 
 The word dharma, like many Sanskrit terms, has different meaning depending on context and who is defining it. For us “living one’s dharma” means doing on this planet what you were meant to do. Dharma is also the ethical basis on which you live your life. It’s a reminder of our values and what governs every action and decision we make in our lives.
 
-Instagram: [@dharmaonwheels](https://www.instagram.com/dharmaonwheels/)  
-Facebook: [@dharmaonwheels](https://www.facebook.com/dharmaonwheels/)  
+Instagram: [@dharmaonwheels](https://www.instagram.com/our.dharma.tribe/)  
+Facebook: [@dharmaonwheels](https://www.facebook.com/our.dharma.tribe/)  
+Website: [DharmaOnWheels.com](https://www.dharmaonwheels.com/)
 All pictures by Melanie Babin

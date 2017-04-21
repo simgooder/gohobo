@@ -1,8 +1,8 @@
-<div class="modal--overlay">
+<div class="modal--overlay -review" id="review">
 
-    <form class="modal--card" method="POST" id="gform" action="https://script.google.com/macros/s/AKfycbxE_iaiF_HoKLPs3Akd4bLBDqDd7s43dwjglUFjlPOnQSUXVlg/exec">
+    <form class="modal--card" method="POST" id="submit_review" action="https://script.google.com/macros/s/AKfycbxE_iaiF_HoKLPs3Akd4bLBDqDd7s43dwjglUFjlPOnQSUXVlg/exec">
 
-        <div class="modal--close__btn js-toggle-modal" title="close this window">
+        <div class="modal--close__btn js-toggle-modal -review" title="close this window">
             <span>
                 &#215;
             </span>
@@ -10,41 +10,38 @@
 
         <div class="input--group">
             <h3 class="input--group__heading">
-                Write a review
+                Submit a review
             </h3>
             <label class="input--label">
-                Your email will not be printed
+                Your email will not be printed.
             </label>
         </div> 
 
         <div class="input--group">
             <label class="input--label" for="name">
-                Your name
+                Your name <em>(optional, will be printed)</em>
             </label>
-            <input type="text" name="name" class="input">
+            <input type="text" name="name" class="input" id="name">
         </div>
         <div class="input--group">
             <label class="input--label" for="email">
-                Your email*
+                Your email
             </label>
-            <input type="email" name="email" class="input">
+            <input type="email" name="email" class="input" id="email">
         </div>
         <div class="input--group">
             <label class="input--label" for="website">
-                Website URL
+                Website URL <em>(optional, will be printed)</em>
             </label>
-            <input type="url" name="website" class="input">
+            <input type="url" name="website" class="input" id="website">
         </div>
         <div class="input--group">
             <label class="input--label" for="service">
-                What service is this review for?
+                What resource is this review for?
             </label>
             <div class="input--select">
-            <select class="input" name="service">
-                {% assign sortedResources = site.data.resources | sort: 'name' %}
-                {% assign totalItems = sortedResources.size | divided_by:2 %}
-
-                {% for resource in sortedResources | limit: totalItems %}
+            <select class="input" name="service" id="resource">
+                {% for resource in site.data.resources %}
 
                 <option value="{{resource.name | slugify}}">
                     {{resource.name}}
@@ -56,7 +53,7 @@
         </div>
         <div class="input--group rating--widget">
             <label class="input--label" for="rating">
-                Rating*
+                Rate your experience:
             </label>
             <div class="rating--widget">
                 <input type="radio" name="rating" value="5" id="star5">
@@ -77,9 +74,15 @@
         </div>
         <div class="input--group">
             <label class="input--label" for="review">
-                Your review *
+                Your review:
             </label>
-            <textarea class="input--textarea" name="review" rows="5"></textarea>
+            <textarea class="input--textarea" name="review" rows="5" id="review-body"></textarea>
+        </div>
+        <div class="input--group">
+            <input type="checkbox" name="subscribe" id="subscribe" checked>
+            <label class="input--label" for="subscribe" style="display:inline-block;">
+                Receive email updates about GoHobo
+            </label>
         </div>
 
         <button class="btn--cta" type="submit">
@@ -102,7 +105,7 @@
     }
     // get all data in form and return object
     function getFormData() {
-      var elements = document.getElementById("gform").elements; // all form elements
+      var elements = document.getElementById("submit_review").elements; // all form elements
       var fields = Object.keys(elements).map(function(k) {
         if(elements[k].name !== undefined) {
           return elements[k].name;
@@ -146,8 +149,15 @@
         xhr.onreadystatechange = function() {
             console.log( xhr.status, xhr.statusText )
             console.log(xhr.responseText);
-            document.getElementById('gform').style.display = 'none'; // hide form
+            document.getElementById('submit_review').style.display = 'none'; // hide form
+            document.getElementById('submit_review').reset();
             document.getElementById('thankyou_message').style.display = 'block';
+            setTimeout(function(){
+                document.getElementById('review').classList.remove('--is--open');
+                document.getElementById('submit_review').style.display = 'block';
+                document.getElementById('thankyou_message').style.display = 'none';
+            }, 4500);
+
             return;
         };
         // url encode form data for sending as post data
@@ -160,7 +170,7 @@
     function loaded() {
       // console.log('contact form submission handler loaded successfully');
       // bind to the submit event of our form
-      var form = document.getElementById('gform');
+      var form = document.getElementById('submit_review');
       form.addEventListener("submit", handleFormSubmit, false);
     };
     document.addEventListener('DOMContentLoaded', loaded, false);

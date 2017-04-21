@@ -8,10 +8,12 @@
     margin-left: auto;
     margin-right: auto;
 
+    background-color: #fff;
+
     overflow: hidden;
 
     &:last-of-type {
-        margin-bottom: 5em;
+        padding-bottom: 5em;
     }
 
     @include mq-xl {
@@ -61,7 +63,7 @@
             height: 448px;
         }
         @include mq-sm {
-            height: 25vh;
+            height: 200px;
             width: 100%;
         }
 
@@ -93,7 +95,7 @@
             height: 248px;
         }
         @include mq-sm {
-            height: 25vh;
+            height: 200px;
         }
 
         h2 {
@@ -129,7 +131,7 @@
             max-height: 14em;
         }
         @include mq-sm {
-            height: 20vh;
+            height: 200px;
             width: 50%;
         }
 

@@ -7,7 +7,7 @@
         </button>
     </a>
 
-    <a href="http://pinterest.com/pin/create/button/?url={{ site.prod_url }}{{ page.url }}&media={{  site.prod_url }}{{ site.image_assets }}{{ page.hero }}&description={{ page.title }}" rel="nofollow" target="_blank" alt="Pin {{page.title}} on Pinterest" title="Share on Pinterest">
+    <a href="http://pinterest.com/pin/create/button/?url={{ site.prod_url }}{{ page.url }}&media={{  site.prod_url }}{{ site.image_assets }}{{ page.hero | replace: '.jpg', '_pin.jpg' }}&description={{ page.title }}" rel="nofollow" target="_blank" alt="Pin {{page.title}} on Pinterest" title="Share on Pinterest">
         <button class="btn--share__pinterest">
            <span class="icon icon-pinterest"></span>
         </button>

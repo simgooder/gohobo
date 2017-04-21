@@ -65,7 +65,7 @@ What I can indeed tell you is that the door in question leads to the Priory of t
 As a side note for history geeks, given the status of this ancient Military Order, Rome technically gathers three nations within its territory: Italy, the Vatican and the Knights of Malta.
 
 
-##Fontana di Trevi
+## Fontana di Trevi
 
 We will both agree that the Trevi Fountain is a wonder in all senses, although it might not be a hidden gem… Let’s call it a not-so-hidden gem. However, it could probably be the most imposing monument in the city.
 
