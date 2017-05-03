@@ -25,7 +25,20 @@
 		font-size: 1.1em;
 	}
 
-	p:not(.art--img), h1, h2, h3, h4, blockquote, ol, ul:not(.unslider-wrap), em, b {
+    ul {
+        margin-top: 1em;
+        margin-bottom: 1em;
+    }
+
+    h2 {
+        
+    }
+
+    h3 {
+        padding-top: 1em;
+    }
+
+	p:not(.art--img), h1, h2, h3, h4, blockquote, ol, ul, em, b {
 		@include article-width;
 	}
 
@@ -35,7 +48,8 @@
 
 // used for subheadings
 	p + h2,
-	blockquote + h2 {
+	blockquote + h2,
+    ul + h2 {
 		margin-top: 2em;
 		margin-bottom: 1em;
 	}

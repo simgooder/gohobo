@@ -33,7 +33,7 @@
 ##################################
 
 - name  : Horizon
-  link  : http://www.horizonapp.co/
+  link  : http://www.horizonapp.co
   desc  : "Stay With Someone You Trust. Horizon uses groups and mutual friends to help you find people and places to stay."
   cat   : accommodation
   subcat: couchsurfing
@@ -44,7 +44,7 @@
   featured: 1
 
 - name  : Love Home Swap
-  link  : http://www.lovehomeswap.com/
+  link  : http://www.lovehomeswap.com
   desc  : "Join Love Home Swap, the world’s favourite home exchange club. Stay in 100,000+ beautiful homes worldwide for free."
   cat   : accommodation
   subcat: home exchange
