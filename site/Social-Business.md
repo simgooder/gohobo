@@ -26,12 +26,11 @@
 ### Content
 [Outside Online](http://www.outsideonline.com/)
 [MEC Blog](https://www.mec.ca/en/blog/)
-[Travel Stories](http://www.thetravelstories.com/)
 [Gear Junkie](https://gearjunkie.com/)
-[The Outbound](https://www.theoutbound.com/)
+[Go The Travel Podcast](https://www.gothepodcast.com/)
+[Travel Outlandish](https://traveloutlandish.com/)
 
 ## Referral Codes
 Air BnB `www.airbnb.ca/c/simong136`  
-HouseCarers `https://www.housecarers.com/gohoboco.cfm?mem=`  
 HipCamp Host `https://www.hipcamp.com/landshare?rc=UIJ9VXIQ&rs=3&rk=1#listnow`
 HipCamp Camper `https://www.hipcamp.com/users/sign-up?rc=UIJ9VXIQ&rs=3&rk=0`
