@@ -24,11 +24,12 @@
 [Hit The Road](http://hittheroad.ca/htr/roadtrips.html)  
 
 ### Content
-[Outside Online](http://www.outsideonline.com/)
-[MEC Blog](https://www.mec.ca/en/blog/)
-[Gear Junkie](https://gearjunkie.com/)
-[Go The Travel Podcast](https://www.gothepodcast.com/)
-[Travel Outlandish](https://traveloutlandish.com/)
+[Outside Online](http://www.outsideonline.com/)  
+[MEC Blog](https://www.mec.ca/en/blog/)  
+[Gear Junkie](https://gearjunkie.com/)  
+[Go The Travel Podcast](https://www.gothepodcast.com/)  
+[Travel Outlandish](https://traveloutlandish.com/)    
+[Indie Voyager](http://www.indievoyager.com/)  
 
 ## Referral Codes
 Air BnB `www.airbnb.ca/c/simong136`  
