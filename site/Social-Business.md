@@ -33,5 +33,5 @@
 
 ## Referral Codes
 Air BnB `www.airbnb.ca/c/simong136`  
-HipCamp Host `https://www.hipcamp.com/landshare?rc=UIJ9VXIQ&rs=3&rk=1#listnow`
-HipCamp Camper `https://www.hipcamp.com/users/sign-up?rc=UIJ9VXIQ&rs=3&rk=0`
+HipCamp Host `https://www.hipcamp.com/landshare?rc=UIJ9VXIQ&rs=3&rk=1#listnow`  
+HipCamp Camper `https://www.hipcamp.com/users/sign-up?rc=UIJ9VXIQ&rs=3&rk=0`  
