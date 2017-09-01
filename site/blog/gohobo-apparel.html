@@ -26,7 +26,7 @@ postcard: apparel/gohobo-adventure-apparel_postcard.jpg
        </p>
 
        {% for product in site.data.products %}
-       <a href="{{ site.url }}{{ product.url }}">
+       <a href="{{ site.env_url }}{{ product.url }}">
        <div class="store--item__product" itemscope itemtype="http://schema.org/Product">
 
            <div class="store--item__img">

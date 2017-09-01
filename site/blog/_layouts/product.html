@@ -22,12 +22,12 @@ layout: default
 		  console.log("Location denied. Currency defaulted to USD.");
 	   });
 </script>
-<script src="{{ 'assets/js/shopify-products.js' | prepend: site.url }}" defer></script>
+<script src="{{ 'assets/js/shopify-products.js' | prepend: site.env_url }}" defer></script>
 
 <img class="art--pin-img"
-	 src="{{ site.url | replace: 'gohobo.co/', 'gohobo.co' }}{{ site.image_assets }}{{ page.productPin }}"
-	 data-pin-url="{{ site.url | replace: 'gohobo.co/', 'gohobo.co' }}{{page.url}}"
-	 data-pin-media="{{ site.url | replace: 'gohobo.co/', 'gohobo.co' }}{{ site.image_assets }}{{ page.productPin }}"/>
+	 src="{{ site.env_url | replace: 'gohobo.co/', 'gohobo.co' }}{{ site.image_assets }}{{ page.productPin }}"
+	 data-pin-url="{{ site.env_url | replace: 'gohobo.co/', 'gohobo.co' }}{{page.url}}"
+	 data-pin-media="{{ site.env_url | replace: 'gohobo.co/', 'gohobo.co' }}{{ site.image_assets }}{{ page.productPin }}"/>
 
 <section class="store--wrapper">
 	
@@ -103,7 +103,7 @@ currency: 'CAD'
 	"@context": "http://schema.org",
 	"@type": "Product",
 	"name": "{{ page.productTitle }}",
-	"image": "{{ site.url }}{{ site.image_assets }}{{ page.productImg }}",
+	"image": "{{ site.env_url }}{{ site.image_assets }}{{ page.productImg }}",
 	"description": "{{ page.productDesc }}",
 	"brand": {
 		"@type": "Thing",

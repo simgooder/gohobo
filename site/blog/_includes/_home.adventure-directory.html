@@ -18,6 +18,9 @@
                href="{{ site.baseurl }}adventure-directory/#{{ resource.name | slugify }}" 
                style="background-image:url({{ resource.logo }})">
             </a>
+            <p class="lander-section--item__desc">
+                {{ resource.desc }}
+            </p>
 
         </li>  
         {% endif %}

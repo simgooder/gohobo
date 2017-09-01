@@ -32,7 +32,7 @@
 
     display: flex;
     flex-flow: row wrap;
-    flex-grow: 1;
+    justify-content: center;
 
     transition: 0.25s;
 
@@ -40,7 +40,6 @@
 
     @include mq-md {
         min-width: 300px;
-        flex-basis: 50%;
         min-height: 28em;
     }
     @include mq-sm {
@@ -118,97 +117,60 @@
         position: relative;
         overflow: hidden;
 
+        padding-left: 1.5em;
+        padding-right: 1.5em;
+
+        margin-bottom: 2em;
+
         text-align: center;
 
         border: 0.15em solid #fff;
+        background-color: #fff;
 
         @include mq-min(1000px) {
-            max-height: 14em;
-            width: (100% / 4);
-        }
-        @include mq-between(760px, 1000px) {
             width: (100% / 3);
-            max-height: 14em;
         }
-        @include mq-sm {
-            height: 200px;
+        @include mq-between(590px, 1000px) {
             width: 50%;
         }
-
-        transition: 0.25s;
-
-        &:hover {
-            transform: scale(1.05);
+        @include mq(590px) {
+            width: 100%;
         }
     }
-
-        .lander-section--item__img {
-            display: block;
-
-            position: relative;
-            top: 50%;
-            transform: translateY(-50%);
-
-            img {
-                position: relative;
-                transition: 0.2s;
-
-                @include mq-md {
-                    max-width: 90%;
-                    padding: 1em;
-                }
-                @include mq-sm {
-
-                }
-            }
-        }
-
-        .lander-section--item__overlay {
-            position: absolute;
-            top: 0;
-            left: 0;
-            width: 100%;
-            height: 100%;
-
-            background-color: rgba(#fff, 0.85);
-            
-            // hidden state
-            transition: 0.2s;
-            opacity: 0;
-
-            button {
-                position: absolute;
-                top: 50%;
-                left: 50%;
-                transform: translate(-50%, -50%);
-
-                white-space: nowrap;
-                font-size: 0.85em;
-            }
-        }
 
         // Hover state
         .lander-section--item:hover {
 
-            img {
+            .lander-section--item__logo {
                 transform: scale(1.1);
             }   
-            .lander-section--item__overlay {
-                opacity: 1;
-            } 
-    
+
+        }
+
+
+        .lander-section--item__desc {
+            font-size: $font-size-sm;
         }
 
         .lander-section--item__logo {
             display: block;
 
+            height: 10em;
+            width: 100%;
+            max-width: 20em;
+
+            margin-left: auto;
+            margin-right: auto;
+
             background-size: 60%;
             background-repeat: no-repeat;
             background-position: center center;
 
-            position: absolute;
-            top: 0;
-            left: 0;
-            width: 100%;
-            height: 100%;
+            transition: transform 0.1s ease-in;
+
+            // position: absolute;
+            // top: 0;
+            // left: 0;
+            // width: 100%;
+            // height: 100%;
         }

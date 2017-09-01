@@ -7,8 +7,8 @@ image-author: "Olga Stalska"
 image-author-link: "https://unsplash.com/@stalskaya"
 author: "Simon Gooder"
 author-thumb: "authors/simon-gooder-gohobo.jpg"
-author-website: "Twitter"
-author-website-link: "https://www.twitter.com/simgooder"
+author-website: "SimonGooder.com"
+author-website-link: "https://simongooder.com"
 category: journal
 tags: 
 - adventure

@@ -183,8 +183,11 @@
 				}
 
 				&.-tags {
+                    padding-top: 0.5em;
+
 					text-transform: uppercase;
-					font-family: $font-bold;
+                    font-family: $font-bold;
+                    letter-spacing: 0.75px;
 				}
 				
 			}

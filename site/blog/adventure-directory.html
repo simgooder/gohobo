@@ -22,7 +22,7 @@ desc: "A collection of vetted alternative travel resources for travellers, adven
     {% assign sortedResources = site.data.resources | sort: 'name' %}
     {% assign totalItems = sortedResources.size | divided_by:2 %}
 
-    {% for resource in sortedResources | limit: totalItems %}
+    {% for resource in sortedResources limit: totalItems %}
 
       <li class="dir--card" data-item-tags="{{ resource.cat }}" id="{{ resource.name | slugify }}">
         
@@ -73,14 +73,10 @@ desc: "A collection of vetted alternative travel resources for travellers, adven
           </figure>
 
           <a href="{{ resource.link }}/?utm_source=gohobo&utm_medium=adventuredirectory&utm_campaign=gohobo" title="{{resource.name}}" alt="{{ resource.name }}">
-            <button class="card--action theme--{{ resource.cat }}" type="button"">
+            <button class="card--action theme--{{ resource.cat }}" type="button">
               {{ resource.cta }}
             </button>
           </a>
-
-          <small class="card--review-btn">
-              <a href="#{{ resource.name | slugify }}" class="js-toggle-modal -review">Submit a review</a>
-          </small>
 
         </section>
 
@@ -90,7 +86,7 @@ desc: "A collection of vetted alternative travel resources for travellers, adven
     </section>
 
     <section class="dir--column">
-    {% for resource in sortedResources | limit: totalItems, offset: totalItems %}
+    {% for resource in sortedResources limit: totalItems offset: totalItems %}
 
       <li class="dir--card" data-item-tags="{{ resource.cat }}" id="{{ resource.name | slugify }}">
         
@@ -141,15 +137,11 @@ desc: "A collection of vetted alternative travel resources for travellers, adven
               </figure>
 
               <a href="{{ resource.link }}/?utm_source=gohobo&utm_medium=adventuredirectory&utm_campaign=gohobo" title="{{resource.name}}" alt="{{ resource.name }}">
-                <button class="card--action theme--{{ resource.cat }}" type="button"">
+                <button class="card--action theme--{{ resource.cat }}" type="button">
                   {{ resource.cta }}
                 </button>
               </a>
-            
-            <small class="card--review-btn">
-                <a href="#{{ resource.name | slugify }}" class="js-toggle-modal -review">Submit a review</a>
-            </small>
-        
+
         </section>
 
       </li>   

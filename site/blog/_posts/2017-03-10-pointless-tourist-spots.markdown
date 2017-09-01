@@ -9,7 +9,7 @@ author: "Allie Whilst"
 author-thumb: "authors/gohobo-generic-avatar.png"
 category: journal
 tags: 
-- promoted post
+- contributed
 - tourism
 desc: "We've all done it – made plans to check out a popular or infamous locale, only to discover just how shoddy it is. We explore the most pointless tourist spots so you don't have to." 
 pinterest-pin: true

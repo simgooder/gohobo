@@ -35,3 +35,9 @@
 Air BnB `www.airbnb.ca/c/simong136`  
 HipCamp Host `https://www.hipcamp.com/landshare?rc=UIJ9VXIQ&rs=3&rk=1#listnow`  
 HipCamp Camper `https://www.hipcamp.com/users/sign-up?rc=UIJ9VXIQ&rs=3&rk=0`  
+
+## GoHobo Press
+[New Travelist - Why you should live and travel in a van](http://newtravelist.com/2016/07/live-travel-van/)  
+[Travel Outlandish - Sunsets, Roadkill & Sand](https://traveloutlandish.com/blog/vanlife-australia-road-trip/)  
+[Vanholio - Is Vanlife for you?](http://www.vanholio.com/2016/11/is-van-life-for-you.html)
+

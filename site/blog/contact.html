@@ -51,7 +51,7 @@ headertheme: -theme--light
                   {% assign sortedResources = site.data.resources | sort: 'name' %}
                   {% assign totalItems = sortedResources.size | divided_by:2 %}
 
-                  {% for resource in sortedResources | limit: totalItems %}
+                  {% for resource in sortedResources limit: totalItems %}
 
                   <option value="{{resource.name}}">
                       {{resource.name}}

@@ -33,6 +33,12 @@ desc: "A collection of inspirational travel and adventure writing for those with
               </time>
             </h6>
 
+            <div class="post--meta -tags">
+                {% for tag in post.tags %}
+                    {{ tag | prepend: '#' | replace: ' ', '' }}
+                {% endfor %}
+            </div>
+
         </a>  
         
       </div>

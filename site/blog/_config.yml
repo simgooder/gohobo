@@ -10,8 +10,8 @@ title: GoHobo | Curated Alternative Travel Resources | Adventures for Everyone.
 email: gohoboco@gmail.com
 description: > # this means to ignore new lines
   GoHobo is a mindset, a mentality, & a tribe. Curated alternative travel resources and inspiration for travellers, adventurers, digital nomads, vandwellers & explorers. 
-#url: "http://localhost:4000/" # the base hostname & protocol for your site
-url: "https://gohobo.co/" # the base hostname & protocol for your site
+#env_url: "http://localhost:3000/" # the base hostname & protocol for your site
+env_url: "https://gohobo.co/" # the base hostname & protocol for your site
 prod_url: "https://gohobo.co"
 
 permalink: /:categories/:title/
@@ -23,7 +23,7 @@ kramdown:
 image_assets: "/assets/img/" 
 
 # Hero Settings
-hero_hero: "hero_natalie-rhea-riggs_cliffs.jpg"
-hero_author: "Natalie Riggs"
-hero_link: "http://natalierhea.com"
-hero_desc: "A road disappearing into the distance. Big Bend National Park, USA."
+hero_hero: "hero_chris-holgersson_bavarian-lake.jpg"
+hero_author: "Chris Holgersson"
+hero_link: "https://tumblr.com/blog/chrisholgerson"
+hero_desc: "A beautiful mountain lake in a valley in Walchensee, Germany."
