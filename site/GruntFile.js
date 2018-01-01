@@ -29,7 +29,7 @@ module.exports = function(grunt) {
 		// Watch for changes in .scss files, & autoprefix them css
 		watch: {
 			sass: {
-				files:'blog/_scss/**/*.scss',
+				files:'_scss/**/*.scss',
 				tasks:['sass', 'postcss'],
 			},
 			gruntfile: {
@@ -46,7 +46,7 @@ module.exports = function(grunt) {
 	        },
 	        dist: {
 	            files: {
-	                'blog/assets/css/main.css': 'blog/_scss/main.scss'
+	                'assets/css/main.css': '_scss/main.scss'
 	            }
 	        }
 		},
@@ -56,7 +56,7 @@ module.exports = function(grunt) {
 		    bsFiles: {
 		      // watch these files for change
 		      src: [
-		        "blog/assets/css/*.css",
+		        "assets/css/*.css",
 		        "_site/*.html"
 		      ]
 		    },
@@ -79,7 +79,7 @@ module.exports = function(grunt) {
 		    },
 		    dist: {
 		    	files: {
-		    	  'blog/assets/css/main.css' : 'blog/assets/css/main.css'
+		    	  'assets/css/main.css' : 'assets/css/main.css'
 		    	}
 		    }
 		},  

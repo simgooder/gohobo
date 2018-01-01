@@ -1,0 +1,39 @@
+# Welcome to Jekyll!
+#
+# This config file is meant for settings that affect your whole blog, values
+# which you are expected to set up once and rarely need to edit after that.
+# For technical reasons, this file is *NOT* reloaded automatically when you use
+# 'jekyll serve'. If you change this file, please restart the server process.
+
+# Site settings
+title: GoHobo | Curated Alternative Travel Resources | Adventures for Everyone.
+email: gohoboco@gmail.com
+description: > # this means to ignore new lines
+  GoHobo is a mindset, a mentality, & a tribe. Curated alternative travel resources and inspiration for travellers, adventurers, digital nomads, vandwellers & explorers. 
+env_url: "http://localhost:3000/" # the base hostname & protocol for your site
+#env_url: "https://gohobo.co/" # the base hostname & protocol for your site
+prod_url: "https://gohobo.co"
+
+permalink: /:categories/:title/
+
+exclude: [
+  GruntFile.js,
+  Grunt.config.js,
+  package-lock.json,
+  package.json,
+  Gemfile,
+  Gemfile.lock,
+  node_modules
+]
+
+# Build settings
+kramdown:
+  input: GFM
+
+image_assets: "/assets/img/" 
+
+# Hero Settings
+hero_hero: "hero_chris-holgersson_bavarian-lake.jpg"
+hero_author: "Chris Holgersson"
+hero_link: "https://tumblr.com/blog/chrisholgerson"
+hero_desc: "A beautiful mountain lake in a valley in Walchensee, Germany."

@@ -1,0 +1,224 @@
+
+// Page Layout for Articles
+// --------------------------------
+
+.art--container {
+
+	margin-left: auto;
+	margin-right: auto;
+
+	padding-top: 5em;
+	
+	background-color: #fff;
+
+	iframe,
+    twitterwidget { // for embeds
+		display: block;
+		margin-left: auto !important;
+		margin-right: auto !important;
+		margin-bottom: 2.5em !important;
+
+		@include article-width;
+	}
+
+	p {
+		font-size: 1.1em;
+	}
+
+    ul {
+        margin-top: 1em;
+        margin-bottom: 1em;
+    }
+
+    h2 {
+        
+    }
+
+    h3 {
+        padding-top: 1em;
+    }
+
+	p:not(.art--img), h1, h2, h3, h4, blockquote, ol, ul, em, b {
+		@include article-width;
+	}
+
+	blockquote {
+		position: relative;
+	}
+
+// used for subheadings
+	p + h2,
+	blockquote + h2,
+    ul + h2 {
+		margin-top: 2em;
+		margin-bottom: 1em;
+	}
+
+	em {
+		font-family: $font-copy;
+	}
+}
+
+	.art--meta {
+	   text-align: center;
+	}
+
+		// the AUTHOR section
+		.art--meta__author {
+            display: block;
+			margin-top: 1em;
+
+            text-align: center;
+            font-family: $font-bold;
+		}
+
+		.art--meta__thumb {
+			position: relative;
+
+			width: 5em;
+			height: 5em;
+
+            margin-left: auto;
+            margin-right: auto;
+
+			overflow: hidden;
+			border-radius: 50%;
+
+            border: 1px solid #eee;
+
+			img {
+				display: block;
+				position: absolute;
+				top: 50%;
+				left: 50%;
+				transform: translate(-50%, -50%);
+				max-width: none;
+				max-height: 100%;
+			}
+		}
+
+        .art--meta__date {
+            font-family: $font-copy;
+            text-align: center;
+            color: #999;
+            font-size: $font-size-meta;
+            
+            margin-top: 0.25em;
+            display: block;
+		}
+		
+		.art--meta__website {
+			display: block;
+
+			margin-top: 0.25em;
+			margin-bottom: 0.5em;
+
+			text-decoration: underline;
+		}
+
+
+	.art--title {
+		text-align: center;
+		text-transform: capitalize;
+
+		margin: 0.3em 0;
+
+		@include mq-md {
+			font-size: 4em;
+		}
+		@include mq-sm {
+			font-size: 3.8em;
+		}
+	}
+
+	.art--content {
+		line-height: 1.9;
+		margin-top: 5em;
+	}
+
+		.art--content {
+			ul li {
+				font-size: 1.1em;
+				list-style-type: disc;
+
+				margin-left: 1.25em;
+			}
+			
+			li + li {
+				margin-top: 0.75em;
+			}
+
+            button {
+                padding: 0.5rem 2rem;
+                text-decoration: none;
+                font-size: 0.85rem;
+            }
+		}
+
+		.art--img {
+            max-width: 75em;
+            margin-left: auto;
+            margin-right: auto;
+			margin-top: 2em;
+			margin-bottom: 2em;
+			text-align: center;
+
+			img {
+				max-width: 100%;
+                max-height: 98vh;
+			}
+		}
+
+        .art--img + figcaption {
+            margin-top: -3em;
+            margin-bottom: 3em;
+
+            font-size: $font-size-meta;
+            text-align: center;
+        }
+
+	.art--footer {
+		display: flex;
+		flex-flow: row wrap;
+
+		@include article-width;
+
+		padding-top: 2em;
+		padding-bottom: 4em;
+
+		@include mq-md {
+			justify-content: space-between;
+			align-items: center;
+		}
+		@include mq-sm {
+			justify-content: center;
+			align-items: center;
+
+			> div {
+				text-align: center;
+			}
+		}
+
+		h6 {
+			font-family: $font-bold;
+			font-size: 1em;
+
+			@include mq-sm {
+				text-align: center;
+				flex-basis: 100%;
+				margin-bottom: 1em;
+			}
+		}
+	}
+
+
+
+// Pinterest Image
+.art--pin-img {
+	visibility: hidden;
+	z-index: -1;
+	position: absolute;
+
+	left: -99999px;
+}
+
