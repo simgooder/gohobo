@@ -69,12 +69,3 @@ Vanlife can enrich or destroy your life. It really depends on how you take it. L
 Travel, save money, go on adventures, experience culture (and subculture!). These reasons (among others) are enough to get thousands of folks like yourself into a van each year.
 
 If you're still on the fence, and want to find out more about living this way, be sure to check out [Vanholio](http://www.vanholio.com/) for entertaining van stories and experience, check out [Our Open Road](https://www.instagram.com/ouropenroad/) for immense amounts of inspiration, and follow the conversation in [/r/vandwellers](https://www.reddit.com/r/vandwellers/) for a large amount of very useful information on the subject.
-
-
-### *NOTE
-
-We have been out-of-van for a few years now, while we let our child settle into the world, and have definitely started consciously collecting debt and *stuff*. 
-
-Everywhere we go we still bring our lessons of minimalism with us. Even living in an apartment in a big city like Montreal, we don't have a couch, cable television (or even a television) and we sleep on the floor (don't worry, our daughter has her own room and a real bed). 
-
-We've tried our best to keep it real but the debt still finds us. Every day we dream, plan, and save for our next big adventure.

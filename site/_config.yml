@@ -10,8 +10,8 @@ title: GoHobo | Curated Alternative Travel Resources | Adventures for Everyone.
 email: gohoboco@gmail.com
 description: > # this means to ignore new lines
   GoHobo is a mindset, a mentality, & a tribe. Curated alternative travel resources and inspiration for travellers, adventurers, digital nomads, vandwellers & explorers. 
-env_url: "http://localhost:3000/" # the base hostname & protocol for your site
-#env_url: "https://gohobo.co/" # the base hostname & protocol for your site
+#env_url: "http://localhost:3000/" # the base hostname & protocol for your site
+env_url: "https://gohobo.co/" # the base hostname & protocol for your site
 prod_url: "https://gohobo.co"
 
 permalink: /:categories/:title/

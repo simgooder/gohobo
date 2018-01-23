@@ -16,9 +16,6 @@ $( document ).ready(function() {
 
 
 
-    // The tag sorting
-
-
 
 // The Modal Toggle
 // -----------------------
