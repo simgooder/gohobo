@@ -417,7 +417,6 @@ self-contained RVers to visit and stay overnight for free!"
   region: usa
   logo  : '../assets/img/directory/outdoorsy-logo.png'
   cta   : Find a RV
-  featured: 1
 
 - name  : RV Rental Connection
   link  : https://www.rvrentalconnection.com/request-rv
@@ -599,6 +598,17 @@ self-contained RVers to visit and stay overnight for free!"
   region: usa
   logo  : '../assets/img/directory/airfare-watchdog-logo.png'
   cta   : Find a flight
+
+- name  : Travel Free
+  link  : https://travelfree.info/
+  desc  : "Travel blog will help you to find the best travel deals, cheap flights, hotels and tours from Europe to the rest of the world."
+  cat   : transportation
+  subcat: airfare
+  budget: 2 # out of 3
+  region: europe
+  logo  : '../assets/img/directory/travel-free-info-logo.png'
+  cta   : Find a flight
+  featured: 1
 
 - name  : The Fare Deal Alert
   link  : http://faredealalert.com
